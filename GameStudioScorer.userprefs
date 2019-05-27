@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{840D54AE-428A-48EE-9E1C-07352083879A}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.GameStudioScorer PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="GameStudioScorer\IGDBInterfacer.cs">
+    <Files>
+      <File FileName="GameStudioScorer\Program.cs" Line="19" Column="4" />
+      <File FileName="GameStudioScorer\IGDBInterfacer.cs" Line="38" Column="1" />
+      <File FileName="GameStudioScorer\CrunchScorer.cs" Line="22" Column="32" />
+      <File FileName="GameStudioScorer\MathUtils.cs" Line="131" Column="4" />
+      <File FileName="GameStudioScorer\LocalCacheManager.cs" Line="64" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
