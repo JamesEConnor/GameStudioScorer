@@ -1,11 +1,7 @@
 C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\GameStudioScorer.exe
 C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\GameStudioScorer.pdb
-C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\mscorlib.dll
-C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\normidna.nlp
-C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\normnfc.nlp
-C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\normnfd.nlp
-C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\normnfkc.nlp
-C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\normnfkd.nlp
 C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\obj\x86\Debug\GameStudioScorer.csprojResolveAssemblyReference.cache
 C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\obj\x86\Debug\GameStudioScorer.exe
 C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\obj\x86\Debug\GameStudioScorer.pdb
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Newtonsoft.Json.xml
