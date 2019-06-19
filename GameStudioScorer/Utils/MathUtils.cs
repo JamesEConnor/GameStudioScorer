@@ -43,6 +43,16 @@ namespace GameStudioScorer.Utils
 			return new BestFit(eq, x, y);
 		}
 
+		public static float LogarithmicIntegral(LogarithmicEquation e, float c1, float c2)
+		{
+			float A = e.c * c1;
+			float area1 = (float)((e.a * c1 * (Math.Log(A, Math.E) - 1)) / Math.Log(e.b, Math.E));
+
+			A = e.c * c2;
+			float area2 = (float)((e.a * c2 * (Math.Log(A, Math.E) - 1)) / Math.Log(e.b, Math.E));
+			return area2 - area1;
+		}
+
 		public static float[] GenInputs(int length)
 		{
 			if (length <= 0)
@@ -129,7 +139,7 @@ namespace GameStudioScorer.Utils
 
 		public float GetValue(float x)
 		{
-			return c * (float)Math.Log(x * a, b);
+			return a * (float)Math.Log(x * c, b);
 		}
 	}
 

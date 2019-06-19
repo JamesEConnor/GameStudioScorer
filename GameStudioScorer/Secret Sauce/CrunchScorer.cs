@@ -20,7 +20,9 @@ namespace GameStudioScorer.Crunch
 			//Console.WriteLine(exp.A + " * (" + exp.r + ")^x");
 
 			LogarithmicEquation log = new LogarithmicEquation(1/exp.A, exp.r, employeeCount);
-			return log.GetValue(2500);
+			//Console.WriteLine(log.a + ", " + log.b + ", " + log.c);
+			//Console.WriteLine(MathUtils.LogarithmicIntegral(log, 1f, 8f) + "," + (7f * log.GetValue(8f)));
+			return MathUtils.LogarithmicIntegral(log, 1f, 8f)/(7f * log.GetValue(8f));
 		}
 	}
 }
@@ -30,4 +32,12 @@ namespace GameStudioScorer.Crunch
  * 532.27819
  * 733.8162
  * 489.28341
+ */
+
+/* 
+ * 0.927385129854	Rockstar		Worst
+ * 0.89632079363	Schell			Best
+ * 0.92178463022	Epic			2nd Worst
+ * 0.919793170921	Bioware			Middle
+ * 0.920726941583	CD Projekt Red	2nd Best
  */
