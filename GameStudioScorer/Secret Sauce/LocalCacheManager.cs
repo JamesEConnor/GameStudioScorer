@@ -15,8 +15,17 @@ namespace GameStudioScorer
 
 				string line = "";
 				foreach (string l in lines)
-					if (l.Split(',')[1] == studioName)
-						line = l;
+				{
+					try
+					{
+						if (l.Split(',')[1] == studioName)
+							line = l;
+					}
+					catch
+					{
+						continue;
+					}
+				}
 
 				if (line != "")
 				{
@@ -26,7 +35,8 @@ namespace GameStudioScorer
 						id = split[0],
 						name = split[1],
 						employeeCount = int.Parse(split[2]),
-						GameYears = Extensions.Extensions.LoadGameYears(split[3])
+						GameYears = Extensions.Extensions.LoadGameYears(split[3]),
+						genreScore = float.Parse(split[4])
 					};
 				}
 			}
@@ -50,7 +60,8 @@ namespace GameStudioScorer
 					contents[a] = 	si.id + "," +
 									si.name + "," +
 									si.employeeCount + "," +
-									si.GameYears.GetString();
+									si.GameYears.GetString() + "," +
+					                si.genreScore;
 
 					saved = true;
 				}
@@ -62,8 +73,8 @@ namespace GameStudioScorer
 				toAdd += 	si.id + "," +
 							si.name + "," +
 							si.employeeCount + "," +
-							si.GameYears.GetString();
-
+							si.GameYears.GetString() + "," +
+							si.genreScore;
 
 			FileStream stream = File.Open("cache.csv", FileMode.OpenOrCreate, FileAccess.ReadWrite);
 			Encoding enc = Encoding.UTF8;

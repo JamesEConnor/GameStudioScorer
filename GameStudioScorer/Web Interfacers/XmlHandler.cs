@@ -2,6 +2,7 @@
 using System.Xml;
 using System.Linq;
 using GameStudioScorer.Extensions;
+using GameStudioScorer.Giantbomb;
 
 namespace GameStudioScorer
 {
@@ -189,10 +190,10 @@ namespace GameStudioScorer
 				string deck = comp.SelectSingleNode("deck").InnerText;
 				string description = comp.SelectSingleNode("description").InnerText;
 
-				DateTime expected_release_month = new DateTime();
-				DateTime expected_release_year = new DateTime();
-				DateTime.TryParse(comp.SelectSingleNode("expected_release_month").InnerText, out expected_release_month);
-				DateTime.TryParse(comp.SelectSingleNode("expected_release_year").InnerText, out expected_release_year);
+				int expected_release_month = 1;
+				int expected_release_year = 1;
+				int.TryParse(comp.SelectSingleNode("expected_release_month").InnerText, out expected_release_month);
+				int.TryParse(comp.SelectSingleNode("expected_release_year").InnerText, out expected_release_year);
 
 				int expected_release_quarter = 0;
 				int.TryParse(comp.SelectSingleNode("expected_release_quarter").InnerText, out expected_release_quarter);

@@ -1,29 +1,46 @@
 ﻿using System;
 using System.Collections.Generic;
 using GameStudioScorer.Utils;
+using GameStudioScorer.IGDB;
 
 namespace GameStudioScorer.Crunch
 {
 	public class CrunchScorer
 	{
+		public static float[] GENRE_SCORES = new float[] { 0.48f, 0.12f, 0.40f, 0.08f, 0.40f, 0.32f, 0.20f };
+
 		public static float GetCrunchOvertimeScore(int[] years, int employeeCount)
 		{
 			List<float> yearsF = new List<float>();
 			for (int a = 0; a < years.Length; a++)
-				if(years[a].ToString().Length >= 4)
+			{
+				if (years[a].ToString().Length >= 4)
 					yearsF.Add(years[a]);
+			}
 
 			float[] inputs = MathUtils.GenInputs(yearsF.Count);
 
 			BestFit bf = MathUtils.ExpRegression(inputs, yearsF.ToArray());
 			ExponentialEquation exp = (ExponentialEquation)bf.equation;
-			//Console.WriteLine(exp.A + " * (" + exp.r + ")^x");
 
 			LogarithmicEquation log = new LogarithmicEquation(1/exp.A, exp.r, employeeCount);
 			//Console.WriteLine(log.a + ", " + log.b + ", " + log.c);
-			//Console.WriteLine(MathUtils.LogarithmicIntegral(log, 1f, 8f) + "," + (7f * log.GetValue(8f)));
-			const int length = 7;
-			return MathUtils.LogarithmicIntegral(log, 1f, length + 1)/(length * log.GetValue(length + 1));
+			const int length = 20;
+			return (MathUtils.LogarithmicIntegral(log, 1f, length + 1)/(length * log.GetValue(length + 1)) - 0.5f) * 2;
+		}
+
+		public static float GetGenreScore(string name, bool DEBUG)
+		{
+			StudioInfo si = LocalCacheManager.GetCachedInfo(name);
+			if (si.id != "-1" && !DEBUG)
+				return si.genreScore;
+
+			int[] genres = IGDBInterfacer.GetGenres(name);
+			float total = 0.0f;
+			foreach (int i in genres)
+				total += GENRE_SCORES[i];
+
+			return total / genres.Length;
 		}
 	}
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GameStudioScorer
+namespace GameStudioScorer.Giantbomb
 {
 	public struct Company
 	{
@@ -90,8 +90,8 @@ namespace GameStudioScorer
 		public string deck;
 		public string description;
 
-		public DateTime expected_release_month;
-		public DateTime expected_release_year;
+		public int expected_release_month;
+		public int expected_release_year;
 		public int expected_release_quarter; //1, 2, 3, or 4
 
 		public string guid;

@@ -8,20 +8,32 @@ namespace GameStudioScorer.Extensions
 {
 	public static class Extensions
 	{
-		public static string GetString(this int[] array)
+		public static string GetString<T>(this T[] array)
 		{
 			string result = "{";
-			foreach (int el in array)
+			foreach (T el in array)
 				result += el.ToString() + "|";
 			return result.Remove(result.Length - 1) + "}";
 		}
 
-		public static string GetString(this string[] array)
+		public static int MaxIndex<T>(this IEnumerable<T> array)
+			where T : IComparable<T>
 		{
-			string result = "{";
-			foreach (string el in array)
-				result += el.ToString() + "|";
-			return result.Remove(result.Length - 1) + "}";
+			int maxIndex = -1;
+			T maxValue = default(T);
+
+			int index = 0;
+			foreach (T element in array)
+			{
+				if (element.CompareTo(maxValue) > 0 || maxIndex == -1)
+				{
+					maxIndex = index;
+					maxValue = element;
+				}
+				index++;
+			}
+
+			return maxIndex;
 		}
 
 		public static int[] LoadGameYears(string str)
@@ -46,7 +58,8 @@ namespace GameStudioScorer.Extensions
 			{
 				if (key.Contains("employee"))
 				{
-					string[] split = Regex.Split(dict[key], "[^\\d]+");
+					string val = dict[key].Replace("+", "");
+					string[] split = Regex.Split(val, "[^\\d]+");
 					for (int a = 0; a < split.Length; a++)
 					{
 						if (int.TryParse(split[a], out employeeCount))

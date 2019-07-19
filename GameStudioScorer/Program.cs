@@ -8,7 +8,8 @@ namespace GameStudioScorer
 {
 	class MainClass
 	{
-		static string[] GAME_STUDIOS = { "Rockstar Games", "Schell Games", "Epic Games", "BioWare", "CD Projekt", "IO Interactive", "Ubisoft" };
+		static string[] GAME_STUDIOS = { "Rockstar Games", "Schell Games", "Epic Games", "BioWare", "CD Projekt", "IO Interactive", "Ubisoft", "Iron Galaxy" };
+		static string[] DEBUG_MODE = { };
 
 		public static void Main(string[] args)
 		{
@@ -24,7 +25,7 @@ namespace GameStudioScorer
 			Dictionary<string, float> dict = new Dictionary<string, float>();
 			foreach (string studio in studios)
 			{
-				StudioInfo si = Giantbomb.GiantBombInterfacer.GetStudio(studio);
+				StudioInfo si = Giantbomb.GiantBombInterfacer.GetStudio(studio, DEBUG_MODE.Contains(studio));
 				dict.Add(studio, CrunchScorer.GetCrunchOvertimeScore(si.GameYears, si.employeeCount));
 			}
 

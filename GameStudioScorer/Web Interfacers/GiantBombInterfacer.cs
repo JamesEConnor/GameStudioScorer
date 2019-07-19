@@ -1,5 +1,5 @@
 ﻿using System;
-using GameStudioScorer.Giantbomb;
+using GameStudioScorer.Extensions;
 using System.Xml.Serialization;
 using System.IO;
 using System.Net;
@@ -12,10 +12,10 @@ namespace GameStudioScorer.Giantbomb
 	{
 		public const string API_KEY = "***REMOVED***";
 
-		public static StudioInfo GetStudio(string name)
+		public static StudioInfo GetStudio(string name, bool DEBUG)
 		{
 			StudioInfo si = LocalCacheManager.GetCachedInfo(name);
-			if (si.id != "-1")
+			if (si.id != "-1" && !DEBUG)
 				return si;
 
 			int employeeCount = Extensions.Extensions.GetEmployeeCount(name);
@@ -24,16 +24,21 @@ namespace GameStudioScorer.Giantbomb
 			int[] gameYears = new int[gameInfo.Length - 1];
 
 			for (int a = 0; a < gameInfo.Length - 1; a++)
+			{
 				gameYears[a] = int.Parse(gameInfo[a]);
+			}
 
 			Array.Sort(gameYears);
+
+			Console.WriteLine(gameInfo.GetString() + "-" + name);
 
 			si = new StudioInfo
 			{
 				id = gameInfo[gameInfo.Length - 1],
 				name = name,
 				employeeCount = employeeCount,
-				GameYears = gameYears
+				GameYears = gameYears,
+				genreScore = -1f
 			};
 
 			LocalCacheManager.SaveCachedInfo(si);
@@ -92,8 +97,13 @@ namespace GameStudioScorer.Giantbomb
 			{
 				if (!usedGames.Contains(games[a].name))
 				{
-					result.Add(games[a].original_release_date.Year.ToString());
+					if(games[a].expected_release_year.ToString().Length >= 4)
+						result.Add(games[a].expected_release_year.ToString());
+					else
+						result.Add(games[a].original_release_date.Year.ToString());
 					usedGames.Add(games[a].name);
+
+					Console.WriteLine(result[result.Count - 1] + "-" + games[a].name);
 				}
 			}
 			result.Add(company.guid);

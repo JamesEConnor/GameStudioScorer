@@ -1,45 +1,73 @@
 ﻿using System.Net;
-using System.IO;
+using System.Linq;
 using GameStudioScorer.Extensions;
+using unirest_net.http;
+using System.Collections.Generic;
 
 namespace GameStudioScorer.IGDB
 {
 	public class IGDBInterfacer
 	{
-		public static StudioInfo GetStudio(string name)
+		public const string API_KEY = "***REMOVED***";
+
+		public static int[] GetGenres(string name)
 		{
-			return new StudioInfo
-			{
-				id = "-1"
-			};
+			HttpResponse<Company> company_response = Unirest.post("https://api-v3.igdb.com/companies/search")
+				   .header("user-key", API_KEY)
+				   .header("Accept", "application/json")
+			                                        .body("fields = name,developed,published; where name ~*\"" + name.ToLower() + "\";")
+				   .asJson<Company>();
 
-			/*StudioInfo si = LocalCacheManager.GetCachedInfo(name);
-			if (si.id != "-1")
-				return si;
+			List<int> genres = new List<int>();
+			foreach (Game g in company_response.Body.developed)
+				genres.Add(EvaluateGenres(g.genres));
+			foreach (Game g in company_response.Body.published)
+				genres.Add(EvaluateGenres(g.genres));
 
-			int employeeCount = Extensions.Extensions.GetEmployeeCount(name);
-			int[] gameInfo = GetIGDBInfo(name);
-			int[] gameYears = new int[gameInfo.Length - 1];
-
-			for (int a = 0; a < gameInfo.Length - 1; a++)
-				gameYears[a] = gameInfo[a];
-
-			si = new StudioInfo
-			{
-				id = gameInfo[gameInfo.Length - 1],
-				name = name,
-				employeeCount = employeeCount,
-				GameYears = gameYears
-			};
-
-			LocalCacheManager.SaveCachedInfo(si);
-			return si;*/
+			return genres.ToArray();
 		}
 
-		public static int[] GetIGDBInfo(string name)
+		public static int EvaluateGenres(int[] genres)
 		{
-			//Unirest.
-			return null;
+			//9 = Puzzle
+			//12 = RPG
+			//13 = Simulator
+			//14 = Sport
+			//15 = Strategy
+			//31 = Adventure
+			foreach (int i in genres)
+			{
+				if (i == 9)
+					return 1;
+				else if (i == 12)
+					return 2;
+				else if (i == 13)
+					return 3;
+				else if (i == 14)
+					return 4;
+				else if (i == 15)
+					return 5;
+				else if (i == 31)
+					return 6;
+			}
+
+			//Action, Puzzle, RPG, Simulator, Sport, Strategy, Adventure
+			int[] genre_points = new int[7];
+			foreach (int i in genres)
+			{
+				if (i == 4 || i == 5 || i == 25 || i == 33)
+					genre_points[0]++;
+				else if (i == 2 || i == 7 || i == 8 || i == 26 || i == 30)
+					genre_points[1]++;
+				else if (i == 10)
+					genre_points[4]++;
+				else if (i == 11 || i == 16 || i == 24)
+					genre_points[5]++;
+				else if (i == 32)
+					genre_points[6]++;
+			}
+
+			return genre_points.MaxIndex();
 		}
 	}
 }
@@ -52,5 +80,6 @@ namespace GameStudioScorer
 		public string name;
 		public int[] GameYears;
 		public int employeeCount;
+		public float genreScore;
 	}
 }
