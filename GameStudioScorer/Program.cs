@@ -8,7 +8,7 @@ namespace GameStudioScorer
 {
 	class MainClass
 	{
-		static string[] GAME_STUDIOS = { "Rockstar Games", "Schell Games", "Epic Games", "BioWare", "CD Projekt", "IO Interactive", "Ubisoft", "Iron Galaxy" };
+		static string[] GAME_STUDIOS = { "Rockstar Games" };//, "Schell Games", "Epic Games", "BioWare", "CD Projekt", "IO Interactive", "Ubisoft", "Iron Galaxy" };
 		static string[] DEBUG_MODE = { };
 
 		public static void Main(string[] args)
@@ -26,7 +26,13 @@ namespace GameStudioScorer
 			foreach (string studio in studios)
 			{
 				StudioInfo si = Giantbomb.GiantBombInterfacer.GetStudio(studio, DEBUG_MODE.Contains(studio));
-				dict.Add(studio, CrunchScorer.GetCrunchOvertimeScore(si.GameYears, si.employeeCount));
+				si.GenreScore = CrunchScorer.GetGenreScore(studio, DEBUG_MODE.Contains(studio));
+
+				//TODO Eventually need to make this use logarithmic regression
+				dict.Add(studio, si.CrunchOvertimeScore);
+
+				if (LocalCacheManager.GetCachedInfo(studio).id == "-1" || DEBUG_MODE.Contains(studio))
+					LocalCacheManager.SaveCachedInfo(si);
 			}
 
 			return dict.OrderByDescending(x => x.Value).ToList();

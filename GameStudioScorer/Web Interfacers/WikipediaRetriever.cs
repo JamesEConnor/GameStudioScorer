@@ -28,14 +28,10 @@ namespace GameStudioScorer.Wiki
 				if (s.IndexOf(" ", StringComparison.Ordinal) == 0)
 					s = s.Substring(1);
 
-				Console.WriteLine(s);
-
 				if (s.Trim().Length != 0)
 				{
 					string[] elements = s.Split(new char[] { ' ' }, 2);
 					elements[1] = Regex.Replace(elements[1], "&#[0-9]+;", " ");
-
-					Console.WriteLine(elements[1] + "___" + topic);
 
 					result.Add(elements[0], elements[1]);
 				}

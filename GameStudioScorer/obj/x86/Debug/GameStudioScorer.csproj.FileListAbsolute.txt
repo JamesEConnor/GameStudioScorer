@@ -5,3 +5,16 @@ C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\obj\x86\Debu
 C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\obj\x86\Debug\GameStudioScorer.pdb
 C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Newtonsoft.Json.dll
 C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\GameStudioScorer.exe.config
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\unirest-net.dll
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\obj\x86\Debug\GameStudioScorer.csproj.GameStudioScorer.exe.config

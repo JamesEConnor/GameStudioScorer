@@ -36,7 +36,7 @@ namespace GameStudioScorer
 						name = split[1],
 						employeeCount = int.Parse(split[2]),
 						GameYears = Extensions.Extensions.LoadGameYears(split[3]),
-						genreScore = float.Parse(split[4])
+						GenreScore = float.Parse(split[4])
 					};
 				}
 			}
@@ -61,7 +61,7 @@ namespace GameStudioScorer
 									si.name + "," +
 									si.employeeCount + "," +
 									si.GameYears.GetString() + "," +
-					                si.genreScore;
+					                si.GenreScore;
 
 					saved = true;
 				}
@@ -74,7 +74,7 @@ namespace GameStudioScorer
 							si.name + "," +
 							si.employeeCount + "," +
 							si.GameYears.GetString() + "," +
-							si.genreScore;
+							si.GenreScore;
 
 			FileStream stream = File.Open("cache.csv", FileMode.OpenOrCreate, FileAccess.ReadWrite);
 			Encoding enc = Encoding.UTF8;

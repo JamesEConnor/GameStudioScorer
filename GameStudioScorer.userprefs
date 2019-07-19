@@ -5,15 +5,17 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="GameStudioScorer\Web Interfacers\IGDBInterfacer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GameStudioScorer\Program.cs">
     <Files>
-      <File FileName="GameStudioScorer\Program.cs" Line="12" Column="33" />
-      <File FileName="GameStudioScorer\Secret Sauce\CrunchScorer.cs" Line="27" Column="4" />
-      <File FileName="GameStudioScorer\Web Interfacers\IGDBInterfacer.cs" Line="27" Column="27" />
-      <File FileName="GameStudioScorer\Web Interfacers\IGDBResources.cs" Line="8" Column="14" />
-      <File FileName="GameStudioScorer\Secret Sauce\LocalCacheManager.cs" Line="26" Column="16" />
-      <File FileName="GameStudioScorer\Utils\Extensions.cs" Line="17" Column="4" />
-      <File FileName="GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs" Line="1" Column="1" />
+      <File FileName="GameStudioScorer\Program.cs" Line="32" Column="44" />
+      <File FileName="GameStudioScorer\Secret Sauce\CrunchScorer.cs" Line="36" Column="18" />
+      <File FileName="GameStudioScorer\Web Interfacers\IGDBInterfacer.cs" Line="16" Column="44" />
+      <File FileName="GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs" Line="18" Column="4" />
+      <File FileName="GameStudioScorer\Web Interfacers\IGDBResources.cs" Line="14" Column="13" />
+      <File FileName="GameStudioScorer\Secret Sauce\LocalCacheManager.cs" Line="35" Column="21" />
+      <File FileName="GameStudioScorer\Utils\Extensions.cs" Line="36" Column="20" />
+      <File FileName="GameStudioScorer\Web Interfacers\WikipediaRetriever.cs" Line="35" Column="6" />
+      <File FileName="GameStudioScorer\Web Interfacers\JsonHandler.cs" Line="15" Column="72" />
     </Files>
   </MonoDevelop.Ide.Workbench>
 </Properties>

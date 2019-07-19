@@ -33,7 +33,7 @@ namespace GameStudioScorer.Crunch
 		{
 			StudioInfo si = LocalCacheManager.GetCachedInfo(name);
 			if (si.id != "-1" && !DEBUG)
-				return si.genreScore;
+				return si.GenreScore;
 
 			int[] genres = IGDBInterfacer.GetGenres(name);
 			float total = 0.0f;

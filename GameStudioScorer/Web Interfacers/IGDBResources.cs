@@ -4,13 +4,14 @@ namespace GameStudioScorer.IGDB
 	public struct Company
 	{
 		public string name;
+		public int id;
 		public Game[] developed;
 		public Game[] published;
 	}
 
 	public struct Game
 	{
-		public string id;
+		public int id;
 		public int[] genres;
 	}
 }

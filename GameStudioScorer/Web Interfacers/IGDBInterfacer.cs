@@ -3,6 +3,9 @@ using System.Linq;
 using GameStudioScorer.Extensions;
 using unirest_net.http;
 using System.Collections.Generic;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using GameStudioScorer.JSON;
 
 namespace GameStudioScorer.IGDB
 {
@@ -12,16 +15,18 @@ namespace GameStudioScorer.IGDB
 
 		public static int[] GetGenres(string name)
 		{
-			HttpResponse<Company> company_response = Unirest.post("https://api-v3.igdb.com/companies/search")
+			HttpResponse<string> company_response = Unirest.post("https://api-v3.igdb.com/companies")
 				   .header("user-key", API_KEY)
 				   .header("Accept", "application/json")
-			                                        .body("fields = name,developed,published; where name ~*\"" + name.ToLower() + "\";")
-				   .asJson<Company>();
+				   .body("fields name,id,developed.genres,published.genres; where name ~*\"" + name.ToLower() + "\";")
+				   .asString();
+
+			Company comp = JsonHandler.DeserializeCompany(company_response.Body);
 
 			List<int> genres = new List<int>();
-			foreach (Game g in company_response.Body.developed)
+			foreach (Game g in comp.developed)
 				genres.Add(EvaluateGenres(g.genres));
-			foreach (Game g in company_response.Body.published)
+			foreach (Game g in comp.published)
 				genres.Add(EvaluateGenres(g.genres));
 
 			return genres.ToArray();
@@ -80,6 +85,15 @@ namespace GameStudioScorer
 		public string name;
 		public int[] GameYears;
 		public int employeeCount;
-		public float genreScore;
+
+		public float CrunchOvertimeScore
+		{
+			get
+			{
+				return Crunch.CrunchScorer.GetCrunchOvertimeScore(GameYears, employeeCount);
+			}
+		}
+
+		public float GenreScore;
 	}
 }

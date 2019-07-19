@@ -4,7 +4,7 @@ using System.Linq;
 using GameStudioScorer.Extensions;
 using GameStudioScorer.Giantbomb;
 
-namespace GameStudioScorer
+namespace GameStudioScorer.XML
 {
 	public static class XmlHandler
 	{
