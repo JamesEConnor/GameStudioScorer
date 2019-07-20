@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Linq;
 using GameStudioScorer.Crunch;
+using GameStudioScorer.Extensions;
 
 namespace GameStudioScorer
 {
 	class MainClass
 	{
-		static string[] GAME_STUDIOS = { "Rockstar Games" };//, "Schell Games", "Epic Games", "BioWare", "CD Projekt", "IO Interactive", "Ubisoft", "Iron Galaxy" };
+		static string[] GAME_STUDIOS = { "Rockstar Games", "Schell Games", "Epic Games", "BioWare", "CD Projekt", "IO Interactive", "Ubisoft", "Iron Galaxy" };
 		static string[] DEBUG_MODE = { };
 
 		public static void Main(string[] args)
@@ -26,10 +27,10 @@ namespace GameStudioScorer
 			foreach (string studio in studios)
 			{
 				StudioInfo si = Giantbomb.GiantBombInterfacer.GetStudio(studio, DEBUG_MODE.Contains(studio));
-				si.GenreScore = CrunchScorer.GetGenreScore(studio, DEBUG_MODE.Contains(studio));
+				si.GenreScore = CrunchScorer.GetGenreScore(si.name, studio, DEBUG_MODE.Contains(studio));
 
 				//TODO Eventually need to make this use logarithmic regression
-				dict.Add(studio, si.CrunchOvertimeScore);
+				dict.Add(studio, si.GenreScore);
 
 				if (LocalCacheManager.GetCachedInfo(studio).id == "-1" || DEBUG_MODE.Contains(studio))
 					LocalCacheManager.SaveCachedInfo(si);

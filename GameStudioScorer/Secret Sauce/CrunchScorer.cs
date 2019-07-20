@@ -29,18 +29,32 @@ namespace GameStudioScorer.Crunch
 			return (MathUtils.LogarithmicIntegral(log, 1f, length + 1)/(length * log.GetValue(length + 1)) - 0.5f) * 2;
 		}
 
-		public static float GetGenreScore(string name, bool DEBUG)
+		public static float GetGenreScore(string name, string savedName, bool DEBUG)
 		{
-			StudioInfo si = LocalCacheManager.GetCachedInfo(name);
+			StudioInfo si = LocalCacheManager.GetCachedInfo(savedName);
 			if (si.id != "-1" && !DEBUG)
 				return si.GenreScore;
 
-			int[] genres = IGDBInterfacer.GetGenres(name);
-			float total = 0.0f;
-			foreach (int i in genres)
-				total += GENRE_SCORES[i];
+			try
+			{
+				int[] genres = IGDBInterfacer.GetGenres(savedName);
+				float total = 0.0f;
+				foreach (int i in genres)
+					total += GENRE_SCORES[i];
 
-			return total / genres.Length;
+				return total / genres.Length;
+			}
+			catch(Exception e)
+			{
+				Console.WriteLine(e);
+
+				int[] genres = IGDBInterfacer.GetGenres(name);
+				float total = 0.0f;
+				foreach (int i in genres)
+					total += GENRE_SCORES[i];
+
+				return total / genres.Length;
+			}
 		}
 	}
 }

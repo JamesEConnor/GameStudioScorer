@@ -77,7 +77,6 @@
     <Compile Include="Secret Sauce\LocalCacheManager.cs" />
     <Compile Include="Secret Sauce\CrunchScorer.cs" />
     <Compile Include="Web Interfacers\IGDBResources.cs" />
-    <Compile Include="Web Interfacers\JsonHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

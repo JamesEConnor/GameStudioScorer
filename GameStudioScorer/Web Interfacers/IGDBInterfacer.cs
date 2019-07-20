@@ -5,7 +5,7 @@ using unirest_net.http;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using GameStudioScorer.JSON;
+using System;
 
 namespace GameStudioScorer.IGDB
 {
@@ -21,13 +21,15 @@ namespace GameStudioScorer.IGDB
 				   .body("fields name,id,developed.genres,published.genres; where name ~*\"" + name.ToLower() + "\";")
 				   .asString();
 
-			Company comp = JsonHandler.DeserializeCompany(company_response.Body);
+			List<Company> list = (List<Company>)JsonConvert.DeserializeObject(company_response.Body, typeof(List<Company>));
 
 			List<int> genres = new List<int>();
-			foreach (Game g in comp.developed)
-				genres.Add(EvaluateGenres(g.genres));
-			foreach (Game g in comp.published)
-				genres.Add(EvaluateGenres(g.genres));
+			foreach (Game g in list[0].developed)
+				if(g.genres != null)
+					genres.Add(EvaluateGenres(g.genres));
+			foreach (Game g in list[0].published)
+				if(g.genres != null)
+					genres.Add(EvaluateGenres(g.genres));
 
 			return genres.ToArray();
 		}

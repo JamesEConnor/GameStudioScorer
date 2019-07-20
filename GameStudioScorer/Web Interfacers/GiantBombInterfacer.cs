@@ -22,9 +22,9 @@ namespace GameStudioScorer.Giantbomb
 			int employeeCount = Extensions.Extensions.GetEmployeeCount(name);
 			string[] gameInfo = GetGBInfo(name);
 
-			int[] gameYears = new int[gameInfo.Length - 1];
+			int[] gameYears = new int[gameInfo.Length - 2];
 
-			for (int a = 0; a < gameInfo.Length - 1; a++)
+			for (int a = 0; a < gameInfo.Length - 2; a++)
 			{
 				gameYears[a] = int.Parse(gameInfo[a]);
 			}
@@ -33,8 +33,8 @@ namespace GameStudioScorer.Giantbomb
 
 			si = new StudioInfo
 			{
-				id = gameInfo[gameInfo.Length - 1],
-				name = name,
+				id = gameInfo[gameInfo.Length - 2],
+				name = gameInfo[gameInfo.Length - 1],
 				employeeCount = employeeCount,
 				GameYears = gameYears,
 				GenreScore = -1f
@@ -104,6 +104,7 @@ namespace GameStudioScorer.Giantbomb
 				}
 			}
 			result.Add(company.guid);
+			result.Add(company.name);
 
 			return result.ToArray();
 		}
