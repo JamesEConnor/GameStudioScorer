@@ -11,7 +11,7 @@ namespace GameStudioScorer.Wiki
 	{
 		public static Dictionary<string, string> GetWikiInfo(string topic)
 		{
-			Dictionary<string, string> result = new Dictionary<string, string>();
+			/*Dictionary<string, string> result = new Dictionary<string, string>();
 
 			string html = GetHTMLCode("https://en.wikipedia.org/wiki/" + topic);
 			string sidebar = html.Split(new string[] { "<tbody>", "</tbody>" }, StringSplitOptions.None)[1];
@@ -34,6 +34,22 @@ namespace GameStudioScorer.Wiki
 					elements[1] = Regex.Replace(elements[1], "&#[0-9]+;", " ");
 
 					result.Add(elements[0], elements[1]);
+				}
+			}
+
+			return result;*/
+
+			Dictionary<string, string> result = new Dictionary<string, string>();
+
+			string html = GetHTMLCode("https://en.wikipedia.org/wiki/" + topic + "?action=raw");
+			string[] lines = html.Split('\n');
+			foreach (string str in lines)
+			{
+				if (str.StartsWith("|", StringComparison.CurrentCulture) && str.Contains(" = "))
+				{
+					string val = str.Remove(0, 2);
+					string[] keyval = val.Split(new string[] { " = " }, 2, StringSplitOptions.None);
+					result.Add(keyval[0], keyval[1]);
 				}
 			}
 

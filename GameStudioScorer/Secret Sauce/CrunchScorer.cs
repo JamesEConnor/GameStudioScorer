@@ -46,8 +46,6 @@ namespace GameStudioScorer.Crunch
 			}
 			catch(Exception e)
 			{
-				Console.WriteLine(e);
-
 				int[] genres = IGDBInterfacer.GetGenres(name);
 				float total = 0.0f;
 				foreach (int i in genres)

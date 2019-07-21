@@ -9,6 +9,8 @@ namespace GameStudioScorer
 	{
 		public static StudioInfo GetCachedInfo(string studioName)
 		{
+			studioName = studioName.Replace(",", "-");
+
 			if (File.Exists("cache.csv"))
 			{
 				string[] lines = File.ReadAllLines("cache.csv");
@@ -57,8 +59,8 @@ namespace GameStudioScorer
 				string[] split = contents[a].Split(',');
 				if (split[0] == si.id.ToString())
 				{
-					contents[a] = 	si.id + "," +
-									si.name + "," +
+					contents[a] = 	si.id.Replace(",", "-") + "," +
+					                si.name.Replace(",","-") + "," +
 									si.employeeCount + "," +
 									si.GameYears.GetString() + "," +
 					                si.GenreScore;
@@ -70,8 +72,8 @@ namespace GameStudioScorer
 			}
 
 			if(!saved)
-				toAdd += 	si.id + "," +
-							si.name + "," +
+				toAdd += 	si.id.Replace(",", "") + "," +
+							si.name.Replace(",", "") + "," +
 							si.employeeCount + "," +
 							si.GameYears.GetString() + "," +
 							si.GenreScore;

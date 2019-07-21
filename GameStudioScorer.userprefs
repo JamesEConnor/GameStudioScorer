@@ -7,14 +7,14 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="GameStudioScorer\Program.cs">
     <Files>
-      <File FileName="GameStudioScorer\Program.cs" Line="25" Column="4" />
-      <File FileName="GameStudioScorer\Secret Sauce\CrunchScorer.cs" Line="49" Column="26" />
+      <File FileName="GameStudioScorer\Program.cs" Line="13" Column="33" />
+      <File FileName="GameStudioScorer\Secret Sauce\CrunchScorer.cs" Line="27" Column="13" />
       <File FileName="GameStudioScorer\Web Interfacers\IGDBInterfacer.cs" Line="8" Column="1" />
-      <File FileName="GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs" Line="37" Column="41" />
+      <File FileName="GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs" Line="73" Column="22" />
       <File FileName="GameStudioScorer\Web Interfacers\IGDBResources.cs" Line="5" Column="2" />
-      <File FileName="GameStudioScorer\Secret Sauce\LocalCacheManager.cs" Line="35" Column="21" />
-      <File FileName="GameStudioScorer\Utils\Extensions.cs" Line="36" Column="20" />
-      <File FileName="GameStudioScorer\Web Interfacers\WikipediaRetriever.cs" Line="35" Column="6" />
+      <File FileName="GameStudioScorer\Secret Sauce\LocalCacheManager.cs" Line="12" Column="46" />
+      <File FileName="GameStudioScorer\Utils\Extensions.cs" Line="56" Column="4" />
+      <File FileName="GameStudioScorer\Web Interfacers\WikipediaRetriever.cs" Line="48" Column="50" />
     </Files>
   </MonoDevelop.Ide.Workbench>
 </Properties>

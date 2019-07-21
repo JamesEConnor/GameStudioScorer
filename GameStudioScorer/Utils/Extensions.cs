@@ -58,13 +58,10 @@ namespace GameStudioScorer.Extensions
 			{
 				if (key.Contains("employee"))
 				{
-					string val = dict[key].Replace("+", "");
-					string[] split = Regex.Split(val, "[^\\d]+");
-					for (int a = 0; a < split.Length; a++)
-					{
-						if (int.TryParse(split[a], out employeeCount))
-							break;
-					}
+					string val = Regex.Replace(dict[key], "<.+?>.+<\\/.+?>", "");
+					string result = Regex.Replace(val, "[^\\d]+", "");
+					if (int.TryParse(result, out employeeCount))
+						break;
 
 					//employeeCount = int.Parse(Regex.Replace(dict[key].Split(new char[] { '_', ' ' })[0], "[^0-9]", String.Empty));
 				}
