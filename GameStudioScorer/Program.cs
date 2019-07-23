@@ -32,6 +32,7 @@ namespace GameStudioScorer
 				//TODO Eventually need to make this use logarithmic regression
 				dict.Add(studio, si.GenreScore);
 
+				si.name = studio;
 				if (LocalCacheManager.GetCachedInfo(studio).id == "-1" || DEBUG_MODE.Contains(studio))
 					LocalCacheManager.SaveCachedInfo(si);
 			}
