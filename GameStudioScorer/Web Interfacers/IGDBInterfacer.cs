@@ -96,6 +96,14 @@ namespace GameStudioScorer
 			}
 		}
 
+		public float RatingScore
+		{
+			get
+			{
+				return Crunch.CrunchScorer.GetReviewScore(name);
+			}
+		}
+
 		public float GenreScore;
 	}
 }

@@ -63,6 +63,7 @@
     <Reference Include="unirest-net">
       <HintPath>..\packages\Unirest-API.1.0.7.6\lib\unirest-net.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
