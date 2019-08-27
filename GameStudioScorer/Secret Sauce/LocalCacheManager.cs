@@ -55,7 +55,7 @@ namespace GameStudioScorer
 			string[] contents = File.ReadAllLines("cache.csv");
 
 			string newValue = 		si.id.Replace(",", "-")		+ "," +
-									si.name.Replace(",", "-") 	+ "," +
+			                        si.alias.Replace(",", "-") 	+ "," +
 									si.employeeCount 			+ "," +
 									si.GameYears.GetString() 	+ "," +
 									si.GenreScore 				+ "," +

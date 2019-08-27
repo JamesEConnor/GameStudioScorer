@@ -37,9 +37,13 @@ namespace GameStudioScorer.Crunch
 
 		public static float GetGenreScore(string name, string savedName, bool DEBUG)
 		{
-			StudioInfo si = LocalCacheManager.GetCachedInfo(savedName);
-			if (si.id != "-1" && !DEBUG)
-				return si.GenreScore;
+			Console.WriteLine(name);
+			if (!DEBUG)
+			{
+				StudioInfo si = LocalCacheManager.GetCachedInfo(savedName);
+				if (si.id != "-1" && !DEBUG)
+					return si.GenreScore;
+			}
 
 			try
 			{
