@@ -2,11 +2,17 @@
 using System.Collections.Generic;
 using GameStudioScorer.Utils;
 using GameStudioScorer.IGDB;
+using System.Diagnostics;
+using System.IO;
+using System.Configuration;
 
 namespace GameStudioScorer.Crunch
 {
 	public class CrunchScorer
 	{
+		public const string SEARCH_SCRAPER_PATH = "glassdoor-search-scraper";
+		public const string REVIEW_SCRAPER_PATH = "glassdoor-review-scraper";
+
 		public static float[] GENRE_SCORES = new float[] { 0.48f, 0.12f, 0.40f, 0.08f, 0.40f, 0.32f, 0.20f };
 
 		public static float GetCrunchOvertimeScore(int[] years, int employeeCount)
@@ -31,9 +37,13 @@ namespace GameStudioScorer.Crunch
 
 		public static float GetGenreScore(string name, string savedName, bool DEBUG)
 		{
-			StudioInfo si = LocalCacheManager.GetCachedInfo(savedName);
-			if (si.id != "-1" && !DEBUG)
-				return si.GenreScore;
+			Console.WriteLine(name);
+			if (!DEBUG)
+			{
+				StudioInfo si = LocalCacheManager.GetCachedInfo(savedName);
+				if (si.id != "-1" && !DEBUG)
+					return si.GenreScore;
+			}
 
 			try
 			{
@@ -53,6 +63,67 @@ namespace GameStudioScorer.Crunch
 
 				return total / genres.Length;
 			}
+		}
+
+		public static float GetReviewScore(string studioName)
+		{
+			string searchScraper = AppDomain.CurrentDomain.BaseDirectory + SEARCH_SCRAPER_PATH;
+			string reviewScraper = AppDomain.CurrentDomain.BaseDirectory + REVIEW_SCRAPER_PATH;
+
+			string searchCommand = "main.py --headless --name \"" + studioName + "\" --browser \"" + ConfigurationManager.AppSettings["browser"] + "\"";
+
+			Process p = new Process();
+			p.StartInfo = new ProcessStartInfo()
+			{
+				WorkingDirectory = searchScraper,
+				FileName = "python.exe",
+				Arguments = searchCommand,
+				UseShellExecute = false,
+				RedirectStandardOutput = true,
+			};
+
+			p.Start();
+
+			while (!p.HasExited) {}
+
+			Console.WriteLine("EXIT ONE");
+
+			string currentLine = "";
+			while (p.StandardOutput.Peek() > -1)
+			{
+				currentLine = p.StandardOutput.ReadLine();
+			}
+
+			if (currentLine == "null")
+				return 0.5f;
+
+			string reviewCommand = "main.py --headless --url \"" + currentLine + "\" -f reviews.csv --limit 40 --browser \"" + ConfigurationManager.AppSettings["browser"] + "\"";
+			Console.WriteLine(reviewCommand);
+
+			p = new Process();
+			p.StartInfo = new ProcessStartInfo()
+			{
+				WorkingDirectory = reviewScraper,
+				FileName = "python.exe",
+				Arguments = reviewCommand,
+				UseShellExecute = false,
+				RedirectStandardOutput = true,
+			};
+
+			p.Start();
+
+			while (!p.HasExited) {}
+
+			float ratingTotal = 0.0f;
+
+			string[] lines = File.ReadAllLines(AppDomain.CurrentDomain.BaseDirectory + "/glassdoor-review-scraper/reviews.csv");
+			for (int a = 1; a < lines.Length; a++)
+			{
+				ratingTotal += float.Parse(lines[a]);
+			}
+
+			ratingTotal /= lines.Length - 1;
+			return ratingTotal / 5;
 		}
 	}
 }

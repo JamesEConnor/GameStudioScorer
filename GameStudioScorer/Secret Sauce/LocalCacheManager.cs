@@ -38,7 +38,8 @@ namespace GameStudioScorer
 						name = split[1],
 						employeeCount = int.Parse(split[2]),
 						GameYears = Extensions.Extensions.LoadGameYears(split[3]),
-						GenreScore = float.Parse(split[4])
+						GenreScore = float.Parse(split[4]),
+						ReviewScore = float.Parse(split[5])
 					};
 				}
 			}
@@ -52,6 +53,14 @@ namespace GameStudioScorer
 		public static bool SaveCachedInfo(StudioInfo si)
 		{
 			string[] contents = File.ReadAllLines("cache.csv");
+
+			string newValue = 		si.id.Replace(",", "-")		+ "," +
+			                        si.alias.Replace(",", "-") 	+ "," +
+									si.employeeCount 			+ "," +
+									si.GameYears.GetString() 	+ "," +
+									si.GenreScore 				+ "," +
+									si.ReviewScore;
+
 			string toAdd = "";
 			bool saved = false;
 			for (int a = 0; a < contents.Length; a++)
@@ -59,11 +68,7 @@ namespace GameStudioScorer
 				string[] split = contents[a].Split(',');
 				if (split[0] == si.id.ToString())
 				{
-					contents[a] = 	si.id.Replace(",", "-") + "," +
-					                si.name.Replace(",","-") + "," +
-									si.employeeCount + "," +
-									si.GameYears.GetString() + "," +
-					                si.GenreScore;
+					contents[a] = newValue;
 
 					saved = true;
 				}
@@ -71,12 +76,8 @@ namespace GameStudioScorer
 				toAdd += contents[a] + "\n";
 			}
 
-			if(!saved)
-				toAdd += 	si.id.Replace(",", "") + "," +
-							si.name.Replace(",", "") + "," +
-							si.employeeCount + "," +
-							si.GameYears.GetString() + "," +
-							si.GenreScore;
+			if (!saved)
+				toAdd += newValue;
 
 			FileStream stream = File.Open("cache.csv", FileMode.OpenOrCreate, FileAccess.ReadWrite);
 			Encoding enc = Encoding.UTF8;

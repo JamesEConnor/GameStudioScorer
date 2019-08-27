@@ -15,9 +15,14 @@ namespace GameStudioScorer.Giantbomb
 
 		public static StudioInfo GetStudio(string name, bool DEBUG)
 		{
-			StudioInfo si = LocalCacheManager.GetCachedInfo(name);
-			if (si.id != "-1" && !DEBUG)
-				return si;
+			StudioInfo si;
+			if (!DEBUG)
+			{
+				si = LocalCacheManager.GetCachedInfo(name);
+				si.alias = name;
+				if (si.id != "-1")
+					return si;
+			}
 
 			int employeeCount = Extensions.Extensions.GetEmployeeCount(name);
 			string[] gameInfo = GetGBInfo(name);
@@ -37,7 +42,7 @@ namespace GameStudioScorer.Giantbomb
 				name = gameInfo[gameInfo.Length - 1],
 				employeeCount = employeeCount,
 				GameYears = gameYears,
-				GenreScore = -1f
+				alias = name
 			};
 
 			//LocalCacheManager.SaveCachedInfo(si);

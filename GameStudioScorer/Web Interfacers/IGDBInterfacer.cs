@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
+using GameStudioScorer.Crunch;
 
 namespace GameStudioScorer.IGDB
 {
@@ -88,6 +89,8 @@ namespace GameStudioScorer
 		public int[] GameYears;
 		public int employeeCount;
 
+		public string alias;
+
 		public float CrunchOvertimeScore
 		{
 			get
@@ -96,6 +99,44 @@ namespace GameStudioScorer
 			}
 		}
 
-		public float GenreScore;
+		public float ReviewScore
+		{
+			get
+			{
+				if (!_setReviewScore)
+					_ReviewScore = Crunch.CrunchScorer.GetReviewScore(name);
+
+				_setReviewScore = true;
+				return _ReviewScore;
+			}
+			set
+			{
+				_setReviewScore = true;
+				_ReviewScore = value;
+			}
+		}
+
+		private float _ReviewScore;
+		private bool _setReviewScore;
+
+		public float GenreScore
+		{
+			get
+			{
+				if (!_setGenreScore)
+					_GenreScore = CrunchScorer.GetGenreScore(name, alias, MainClass.DEBUG_MODE.Contains(alias));
+
+				_setGenreScore = true;
+				return _GenreScore;
+			}
+			set
+			{
+				_setGenreScore = true;
+				_GenreScore = value;
+			}
+		}
+
+		private float _GenreScore;
+		private bool _setGenreScore;
 	}
 }
