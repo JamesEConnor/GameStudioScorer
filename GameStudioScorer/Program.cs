@@ -51,16 +51,18 @@ namespace GameStudioScorer
 				else if (options.RegressionType == 's')
 				{
 					//Save data to file.
-					LogisticRegression.SaveToDataFile(scores, options.saveTo);
+					LRegression.SaveToDataFile(scores, options.fileName);
 				}
 				else if (options.RegressionType == 'm')
 				{
-
+					//Model based off of learned weights.
+					LRegression.Model(scores, options.modelName);
 				}
 			}
 			else if (options.RegressionType == 'l')
 			{
-
+				//Learn the weights and record as a model.
+				Console.WriteLine(LRegression.Learn(options.fileName));
 			}
 			else
 			{

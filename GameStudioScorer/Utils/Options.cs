@@ -12,5 +12,8 @@ namespace GameStudioScorer
 
 		[Option("file", Required = false, HelpText = "The name of the file to save to or learn from. Must be a .txt file.", Default="data.txt")]
 		public string fileName { get; set; }
+
+		[Option("model", Required = false, HelpText = "The name of the model to use in predicting values.", Default = "Model-0")]
+		public string modelName { get; set; }
 	}
 }

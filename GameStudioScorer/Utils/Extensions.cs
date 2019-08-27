@@ -73,6 +73,27 @@ namespace GameStudioScorer.Extensions
 		}
 
 		/// <summary>
+		/// Converts the string of weights from a model file to an array of doubles.
+		/// </summary>
+		/// <returns>The weights, in an array of doubles.</returns>
+		/// <param name="str">The model weights as a string, in the form that they're stored
+		/// in the model file.</param>
+		public static double[] LoadWeights(string str)
+		{
+			//Remove the opening and closing brackets.
+			str = str.Substring(1);
+			str = str.Remove(str.Length - 1);
+
+			//Split between the pipes and parse.
+			string[] split = str.Split('|');
+			double[] result = new double[split.Length];
+			for (int a = 0; a < result.Length; a++)
+				result[a] = double.Parse(split[a]);
+
+			return result;
+		}
+
+		/// <summary>
 		/// Gets the number of employees for a company from Wikipedia.
 		/// </summary>
 		/// <returns>The number of employees.</returns>

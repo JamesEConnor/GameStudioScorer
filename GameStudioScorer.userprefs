@@ -5,11 +5,12 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="GameStudioScorer\Utils\Options.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GameStudioScorer\Utils\Extensions.cs">
     <Files>
-      <File FileName="GameStudioScorer\Program.cs" Line="76" Column="2" />
-      <File FileName="GameStudioScorer\Secret Sauce\LogisticRegression.cs" Line="40" Column="14" />
-      <File FileName="GameStudioScorer\Utils\Options.cs" Line="6" Column="8" />
+      <File FileName="GameStudioScorer\Program.cs" Line="58" Column="6" />
+      <File FileName="GameStudioScorer\Secret Sauce\LRegression.cs" Line="53" Column="96" />
+      <File FileName="GameStudioScorer\Utils\Options.cs" Line="17" Column="39" />
+      <File FileName="GameStudioScorer\Utils\Extensions.cs" Line="115" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
 </Properties>
