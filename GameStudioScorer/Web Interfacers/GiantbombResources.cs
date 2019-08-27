@@ -2,6 +2,7 @@
 
 namespace GameStudioScorer.Giantbomb
 {
+	//A struct representing a response from the Giantbomb "Company" endpoint.
 	public struct Company
 	{
 		public string abbreviation;
@@ -48,6 +49,7 @@ namespace GameStudioScorer.Giantbomb
 		public string website;
 	}
 
+	//A struct representing a response from the Giantbomb "Companies" endpoint.
 	public struct Companies
 	{
 		public string abbreviation;
@@ -79,6 +81,7 @@ namespace GameStudioScorer.Giantbomb
 		public string website;
 	}
 
+	//A struct representing a response from the Giantbomb "Games" endpoint.
 	public struct Games
 	{
 		public string[] aliases;

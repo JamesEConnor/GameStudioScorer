@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 namespace GameStudioScorer.IGDB
 {
+	//A class representing a company, which allows for deserializing from JSON
+	//when making an IGDB request to the Companies endpoint.
 	public class Company
 	{
 		public string name { get; set; }
@@ -16,6 +18,8 @@ namespace GameStudioScorer.IGDB
 		}
 	}
 
+	//A class representing a game, which allows for deserializing from JSON
+	//when making an IGDB request to the Game endpoint.
 	public class Game
 	{
 		public int id { get; set; }

@@ -9,44 +9,27 @@ namespace GameStudioScorer.Wiki
 {
 	public class WikipediaRetriever
 	{
+		/// <summary>
+		/// Gets information from the sidebar of a Wikipedia page.
+		/// </summary>
+		/// <returns>A dictionary, where the key is the label and the value is the information.</returns>
+		/// <param name="topic">The last part of a Wikipedia URL. For instance, in the
+		/// url "https://www.wikipedia.com/wiki/Rockstar_Games", the topic is
+		/// "Rockstar_Games".</param>
 		public static Dictionary<string, string> GetWikiInfo(string topic)
 		{
-			/*Dictionary<string, string> result = new Dictionary<string, string>();
-
-			string html = GetHTMLCode("https://en.wikipedia.org/wiki/" + topic);
-			string sidebar = html.Split(new string[] { "<tbody>", "</tbody>" }, StringSplitOptions.None)[1];
-
-			string[] split = sidebar.Split(new string[] { "<tr>", "</tr>" }, StringSplitOptions.None);
-
-			foreach (string str in split)
-			{
-				//TODO: NEEDS EDITING BECAUSE IT'S CURRENTLY RETURNING 2 FOR ROCKSTAR INSTEAD OF 2000
-				string s = Regex.Replace(str, "[ ]", "_");
-				s = Regex.Replace(s, "<.*?>", " ");
-				s = s.Replace(",", "");
-				s = Regex.Replace(s, "[ ]+", " ");
-				if (s.IndexOf(" ", StringComparison.Ordinal) == 0)
-					s = s.Substring(1);
-
-				if (s.Trim().Length != 0)
-				{
-					string[] elements = s.Split(new char[] { ' ' }, 2);
-					elements[1] = Regex.Replace(elements[1], "&#[0-9]+;", " ");
-
-					result.Add(elements[0], elements[1]);
-				}
-			}
-
-			return result;*/
-
 			Dictionary<string, string> result = new Dictionary<string, string>();
 
+			//Get the raw text for the page, and go through each line.
 			string html = GetHTMLCode("https://en.wikipedia.org/wiki/" + topic + "?action=raw");
 			string[] lines = html.Split('\n');
 			foreach (string str in lines)
 			{
+				//If it starts with a '|', it's part of the sidebar. If it contains '='
+				//that means it's a new label.
 				if (str.StartsWith("|", StringComparison.CurrentCulture) && str.Contains(" = "))
 				{
+					//Split between the equal sign and add the new information.
 					string val = str.Remove(0, 2);
 					string[] keyval = val.Split(new string[] { " = " }, 2, StringSplitOptions.None);
 					result.Add(keyval[0], keyval[1]);
@@ -56,13 +39,20 @@ namespace GameStudioScorer.Wiki
 			return result;
 		}
 
+		/// <summary>
+		/// Makes a web request and returns the HTML.
+		/// </summary>
+		/// <returns>The HTML code from the URI.</returns>
+		/// <param name="uri">The URI to get the code from.</param>
 		public static string GetHTMLCode(string uri)
 		{
+			//Make the request and get the response.
 			HttpWebRequest http = (HttpWebRequest)WebRequest.Create(uri);
 			HttpWebResponse response = (HttpWebResponse)http.GetResponse();
 
 			if (response.StatusCode == HttpStatusCode.OK)
 			{
+				//If the request was valid, read the text.
 				Stream stream = response.GetResponseStream();
 				StreamReader readStream = null;
 
@@ -75,8 +65,10 @@ namespace GameStudioScorer.Wiki
 					readStream = new StreamReader(stream, Encoding.GetEncoding(response.CharacterSet));
 				}
 
+				//Get the code.
 				string html = readStream.ReadToEnd();
 
+				//Clean up.
 				readStream.Close();
 				readStream.Dispose();
 
@@ -86,10 +78,12 @@ namespace GameStudioScorer.Wiki
 				response.Close();
 				response.Dispose();
 
+				//Return!
 				return html;
 			}
 			else
 			{
+				//If the request wasn't valid, clean up and die.
 				response.Close();
 				response.Dispose();
 

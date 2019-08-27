@@ -8,6 +8,11 @@ namespace GameStudioScorer.XML
 {
 	public static class XmlHandler
 	{
+		/// <summary>
+		/// Use the Giantbomb Company resource to deserialize a response from XML.
+		/// </summary>
+		/// <returns>An object representing the response.</returns>
+		/// <param name="xml">The XML response.</param>
 		public static Company DeserializeCompany(string xml)
 		{
 			XmlDocument doc = new XmlDocument();
@@ -97,6 +102,11 @@ namespace GameStudioScorer.XML
 			};
 		}
 
+		/// <summary>
+		/// Use the Giantbomb Companies resource to deserialize a response from XML.
+		/// </summary>
+		/// <returns>An object representing the response.</returns>
+		/// <param name="xml">The XML response.</param>
 		public static Companies[] DeserializeCompanies(string xml)
 		{
 			XmlDocument doc = new XmlDocument();
@@ -169,6 +179,11 @@ namespace GameStudioScorer.XML
 			return result;
 		}
 
+		/// <summary>
+		/// Use the Giantbomb Games resource to deserialize a response from XML.
+		/// </summary>
+		/// <returns>An object representing the response.</returns>
+		/// <param name="xml">The XML response.</param>
 		public static Games[] DeserializeGames(string xml)
 		{
 			XmlDocument doc = new XmlDocument();
