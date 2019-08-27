@@ -19,6 +19,7 @@ Ratings for each of 5 categories
 Overall rating
 '''
 
+
 import sys
 import time
 import pandas as pd
@@ -106,7 +107,8 @@ def sign_in():
 def get_browser():
     logger.info('Configuring browser')
     chrome_options = wd.ChromeOptions()
-    chrome_options.binary_location = args.browser
+    if args.browser:
+        chrome_options.binary_location = args.browser
     if args.headless:
         chrome_options.add_argument('--headless')
     chrome_options.add_argument('log-level=3')
