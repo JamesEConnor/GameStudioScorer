@@ -48,6 +48,7 @@ parser.add_argument('--headless', action='store_true',
 parser.add_argument('--username', help='Email address used to sign in to GD.')
 parser.add_argument('-p', '--password', help='Password to sign in to GD.')
 parser.add_argument('-c', '--credentials', help='Credentials file')
+parser.add_argument('-b', '--browser', help='The location of the chrome executable if using a non-standard install location.')
 args = parser.parse_args()
 
 if args.credentials:
@@ -105,6 +106,7 @@ def sign_in():
 def get_browser():
     logger.info('Configuring browser')
     chrome_options = wd.ChromeOptions()
+    chrome_options.binary_location = args.browser
     if args.headless:
         chrome_options.add_argument('--headless')
     chrome_options.add_argument('log-level=3')

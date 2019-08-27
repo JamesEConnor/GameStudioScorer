@@ -4,7 +4,7 @@ using GameStudioScorer.Utils;
 using GameStudioScorer.IGDB;
 using System.Diagnostics;
 using System.IO;
-using Microsoft.VisualBasic.FileIO;
+using System.Configuration;
 
 namespace GameStudioScorer.Crunch
 {
@@ -66,7 +66,7 @@ namespace GameStudioScorer.Crunch
 			string searchScraper = AppDomain.CurrentDomain.BaseDirectory + SEARCH_SCRAPER_PATH;
 			string reviewScraper = AppDomain.CurrentDomain.BaseDirectory + REVIEW_SCRAPER_PATH;
 
-			string searchCommand = "main.py --headless --name \"" + studioName + "\"";
+			string searchCommand = "main.py --headless --name \"" + studioName + "\" --browser \"" + ConfigurationManager.AppSettings["browser"] + "\"";
 
 			Process p = new Process();
 			p.StartInfo = new ProcessStartInfo()
@@ -90,7 +90,7 @@ namespace GameStudioScorer.Crunch
 				currentLine = p.StandardOutput.ReadLine();
 			}
 
-			string reviewCommand = "main.py --headless --url \"" + currentLine + "\" -f reviews.csv --limit 40";
+			string reviewCommand = "main.py --headless --url \"" + currentLine + "\" -f reviews.csv --limit 40 --browser \"" + ConfigurationManager.AppSettings["browser"] + "\"";
 			Console.WriteLine(reviewCommand);
 
 			p = new Process();
@@ -112,23 +112,10 @@ namespace GameStudioScorer.Crunch
 			string[] lines = File.ReadAllLines(AppDomain.CurrentDomain.BaseDirectory + "/glassdoor-review-scraper/reviews.csv");
 			for (int a = 1; a < lines.Length; a++)
 			{
-				Console.WriteLine();
-				string[] split = lines[a].Split(',');
-				List<float> floats = new List<float>();
-
-				foreach (string s in split)
-				{
-					Console.Write(s + ",");
-					float f;
-					if (float.TryParse(s, out f))
-						floats.Add(f);
-				}
-
-				ratingTotal += floats[1];
-				Console.WriteLine();
+				ratingTotal += float.Parse(lines[a]);
 			}
 
-			File.Delete(AppDomain.CurrentDomain.BaseDirectory + "/glassdoor-review-scraper/reviews.csv");
+			//File.Delete(AppDomain.CurrentDomain.BaseDirectory + "/glassdoor-review-scraper/reviews.csv");
 
 			ratingTotal /= lines.Length - 1;
 			return ratingTotal / 5;
