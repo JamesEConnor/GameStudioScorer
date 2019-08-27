@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.IO;
 using System.Linq;
+using CommandLine;
 using GameStudioScorer.Crunch;
 using GameStudioScorer.Extensions;
+using GameStudioScorer.Regression;
 
 namespace GameStudioScorer
 {
@@ -18,13 +21,50 @@ namespace GameStudioScorer
 		//a score. This is good if they're outdated.
 		public static string[] DEBUG_MODE = { };
 
+		//'p' = Print. This will simply print the values. No logistic regression applied.
+		//'s' = Save. This will perform the same operations as print, but save them to a file.
+		//'l' = Learn. This will take in values from a file and create a model based off of them.
+		//'m' = Model. This will perform print, but then apply the values to a logistic regression model.
+
 		public static void Main(string[] args)
 		{
-			//Prints scores.
-			List<KeyValuePair<string, float[]>> scores = GetScores(GAME_STUDIOS);
-			foreach (KeyValuePair<string, float[]> s in scores)
+			//Uses the CommandLineParser library to parse command line arguments.
+			Options options = new Options();
+			Parser.Default.ParseArguments<Options>(args)
+				  .WithParsed(o => options = o);
+
+			if (options.RegressionType == 'p' ||
+			   options.RegressionType == 's' ||
+			   options.RegressionType == 'm')
 			{
-				Console.WriteLine("{0, -20}: {1, -5}, {2, 10}, {3, 25}", s.Key, s.Value[0], s.Value[1], s.Value[2]);
+				List<KeyValuePair<string, float[]>> scores = GetScores(GAME_STUDIOS);
+
+				//Print the values out.
+				if (options.RegressionType == 'p')
+				{
+					//Print data.
+					foreach (KeyValuePair<string, float[]> s in scores)
+					{
+						Console.WriteLine("{0, -20}: {1, -5}, {2, 10}, {3, 25}", s.Key, s.Value[0], s.Value[1], s.Value[2]);
+					}
+				}
+				else if (options.RegressionType == 's')
+				{
+					//Save data to file.
+					LogisticRegression.SaveToDataFile(scores, options.saveTo);
+				}
+				else if (options.RegressionType == 'm')
+				{
+
+				}
+			}
+			else if (options.RegressionType == 'l')
+			{
+
+			}
+			else
+			{
+				throw new Exception("Regression type is limited to 'p', 'l', 'm', or 's'. For more info on all of them and what they mean, consult the ReadMe.");
 			}
 		}
 
