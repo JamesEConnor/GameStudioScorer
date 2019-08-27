@@ -96,13 +96,22 @@ namespace GameStudioScorer
 			}
 		}
 
-		public float RatingScore
+		public float ReviewScore
 		{
 			get
 			{
-				return Crunch.CrunchScorer.GetReviewScore(name);
+				if (_ReviewScore == null)
+					_ReviewScore = Crunch.CrunchScorer.GetReviewScore(name);
+
+				return _ReviewScore;
+			}
+			set
+			{
+				_ReviewScore = value;
 			}
 		}
+
+		private float _ReviewScore;
 
 		public float GenreScore;
 	}

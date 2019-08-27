@@ -30,7 +30,7 @@ namespace GameStudioScorer
 				//si.GenreScore = CrunchScorer.GetGenreScore(si.name, studio, DEBUG_MODE.Contains(studio));
 
 				//TODO Eventually need to make this use logarithmic regression
-				dict.Add(studio, si.RatingScore);
+				dict.Add(studio, si.ReviewScore);
 
 				si.name = studio;
 				if (LocalCacheManager.GetCachedInfo(studio).id == "-1" || DEBUG_MODE.Contains(studio))
