@@ -8,7 +8,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="GameStudioScorer\Secret Sauce\CrunchScorer.cs">
     <Files>
       <File FileName="GameStudioScorer\Program.cs" Line="12" Column="52" />
-      <File FileName="GameStudioScorer\Secret Sauce\CrunchScorer.cs" Line="120" Column="1" />
+      <File FileName="GameStudioScorer\Secret Sauce\CrunchScorer.cs" Line="117" Column="4" />
       <File FileName="GameStudioScorer\Web Interfacers\IGDBInterfacer.cs" Line="101" Column="7" />
       <File FileName="GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs" Line="112" Column="3" />
       <File FileName="GameStudioScorer\Web Interfacers\IGDBResources.cs" Line="5" Column="2" />

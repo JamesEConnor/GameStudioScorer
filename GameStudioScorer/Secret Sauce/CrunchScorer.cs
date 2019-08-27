@@ -90,6 +90,9 @@ namespace GameStudioScorer.Crunch
 				currentLine = p.StandardOutput.ReadLine();
 			}
 
+			if (currentLine == "null")
+				return 0.5f;
+
 			string reviewCommand = "main.py --headless --url \"" + currentLine + "\" -f reviews.csv --limit 40 --browser \"" + ConfigurationManager.AppSettings["browser"] + "\"";
 			Console.WriteLine(reviewCommand);
 
@@ -114,8 +117,6 @@ namespace GameStudioScorer.Crunch
 			{
 				ratingTotal += float.Parse(lines[a]);
 			}
-
-			//File.Delete(AppDomain.CurrentDomain.BaseDirectory + "/glassdoor-review-scraper/reviews.csv");
 
 			ratingTotal /= lines.Length - 1;
 			return ratingTotal / 5;

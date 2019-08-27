@@ -134,7 +134,7 @@ def extract_from_page():
         if(link.get_attribute('href') is not None):
             return link.get_attribute('href')
     
-    return browser.current_url
+    return "null"
 
 
 def main():
