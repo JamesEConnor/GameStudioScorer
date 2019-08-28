@@ -90,6 +90,9 @@ namespace GameStudioScorer.Crunch
 				foreach (int i in genres)
 					total += GENRE_SCORES[i];
 
+				if (genres.Length == 0)
+					return 0.5f;
+
 				return total / genres.Length;
 			}
 			catch(Exception e)

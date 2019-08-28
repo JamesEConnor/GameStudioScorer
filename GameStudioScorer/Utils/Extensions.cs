@@ -73,6 +73,27 @@ namespace GameStudioScorer.Extensions
 		}
 
 		/// <summary>
+		/// Converts the string of weights from a model file to an array of doubles.
+		/// </summary>
+		/// <returns>The weights, in an array of doubles.</returns>
+		/// <param name="str">The model weights as a string, in the form that they're stored
+		/// in the model file.</param>
+		public static double[] LoadWeights(string str)
+		{
+			//Remove the opening and closing brackets.
+			str = str.Substring(1);
+			str = str.Remove(str.Length - 1);
+
+			//Split between the pipes and parse.
+			string[] split = str.Split('|');
+			double[] result = new double[split.Length];
+			for (int a = 0; a < result.Length; a++)
+				result[a] = double.Parse(split[a]);
+
+			return result;
+		}
+
+		/// <summary>
 		/// Gets the number of employees for a company from Wikipedia.
 		/// </summary>
 		/// <returns>The number of employees.</returns>
@@ -82,8 +103,7 @@ namespace GameStudioScorer.Extensions
 			//Get all information from the quick facts sidebar.
 			Dictionary<string, string> dict = WikipediaRetriever.GetWikiInfo(companyName);
 
-			//If there was no Wikipedia entry, return a default of 100 employees.
-			int employeeCount = 100;
+			int employeeCount = 0;
 
 			//Search through each fact until one is found containing the word 'employee'
 			//(as in, "number of employees", "employees", or "employee count")
@@ -104,6 +124,10 @@ namespace GameStudioScorer.Extensions
 				}
 			}
 
+			//If there was no Wikipedia entry, return a default of 100 employees.
+			if (employeeCount == 0)
+				employeeCount = 100;
+
 			//Return it.
 			return employeeCount;
 		}
@@ -120,6 +144,58 @@ namespace GameStudioScorer.Extensions
 				result[a] = list[a];
 
 			return result;
+		}
+
+		/// <summary>
+		/// Computes the Levenshtein distance between two strings.
+		/// </summary>
+		/// <param name="s">The first string.</param>
+		/// <param name="t">The second string.</param>
+		/// Source from here: https://stackoverflow.com/questions/13793560/find-closest-match-to-input-string-in-a-list-of-strings
+		/// Learn more here: http://en.wikipedia.org/wiki/Levenshtein_distance
+		public static int LevenshteinDistance(string s, string t)
+		{
+			int n = s.Length;
+			int m = t.Length;
+			int[,] d = new int[n + 1, m + 1];
+
+			// Step 1
+			if (n == 0)
+			{
+				return m;
+			}
+
+			if (m == 0)
+			{
+				return n;
+			}
+
+			// Step 2
+			for (int i = 0; i <= n; d[i, 0] = i++)
+			{
+			}
+
+			for (int j = 0; j <= m; d[0, j] = j++)
+			{
+			}
+
+			// Step 3
+			for (int i = 1; i <= n; i++)
+			{
+				//Step 4
+				for (int j = 1; j <= m; j++)
+				{
+					// Step 5
+					int cost = (t[j - 1] == s[i - 1]) ? 0 : 1;
+
+					// Step 6
+					d[i, j] = Math.Min(
+						Math.Min(d[i - 1, j] + 1, d[i, j - 1] + 1),
+						d[i - 1, j - 1] + cost);
+				}
+			}
+			// Step 7
+			return d[n, m];
 		}
 	}
 }

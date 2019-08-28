@@ -1,0 +1,12490 @@
+[132114743443456699]:	Critical -	   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 43
+   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, String savedName, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 99
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 194
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 91
+
+[132114744486929559]:	Error -	Object reference not set to an instance of an object.
+
+[132114744487085725]:	Critical -	   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 46
+   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, String savedName, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 99
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 194
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 91
+
+[132114744492710388]:	Error -	Cannot have a negative or empty input array!
+
+[132114744492710388]:	Critical -	   at GameStudioScorer.Utils.MathUtils.GenInputs(Int32 length) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\MathUtils.cs:line 112
+   at GameStudioScorer.Crunch.CrunchScorer.GetCrunchOvertimeScore(Int32[] years, Int32 employeeCount) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 46
+   at GameStudioScorer.StudioInfo.get_CrunchOvertimeScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 157
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 91
+
+[132114744508334816]:	Error -	Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+
+[132114744508334816]:	Critical -	   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 43
+   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, String savedName, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 99
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 194
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 91
+
+[132114744567705643]:	Error -	Error converting value 18049 to type 'GameStudioScorer.IGDB.Game'. Path '[0].developed[178]', line 1242, position 11.
+
+[132114744568330351]:	Critical -	   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type)
+   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 39
+   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, String savedName, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 99
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 194
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 91
+
+[132114748475755487]:	DEBUG -	[
+  {
+    "id": 428,
+    "developed": [
+      {
+        "id": 545,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 623,
+        "genres": [
+          5,
+          13
+        ]
+      },
+      {
+        "id": 625,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 949,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 979,
+        "genres": [
+          5,
+          24,
+          31
+        ]
+      },
+      {
+        "id": 1122,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 1646,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 2033,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 3569,
+        "genres": [
+          14
+        ]
+      },
+      {
+        "id": 3621,
+        "genres": [
+          13,
+          14
+        ]
+      },
+      {
+        "id": 3845,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 3963,
+        "genres": [
+          14
+        ]
+      },
+      {
+        "id": 4012,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 4045,
+        "genres": [
+          14
+        ]
+      },
+      {
+        "id": 4225,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 4352
+      },
+      {
+        "id": 5178,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 5181,
+        "genres": [
+          4,
+          8,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 6285,
+        "genres": [
+          4,
+          31
+        ]
+      },
+      {
+        "id": 9189,
+        "genres": [
+          12,
+          25
+        ]
+      },
+      {
+        "id": 9509,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 10912,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 10913,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 18352,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 19114,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 19948,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 20291,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 20292,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 22945,
+        "genres": [
+          24
+        ]
+      },
+      {
+        "id": 23727,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 27674,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 45811,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 47754,
+        "genres": [
+          14
+        ]
+      },
+      {
+        "id": 83727,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 91975,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 93846
+      },
+      {
+        "id": 93877
+      },
+      {
+        "id": 102079,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 120543,
+        "genres": [
+          5
+        ]
+      }
+    ],
+    "name": "Treyarch"
+  }
+]
+
+[132114749271511021]:	ERROR -	Cannot have a negative or empty input array!. Occurred for Bethesda Game Studios
+
+[132114749271666695]:	CRITICAL -	   at GameStudioScorer.Utils.MathUtils.GenInputs(Int32 length) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\MathUtils.cs:line 112
+   at GameStudioScorer.Crunch.CrunchScorer.GetCrunchOvertimeScore(Int32[] years, Int32 employeeCount) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 46
+   at GameStudioScorer.StudioInfo.get_CrunchOvertimeScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 166
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 91
+
+[132114749284791060]:	DEBUG -	[]
+
+[132114749286509979]:	DEBUG -	[]
+
+[132114749286665637]:	ERROR -	Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index. Occurred for PlatinumGames
+
+[132114749286978192]:	CRITICAL -	   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 48
+   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, String savedName, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 102
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 203
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 91
+
+[132114749328850138]:	DEBUG -	[
+  {
+    "id": 37,
+    "developed": [
+      {
+        "id": 112,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 134,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 135,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 136,
+        "genres": [
+          4,
+          5,
+          25
+        ]
+      },
+      {
+        "id": 243,
+        "genres": [
+          15,
+          26
+        ]
+      },
+      {
+        "id": 424,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 496,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 497,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 847,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 880,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 884,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 966,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 967,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 969
+      },
+      {
+        "id": 973,
+        "genres": [
+          5,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 975,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 976,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 977,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 978,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 1032,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1035,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1041,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1082,
+        "genres": [
+          5,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 1280,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 1288,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 1348,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 1357,
+        "genres": [
+          5,
+          11,
+          15
+        ]
+      },
+      {
+        "id": 1402,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 1426,
+        "genres": [
+          2,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 1427,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 1428,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 1429,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 1430,
+        "genres": [
+          2,
+          13,
+          31
+        ]
+      },
+      {
+        "id": 1431,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 1432,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 1655,
+        "genres": [
+          4,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 1656,
+        "genres": [
+          4,
+          8,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 1657,
+        "genres": [
+          4,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 1658,
+        "genres": [
+          4,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 1663,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 1664,
+        "genres": [
+          4,
+          25
+        ]
+      },
+      {
+        "id": 1714,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1715,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1716,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1717,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1719,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1721,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1723,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1724,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 1725,
+        "genres": [
+          4,
+          5,
+          33
+        ]
+      },
+      {
+        "id": 1726,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1729,
+        "genres": [
+          13
+        ]
+      },
+      {
+        "id": 1730,
+        "genres": [
+          14,
+          33
+        ]
+      },
+      {
+        "id": 1739,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1740,
+        "genres": [
+          4,
+          10,
+          33
+        ]
+      },
+      {
+        "id": 1741,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1742,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1743,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1744,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1746,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1749,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1750,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1756,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1759,
+        "genres": [
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1762,
+        "genres": [
+          12,
+          16,
+          31
+        ]
+      },
+      {
+        "id": 1767,
+        "genres": [
+          15
+        ]
+      },
+      {
+        "id": 1771
+      },
+      {
+        "id": 1774,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 1781,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1782,
+        "genres": [
+          8,
+          12,
+          14,
+          31
+        ]
+      },
+      {
+        "id": 1783,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1784,
+        "genres": [
+          12,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 1785,
+        "genres": [
+          12,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 1786,
+        "genres": [
+          12,
+          15,
+          24,
+          31
+        ]
+      },
+      {
+        "id": 1787,
+        "genres": [
+          12,
+          15,
+          24,
+          31
+        ]
+      },
+      {
+        "id": 1913,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1915,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 1969,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 2066,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 2264,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 2271,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 2473,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 2904,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 3027,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 3186,
+        "genres": [
+          4,
+          8
+        ]
+      },
+      {
+        "id": 3398,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 3773,
+        "genres": [
+          2,
+          8,
+          14,
+          31
+        ]
+      },
+      {
+        "id": 3846,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 3885,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 3936,
+        "genres": [
+          4,
+          5,
+          13
+        ]
+      },
+      {
+        "id": 3964,
+        "genres": [
+          4,
+          5,
+          33
+        ]
+      },
+      {
+        "id": 3968,
+        "genres": [
+          12,
+          25
+        ]
+      },
+      {
+        "id": 4135,
+        "genres": [
+          4,
+          14,
+          33
+        ]
+      },
+      {
+        "id": 4355,
+        "genres": [
+          4,
+          8
+        ]
+      },
+      {
+        "id": 4407,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 4504,
+        "genres": [
+          4,
+          14
+        ]
+      },
+      {
+        "id": 5150,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 5316,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 5368,
+        "genres": [
+          8,
+          25
+        ]
+      },
+      {
+        "id": 5668,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 5845,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 5856,
+        "genres": [
+          10
+        ]
+      },
+      {
+        "id": 5923,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 6075,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6076,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6077,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6078,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6200,
+        "genres": [
+          7,
+          31
+        ]
+      },
+      {
+        "id": 6337,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 6379,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6380,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6381,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6440,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 6487,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6490,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 6518,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 6526,
+        "genres": [
+          12,
+          15,
+          16,
+          24
+        ]
+      },
+      {
+        "id": 6592,
+        "genres": [
+          9,
+          15
+        ]
+      },
+      {
+        "id": 6621,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6656,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6671,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6702,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6703,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6704,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6708,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6709,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6710,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6792,
+        "genres": [
+          25,
+          33
+        ]
+      },
+      {
+        "id": 6794,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6807,
+        "genres": [
+          5,
+          8,
+          33
+        ]
+      },
+      {
+        "id": 6814,
+        "genres": [
+          12,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 6816,
+        "genres": [
+          4,
+          12,
+          25,
+          31,
+          33
+        ]
+      },
+      {
+        "id": 6817,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 6823,
+        "genres": [
+          5,
+          8,
+          9,
+          33
+        ]
+      },
+      {
+        "id": 6895,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 6930,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6933,
+        "genres": [
+          4,
+          5,
+          8,
+          9,
+          31,
+          33
+        ]
+      },
+      {
+        "id": 6969,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 6980,
+        "genres": [
+          5,
+          8,
+          9,
+          33
+        ]
+      },
+      {
+        "id": 6981,
+        "genres": [
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 7075,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 7198,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 7455,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 7725,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 8130,
+        "genres": [
+          26,
+          31
+        ]
+      },
+      {
+        "id": 8163,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 8244,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8245,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8246,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8247,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8248,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8254,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 8258,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8452,
+        "genres": [
+          8,
+          9
+        ]
+      },
+      {
+        "id": 9160,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 9242,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 9426,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 9755,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 10614,
+        "genres": [
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 11486,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 11617,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 11757,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 11758,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 11966,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 12077,
+        "genres": [
+          2,
+          9,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 12530,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 12864,
+        "genres": [
+          4,
+          25
+        ]
+      },
+      {
+        "id": 12937,
+        "genres": [
+          5,
+          8,
+          31,
+          33
+        ]
+      },
+      {
+        "id": 13095,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 13096,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 13106,
+        "genres": [
+          4,
+          8
+        ]
+      },
+      {
+        "id": 13679,
+        "genres": [
+          5,
+          25
+        ]
+      },
+      {
+        "id": 13931,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 14679,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 14680,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 14929,
+        "genres": [
+          9,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 16141,
+        "genres": [
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 16300,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      18049,
+      {
+        "id": 18055,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 18067,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 18181,
+        "genres": [
+          12,
+          25
+        ]
+      },
+      {
+        "id": 18626,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 19562,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 19686,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 19754,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 19768,
+        "genres": [
+          4,
+          25
+        ]
+      },
+      {
+        "id": 19821,
+        "genres": [
+          4,
+          8,
+          25
+        ]
+      },
+      {
+        "id": 20011,
+        "genres": [
+          4,
+          13,
+          32
+        ]
+      },
+      {
+        "id": 20013,
+        "genres": [
+          4,
+          13
+        ]
+      },
+      {
+        "id": 20022,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 20747,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 20803,
+        "genres": [
+          9,
+          33
+        ]
+      },
+      {
+        "id": 21533,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 21610,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 21724,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 22049,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 22568,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 22993,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 23251,
+        "genres": [
+          5,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 23907,
+        "genres": [
+          13,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 24347,
+        "genres": [
+          5,
+          12,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 24369,
+        "genres": [
+          5,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 24869,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 25623,
+        "genres": [
+          12,
+          25
+        ]
+      },
+      {
+        "id": 25886,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 26197,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 26384
+      },
+      {
+        "id": 26773,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 26901,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 26924,
+        "genres": [
+          9
+        ]
+      },
+      {
+        "id": 26985,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 27040,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 27395,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 27791,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 27890,
+        "genres": [
+          4,
+          25
+        ]
+      },
+      {
+        "id": 36926,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 37211,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 38297,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 39407,
+        "genres": [
+          5,
+          10,
+          33
+        ]
+      },
+      {
+        "id": 39496,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 39704,
+        "genres": [
+          10,
+          33
+        ]
+      },
+      {
+        "id": 39705,
+        "genres": [
+          5,
+          8,
+          33
+        ]
+      },
+      {
+        "id": 39993,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 40010,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 40195,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 42033,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 42759,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 42976
+      },
+      {
+        "id": 43196,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 43311
+      },
+      {
+        "id": 43668,
+        "genres": [
+          8,
+          12
+        ]
+      },
+      {
+        "id": 45196,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 45198,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 45854,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 46815,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 46822,
+        "genres": [
+          25,
+          33
+        ]
+      },
+      {
+        "id": 48335,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 50654
+      },
+      {
+        "id": 53505
+      },
+      {
+        "id": 53678,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 54535,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 55163
+      },
+      {
+        "id": 61752,
+        "genres": [
+          4,
+          12
+        ]
+      },
+      {
+        "id": 63065
+      },
+      {
+        "id": 63628
+      },
+      {
+        "id": 63644,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 65676
+      },
+      {
+        "id": 65896
+      },
+      {
+        "id": 68126
+      },
+      {
+        "id": 68160
+      },
+      {
+        "id": 72563
+      },
+      {
+        "id": 72578
+      },
+      {
+        "id": 72783
+      },
+      {
+        "id": 74155,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 74394,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 74421,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 75236,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 75374,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 75449,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 75696
+      },
+      {
+        "id": 75697
+      },
+      {
+        "id": 75962,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 75963,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 75964,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 75965,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 76243
+      },
+      {
+        "id": 76244
+      },
+      {
+        "id": 76253,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 76723,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 77175,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 78161
+      },
+      {
+        "id": 78461,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 78462,
+        "genres": [
+          2,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 78463,
+        "genres": [
+          2,
+          31
+        ]
+      },
+      {
+        "id": 78464,
+        "genres": [
+          2,
+          31
+        ]
+      },
+      {
+        "id": 78626,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 78633
+      },
+      {
+        "id": 78677,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 89016,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 90566,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 96248,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 96252,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 96254,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 102075,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 102722,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 105979,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 107292,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 109456,
+        "genres": [
+          25,
+          33
+        ]
+      },
+      {
+        "id": 110809,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 112425,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 113344,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 115115,
+        "genres": [
+          5,
+          9
+        ]
+      },
+      {
+        "id": 116026,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 116027,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 116028,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 116029,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 118273,
+        "genres": [
+          12,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 122048,
+        "genres": [
+          5,
+          8
+        ]
+      }
+    ],
+    "name": "Capcom",
+    "published": [
+      {
+        "id": 112,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 132,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 133,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 134,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 135,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 136,
+        "genres": [
+          4,
+          5,
+          25
+        ]
+      },
+      {
+        "id": 243,
+        "genres": [
+          15,
+          26
+        ]
+      },
+      {
+        "id": 424,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 496,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 497,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 549,
+        "genres": [
+          15,
+          31
+        ]
+      },
+      {
+        "id": 551,
+        "genres": [
+          8,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 602,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 847,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 880,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 884,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 966,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 967,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 968,
+        "genres": [
+          5,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 969
+      },
+      {
+        "id": 970,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 971,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 972,
+        "genres": [
+          5,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 973,
+        "genres": [
+          5,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 974,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 975,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 976,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 977,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 978,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 1082,
+        "genres": [
+          5,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 1254,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 1271,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1280,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 1288,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 1348,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 1357,
+        "genres": [
+          5,
+          11,
+          15
+        ]
+      },
+      {
+        "id": 1414,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 1415,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 1426,
+        "genres": [
+          2,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 1427,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 1428,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 1429,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 1430,
+        "genres": [
+          2,
+          13,
+          31
+        ]
+      },
+      {
+        "id": 1431,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 1432,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 1458,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 1655,
+        "genres": [
+          4,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 1656,
+        "genres": [
+          4,
+          8,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 1657,
+        "genres": [
+          4,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 1658,
+        "genres": [
+          4,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 1659,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 1660,
+        "genres": [
+          4,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 1663,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 1664,
+        "genres": [
+          4,
+          25
+        ]
+      },
+      {
+        "id": 1674,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 1714,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1715,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1716,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1717,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1718,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1720,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1721,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1722,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1723,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1724,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 1725,
+        "genres": [
+          4,
+          5,
+          33
+        ]
+      },
+      {
+        "id": 1726,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1727,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1728,
+        "genres": [
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1729,
+        "genres": [
+          13
+        ]
+      },
+      {
+        "id": 1730,
+        "genres": [
+          14,
+          33
+        ]
+      },
+      {
+        "id": 1732,
+        "genres": [
+          5,
+          13,
+          31
+        ]
+      },
+      {
+        "id": 1733,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1734,
+        "genres": [
+          8,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 1735,
+        "genres": [
+          8,
+          25,
+          31,
+          33
+        ]
+      },
+      {
+        "id": 1736,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1737,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1739,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1740,
+        "genres": [
+          4,
+          10,
+          33
+        ]
+      },
+      {
+        "id": 1741,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1742,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1743,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1744,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1745,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1746,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1748,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1749,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1750,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1751,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 1752,
+        "genres": [
+          5,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1753,
+        "genres": [
+          9,
+          12
+        ]
+      },
+      {
+        "id": 1754,
+        "genres": [
+          5,
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1755,
+        "genres": [
+          12,
+          16,
+          31
+        ]
+      },
+      {
+        "id": 1756,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1757,
+        "genres": [
+          11,
+          12
+        ]
+      },
+      {
+        "id": 1758,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 1759,
+        "genres": [
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1760,
+        "genres": [
+          12,
+          24
+        ]
+      },
+      {
+        "id": 1761,
+        "genres": [
+          12,
+          24
+        ]
+      },
+      {
+        "id": 1762,
+        "genres": [
+          12,
+          16,
+          31
+        ]
+      },
+      {
+        "id": 1763,
+        "genres": [
+          24
+        ]
+      },
+      {
+        "id": 1764,
+        "genres": [
+          12,
+          24
+        ]
+      },
+      {
+        "id": 1765,
+        "genres": [
+          12,
+          24
+        ]
+      },
+      {
+        "id": 1766,
+        "genres": [
+          8,
+          12
+        ]
+      },
+      {
+        "id": 1767,
+        "genres": [
+          15
+        ]
+      },
+      {
+        "id": 1769,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 1771
+      },
+      {
+        "id": 1772
+      },
+      {
+        "id": 1774,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 1775,
+        "genres": [
+          5,
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1776,
+        "genres": [
+          5,
+          8,
+          12
+        ]
+      },
+      {
+        "id": 1777,
+        "genres": [
+          5,
+          8,
+          12
+        ]
+      },
+      {
+        "id": 1778,
+        "genres": [
+          5,
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1779,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1780,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1781,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1782,
+        "genres": [
+          8,
+          12,
+          14,
+          31
+        ]
+      },
+      {
+        "id": 1783,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1784,
+        "genres": [
+          12,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 1785,
+        "genres": [
+          12,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 1786,
+        "genres": [
+          12,
+          15,
+          24,
+          31
+        ]
+      },
+      {
+        "id": 1787,
+        "genres": [
+          12,
+          15,
+          24,
+          31
+        ]
+      },
+      {
+        "id": 1827,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1913,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1915,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 1916,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 1969,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 2066,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 2264,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 2268,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 2269,
+        "genres": [
+          12,
+          15
+        ]
+      },
+      {
+        "id": 2271,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 2275,
+        "genres": [
+          4,
+          14
+        ]
+      },
+      {
+        "id": 2317,
+        "genres": [
+          8,
+          9,
+          31,
+          32
+        ]
+      },
+      {
+        "id": 2473,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 2904,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 2917,
+        "genres": [
+          4,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 3027,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 3186,
+        "genres": [
+          4,
+          8
+        ]
+      },
+      {
+        "id": 3199,
+        "genres": [
+          12,
+          14,
+          31
+        ]
+      },
+      {
+        "id": 3219,
+        "genres": [
+          8,
+          9,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 3398,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 3761,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 3791,
+        "genres": [
+          10,
+          13
+        ]
+      },
+      {
+        "id": 3846,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 3885,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 3936,
+        "genres": [
+          4,
+          5,
+          13
+        ]
+      },
+      {
+        "id": 3966,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 3968,
+        "genres": [
+          12,
+          25
+        ]
+      },
+      {
+        "id": 4001,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 4060,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 4132,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 4135,
+        "genres": [
+          4,
+          14,
+          33
+        ]
+      },
+      {
+        "id": 4220,
+        "genres": [
+          5,
+          13,
+          31
+        ]
+      },
+      {
+        "id": 4229,
+        "genres": [
+          4,
+          8,
+          25
+        ]
+      },
+      {
+        "id": 4230,
+        "genres": [
+          4,
+          8,
+          25
+        ]
+      },
+      {
+        "id": 4231,
+        "genres": [
+          4,
+          8,
+          25
+        ]
+      },
+      {
+        "id": 4238,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 4355,
+        "genres": [
+          4,
+          8
+        ]
+      },
+      {
+        "id": 4356,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 4367,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 4487,
+        "genres": [
+          5,
+          8,
+          30,
+          33
+        ]
+      },
+      {
+        "id": 4504,
+        "genres": [
+          4,
+          14
+        ]
+      },
+      {
+        "id": 4797,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 4798,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 4907,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 5022,
+        "genres": [
+          10,
+          13,
+          14
+        ]
+      },
+      {
+        "id": 5067,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 5150,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 5206,
+        "genres": [
+          8,
+          25
+        ]
+      },
+      {
+        "id": 5265,
+        "genres": [
+          14
+        ]
+      },
+      {
+        "id": 5316,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 5333,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 5368,
+        "genres": [
+          8,
+          25
+        ]
+      },
+      {
+        "id": 5384,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 5404,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 5495,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 5668,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 5745,
+        "genres": [
+          4,
+          25
+        ]
+      },
+      {
+        "id": 5766,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 5808,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 5813,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 5845,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 5856,
+        "genres": [
+          10
+        ]
+      },
+      {
+        "id": 5923,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 5924,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 5987,
+        "genres": [
+          8,
+          25
+        ]
+      },
+      {
+        "id": 5992,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 6011,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 6012,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 6075,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6076,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6077,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6078,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6079,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6163,
+        "genres": [
+          13,
+          15
+        ]
+      },
+      {
+        "id": 6174,
+        "genres": [
+          13,
+          15
+        ]
+      },
+      {
+        "id": 6178,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 6184,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 6200,
+        "genres": [
+          7,
+          31
+        ]
+      },
+      {
+        "id": 6218,
+        "genres": [
+          4,
+          14
+        ]
+      },
+      {
+        "id": 6236,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6285,
+        "genres": [
+          4,
+          31
+        ]
+      },
+      {
+        "id": 6317,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6337,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 6379,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6380,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6381,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6440,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 6487,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6488,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 6490,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 6518,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 6526,
+        "genres": [
+          12,
+          15,
+          16,
+          24
+        ]
+      },
+      {
+        "id": 6621,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6656,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6671,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6702,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6703,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6704,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6708,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6709,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6710,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6719,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 6792,
+        "genres": [
+          25,
+          33
+        ]
+      },
+      {
+        "id": 6794,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6807,
+        "genres": [
+          5,
+          8,
+          33
+        ]
+      },
+      {
+        "id": 6814,
+        "genres": [
+          12,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 6816,
+        "genres": [
+          4,
+          12,
+          25,
+          31,
+          33
+        ]
+      },
+      {
+        "id": 6817,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 6823,
+        "genres": [
+          5,
+          8,
+          9,
+          33
+        ]
+      },
+      {
+        "id": 6895,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 6901,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 6914,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 6930,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6933,
+        "genres": [
+          4,
+          5,
+          8,
+          9,
+          31,
+          33
+        ]
+      },
+      {
+        "id": 6969,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 6980,
+        "genres": [
+          5,
+          8,
+          9,
+          33
+        ]
+      },
+      {
+        "id": 6981,
+        "genres": [
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 7075,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 7080,
+        "genres": [
+          10,
+          13,
+          14
+        ]
+      },
+      {
+        "id": 7198,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 7455,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 7505,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 7725,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 7786,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 8020,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 8067,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 8126,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 8127,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 8130,
+        "genres": [
+          26,
+          31
+        ]
+      },
+      {
+        "id": 8163,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 8166,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 8237,
+        "genres": [
+          5,
+          10
+        ]
+      },
+      {
+        "id": 8244,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8245,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8246,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8247,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8248,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8254,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 8258,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8333,
+        "genres": [
+          14
+        ]
+      },
+      {
+        "id": 8432,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 8452,
+        "genres": [
+          8,
+          9
+        ]
+      },
+      {
+        "id": 8547
+      },
+      {
+        "id": 8803,
+        "genres": [
+          4,
+          25
+        ]
+      },
+      {
+        "id": 9160,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 9242,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 9290,
+        "genres": [
+          5,
+          32,
+          33
+        ]
+      },
+      {
+        "id": 9426,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 9692,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 9755,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 9948,
+        "genres": [
+          11,
+          15,
+          33
+        ]
+      },
+      {
+        "id": 10157,
+        "genres": [
+          4,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 10166,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 10296,
+        "genres": [
+          8,
+          25,
+          32
+        ]
+      },
+      {
+        "id": 10614,
+        "genres": [
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 11486,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 11566,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 11617,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 11757,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 11758,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 11759,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 11966,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 12060,
+        "genres": [
+          4,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 12077,
+        "genres": [
+          2,
+          9,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 12171,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 12175,
+        "genres": [
+          10
+        ]
+      },
+      {
+        "id": 12184,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 12331,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 12332,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 12381,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 12481,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 12495,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 12530,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 12782,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 12849,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 12860,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 12864,
+        "genres": [
+          4,
+          25
+        ]
+      },
+      {
+        "id": 12937,
+        "genres": [
+          5,
+          8,
+          31,
+          33
+        ]
+      },
+      {
+        "id": 13095,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 13096,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 13106,
+        "genres": [
+          4,
+          8
+        ]
+      },
+      {
+        "id": 13107,
+        "genres": [
+          4,
+          8
+        ]
+      },
+      {
+        "id": 13679,
+        "genres": [
+          5,
+          25
+        ]
+      },
+      {
+        "id": 14536,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 14605,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 14679,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 14680,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 15108,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 15856,
+        "genres": [
+          5,
+          8,
+          33
+        ]
+      },
+      {
+        "id": 15858,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 16141,
+        "genres": [
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 16300,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 16618,
+        "genres": [
+          31
+        ]
+      },
+      18049,
+      {
+        "id": 18056,
+        "genres": [
+          12,
+          15
+        ]
+      },
+      {
+        "id": 18181,
+        "genres": [
+          12,
+          25
+        ]
+      },
+      {
+        "id": 18305,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 18626,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 18821,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 19521,
+        "genres": [
+          5,
+          25
+        ]
+      },
+      {
+        "id": 19562,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 19612,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 19647
+      },
+      {
+        "id": 19686,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 19754,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 19821,
+        "genres": [
+          4,
+          8,
+          25
+        ]
+      },
+      {
+        "id": 19874,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 19886,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 19900,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 20011,
+        "genres": [
+          4,
+          13,
+          32
+        ]
+      },
+      {
+        "id": 20013,
+        "genres": [
+          4,
+          13
+        ]
+      },
+      {
+        "id": 20022,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 20065,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 20095,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 20427,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 20456,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 20545,
+        "genres": [
+          4,
+          5,
+          25,
+          31,
+          33
+        ]
+      },
+      {
+        "id": 20586,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 20734,
+        "genres": [
+          8,
+          25
+        ]
+      },
+      {
+        "id": 20747,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 20803,
+        "genres": [
+          9,
+          33
+        ]
+      },
+      {
+        "id": 20869,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 21068,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 21346,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 21533,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 21567,
+        "genres": [
+          12,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 21568,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 21610,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 21611
+      },
+      {
+        "id": 21724,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 22054,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 22252,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 22300,
+        "genres": [
+          4,
+          12,
+          25
+        ]
+      },
+      {
+        "id": 22568,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 22993,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 23066,
+        "genres": [
+          10,
+          12,
+          15
+        ]
+      },
+      {
+        "id": 23072,
+        "genres": [
+          4,
+          9,
+          15
+        ]
+      },
+      {
+        "id": 23215,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 23251,
+        "genres": [
+          5,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 23377,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 23907,
+        "genres": [
+          13,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 24223,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 24275,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 24347,
+        "genres": [
+          5,
+          12,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 24355,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 24369,
+        "genres": [
+          5,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 24869,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 25022,
+        "genres": [
+          9,
+          33
+        ]
+      },
+      {
+        "id": 25623,
+        "genres": [
+          12,
+          25
+        ]
+      },
+      {
+        "id": 25817,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 25886,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 26197,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 26384
+      },
+      {
+        "id": 26773,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 26924,
+        "genres": [
+          9
+        ]
+      },
+      {
+        "id": 26985,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 27018
+      },
+      {
+        "id": 27019,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 27040,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 27395,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 27791,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 27861,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 27890,
+        "genres": [
+          4,
+          25
+        ]
+      },
+      {
+        "id": 27955,
+        "genres": [
+          5,
+          11,
+          15
+        ]
+      },
+      {
+        "id": 28323,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 28530,
+        "genres": [
+          30
+        ]
+      },
+      {
+        "id": 36926,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 37082,
+        "genres": [
+          13,
+          31
+        ]
+      },
+      {
+        "id": 37211,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 37589,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 38297,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 38338,
+        "genres": [
+          9
+        ]
+      },
+      {
+        "id": 39048
+      },
+      {
+        "id": 39063
+      },
+      {
+        "id": 39306,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 39407,
+        "genres": [
+          5,
+          10,
+          33
+        ]
+      },
+      {
+        "id": 39496,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 39704,
+        "genres": [
+          10,
+          33
+        ]
+      },
+      {
+        "id": 39705,
+        "genres": [
+          5,
+          8,
+          33
+        ]
+      },
+      {
+        "id": 39958,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 39993,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 40010,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 40195,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 40262,
+        "genres": [
+          9
+        ]
+      },
+      {
+        "id": 41858,
+        "genres": [
+          5,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 41862
+      },
+      {
+        "id": 42033,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 42759,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 42976
+      },
+      {
+        "id": 43441,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 43642,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 43668,
+        "genres": [
+          8,
+          12
+        ]
+      },
+      {
+        "id": 45196,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 45198,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 45829,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 45854,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 46815,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 46822,
+        "genres": [
+          25,
+          33
+        ]
+      },
+      {
+        "id": 48335,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      50607,
+      {
+        "id": 50654
+      },
+      {
+        "id": 52173
+      },
+      {
+        "id": 52845
+      },
+      {
+        "id": 53505
+      },
+      {
+        "id": 53678,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 54535,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 54649,
+        "genres": [
+          8,
+          30
+        ]
+      },
+      {
+        "id": 55037,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 55060
+      },
+      {
+        "id": 55163
+      },
+      {
+        "id": 55280,
+        "genres": [
+          4,
+          9
+        ]
+      },
+      {
+        "id": 57693
+      },
+      {
+        "id": 60852,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 61752,
+        "genres": [
+          4,
+          12
+        ]
+      },
+      {
+        "id": 62876
+      },
+      {
+        "id": 63065
+      },
+      {
+        "id": 63628
+      },
+      {
+        "id": 63644,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 65178
+      },
+      {
+        "id": 65676
+      },
+      {
+        "id": 65896
+      },
+      {
+        "id": 67173
+      },
+      {
+        "id": 68950,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 70462,
+        "genres": [
+          4,
+          14
+        ]
+      },
+      {
+        "id": 72563
+      },
+      {
+        "id": 72578
+      },
+      {
+        "id": 74155,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 74394,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 74421,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 75236,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 75374,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 75449,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 75515
+      },
+      {
+        "id": 75692,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 75962,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 75964,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 75965,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 76243
+      },
+      {
+        "id": 76244
+      },
+      {
+        "id": 76253,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 76723,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 77175,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 78003
+      },
+      {
+        "id": 78060,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 78130
+      },
+      {
+        "id": 78133
+      },
+      {
+        "id": 78161
+      },
+      {
+        "id": 78461,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 78462,
+        "genres": [
+          2,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 78463,
+        "genres": [
+          2,
+          31
+        ]
+      },
+      {
+        "id": 78464,
+        "genres": [
+          2,
+          31
+        ]
+      },
+      {
+        "id": 78626,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 78633
+      },
+      {
+        "id": 79129
+      },
+      {
+        "id": 79848
+      },
+      {
+        "id": 80151
+      },
+      {
+        "id": 84559
+      },
+      {
+        "id": 84600
+      },
+      {
+        "id": 84640
+      },
+      {
+        "id": 84972
+      },
+      {
+        "id": 85280
+      },
+      {
+        "id": 85281
+      },
+      {
+        "id": 85282
+      },
+      {
+        "id": 85499
+      },
+      {
+        "id": 85616
+      },
+      {
+        "id": 86226
+      },
+      {
+        "id": 87782,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 90566,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 96248,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 96252,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 96254,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 102075,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 102722,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 105979,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 107221,
+        "genres": [
+          13,
+          15
+        ]
+      },
+      {
+        "id": 107292,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 109456,
+        "genres": [
+          25,
+          33
+        ]
+      },
+      {
+        "id": 110809,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 112425,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 113344,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 115060
+      },
+      {
+        "id": 115115,
+        "genres": [
+          5,
+          9
+        ]
+      },
+      {
+        "id": 116026,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 116027,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 116028,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 116029,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 117967
+      },
+      {
+        "id": 118273,
+        "genres": [
+          12,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 121045
+      },
+      {
+        "id": 121204
+      },
+      {
+        "id": 122048,
+        "genres": [
+          5,
+          8
+        ]
+      }
+    ]
+  }
+]
+
+[132114749332287391]:	DEBUG -	[
+  {
+    "id": 37,
+    "developed": [
+      {
+        "id": 112,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 134,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 135,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 136,
+        "genres": [
+          4,
+          5,
+          25
+        ]
+      },
+      {
+        "id": 243,
+        "genres": [
+          15,
+          26
+        ]
+      },
+      {
+        "id": 424,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 496,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 497,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 847,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 880,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 884,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 966,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 967,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 969
+      },
+      {
+        "id": 973,
+        "genres": [
+          5,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 975,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 976,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 977,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 978,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 1032,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1035,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1041,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1082,
+        "genres": [
+          5,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 1280,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 1288,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 1348,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 1357,
+        "genres": [
+          5,
+          11,
+          15
+        ]
+      },
+      {
+        "id": 1402,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 1426,
+        "genres": [
+          2,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 1427,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 1428,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 1429,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 1430,
+        "genres": [
+          2,
+          13,
+          31
+        ]
+      },
+      {
+        "id": 1431,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 1432,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 1655,
+        "genres": [
+          4,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 1656,
+        "genres": [
+          4,
+          8,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 1657,
+        "genres": [
+          4,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 1658,
+        "genres": [
+          4,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 1663,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 1664,
+        "genres": [
+          4,
+          25
+        ]
+      },
+      {
+        "id": 1714,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1715,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1716,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1717,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1719,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1721,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1723,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1724,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 1725,
+        "genres": [
+          4,
+          5,
+          33
+        ]
+      },
+      {
+        "id": 1726,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1729,
+        "genres": [
+          13
+        ]
+      },
+      {
+        "id": 1730,
+        "genres": [
+          14,
+          33
+        ]
+      },
+      {
+        "id": 1739,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1740,
+        "genres": [
+          4,
+          10,
+          33
+        ]
+      },
+      {
+        "id": 1741,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1742,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1743,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1744,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1746,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1749,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1750,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1756,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1759,
+        "genres": [
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1762,
+        "genres": [
+          12,
+          16,
+          31
+        ]
+      },
+      {
+        "id": 1767,
+        "genres": [
+          15
+        ]
+      },
+      {
+        "id": 1771
+      },
+      {
+        "id": 1774,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 1781,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1782,
+        "genres": [
+          8,
+          12,
+          14,
+          31
+        ]
+      },
+      {
+        "id": 1783,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1784,
+        "genres": [
+          12,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 1785,
+        "genres": [
+          12,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 1786,
+        "genres": [
+          12,
+          15,
+          24,
+          31
+        ]
+      },
+      {
+        "id": 1787,
+        "genres": [
+          12,
+          15,
+          24,
+          31
+        ]
+      },
+      {
+        "id": 1913,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1915,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 1969,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 2066,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 2264,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 2271,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 2473,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 2904,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 3027,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 3186,
+        "genres": [
+          4,
+          8
+        ]
+      },
+      {
+        "id": 3398,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 3773,
+        "genres": [
+          2,
+          8,
+          14,
+          31
+        ]
+      },
+      {
+        "id": 3846,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 3885,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 3936,
+        "genres": [
+          4,
+          5,
+          13
+        ]
+      },
+      {
+        "id": 3964,
+        "genres": [
+          4,
+          5,
+          33
+        ]
+      },
+      {
+        "id": 3968,
+        "genres": [
+          12,
+          25
+        ]
+      },
+      {
+        "id": 4135,
+        "genres": [
+          4,
+          14,
+          33
+        ]
+      },
+      {
+        "id": 4355,
+        "genres": [
+          4,
+          8
+        ]
+      },
+      {
+        "id": 4407,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 4504,
+        "genres": [
+          4,
+          14
+        ]
+      },
+      {
+        "id": 5150,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 5316,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 5368,
+        "genres": [
+          8,
+          25
+        ]
+      },
+      {
+        "id": 5668,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 5845,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 5856,
+        "genres": [
+          10
+        ]
+      },
+      {
+        "id": 5923,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 6075,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6076,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6077,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6078,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6200,
+        "genres": [
+          7,
+          31
+        ]
+      },
+      {
+        "id": 6337,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 6379,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6380,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6381,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6440,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 6487,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6490,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 6518,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 6526,
+        "genres": [
+          12,
+          15,
+          16,
+          24
+        ]
+      },
+      {
+        "id": 6592,
+        "genres": [
+          9,
+          15
+        ]
+      },
+      {
+        "id": 6621,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6656,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6671,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6702,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6703,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6704,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6708,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6709,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6710,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6792,
+        "genres": [
+          25,
+          33
+        ]
+      },
+      {
+        "id": 6794,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6807,
+        "genres": [
+          5,
+          8,
+          33
+        ]
+      },
+      {
+        "id": 6814,
+        "genres": [
+          12,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 6816,
+        "genres": [
+          4,
+          12,
+          25,
+          31,
+          33
+        ]
+      },
+      {
+        "id": 6817,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 6823,
+        "genres": [
+          5,
+          8,
+          9,
+          33
+        ]
+      },
+      {
+        "id": 6895,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 6930,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6933,
+        "genres": [
+          4,
+          5,
+          8,
+          9,
+          31,
+          33
+        ]
+      },
+      {
+        "id": 6969,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 6980,
+        "genres": [
+          5,
+          8,
+          9,
+          33
+        ]
+      },
+      {
+        "id": 6981,
+        "genres": [
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 7075,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 7198,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 7455,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 7725,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 8130,
+        "genres": [
+          26,
+          31
+        ]
+      },
+      {
+        "id": 8163,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 8244,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8245,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8246,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8247,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8248,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8254,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 8258,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8452,
+        "genres": [
+          8,
+          9
+        ]
+      },
+      {
+        "id": 9160,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 9242,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 9426,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 9755,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 10614,
+        "genres": [
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 11486,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 11617,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 11757,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 11758,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 11966,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 12077,
+        "genres": [
+          2,
+          9,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 12530,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 12864,
+        "genres": [
+          4,
+          25
+        ]
+      },
+      {
+        "id": 12937,
+        "genres": [
+          5,
+          8,
+          31,
+          33
+        ]
+      },
+      {
+        "id": 13095,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 13096,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 13106,
+        "genres": [
+          4,
+          8
+        ]
+      },
+      {
+        "id": 13679,
+        "genres": [
+          5,
+          25
+        ]
+      },
+      {
+        "id": 13931,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 14679,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 14680,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 14929,
+        "genres": [
+          9,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 16141,
+        "genres": [
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 16300,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      18049,
+      {
+        "id": 18055,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 18067,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 18181,
+        "genres": [
+          12,
+          25
+        ]
+      },
+      {
+        "id": 18626,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 19562,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 19686,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 19754,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 19768,
+        "genres": [
+          4,
+          25
+        ]
+      },
+      {
+        "id": 19821,
+        "genres": [
+          4,
+          8,
+          25
+        ]
+      },
+      {
+        "id": 20011,
+        "genres": [
+          4,
+          13,
+          32
+        ]
+      },
+      {
+        "id": 20013,
+        "genres": [
+          4,
+          13
+        ]
+      },
+      {
+        "id": 20022,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 20747,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 20803,
+        "genres": [
+          9,
+          33
+        ]
+      },
+      {
+        "id": 21533,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 21610,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 21724,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 22049,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 22568,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 22993,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 23251,
+        "genres": [
+          5,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 23907,
+        "genres": [
+          13,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 24347,
+        "genres": [
+          5,
+          12,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 24369,
+        "genres": [
+          5,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 24869,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 25623,
+        "genres": [
+          12,
+          25
+        ]
+      },
+      {
+        "id": 25886,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 26197,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 26384
+      },
+      {
+        "id": 26773,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 26901,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 26924,
+        "genres": [
+          9
+        ]
+      },
+      {
+        "id": 26985,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 27040,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 27395,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 27791,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 27890,
+        "genres": [
+          4,
+          25
+        ]
+      },
+      {
+        "id": 36926,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 37211,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 38297,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 39407,
+        "genres": [
+          5,
+          10,
+          33
+        ]
+      },
+      {
+        "id": 39496,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 39704,
+        "genres": [
+          10,
+          33
+        ]
+      },
+      {
+        "id": 39705,
+        "genres": [
+          5,
+          8,
+          33
+        ]
+      },
+      {
+        "id": 39993,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 40010,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 40195,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 42033,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 42759,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 42976
+      },
+      {
+        "id": 43196,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 43311
+      },
+      {
+        "id": 43668,
+        "genres": [
+          8,
+          12
+        ]
+      },
+      {
+        "id": 45196,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 45198,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 45854,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 46815,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 46822,
+        "genres": [
+          25,
+          33
+        ]
+      },
+      {
+        "id": 48335,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 50654
+      },
+      {
+        "id": 53505
+      },
+      {
+        "id": 53678,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 54535,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 55163
+      },
+      {
+        "id": 61752,
+        "genres": [
+          4,
+          12
+        ]
+      },
+      {
+        "id": 63065
+      },
+      {
+        "id": 63628
+      },
+      {
+        "id": 63644,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 65676
+      },
+      {
+        "id": 65896
+      },
+      {
+        "id": 68126
+      },
+      {
+        "id": 68160
+      },
+      {
+        "id": 72563
+      },
+      {
+        "id": 72578
+      },
+      {
+        "id": 72783
+      },
+      {
+        "id": 74155,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 74394,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 74421,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 75236,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 75374,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 75449,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 75696
+      },
+      {
+        "id": 75697
+      },
+      {
+        "id": 75962,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 75963,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 75964,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 75965,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 76243
+      },
+      {
+        "id": 76244
+      },
+      {
+        "id": 76253,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 76723,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 77175,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 78161
+      },
+      {
+        "id": 78461,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 78462,
+        "genres": [
+          2,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 78463,
+        "genres": [
+          2,
+          31
+        ]
+      },
+      {
+        "id": 78464,
+        "genres": [
+          2,
+          31
+        ]
+      },
+      {
+        "id": 78626,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 78633
+      },
+      {
+        "id": 78677,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 89016,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 90566,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 96248,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 96252,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 96254,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 102075,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 102722,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 105979,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 107292,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 109456,
+        "genres": [
+          25,
+          33
+        ]
+      },
+      {
+        "id": 110809,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 112425,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 113344,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 115115,
+        "genres": [
+          5,
+          9
+        ]
+      },
+      {
+        "id": 116026,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 116027,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 116028,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 116029,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 118273,
+        "genres": [
+          12,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 122048,
+        "genres": [
+          5,
+          8
+        ]
+      }
+    ],
+    "name": "Capcom",
+    "published": [
+      {
+        "id": 112,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 132,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 133,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 134,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 135,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 136,
+        "genres": [
+          4,
+          5,
+          25
+        ]
+      },
+      {
+        "id": 243,
+        "genres": [
+          15,
+          26
+        ]
+      },
+      {
+        "id": 424,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 496,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 497,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 549,
+        "genres": [
+          15,
+          31
+        ]
+      },
+      {
+        "id": 551,
+        "genres": [
+          8,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 602,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 847,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 880,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 884,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 966,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 967,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 968,
+        "genres": [
+          5,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 969
+      },
+      {
+        "id": 970,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 971,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 972,
+        "genres": [
+          5,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 973,
+        "genres": [
+          5,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 974,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 975,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 976,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 977,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 978,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 1082,
+        "genres": [
+          5,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 1254,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 1271,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1280,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 1288,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 1348,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 1357,
+        "genres": [
+          5,
+          11,
+          15
+        ]
+      },
+      {
+        "id": 1414,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 1415,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 1426,
+        "genres": [
+          2,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 1427,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 1428,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 1429,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 1430,
+        "genres": [
+          2,
+          13,
+          31
+        ]
+      },
+      {
+        "id": 1431,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 1432,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 1458,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 1655,
+        "genres": [
+          4,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 1656,
+        "genres": [
+          4,
+          8,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 1657,
+        "genres": [
+          4,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 1658,
+        "genres": [
+          4,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 1659,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 1660,
+        "genres": [
+          4,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 1663,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 1664,
+        "genres": [
+          4,
+          25
+        ]
+      },
+      {
+        "id": 1674,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 1714,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1715,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1716,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1717,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1718,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1720,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1721,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1722,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1723,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1724,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 1725,
+        "genres": [
+          4,
+          5,
+          33
+        ]
+      },
+      {
+        "id": 1726,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1727,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1728,
+        "genres": [
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1729,
+        "genres": [
+          13
+        ]
+      },
+      {
+        "id": 1730,
+        "genres": [
+          14,
+          33
+        ]
+      },
+      {
+        "id": 1732,
+        "genres": [
+          5,
+          13,
+          31
+        ]
+      },
+      {
+        "id": 1733,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1734,
+        "genres": [
+          8,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 1735,
+        "genres": [
+          8,
+          25,
+          31,
+          33
+        ]
+      },
+      {
+        "id": 1736,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1737,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1739,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1740,
+        "genres": [
+          4,
+          10,
+          33
+        ]
+      },
+      {
+        "id": 1741,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1742,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1743,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1744,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1745,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1746,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1748,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1749,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1750,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 1751,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 1752,
+        "genres": [
+          5,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1753,
+        "genres": [
+          9,
+          12
+        ]
+      },
+      {
+        "id": 1754,
+        "genres": [
+          5,
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1755,
+        "genres": [
+          12,
+          16,
+          31
+        ]
+      },
+      {
+        "id": 1756,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1757,
+        "genres": [
+          11,
+          12
+        ]
+      },
+      {
+        "id": 1758,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 1759,
+        "genres": [
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1760,
+        "genres": [
+          12,
+          24
+        ]
+      },
+      {
+        "id": 1761,
+        "genres": [
+          12,
+          24
+        ]
+      },
+      {
+        "id": 1762,
+        "genres": [
+          12,
+          16,
+          31
+        ]
+      },
+      {
+        "id": 1763,
+        "genres": [
+          24
+        ]
+      },
+      {
+        "id": 1764,
+        "genres": [
+          12,
+          24
+        ]
+      },
+      {
+        "id": 1765,
+        "genres": [
+          12,
+          24
+        ]
+      },
+      {
+        "id": 1766,
+        "genres": [
+          8,
+          12
+        ]
+      },
+      {
+        "id": 1767,
+        "genres": [
+          15
+        ]
+      },
+      {
+        "id": 1769,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 1771
+      },
+      {
+        "id": 1772
+      },
+      {
+        "id": 1774,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 1775,
+        "genres": [
+          5,
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1776,
+        "genres": [
+          5,
+          8,
+          12
+        ]
+      },
+      {
+        "id": 1777,
+        "genres": [
+          5,
+          8,
+          12
+        ]
+      },
+      {
+        "id": 1778,
+        "genres": [
+          5,
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1779,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1780,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1781,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1782,
+        "genres": [
+          8,
+          12,
+          14,
+          31
+        ]
+      },
+      {
+        "id": 1783,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 1784,
+        "genres": [
+          12,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 1785,
+        "genres": [
+          12,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 1786,
+        "genres": [
+          12,
+          15,
+          24,
+          31
+        ]
+      },
+      {
+        "id": 1787,
+        "genres": [
+          12,
+          15,
+          24,
+          31
+        ]
+      },
+      {
+        "id": 1827,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1913,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1915,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 1916,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 1969,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 2066,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 2264,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 2268,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 2269,
+        "genres": [
+          12,
+          15
+        ]
+      },
+      {
+        "id": 2271,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 2275,
+        "genres": [
+          4,
+          14
+        ]
+      },
+      {
+        "id": 2317,
+        "genres": [
+          8,
+          9,
+          31,
+          32
+        ]
+      },
+      {
+        "id": 2473,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 2904,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 2917,
+        "genres": [
+          4,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 3027,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 3186,
+        "genres": [
+          4,
+          8
+        ]
+      },
+      {
+        "id": 3199,
+        "genres": [
+          12,
+          14,
+          31
+        ]
+      },
+      {
+        "id": 3219,
+        "genres": [
+          8,
+          9,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 3398,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 3761,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 3791,
+        "genres": [
+          10,
+          13
+        ]
+      },
+      {
+        "id": 3846,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 3885,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 3936,
+        "genres": [
+          4,
+          5,
+          13
+        ]
+      },
+      {
+        "id": 3966,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 3968,
+        "genres": [
+          12,
+          25
+        ]
+      },
+      {
+        "id": 4001,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 4060,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 4132,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 4135,
+        "genres": [
+          4,
+          14,
+          33
+        ]
+      },
+      {
+        "id": 4220,
+        "genres": [
+          5,
+          13,
+          31
+        ]
+      },
+      {
+        "id": 4229,
+        "genres": [
+          4,
+          8,
+          25
+        ]
+      },
+      {
+        "id": 4230,
+        "genres": [
+          4,
+          8,
+          25
+        ]
+      },
+      {
+        "id": 4231,
+        "genres": [
+          4,
+          8,
+          25
+        ]
+      },
+      {
+        "id": 4238,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 4355,
+        "genres": [
+          4,
+          8
+        ]
+      },
+      {
+        "id": 4356,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 4367,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 4487,
+        "genres": [
+          5,
+          8,
+          30,
+          33
+        ]
+      },
+      {
+        "id": 4504,
+        "genres": [
+          4,
+          14
+        ]
+      },
+      {
+        "id": 4797,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 4798,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 4907,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 5022,
+        "genres": [
+          10,
+          13,
+          14
+        ]
+      },
+      {
+        "id": 5067,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 5150,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 5206,
+        "genres": [
+          8,
+          25
+        ]
+      },
+      {
+        "id": 5265,
+        "genres": [
+          14
+        ]
+      },
+      {
+        "id": 5316,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 5333,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 5368,
+        "genres": [
+          8,
+          25
+        ]
+      },
+      {
+        "id": 5384,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 5404,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 5495,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 5668,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 5745,
+        "genres": [
+          4,
+          25
+        ]
+      },
+      {
+        "id": 5766,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 5808,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 5813,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 5845,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 5856,
+        "genres": [
+          10
+        ]
+      },
+      {
+        "id": 5923,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 5924,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 5987,
+        "genres": [
+          8,
+          25
+        ]
+      },
+      {
+        "id": 5992,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 6011,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 6012,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 6075,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6076,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6077,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6078,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6079,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6163,
+        "genres": [
+          13,
+          15
+        ]
+      },
+      {
+        "id": 6174,
+        "genres": [
+          13,
+          15
+        ]
+      },
+      {
+        "id": 6178,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 6184,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 6200,
+        "genres": [
+          7,
+          31
+        ]
+      },
+      {
+        "id": 6218,
+        "genres": [
+          4,
+          14
+        ]
+      },
+      {
+        "id": 6236,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6285,
+        "genres": [
+          4,
+          31
+        ]
+      },
+      {
+        "id": 6317,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6337,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 6379,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6380,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6381,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6440,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 6487,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6488,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 6490,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 6518,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 6526,
+        "genres": [
+          12,
+          15,
+          16,
+          24
+        ]
+      },
+      {
+        "id": 6621,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 6656,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6671,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6702,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6703,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6704,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6708,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6709,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6710,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6719,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 6792,
+        "genres": [
+          25,
+          33
+        ]
+      },
+      {
+        "id": 6794,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 6807,
+        "genres": [
+          5,
+          8,
+          33
+        ]
+      },
+      {
+        "id": 6814,
+        "genres": [
+          12,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 6816,
+        "genres": [
+          4,
+          12,
+          25,
+          31,
+          33
+        ]
+      },
+      {
+        "id": 6817,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 6823,
+        "genres": [
+          5,
+          8,
+          9,
+          33
+        ]
+      },
+      {
+        "id": 6895,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 6901,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 6914,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 6930,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6933,
+        "genres": [
+          4,
+          5,
+          8,
+          9,
+          31,
+          33
+        ]
+      },
+      {
+        "id": 6969,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 6980,
+        "genres": [
+          5,
+          8,
+          9,
+          33
+        ]
+      },
+      {
+        "id": 6981,
+        "genres": [
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 7075,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 7080,
+        "genres": [
+          10,
+          13,
+          14
+        ]
+      },
+      {
+        "id": 7198,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 7455,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 7505,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 7725,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 7786,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 8020,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 8067,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 8126,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 8127,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 8130,
+        "genres": [
+          26,
+          31
+        ]
+      },
+      {
+        "id": 8163,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 8166,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 8237,
+        "genres": [
+          5,
+          10
+        ]
+      },
+      {
+        "id": 8244,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8245,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8246,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8247,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8248,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8254,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 8258,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 8333,
+        "genres": [
+          14
+        ]
+      },
+      {
+        "id": 8432,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 8452,
+        "genres": [
+          8,
+          9
+        ]
+      },
+      {
+        "id": 8547
+      },
+      {
+        "id": 8803,
+        "genres": [
+          4,
+          25
+        ]
+      },
+      {
+        "id": 9160,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 9242,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 9290,
+        "genres": [
+          5,
+          32,
+          33
+        ]
+      },
+      {
+        "id": 9426,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 9692,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 9755,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 9948,
+        "genres": [
+          11,
+          15,
+          33
+        ]
+      },
+      {
+        "id": 10157,
+        "genres": [
+          4,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 10166,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 10296,
+        "genres": [
+          8,
+          25,
+          32
+        ]
+      },
+      {
+        "id": 10614,
+        "genres": [
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 11486,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 11566,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 11617,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 11757,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 11758,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 11759,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 11966,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 12060,
+        "genres": [
+          4,
+          25,
+          33
+        ]
+      },
+      {
+        "id": 12077,
+        "genres": [
+          2,
+          9,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 12171,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 12175,
+        "genres": [
+          10
+        ]
+      },
+      {
+        "id": 12184,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 12331,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 12332,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 12381,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 12481,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 12495,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 12530,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 12782,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 12849,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 12860,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 12864,
+        "genres": [
+          4,
+          25
+        ]
+      },
+      {
+        "id": 12937,
+        "genres": [
+          5,
+          8,
+          31,
+          33
+        ]
+      },
+      {
+        "id": 13095,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 13096,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 13106,
+        "genres": [
+          4,
+          8
+        ]
+      },
+      {
+        "id": 13107,
+        "genres": [
+          4,
+          8
+        ]
+      },
+      {
+        "id": 13679,
+        "genres": [
+          5,
+          25
+        ]
+      },
+      {
+        "id": 14536,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 14605,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 14679,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 14680,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 15108,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 15856,
+        "genres": [
+          5,
+          8,
+          33
+        ]
+      },
+      {
+        "id": 15858,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 16141,
+        "genres": [
+          8,
+          12,
+          31
+        ]
+      },
+      {
+        "id": 16300,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 16618,
+        "genres": [
+          31
+        ]
+      },
+      18049,
+      {
+        "id": 18056,
+        "genres": [
+          12,
+          15
+        ]
+      },
+      {
+        "id": 18181,
+        "genres": [
+          12,
+          25
+        ]
+      },
+      {
+        "id": 18305,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 18626,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 18821,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 19521,
+        "genres": [
+          5,
+          25
+        ]
+      },
+      {
+        "id": 19562,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 19612,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 19647
+      },
+      {
+        "id": 19686,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 19754,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 19821,
+        "genres": [
+          4,
+          8,
+          25
+        ]
+      },
+      {
+        "id": 19874,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 19886,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 19900,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 20011,
+        "genres": [
+          4,
+          13,
+          32
+        ]
+      },
+      {
+        "id": 20013,
+        "genres": [
+          4,
+          13
+        ]
+      },
+      {
+        "id": 20022,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 20065,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 20095,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 20427,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 20456,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 20545,
+        "genres": [
+          4,
+          5,
+          25,
+          31,
+          33
+        ]
+      },
+      {
+        "id": 20586,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 20734,
+        "genres": [
+          8,
+          25
+        ]
+      },
+      {
+        "id": 20747,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 20803,
+        "genres": [
+          9,
+          33
+        ]
+      },
+      {
+        "id": 20869,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 21068,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 21346,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 21533,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 21567,
+        "genres": [
+          12,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 21568,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 21610,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 21611
+      },
+      {
+        "id": 21724,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 22054,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 22252,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 22300,
+        "genres": [
+          4,
+          12,
+          25
+        ]
+      },
+      {
+        "id": 22568,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 22993,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 23066,
+        "genres": [
+          10,
+          12,
+          15
+        ]
+      },
+      {
+        "id": 23072,
+        "genres": [
+          4,
+          9,
+          15
+        ]
+      },
+      {
+        "id": 23215,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 23251,
+        "genres": [
+          5,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 23377,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 23907,
+        "genres": [
+          13,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 24223,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 24275,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 24347,
+        "genres": [
+          5,
+          12,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 24355,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 24369,
+        "genres": [
+          5,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 24869,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 25022,
+        "genres": [
+          9,
+          33
+        ]
+      },
+      {
+        "id": 25623,
+        "genres": [
+          12,
+          25
+        ]
+      },
+      {
+        "id": 25817,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 25886,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 26197,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 26384
+      },
+      {
+        "id": 26773,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 26924,
+        "genres": [
+          9
+        ]
+      },
+      {
+        "id": 26985,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 27018
+      },
+      {
+        "id": 27019,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 27040,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 27395,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 27791,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 27861,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 27890,
+        "genres": [
+          4,
+          25
+        ]
+      },
+      {
+        "id": 27955,
+        "genres": [
+          5,
+          11,
+          15
+        ]
+      },
+      {
+        "id": 28323,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 28530,
+        "genres": [
+          30
+        ]
+      },
+      {
+        "id": 36926,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 37082,
+        "genres": [
+          13,
+          31
+        ]
+      },
+      {
+        "id": 37211,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 37589,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 38297,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 38338,
+        "genres": [
+          9
+        ]
+      },
+      {
+        "id": 39048
+      },
+      {
+        "id": 39063
+      },
+      {
+        "id": 39306,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 39407,
+        "genres": [
+          5,
+          10,
+          33
+        ]
+      },
+      {
+        "id": 39496,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 39704,
+        "genres": [
+          10,
+          33
+        ]
+      },
+      {
+        "id": 39705,
+        "genres": [
+          5,
+          8,
+          33
+        ]
+      },
+      {
+        "id": 39958,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 39993,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 40010,
+        "genres": [
+          8,
+          33
+        ]
+      },
+      {
+        "id": 40195,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 40262,
+        "genres": [
+          9
+        ]
+      },
+      {
+        "id": 41858,
+        "genres": [
+          5,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 41862
+      },
+      {
+        "id": 42033,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      {
+        "id": 42759,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 42976
+      },
+      {
+        "id": 43441,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 43642,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 43668,
+        "genres": [
+          8,
+          12
+        ]
+      },
+      {
+        "id": 45196,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 45198,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 45829,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 45854,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 46815,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 46822,
+        "genres": [
+          25,
+          33
+        ]
+      },
+      {
+        "id": 48335,
+        "genres": [
+          5,
+          33
+        ]
+      },
+      50607,
+      {
+        "id": 50654
+      },
+      {
+        "id": 52173
+      },
+      {
+        "id": 52845
+      },
+      {
+        "id": 53505
+      },
+      {
+        "id": 53678,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 54535,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 54649,
+        "genres": [
+          8,
+          30
+        ]
+      },
+      {
+        "id": 55037,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 55060
+      },
+      {
+        "id": 55163
+      },
+      {
+        "id": 55280,
+        "genres": [
+          4,
+          9
+        ]
+      },
+      {
+        "id": 57693
+      },
+      {
+        "id": 60852,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 61752,
+        "genres": [
+          4,
+          12
+        ]
+      },
+      {
+        "id": 62876
+      },
+      {
+        "id": 63065
+      },
+      {
+        "id": 63628
+      },
+      {
+        "id": 63644,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 65178
+      },
+      {
+        "id": 65676
+      },
+      {
+        "id": 65896
+      },
+      {
+        "id": 67173
+      },
+      {
+        "id": 68950,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 70462,
+        "genres": [
+          4,
+          14
+        ]
+      },
+      {
+        "id": 72563
+      },
+      {
+        "id": 72578
+      },
+      {
+        "id": 74155,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 74394,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 74421,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 75236,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 75374,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 75449,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 75515
+      },
+      {
+        "id": 75692,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 75962,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 75964,
+        "genres": [
+          4
+        ]
+      },
+      {
+        "id": 75965,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 76243
+      },
+      {
+        "id": 76244
+      },
+      {
+        "id": 76253,
+        "genres": [
+          25
+        ]
+      },
+      {
+        "id": 76723,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 77175,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 78003
+      },
+      {
+        "id": 78060,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 78130
+      },
+      {
+        "id": 78133
+      },
+      {
+        "id": 78161
+      },
+      {
+        "id": 78461,
+        "genres": [
+          9,
+          31
+        ]
+      },
+      {
+        "id": 78462,
+        "genres": [
+          2,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 78463,
+        "genres": [
+          2,
+          31
+        ]
+      },
+      {
+        "id": 78464,
+        "genres": [
+          2,
+          31
+        ]
+      },
+      {
+        "id": 78626,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 78633
+      },
+      {
+        "id": 79129
+      },
+      {
+        "id": 79848
+      },
+      {
+        "id": 80151
+      },
+      {
+        "id": 84559
+      },
+      {
+        "id": 84600
+      },
+      {
+        "id": 84640
+      },
+      {
+        "id": 84972
+      },
+      {
+        "id": 85280
+      },
+      {
+        "id": 85281
+      },
+      {
+        "id": 85282
+      },
+      {
+        "id": 85499
+      },
+      {
+        "id": 85616
+      },
+      {
+        "id": 86226
+      },
+      {
+        "id": 87782,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 90566,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 96248,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 96252,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 96254,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 102075,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 102722,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 105979,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 107221,
+        "genres": [
+          13,
+          15
+        ]
+      },
+      {
+        "id": 107292,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 109456,
+        "genres": [
+          25,
+          33
+        ]
+      },
+      {
+        "id": 110809,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 112425,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 113344,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 115060
+      },
+      {
+        "id": 115115,
+        "genres": [
+          5,
+          9
+        ]
+      },
+      {
+        "id": 116026,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 116027,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 116028,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 116029,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 117967
+      },
+      {
+        "id": 118273,
+        "genres": [
+          12,
+          25,
+          31
+        ]
+      },
+      {
+        "id": 121045
+      },
+      {
+        "id": 121204
+      },
+      {
+        "id": 122048,
+        "genres": [
+          5,
+          8
+        ]
+      }
+    ]
+  }
+]
+
+[132114749332287391]:	ERROR -	Error converting value 18049 to type 'GameStudioScorer.IGDB.Game'. Path '[0].developed[178]', line 1242, position 11.. Occurred for Capcom
+
+[132114749332443960]:	CRITICAL -	   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type)
+   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 42
+   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, String savedName, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 102
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 203
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 91
+
+[132114749340724677]:	DEBUG -	[
+  {
+    "id": 4291,
+    "name": "CD Projekt",
+    "published": [
+      {
+        "id": 20275,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 20740,
+        "genres": [
+          12,
+          31
+        ]
+      },
+      {
+        "id": 22439,
+        "genres": [
+          12,
+          31
+        ]
+      }
+    ]
+  }
+]
+
+[132114750081663205]:	DEBUG -	[
+  {
+    "id": 401,
+    "developed": [
+      {
+        "id": 431,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 512,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 565,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1009,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 1185,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1186,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1187,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1192,
+        "genres": [
+          10
+        ]
+      },
+      {
+        "id": 1528,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1529,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 1530,
+        "genres": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1532,
+        "genres": [
+          10
+        ]
+      },
+      {
+        "id": 4326,
+        "genres": [
+          4,
+          33
+        ]
+      },
+      {
+        "id": 6036,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 7224,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 7331,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 8930,
+        "genres": [
+          12
+        ]
+      },
+      {
+        "id": 10962,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 11790,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 20113,
+        "genres": [
+          8,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 26192,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 26193,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 41876,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 41877,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 41878,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 41880,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 41881,
+        "genres": [
+          5,
+          8,
+          31
+        ]
+      },
+      {
+        "id": 41883,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 41884,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 76868,
+        "genres": [
+          8,
+          10,
+          31
+        ]
+      },
+      {
+        "id": 89929,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 101462,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 102081,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 102082,
+        "genres": [
+          5,
+          31
+        ]
+      },
+      {
+        "id": 102083,
+        "genres": [
+          5,
+          31
+        ]
+      }
+    ],
+    "name": "Naughty Dog"
+  }
+]
+
+[132114750876792560]:	ERROR -	The remote server returned an error: (414) URI Too Long.. Occurred for Konami
+
+[132114750877416964]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.MakeRequest(String url) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 168
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 130
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 44
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 87
+
+[132114750888313775]:	DEBUG -	[
+  {
+    "id": 482,
+    "developed": [
+      {
+        "id": 612,
+        "genres": [
+          2,
+          31
+        ]
+      },
+      {
+        "id": 616,
+        "genres": [
+          2,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 919,
+        "genres": [
+          2,
+          31
+        ]
+      },
+      {
+        "id": 1150,
+        "genres": [
+          2,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 1151,
+        "genres": [
+          2,
+          31
+        ]
+      },
+      {
+        "id": 1152,
+        "genres": [
+          2,
+          31
+        ]
+      },
+      {
+        "id": 2924,
+        "genres": [
+          2,
+          31
+        ]
+      },
+      {
+        "id": 7501,
+        "genres": [
+          2,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 8482,
+        "genres": [
+          2,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 21127,
+        "genres": [
+          2,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 116634,
+        "genres": [
+          31
+        ]
+      }
+    ],
+    "name": "Revolution Software",
+    "published": [
+      {
+        "id": 612,
+        "genres": [
+          2,
+          31
+        ]
+      },
+      {
+        "id": 919,
+        "genres": [
+          2,
+          31
+        ]
+      },
+      {
+        "id": 1151,
+        "genres": [
+          2,
+          31
+        ]
+      },
+      {
+        "id": 1152,
+        "genres": [
+          2,
+          31
+        ]
+      },
+      {
+        "id": 2924,
+        "genres": [
+          2,
+          31
+        ]
+      },
+      {
+        "id": 8482,
+        "genres": [
+          2,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 21127,
+        "genres": [
+          2,
+          9,
+          31
+        ]
+      },
+      {
+        "id": 94068
+      },
+      {
+        "id": 94069,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 116634,
+        "genres": [
+          31
+        ]
+      }
+    ]
+  }
+]
+
+[132114751403081318]:	DEBUG -	[
+  {
+    "id": 3,
+    "developed": [
+      {
+        "id": 1,
+        "genres": [
+          5,
+          13,
+          31
+        ]
+      },
+      {
+        "id": 2,
+        "genres": [
+          5,
+          14
+        ]
+      },
+      {
+        "id": 22,
+        "genres": [
+          5,
+          12
+        ]
+      },
+      {
+        "id": 23,
+        "genres": [
+          5,
+          12
+        ]
+      },
+      {
+        "id": 70,
+        "genres": [
+          5,
+          13,
+          15
+        ]
+      },
+      {
+        "id": 647,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 714,
+        "genres": [
+          13
+        ]
+      },
+      {
+        "id": 715,
+        "genres": [
+          13
+        ]
+      },
+      {
+        "id": 1168,
+        "genres": [
+          10
+        ]
+      },
+      {
+        "id": 3352,
+        "genres": [
+          13
+        ]
+      },
+      {
+        "id": 9227,
+        "genres": [
+          5,
+          13,
+          14,
+          31
+        ]
+      },
+      {
+        "id": 10686,
+        "genres": [
+          10,
+          13
+        ]
+      },
+      {
+        "id": 12987,
+        "genres": [
+          5,
+          12,
+          31
+        ]
+      }
+    ],
+    "name": "Looking Glass Studios",
+    "published": [
+      {
+        "id": 70,
+        "genres": [
+          5,
+          13,
+          15
+        ]
+      },
+      {
+        "id": 3352,
+        "genres": [
+          13
+        ]
+      }
+    ]
+  }
+]
+
+[132114751807271173]:	ERROR -	An item with the same key has already been added.. Occurred for Electronic Arts
+
+[132114751807584027]:	CRITICAL -	   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 35
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 104
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 42
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 87
+
+[132114751810552542]:	ERROR -	Index was outside the bounds of the array.. Occurred for Tose (company)
+
+[132114751810708434]:	CRITICAL -	   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 92
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 44
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 87
+
+[132114751867550516]:	DEBUG -	[
+  {
+    "id": 196,
+    "developed": [
+      {
+        "id": 257,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 465,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 466,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 467,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 468,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 469,
+        "genres": [
+          4,
+          11,
+          15
+        ]
+      },
+      {
+        "id": 470,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 578,
+        "genres": [
+          5,
+          12
+        ]
+      },
+      {
+        "id": 654,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 749,
+        "genres": [
+          11,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 750,
+        "genres": [
+          11,
+          13,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 1369,
+        "genres": [
+          11,
+          13,
+          15
+        ]
+      },
+      {
+        "id": 1370,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 1371,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 7126
+      },
+      {
+        "id": 8444,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 8445,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 14551,
+        "genres": [
+          11,
+          13,
+          15
+        ]
+      },
+      {
+        "id": 18980,
+        "genres": [
+          11,
+          13,
+          15
+        ]
+      },
+      {
+        "id": 28981,
+        "genres": [
+          15
+        ]
+      },
+      {
+        "id": 34620,
+        "genres": [
+          15
+        ]
+      },
+      {
+        "id": 55029,
+        "genres": [
+          11,
+          15
+        ]
+      }
+    ],
+    "name": "Relic Entertainment"
+  }
+]
+
+[132114752465715587]:	DEBUG -	[
+  {
+    "id": 377,
+    "developed": [
+      {
+        "id": 293,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 310,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 633,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 635,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 863,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 864,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 865,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 866,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 867,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 868,
+        "genres": [
+          11,
+          12,
+          13,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 869,
+        "genres": [
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "id": 1318,
+        "genres": [
+          11,
+          12,
+          15,
+          16,
+          24
+        ]
+      },
+      {
+        "id": 2152,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 3083,
+        "genres": [
+          15
+        ]
+      },
+      {
+        "id": 3271,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 3272,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 4228,
+        "genres": [
+          13,
+          15,
+          16,
+          31
+        ]
+      },
+      {
+        "id": 5894,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 6038,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 8714,
+        "genres": [
+          15
+        ]
+      },
+      {
+        "id": 9021,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 9022,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 9197,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 10502,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 10743,
+        "genres": [
+          13,
+          15
+        ]
+      },
+      {
+        "id": 10831,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 10919,
+        "genres": [
+          12,
+          14,
+          15,
+          16,
+          24
+        ]
+      },
+      {
+        "id": 15819,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 19130,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      19335,
+      {
+        "id": 27820,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 37060,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 52159,
+        "genres": [
+          16
+        ]
+      },
+      {
+        "id": 53610,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 76420,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 86268,
+        "genres": [
+          13,
+          16
+        ]
+      },
+      {
+        "id": 110871,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 113374,
+        "genres": [
+          15,
+          16
+        ]
+      }
+    ],
+    "name": "Firaxis Games"
+  }
+]
+
+[132114752467649603]:	DEBUG -	[
+  {
+    "id": 377,
+    "developed": [
+      {
+        "id": 293,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 310,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 633,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 635,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 863,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 864,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 865,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 866,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 867,
+        "genres": [
+          11,
+          15
+        ]
+      },
+      {
+        "id": 868,
+        "genres": [
+          11,
+          12,
+          13,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 869,
+        "genres": [
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "id": 1318,
+        "genres": [
+          11,
+          12,
+          15,
+          16,
+          24
+        ]
+      },
+      {
+        "id": 2152,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 3083,
+        "genres": [
+          15
+        ]
+      },
+      {
+        "id": 3271,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 3272,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 4228,
+        "genres": [
+          13,
+          15,
+          16,
+          31
+        ]
+      },
+      {
+        "id": 5894,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 6038,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 8714,
+        "genres": [
+          15
+        ]
+      },
+      {
+        "id": 9021,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 9022,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 9197,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 10502,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 10743,
+        "genres": [
+          13,
+          15
+        ]
+      },
+      {
+        "id": 10831,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 10919,
+        "genres": [
+          12,
+          14,
+          15,
+          16,
+          24
+        ]
+      },
+      {
+        "id": 15819,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 19130,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      19335,
+      {
+        "id": 27820,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 37060,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 52159,
+        "genres": [
+          16
+        ]
+      },
+      {
+        "id": 53610,
+        "genres": [
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "id": 76420,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 86268,
+        "genres": [
+          13,
+          16
+        ]
+      },
+      {
+        "id": 110871,
+        "genres": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 113374,
+        "genres": [
+          15,
+          16
+        ]
+      }
+    ],
+    "name": "Firaxis Games"
+  }
+]
+
+[132114752467649603]:	ERROR -	Error converting value 19335 to type 'GameStudioScorer.IGDB.Game'. Path '[0].developed[29]', line 231, position 11.. Occurred for Firaxis Games
+
+[132114752467805278]:	CRITICAL -	   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type)
+   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 42
+   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, String savedName, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 102
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 203
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 91
+
+[132114752481522700]:	DEBUG -	[]
+
+[132114752483321715]:	DEBUG -	[]
+
+[132114752483321715]:	ERROR -	Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index. Occurred for Sir-Tech
+
+[132114752483478112]:	CRITICAL -	   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 48
+   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, String savedName, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 102
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 203
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 91
+
+[132114752485935055]:	ERROR -	Index was outside the bounds of the array.. Occurred for Wargaming Seattle
+
+[132114752486085413]:	CRITICAL -	   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 92
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 44
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 87
+
+[132114752511460173]:	DEBUG -	[]
+
+[132114752513335660]:	DEBUG -	[
+  {
+    "id": 90,
+    "developed": [
+      {
+        "id": 913,
+        "genres": [
+          14
+        ]
+      },
+      {
+        "id": 914,
+        "genres": [
+          14
+        ]
+      },
+      {
+        "id": 915,
+        "genres": [
+          14
+        ]
+      },
+      {
+        "id": 2033,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 2629,
+        "genres": [
+          7
+        ]
+      },
+      {
+        "id": 2669,
+        "genres": [
+          7
+        ]
+      },
+      {
+        "id": 2671,
+        "genres": [
+          7,
+          13
+        ]
+      },
+      {
+        "id": 2672,
+        "genres": [
+          7
+        ]
+      },
+      {
+        "id": 2673,
+        "genres": [
+          7
+        ]
+      },
+      {
+        "id": 2674,
+        "genres": [
+          7
+        ]
+      },
+      {
+        "id": 2675,
+        "genres": [
+          7
+        ]
+      },
+      {
+        "id": 2678,
+        "genres": [
+          7
+        ]
+      },
+      {
+        "id": 2698,
+        "genres": [
+          10,
+          12,
+          14,
+          31
+        ]
+      },
+      {
+        "id": 2699,
+        "genres": [
+          14
+        ]
+      },
+      {
+        "id": 2700,
+        "genres": [
+          14
+        ]
+      },
+      {
+        "id": 3603,
+        "genres": [
+          25,
+          31
+        ]
+      },
+      {
+        "id": 3939,
+        "genres": [
+          31
+        ]
+      },
+      {
+        "id": 6204,
+        "genres": [
+          10,
+          14
+        ]
+      },
+      {
+        "id": 6692,
+        "genres": [
+          14
+        ]
+      },
+      {
+        "id": 7219,
+        "genres": [
+          14,
+          31
+        ]
+      },
+      {
+        "id": 8084,
+        "genres": [
+          8
+        ]
+      },
+      {
+        "id": 15547,
+        "genres": [
+          5
+        ]
+      },
+      {
+        "id": 43395,
+        "genres": [
+          14
+        ]
+      }
+    ],
+    "name": "Neversoft Entertainment"
+  }
+]
+
+[132114753159818299]:	DEBUG -	[
+  {
+    "id": 2162,
+    "developed": [
+      {
+        "id": 2943,
+        "genres": [
+          8,
+          9,
+          14,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 4820,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 4821,
+        "genres": [
+          8,
+          31
+        ]
+      },
+      {
+        "id": 5033,
+        "genres": [
+          9,
+          14,
+          15,
+          31
+        ]
+      },
+      {
+        "id": 8806,
+        "genres": [
+          8,
+          9
+        ]
+      },
+      {
+        "id": 8807,
+        "genres": [
+          9
+        ]
+      },
+      {
+        "id": 8808,
+        "genres": [
+          8,
+          9,
+          14,
+          30
+        ]
+      },
+      {
+        "id": 18264,
+        "genres": [
+          11,
+          12,
+          15,
+          32
+        ]
+      }
+    ],
+    "name": "5th Cell"
+  }
+]
+
