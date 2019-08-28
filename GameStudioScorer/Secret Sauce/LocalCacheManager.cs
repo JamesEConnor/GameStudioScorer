@@ -2,6 +2,7 @@
 using System.Text;
 using GameStudioScorer.IGDB;
 using GameStudioScorer.Extensions;
+using System;
 
 namespace GameStudioScorer
 {
@@ -78,11 +79,11 @@ namespace GameStudioScorer
 			//Read the contents and create the new value for the Studio.
 			string[] contents = File.ReadAllLines("cache.csv");
 
-			string newValue = 		si.id.Replace(",", "-")		+ "," +
-			                        si.alias.Replace(",", "-") 	+ "," +
-									si.employeeCount 			+ "," +
-									si.GameYears.GetString() 	+ "," +
-									si.GenreScore 				+ "," +
+			string newValue = 		si.id.Replace(",", "-")					+ "," +
+			                        si.alias.Replace(",", "-").ToLower() 	+ "," +
+									si.employeeCount 						+ "," +
+									si.GameYears.GetString() 				+ "," +
+									si.GenreScore 							+ "," +
 									si.ReviewScore;
 
 			string toAdd = "";

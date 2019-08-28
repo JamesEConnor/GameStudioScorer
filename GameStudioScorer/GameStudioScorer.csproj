@@ -96,6 +96,7 @@
     <Compile Include="Web Interfacers\IGDBResources.cs" />
     <Compile Include="Secret Sauce\LRegression.cs" />
     <Compile Include="Utils\Options.cs" />
+    <Compile Include="Utils\Logger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

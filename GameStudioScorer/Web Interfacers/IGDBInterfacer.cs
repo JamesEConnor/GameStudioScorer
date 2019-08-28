@@ -8,6 +8,8 @@ using Newtonsoft.Json.Linq;
 using System;
 using GameStudioScorer.Crunch;
 using System.Configuration;
+using GameStudioScorer.Utils;
+using System.Text.RegularExpressions;
 
 namespace GameStudioScorer.IGDB
 {
@@ -35,17 +37,32 @@ namespace GameStudioScorer.IGDB
 				   .body("fields name,id,developed.genres,published.genres; where name ~*\"" + name.ToLower() + "\";")
 				   .asString();
 
+			//Handle an edge case where an ID from IGDB is not formatted into a Game JSON object.
+			string regex = Regex.Replace(company_response.Body, "\\s+", "");
+			MatchCollection collection = Regex.Matches(regex, "(?<=},)\\d+");
+			foreach (Match match in collection)
+				company_response.Body = company_response.Body.Replace(match.Value, "{\n\"id\": " + match.Value + ",\n\"genres\": []\n}");
+
+			//DEBUGGING
+			Logger.Log(company_response.Body, Logger.LogLevel.DEBUG, false);
+
 			//Deserializes the response from Json to a list of companies.
 			List<Company> list = (List<Company>)JsonConvert.DeserializeObject(company_response.Body, typeof(List<Company>));
 
 			//Get all of the available genres, changes them to values between 0 and 6, and stores them.
 			List<int> genres = new List<int>();
-			foreach (Game g in list[0].developed)
-				if(g.genres != null)
-					genres.Add(EvaluateGenres(g.genres));
-			foreach (Game g in list[0].published)
-				if(g.genres != null)
-					genres.Add(EvaluateGenres(g.genres));
+
+			//Developed Games
+			if(list[0].developed != null)
+				foreach (Game g in list[0].developed)
+					if(g.genres != null)
+						genres.Add(EvaluateGenres(g.genres));
+
+			//Published Games
+			if(list[0].published != null)
+				foreach (Game g in list[0].published)
+					if(g.genres != null)
+						genres.Add(EvaluateGenres(g.genres));
 
 			return genres.ToArray();
 		}

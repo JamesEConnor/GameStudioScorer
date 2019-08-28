@@ -7,6 +7,7 @@ using CommandLine;
 using GameStudioScorer.Crunch;
 using GameStudioScorer.Extensions;
 using GameStudioScorer.Regression;
+using GameStudioScorer.Utils;
 
 namespace GameStudioScorer
 {
@@ -19,7 +20,7 @@ namespace GameStudioScorer
 		//Copy them from the GAME_STUDIOS array. They *must* be in both.
 		//This will cause them to ignore any cached values and forcibly recalculate
 		//a score. This is good if they're outdated.
-		public static string[] DEBUG_MODE = { };
+		public static string[] DEBUG_MODE = { "Revolution Software", "Insomniac Games", "Black Isle Studios", "Zachtronics" };
 
 		//'p' = Print. This will simply print the values. No logistic regression applied.
 		//'s' = Save. This will perform the same operations as print, but save them to a file.
@@ -98,7 +99,8 @@ namespace GameStudioScorer
 				}
 				catch(Exception e)
 				{
-					Console.WriteLine("ERROR: " + e.Message + ". Occurred during \"" + studio + "\"");
+					Logger.Log(e.Message + ". Occurred for " + studio, Logger.LogLevel.ERROR, true);
+					Logger.Log(e.StackTrace, Logger.LogLevel.CRITICAL, false);
 				}
 			}
 

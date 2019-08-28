@@ -87,10 +87,21 @@ namespace GameStudioScorer.Giantbomb
 			//Deserialize the result from XML.
 			Companies[] companies = XmlHandler.DeserializeCompanies(text);
 
+			int lowestDistance = int.MaxValue;
+			int lowestIndex = 0;
+			for (int a = 0; a < companies.Length; a++)
+			{
+				int diff = Extensions.Extensions.LevenshteinDistance(name, companies[a].name);
+				if (diff < lowestDistance)
+				{
+					lowestDistance = diff;
+					lowestIndex = a;
+				}
+			}
 
 			//A request to the Giantbomb API for the studio's specifics.
 			url = "https://www.giantbomb.com/api/company/" +
-				companies[0].guid +
+				companies[lowestIndex].guid +
 				"/?api_key=" +
 				API_KEY;
 

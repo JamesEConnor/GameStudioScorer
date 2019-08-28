@@ -20,9 +20,28 @@ namespace GameStudioScorer.Wiki
 		{
 			Dictionary<string, string> result = new Dictionary<string, string>();
 
+			string[] lines;
+
+			//Keeps track of whether the program was redirected.
+			bool redirect;
+
 			//Get the raw text for the page, and go through each line.
-			string html = GetHTMLCode("https://en.wikipedia.org/wiki/" + topic + "?action=raw");
-			string[] lines = html.Split('\n');
+			do
+			{
+				redirect = false;
+
+				string html = GetHTMLCode("https://en.wikipedia.org/wiki/" + topic + "?action=raw");
+				lines = html.Split('\n');
+
+				//Handle Wikipedia topic redirect.
+				if (lines[0].StartsWith("#redirect", StringComparison.CurrentCultureIgnoreCase))
+				{
+					topic = lines[0].Substring(12, lines[0].Length - 2);
+					redirect = true;
+				}
+			} while (redirect);
+
+
 			foreach (string str in lines)
 			{
 				//If it starts with a '|', it's part of the sidebar. If it contains '='
