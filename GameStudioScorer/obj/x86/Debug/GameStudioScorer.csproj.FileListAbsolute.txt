@@ -18,3 +18,14 @@ C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Mi
 C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\System.Net.Http.Extensions.xml
 C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\obj\x86\Debug\GameStudioScorer.csproj.GameStudioScorer.exe.config
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Accord.dll.config
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Accord.dll
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Accord.Math.Core.dll
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Accord.Math.dll
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Accord.Statistics.dll
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\CommandLine.dll
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\CommandLine.xml
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Accord.xml
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Accord.Math.Core.xml
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Accord.Math.xml
+C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\Accord.Statistics.xml

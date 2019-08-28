@@ -13,7 +13,7 @@ namespace GameStudioScorer
 	class MainClass
 	{
 		//The Game Studios to get a score for.
-		public static string[] GAME_STUDIOS = { "Rockstar Games" };
+		public static string[] GAME_STUDIOS = {  };
 
 		//Should any of the Game Studios be used in Debug Mode?
 		//Copy them from the GAME_STUDIOS array. They *must* be in both.
@@ -37,7 +37,9 @@ namespace GameStudioScorer
 			   options.RegressionType == 's' ||
 			   options.RegressionType == 'm')
 			{
-				List<KeyValuePair<string, float[]>> scores = GetScores(GAME_STUDIOS);
+				string[] lines = File.ReadAllLines("Logistic Regression Model/sets/" + options.setName + ".txt");
+
+				List<KeyValuePair<string, float[]>> scores = GetScores(lines[0].Split(new string[] { ", " }, StringSplitOptions.None));
 
 				//Print the values out.
 				if (options.RegressionType == 'p')
@@ -50,8 +52,11 @@ namespace GameStudioScorer
 				}
 				else if (options.RegressionType == 's')
 				{
+					//Get the scores for the second line of the set.
+					List<KeyValuePair<string, float[]>> noCrunchScores = GetScores(lines[1].Split(new string[] { ", " }, StringSplitOptions.None));
+
 					//Save data to file.
-					LRegression.SaveToDataFile(scores, options.fileName);
+					LRegression.SaveToDataFile(scores, noCrunchScores, options.fileName);
 				}
 				else if (options.RegressionType == 'm')
 				{
@@ -75,19 +80,26 @@ namespace GameStudioScorer
 			Dictionary<string, float[]> dict = new Dictionary<string, float[]>();
 			foreach (string studio in studios)
 			{
-				//Gets a StudioInfo object, containing all sorts of goodies.
-				StudioInfo si = Giantbomb.GiantBombInterfacer.GetStudio(studio, DEBUG_MODE.Contains(studio));
+				try
+				{
+					//Gets a StudioInfo object, containing all sorts of goodies.
+					StudioInfo si = Giantbomb.GiantBombInterfacer.GetStudio(studio, DEBUG_MODE.Contains(studio));
 
-				//TODO Eventually need to make this use logarithmic regression
-				//Add the different values to the dictionary.
-				dict.Add(studio, new float[]{ 
-					si.CrunchOvertimeScore, si.GenreScore, si.ReviewScore
-				});
+					//TODO Eventually need to make this use logarithmic regression
+					//Add the different values to the dictionary.
+					dict.Add(studio, new float[]{
+						si.CrunchOvertimeScore, si.GenreScore, si.ReviewScore
+					});
 
-				//If we force-calculated new values or if it doesn't already exist,
-				//cache the Studio.
-				if (DEBUG_MODE.Contains(studio) || LocalCacheManager.GetCachedInfo(studio).id == "-1")
-					LocalCacheManager.SaveCachedInfo(si);
+					//If we force-calculated new values or if it doesn't already exist,
+					//cache the Studio.
+					if (DEBUG_MODE.Contains(studio) || LocalCacheManager.GetCachedInfo(studio).id == "-1")
+						LocalCacheManager.SaveCachedInfo(si);
+				}
+				catch(Exception e)
+				{
+					Console.WriteLine("ERROR: " + e.Message + ". Occurred during \"" + studio + "\"");
+				}
 			}
 
 			//Order things so it looks nice.

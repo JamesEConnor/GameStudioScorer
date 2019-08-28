@@ -12,24 +12,25 @@ namespace GameStudioScorer.Regression
 		/// <summary>
 		/// Saves scores to a data file for Regression training.
 		/// </summary>
-		/// <param name="scores">The scores calculated by MainClass.GetScores().</param>
+		/// <param name="crunchScores">The scores of studios that crunch calculated by MainClass.GetScores().</param>
+		/// <param name="noCrunchScores">The scores of studios that don't crunch calculated by MainClass.GetScores().</param>
 		/// <param name="saveTo">The name of the file to save the data to.</param>
-		public static void SaveToDataFile(List<KeyValuePair<string, float[]>> scores, string saveTo)
+		public static void SaveToDataFile(List<KeyValuePair<string, float[]>> crunchScores, List<KeyValuePair<string, float[]>> noCrunchScores, string saveTo)
 		{
 			//Create the file if it doesn't exist.
-			if (!File.Exists("Logistic Regression Model/data.txt"))
+			if (!File.Exists("Logistic Regression Model/data/" + saveTo + ".txt"))
 			{
-				FileStream fs = File.Create("Logistic Regression Model/data.txt");
+				FileStream fs = File.Create("Logistic Regression Model/data/" + saveTo + ".txt");
 				fs.Close();
 				fs.Dispose();
 			}
 
 			//Setup
-			string[] lines = File.ReadAllLines("Logistic Regression Model/data/" + saveTo);
-			StreamWriter writer = new StreamWriter("Logistic Regression Model/data/" + saveTo);
+			string[] lines = File.ReadAllLines("Logistic Regression Model/data/" + saveTo + ".txt");
+			StreamWriter writer = new StreamWriter("Logistic Regression Model/data/" + saveTo + ".txt");
 
 			//Loop through and make sure the scores haven't already been recorded.
-			foreach (KeyValuePair<string, float[]> studio in scores)
+			foreach (KeyValuePair<string, float[]> studio in crunchScores)
 			{
 				bool canWrite = true;
 				foreach (string line in lines)
@@ -37,7 +38,18 @@ namespace GameStudioScorer.Regression
 						canWrite = false;
 
 				if(canWrite)
-					writer.WriteLine(studio.Key + ":" + studio.Value[0] + "-" + studio.Value[1] + "-" + studio.Value[2]);
+					writer.WriteLine(studio.Key + ":" + studio.Value[0] + "-" + studio.Value[1] + "-" + studio.Value[2] + ":1");
+			}
+
+			foreach (KeyValuePair<string, float[]> studio in noCrunchScores)
+			{
+				bool canWrite = true;
+				foreach (string line in lines)
+					if (line.Split(':')[0] == studio.Key)
+						canWrite = false;
+
+				if (canWrite)
+					writer.WriteLine(studio.Key + ":" + studio.Value[0] + "-" + studio.Value[1] + "-" + studio.Value[2] + ":0");
 			}
 
 			//Clean up
