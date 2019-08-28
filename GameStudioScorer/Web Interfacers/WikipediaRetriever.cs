@@ -51,7 +51,9 @@ namespace GameStudioScorer.Wiki
 					//Split between the equal sign and add the new information.
 					string val = str.Remove(0, 2);
 					string[] keyval = val.Split(new string[] { " = " }, 2, StringSplitOptions.None);
-					result.Add(keyval[0], keyval[1]);
+
+					if(!result.ContainsKey(keyval[0]))
+						result.Add(keyval[0], keyval[1]);
 				}
 			}
 

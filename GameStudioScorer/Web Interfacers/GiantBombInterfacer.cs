@@ -78,6 +78,8 @@ namespace GameStudioScorer.Giantbomb
 		/// <param name="name">Name.</param>
 		public static string[] GetGBInfo(string name)
 		{
+			name = name.Replace("(company)", "");
+
 			//A request to the Giantbomb API to search for the studio.
 			string url = "https://www.giantbomb.com/api/companies/?api_key=" +
 				API_KEY + "&filter=name:" + Uri.EscapeDataString(name);
