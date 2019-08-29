@@ -50,7 +50,7 @@ namespace GameStudioScorer.IGDB
 			List<int> genres = new List<int>();
 
 			if (list.Count <= 0)
-				throw new Exception("No studios under the name \"" + name + "\" found in IGDB!");
+				return null;
 
 			//Developed Games
 			if(list[0].developed != null)

@@ -38,9 +38,11 @@ namespace GameStudioScorer.Wiki
 				if (lines[0].StartsWith("#redirect", StringComparison.CurrentCultureIgnoreCase))
 				{
 					Logger.Log(lines[0] + " = " + lines[0].Length, Logger.LogLevel.DEBUG, true);
-					topic = lines[0].Replace("#redirect", "")
-					                .TrimStart(new char[] { ' ' })
-					                .Substring(2, lines[0].Length - 2);
+					topic = Regex.Replace(lines[0], "#redirect", "", RegexOptions.IgnoreCase)
+					                .Trim();
+					topic = topic.Substring(2, topic.Length - 4);
+
+					Logger.Log("Redirect, new topic: " + topic, Logger.LogLevel.DEBUG, true);
 					redirect = true;
 				}
 			} while (redirect);

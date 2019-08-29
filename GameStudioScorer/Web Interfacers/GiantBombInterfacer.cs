@@ -7,6 +7,7 @@ using System.Net;
 using System.Xml;
 using System.Collections.Generic;
 using System.Configuration;
+using GameStudioScorer.Utils;
 
 namespace GameStudioScorer.Giantbomb
 {
@@ -163,7 +164,6 @@ namespace GameStudioScorer.Giantbomb
 			//Deserialize the result from XML.
 			Games[] games = XmlHandler.DeserializeGames(text);
 
-
 			//Get all games and add them, taking care to not repeat any.
 			List<string> usedGames = new List<string>();
 			List<string> result = new List<string>();
@@ -180,6 +180,9 @@ namespace GameStudioScorer.Giantbomb
 					usedGames.Add(games[a].name);
 				}
 			}
+
+			Logger.Log("Games length for " + name + ": " + result.Count, Logger.LogLevel.DEBUG, true);
+
 			result.Add(company.guid);
 
 			if (company.name.EndsWith(".", StringComparison.CurrentCulture))

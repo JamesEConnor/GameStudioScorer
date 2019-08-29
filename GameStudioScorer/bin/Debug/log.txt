@@ -2,218 +2,206 @@
 
 --------------------------------------------------------------------
 
-[8/28/2019 4:59:13 PM]:	ERROR -	Index and length must refer to a location within the string.
-Parameter name: length. Occurred for Platinum Games
+[8/29/2019 8:40:10 AM]:	DEBUG -	#REDIRECT [[PlatinumGames]] = 27
 
-[8/28/2019 4:59:13 PM]:	CRITICAL -	   at System.String.Substring(Int32 startIndex, Int32 length)
-   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 39
-   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 104
-   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 42
-   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
+[8/29/2019 8:40:10 AM]:	DEBUG -	Redirect, new topic: platinumgames]]
 
-[8/28/2019 4:59:17 PM]:	ERROR -	Unexpected character encountered while parsing value: {. Path '[0].developed[178].id', line 1243, position 7.. Occurred for Capcom
+[8/29/2019 8:40:10 AM]:	ERROR -	The remote server returned an error: (400) Bad Request.. Occurred for Platinum Games
 
-[8/28/2019 4:59:17 PM]:	CRITICAL -	   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
-   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
-   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
-   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
-   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
-   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type)
-   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 47
-   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, String savedName, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 102
-   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 208
-   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 103
-
-[8/28/2019 5:00:04 PM]:	ERROR -	Index was out of range. Must be non-negative and less than the size of the collection.
-Parameter name: index. Occurred for Sir-Tech
-
-[8/28/2019 5:00:04 PM]:	CRITICAL -	   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
-   at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 53
-   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, String savedName, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 102
-   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 208
-   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 103
-
-[8/28/2019 5:00:04 PM]:	ERROR -	Index was outside the bounds of the array.. Occurred for Wargaming Seattle
-
-[8/28/2019 5:00:04 PM]:	CRITICAL -	   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 105
-   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 44
-   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
-
-[8/28/2019 5:01:20 PM]:	ERROR -	Index was outside the bounds of the array.. Occurred for EA DICE
-
-[8/28/2019 5:01:20 PM]:	CRITICAL -	   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 105
-   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 44
-   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
-
-[8/28/2019 5:02:01 PM]:	ERROR -	Index was outside the bounds of the array.. Occurred for Fullbright (company)
-
-[8/28/2019 5:02:01 PM]:	CRITICAL -	   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 105
-   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 44
-   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
-
-[8/28/2019 5:02:02 PM]:	ERROR -	Index was out of range. Must be non-negative and less than the size of the collection.
-Parameter name: index. Occurred for LucasArts
-
-[8/28/2019 5:02:02 PM]:	CRITICAL -	   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
-   at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 53
-   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, String savedName, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 102
-   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 208
-   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 103
-
-[8/28/2019 5:04:27 PM]:	ERROR -	Index was out of range. Must be non-negative and less than the size of the collection.
-Parameter name: index. Occurred for Razorworks
-
-[8/28/2019 5:04:27 PM]:	CRITICAL -	   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
-   at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 53
-   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, String savedName, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 102
-   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 208
-   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 103
-
-[8/28/2019 5:05:23 PM]:	ERROR -	Unexpected character encountered while parsing value: {. Path '[0].developed[6].id', line 46, position 7.. Occurred for Nintendo
-
-[8/28/2019 5:05:23 PM]:	CRITICAL -	   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
-   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
-   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
-   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
-   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
-   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
-   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type)
-   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 47
-   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, String savedName, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 102
-   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 208
-   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 103
-
-[8/28/2019 5:06:15 PM]:	ERROR -	Index was out of range. Must be non-negative and less than the size of the collection.
-Parameter name: index. Occurred for Fireproof Studios
-
-[8/28/2019 5:06:15 PM]:	CRITICAL -	   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
-   at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 53
-   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, String savedName, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 102
-   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 208
-   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 103
-
-
-
---------------------------------------------------------------------
-
-[8/28/2019 6:05:34 PM]:	DEBUG -	#REDIRECT [[PlatinumGames]] = 27
-
-[8/28/2019 6:05:34 PM]:	ERROR -	Index and length must refer to a location within the string.
-Parameter name: length. Occurred for Platinum Games
-
-[8/28/2019 6:05:34 PM]:	CRITICAL -	   at System.String.Substring(Int32 startIndex, Int32 length)
-   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 41
-   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 104
-   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 42
-   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
-
-[8/28/2019 6:07:24 PM]:	ERROR -	Length cannot be less than zero.
-Parameter name: length. Occurred for Revolution Software
-
-[8/28/2019 6:07:24 PM]:	CRITICAL -	   at System.String.Substring(Int32 startIndex, Int32 length)
-   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 180
-   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 44
-   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
-
-[8/28/2019 6:08:17 PM]:	DEBUG -	#redirect[[Wargame]] = 20
-
-[8/28/2019 6:08:17 PM]:	ERROR -	Index and length must refer to a location within the string.
-Parameter name: length. Occurred for Wargaming
-
-[8/28/2019 6:08:17 PM]:	CRITICAL -	   at System.String.Substring(Int32 startIndex, Int32 length)
-   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 41
-   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 104
-   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 42
-   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
-
-[8/28/2019 6:09:54 PM]:	ERROR -	Index was outside the bounds of the array.. Occurred for Warthog Games
-
-[8/28/2019 6:09:54 PM]:	CRITICAL -	   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 105
-   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 44
-   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
-
-
-
---------------------------------------------------------------------
-
-[8/28/2019 6:34:11 PM]:	DEBUG -	#REDIRECT [[PlatinumGames]] = 27
-
-[8/28/2019 6:34:11 PM]:	ERROR -	The remote server returned an error: (400) Bad Request.. Occurred for Platinum Games
-
-[8/28/2019 6:34:11 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
-   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 76
+[8/29/2019 8:40:10 AM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 79
    at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 34
    at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 104
-   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 42
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 43
    at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
 
-[8/28/2019 6:34:12 PM]:	ERROR -	Length cannot be less than zero.
+[8/29/2019 8:40:11 AM]:	DEBUG -	Games length for Revolution Software: 10
+
+[8/29/2019 8:40:11 AM]:	ERROR -	Length cannot be less than zero.
 Parameter name: length. Occurred for Revolution Software
 
-[8/28/2019 6:34:12 PM]:	CRITICAL -	   at System.String.Substring(Int32 startIndex, Int32 length)
-   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 186
-   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 44
+[8/29/2019 8:40:11 AM]:	CRITICAL -	   at System.String.Substring(Int32 startIndex, Int32 length)
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 189
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 45
    at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
 
-[8/28/2019 6:34:12 PM]:	DEBUG -	#redirect[[Wargame]] = 20
+[8/29/2019 8:40:11 AM]:	DEBUG -	#redirect[[Wargame]] = 20
 
-[8/28/2019 6:34:12 PM]:	ERROR -	Index and length must refer to a location within the string.
-Parameter name: length. Occurred for Wargaming
+[8/29/2019 8:40:11 AM]:	DEBUG -	Redirect, new topic: wargame]]
 
-[8/28/2019 6:34:12 PM]:	CRITICAL -	   at System.String.Substring(Int32 startIndex, Int32 length)
-   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 41
+[8/29/2019 8:40:11 AM]:	ERROR -	The remote server returned an error: (400) Bad Request.. Occurred for Wargaming
+
+[8/29/2019 8:40:11 AM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 79
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 34
    at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 104
-   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 42
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 43
    at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
 
-[8/28/2019 6:35:21 PM]:	ERROR -	Index was outside the bounds of the array.. Occurred for Warthog Games
+[8/29/2019 8:40:12 AM]:	DEBUG -	Games length for Insomniac Games: 32
 
-[8/28/2019 6:35:21 PM]:	CRITICAL -	   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 111
-   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 44
+
+
+--------------------------------------------------------------------
+
+[8/29/2019 8:41:38 AM]:	DEBUG -	#REDIRECT [[PlatinumGames]] = 27
+
+[8/29/2019 8:41:38 AM]:	DEBUG -	Redirect, new topic: platinumgames]]
+
+[8/29/2019 8:41:38 AM]:	ERROR -	The remote server returned an error: (400) Bad Request.. Occurred for Platinum Games
+
+[8/29/2019 8:41:38 AM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 79
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 34
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 104
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 43
    at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
 
-[8/28/2019 6:36:47 PM]:	ERROR -	No studios under the name "Razorworks" found in IGDB!. Occurred for Razorworks
+[8/29/2019 8:41:39 AM]:	DEBUG -	Games length for Revolution Software: 10
 
-[8/28/2019 6:36:47 PM]:	CRITICAL -	   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 53
-   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, String savedName, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 102
+[8/29/2019 8:41:40 AM]:	ERROR -	Length cannot be less than zero.
+Parameter name: length. Occurred for Revolution Software
+
+[8/29/2019 8:41:40 AM]:	CRITICAL -	   at System.String.Substring(Int32 startIndex, Int32 length)
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 189
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 45
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
+
+[8/29/2019 8:41:40 AM]:	DEBUG -	#redirect[[Wargame]] = 20
+
+[8/29/2019 8:41:40 AM]:	DEBUG -	Redirect, new topic: wargame]]
+
+[8/29/2019 8:41:40 AM]:	ERROR -	The remote server returned an error: (400) Bad Request.. Occurred for Wargaming
+
+[8/29/2019 8:41:40 AM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 79
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 34
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 104
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 43
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
+
+
+
+--------------------------------------------------------------------
+
+[8/29/2019 8:42:11 AM]:	DEBUG -	#REDIRECT [[PlatinumGames]] = 27
+
+[8/29/2019 8:42:11 AM]:	DEBUG -	Redirect, new topic: platinumgames]]
+
+[8/29/2019 8:42:11 AM]:	ERROR -	The remote server returned an error: (400) Bad Request.. Occurred for Platinum Games
+
+[8/29/2019 8:42:11 AM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 80
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 34
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 104
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 43
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
+
+
+
+--------------------------------------------------------------------
+
+[8/29/2019 8:43:01 AM]:	DEBUG -	#REDIRECT [[PlatinumGames]] = 27
+
+[8/29/2019 8:43:01 AM]:	DEBUG -	Redirect, new topic: platinumgames]]
+
+[8/29/2019 8:43:01 AM]:	ERROR -	The remote server returned an error: (400) Bad Request.. Occurred for Platinum Games
+
+[8/29/2019 8:43:02 AM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 80
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 34
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 104
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 43
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
+
+
+
+--------------------------------------------------------------------
+
+[8/29/2019 8:43:43 AM]:	DEBUG -	#REDIRECT [[PlatinumGames]] = 27
+
+[8/29/2019 8:43:43 AM]:	DEBUG -	Redirect, new topic: platinumgames
+
+[8/29/2019 8:43:43 AM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Platinum Games
+
+[8/29/2019 8:43:43 AM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 79
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 34
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 104
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 43
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
+
+[8/29/2019 8:43:44 AM]:	DEBUG -	Games length for Revolution Software: 10
+
+[8/29/2019 8:43:44 AM]:	ERROR -	Length cannot be less than zero.
+Parameter name: length. Occurred for Revolution Software
+
+[8/29/2019 8:43:44 AM]:	CRITICAL -	   at System.String.Substring(Int32 startIndex, Int32 length)
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 189
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 45
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
+
+[8/29/2019 8:43:44 AM]:	DEBUG -	#redirect[[Wargame]] = 20
+
+[8/29/2019 8:43:44 AM]:	DEBUG -	Redirect, new topic: wargame
+
+[8/29/2019 8:43:45 AM]:	DEBUG -	Games length for Wargaming: 17
+
+
+
+--------------------------------------------------------------------
+
+[8/29/2019 8:45:02 AM]:	DEBUG -	#REDIRECT [[PlatinumGames]] = 27
+
+[8/29/2019 8:45:02 AM]:	DEBUG -	Redirect, new topic: PlatinumGames
+
+[8/29/2019 8:45:03 AM]:	ERROR -	Index was outside the bounds of the array.. Occurred for Platinum Games
+
+[8/29/2019 8:45:03 AM]:	CRITICAL -	   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 112
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 45
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
+
+[8/29/2019 8:45:04 AM]:	DEBUG -	Games length for Revolution Software: 10
+
+[8/29/2019 8:45:04 AM]:	ERROR -	Length cannot be less than zero.
+Parameter name: length. Occurred for Revolution Software
+
+[8/29/2019 8:45:04 AM]:	CRITICAL -	   at System.String.Substring(Int32 startIndex, Int32 length)
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 189
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 45
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
+
+[8/29/2019 8:45:04 AM]:	DEBUG -	#redirect[[Wargame]] = 20
+
+[8/29/2019 8:45:04 AM]:	DEBUG -	Redirect, new topic: Wargame
+
+[8/29/2019 8:45:05 AM]:	DEBUG -	Games length for Wargaming: 17
+
+[8/29/2019 8:46:37 AM]:	DEBUG -	Games length for Insomniac Games: 32
+
+[8/29/2019 8:47:22 AM]:	ERROR -	Index was outside the bounds of the array.. Occurred for Warthog Games
+
+[8/29/2019 8:47:22 AM]:	CRITICAL -	   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 112
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 45
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 99
+
+[8/29/2019 8:47:23 AM]:	DEBUG -	Games length for Black Isle Studios: 13
+
+[8/29/2019 8:48:13 AM]:	DEBUG -	Games length for Razorworks: 8
+
+[8/29/2019 8:48:13 AM]:	ERROR -	Object reference not set to an instance of an object.. Occurred for Razorworks
+
+[8/29/2019 8:48:13 AM]:	CRITICAL -	   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, String savedName, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 105
    at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 211
    at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 103
 
-[8/28/2019 6:38:45 PM]:	ERROR -	No studios under the name "Fireproof Studios" found in IGDB!. Occurred for Fireproof Studios
+[8/29/2019 8:48:14 AM]:	DEBUG -	Games length for Zachtronics: 9
 
-[8/28/2019 6:38:45 PM]:	CRITICAL -	   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 53
-   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, String savedName, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 102
+[8/29/2019 8:49:06 AM]:	DEBUG -	Games length for Fireproof Studios: 10
+
+[8/29/2019 8:49:06 AM]:	ERROR -	Object reference not set to an instance of an object.. Occurred for Fireproof Studios
+
+[8/29/2019 8:49:06 AM]:	CRITICAL -	   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, String savedName, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 105
    at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 211
    at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 103
 

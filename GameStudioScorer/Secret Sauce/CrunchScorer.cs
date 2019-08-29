@@ -82,10 +82,11 @@ namespace GameStudioScorer.Crunch
 					return si.GenreScore;
 			}
 
-			try
+			//Get the genres of all released games from IGDB and return their average as the score.
+			int[] genres = IGDBInterfacer.GetGenres(savedName);
+
+			if (genres != null && genres.Length > 0)
 			{
-				//Get the genres of all released games from IGDB and return their average as the score.
-				int[] genres = IGDBInterfacer.GetGenres(savedName);
 				float total = 0.0f;
 				foreach (int i in genres)
 					total += GENRE_SCORES[i];
@@ -95,11 +96,11 @@ namespace GameStudioScorer.Crunch
 
 				return total / genres.Length;
 			}
-			catch(Exception e)
+			else
 			{
 				//If an exception was thrown, it means the savedName doesn't exist on IGDB.
 				//Then we use the provided name.
-				int[] genres = IGDBInterfacer.GetGenres(name);
+				genres = IGDBInterfacer.GetGenres(name);
 				float total = 0.0f;
 				foreach (int i in genres)
 					total += GENRE_SCORES[i];
