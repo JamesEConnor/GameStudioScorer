@@ -7,6 +7,9 @@ namespace GameStudioScorer
 	//Command line arguments parsed using the CommandLineParser library.
 	public class Options
 	{
+		[Option("studio", Required = false, Default="null", HelpText="A specific studio to calculate for. Should only be used with 'p' and 'm' regression modes.")]
+		public string studio { get; set; }
+
 		[Option("regression", Required = false, HelpText = "The action to take in terms of regression learning. The default is 'm' for model.", Default='m')]
 		public char RegressionType { get; set; }
 

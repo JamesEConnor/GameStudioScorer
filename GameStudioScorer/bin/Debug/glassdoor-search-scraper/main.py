@@ -157,6 +157,9 @@ def main():
     end = time.time()
     logger.info(f'Finished in {end - start} seconds')
 
+    browser.close()
+    browser.quit()
+
     print(link_url);
     exit(0)
 

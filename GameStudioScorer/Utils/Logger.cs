@@ -16,6 +16,9 @@ namespace GameStudioScorer.Utils
 
 		const string LOG_FILE = "log.txt";
 
+		//Adds dashed line to file to split program runs.
+		static bool firstLog = true;
+
 		/// <summary>
 		/// Logs a message to the Console and to the Log file.
 		/// </summary>
@@ -54,6 +57,13 @@ namespace GameStudioScorer.Utils
 				//Write to Console
 				Console.WriteLine(line);
 				Console.ForegroundColor = ConsoleColor.Gray;
+			}
+
+			//Add a dashed line to split up program runs in the log file.
+			if (firstLog)
+			{
+				firstLog = false;
+				line = "\n\n--------------------------------------------------------------------\n\n" + line;
 			}
 
 			//Write to Log File

@@ -78,7 +78,7 @@ namespace GameStudioScorer.Giantbomb
 		/// <param name="name">Name.</param>
 		public static string[] GetGBInfo(string name)
 		{
-			name = name.Replace("(company)", "");
+			name = name.Replace("(company)", "").TrimEnd(new char[] { ' ' });
 
 			//A request to the Giantbomb API to search for the studio.
 			string url = "https://www.giantbomb.com/api/companies/?api_key=" +
@@ -89,7 +89,13 @@ namespace GameStudioScorer.Giantbomb
 			//Deserialize the result from XML.
 			Companies[] companies = XmlHandler.DeserializeCompanies(text);
 
-			int lowestDistance = int.MaxValue;
+			//Handles an edge case where the first company listed in the Giantbomb response is not the actual company.
+			int index = 0;
+			for (int a = 0; a < companies.Length; a++)
+				if (companies[a].name.ToLower() == name.ToLower())
+					index = a;
+
+			/*int lowestDistance = int.MaxValue;
 			int lowestIndex = 0;
 			for (int a = 0; a < companies.Length; a++)
 			{
@@ -99,11 +105,11 @@ namespace GameStudioScorer.Giantbomb
 					lowestDistance = diff;
 					lowestIndex = a;
 				}
-			}
+			}*/
 
 			//A request to the Giantbomb API for the studio's specifics.
 			url = "https://www.giantbomb.com/api/company/" +
-				companies[lowestIndex].guid +
+				companies[index].guid +
 				"/?api_key=" +
 				API_KEY;
 
@@ -128,13 +134,26 @@ namespace GameStudioScorer.Giantbomb
 					url += id + "|";
 					addedIDs.Add(id);
 				}
+
+				//Giantbomb API restricts requests to 100 results.
+				if (addedIDs.Count >= 100)
+					break;
 			}
-			foreach (string id in company.published_games)
+
+			//Giantbomb API resitricts requests to 100 results.
+			if (addedIDs.Count < 100)
 			{
-				if (!addedIDs.Contains(id))
+				foreach (string id in company.published_games)
 				{
-					url += id + "|";
-					addedIDs.Add(id);
+					if (!addedIDs.Contains(id))
+					{
+						url += id + "|";
+						addedIDs.Add(id);
+					}
+
+					//Giantbomb API restricts requests to 100 results.
+					if (addedIDs.Count >= 100)
+						break;
 				}
 			}
 			url = url.Substring(0, url.Length - 1);
@@ -162,7 +181,11 @@ namespace GameStudioScorer.Giantbomb
 				}
 			}
 			result.Add(company.guid);
-			result.Add(company.name);
+
+			if (company.name.EndsWith(".", StringComparison.CurrentCulture))
+				result.Add(company.name.Substring(0, company.name.LastIndexOf(",", StringComparison.CurrentCulture)));
+			else
+				result.Add(company.name);
 
 			//Return the game information, including the years, ID, and studio name.
 			return result.ToArray();

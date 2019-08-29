@@ -4,6 +4,7 @@ using System.Net;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
+using GameStudioScorer.Utils;
 
 namespace GameStudioScorer.Wiki
 {
@@ -36,7 +37,10 @@ namespace GameStudioScorer.Wiki
 				//Handle Wikipedia topic redirect.
 				if (lines[0].StartsWith("#redirect", StringComparison.CurrentCultureIgnoreCase))
 				{
-					topic = lines[0].Substring(12, lines[0].Length - 2);
+					Logger.Log(lines[0] + " = " + lines[0].Length, Logger.LogLevel.DEBUG, true);
+					topic = lines[0].Replace("#redirect", "")
+					                .TrimStart(new char[] { ' ' })
+					                .Substring(2, lines[0].Length - 2);
 					redirect = true;
 				}
 			} while (redirect);

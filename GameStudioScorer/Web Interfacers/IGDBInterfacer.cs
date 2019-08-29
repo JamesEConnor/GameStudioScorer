@@ -38,19 +38,19 @@ namespace GameStudioScorer.IGDB
 				   .asString();
 
 			//Handle an edge case where an ID from IGDB is not formatted into a Game JSON object.
-			string regex = Regex.Replace(company_response.Body, "\\s+", "");
-			MatchCollection collection = Regex.Matches(regex, "(?<=},)\\d+");
+			string regex = Regex.Replace(company_response.Body, "\\s{2,}", "");
+			MatchCollection collection = Regex.Matches(regex, "(?<=},)\\d+,?");
 			foreach (Match match in collection)
-				company_response.Body = company_response.Body.Replace(match.Value, "{\n\"id\": " + match.Value + ",\n\"genres\": []\n}");
-
-			//DEBUGGING
-			Logger.Log(company_response.Body, Logger.LogLevel.DEBUG, false);
+				company_response.Body = company_response.Body.Replace(match.Value, "");
 
 			//Deserializes the response from Json to a list of companies.
 			List<Company> list = (List<Company>)JsonConvert.DeserializeObject(company_response.Body, typeof(List<Company>));
 
 			//Get all of the available genres, changes them to values between 0 and 6, and stores them.
 			List<int> genres = new List<int>();
+
+			if (list.Count <= 0)
+				throw new Exception("No studios under the name \"" + name + "\" found in IGDB!");
 
 			//Developed Games
 			if(list[0].developed != null)

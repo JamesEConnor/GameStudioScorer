@@ -7,16 +7,16 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs">
     <Files>
-      <File FileName="GameStudioScorer\Program.cs" Line="102" Column="55" />
-      <File FileName="GameStudioScorer\Secret Sauce\LRegression.cs" Line="23" Column="65" />
-      <File FileName="GameStudioScorer\Utils\Options.cs" Line="16" Column="55" />
-      <File FileName="GameStudioScorer\Utils\Extensions.cs" Line="123" Column="1" />
-      <File FileName="GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs" Line="82" Column="67" />
-      <File FileName="GameStudioScorer\Web Interfacers\WikipediaRetriever.cs" Line="24" Column="33" />
-      <File FileName="GameStudioScorer\Utils\Logger.cs" Line="14" Column="12" />
-      <File FileName="GameStudioScorer\Web Interfacers\IGDBInterfacer.cs" Line="45" Column="4" />
+      <File FileName="GameStudioScorer\Program.cs" Line="45" Column="119" />
+      <File FileName="GameStudioScorer\Secret Sauce\LRegression.cs" Line="1" Column="1" />
+      <File FileName="GameStudioScorer\Utils\Options.cs" Line="10" Column="155" />
+      <File FileName="GameStudioScorer\Utils\Extensions.cs" Line="1" Column="1" />
+      <File FileName="GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs" Line="112" Column="20" />
+      <File FileName="GameStudioScorer\Web Interfacers\WikipediaRetriever.cs" Line="41" Column="22" />
+      <File FileName="GameStudioScorer\Utils\Logger.cs" Line="66" Column="89" />
+      <File FileName="GameStudioScorer\Web Interfacers\IGDBInterfacer.cs" Line="53" Column="54" />
       <File FileName="GameStudioScorer\Utils\MathUtils.cs" Line="110" Column="4" />
-      <File FileName="GameStudioScorer\Secret Sauce\CrunchScorer.cs" Line="94" Column="17" />
+      <File FileName="GameStudioScorer\Secret Sauce\CrunchScorer.cs" Line="98" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
 </Properties>

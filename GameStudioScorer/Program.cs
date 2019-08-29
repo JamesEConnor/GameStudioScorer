@@ -31,16 +31,28 @@ namespace GameStudioScorer
 		{
 			//Uses the CommandLineParser library to parse command line arguments.
 			Options options = new Options();
-			Parser.Default.ParseArguments<Options>(args)
-				  .WithParsed(o => options = o);
+			if (Parser.Default.ParseArguments<Options>(args)
+				  .WithParsed(o => options = o).Tag == ParserResultType.NotParsed)
+				return;
+
+
 
 			if (options.RegressionType == 'p' ||
 			   options.RegressionType == 's' ||
 			   options.RegressionType == 'm')
 			{
+				if (!File.Exists("Logistic Regression Model/sets/" + options.setName + ".txt") && options.studio == "null")
+					throw new Exception("Set file must exist or studio must be specified. Consult the ReadMe for more information.");
+				   
 				string[] lines = File.ReadAllLines("Logistic Regression Model/sets/" + options.setName + ".txt");
 
-				List<KeyValuePair<string, float[]>> scores = GetScores(lines[0].Split(new string[] { ", " }, StringSplitOptions.None));
+				List<KeyValuePair<string, float[]>> scores;
+
+				//If studio is specified, use it. Otherwise, load from the file.
+				if (options.studio == "null")
+					scores = GetScores(lines[0].Split(new string[] { ", " }, StringSplitOptions.None));
+				else
+					scores = GetScores(new string[] { options.studio });
 
 				//Print the values out.
 				if (options.RegressionType == 'p')
