@@ -3,6 +3,7 @@ using System.Text;
 using GameStudioScorer.IGDB;
 using GameStudioScorer.Extensions;
 using System;
+using GameStudioScorer.Utils;
 
 namespace GameStudioScorer
 {
@@ -16,7 +17,11 @@ namespace GameStudioScorer
 		public static StudioInfo GetCachedInfo(string studioName)
 		{
 			//Formatting stuff so it can be stored in a CSV properly.
-			studioName = studioName.Replace(",", "-").ToLower();
+			string formattedStudioName = studioName.Replace(",", "-").ToLower();
+
+			//Logging
+			if (Logger.VERBOSE)
+				Logger.Log(studioName + " formatted to: " + formattedStudioName);
 
 			if (File.Exists("cache.csv"))
 			{
@@ -29,7 +34,7 @@ namespace GameStudioScorer
 				{
 					try
 					{
-						if (l.Split(',')[1] == studioName)
+						if (l.Split(',')[1] == formattedStudioName)
 							line = l;
 					}
 					catch
@@ -42,14 +47,19 @@ namespace GameStudioScorer
 				{
 					//Split and get the info.
 					string[] split = line.Split(',');
+
+					if (Logger.VERBOSE)
+						Logger.Log(formattedStudioName + " (" + studioName + ") found in LocalCache.");
+
 					return new StudioInfo
 					{
 						id = split[0],
-						name = split[1],
+						name = studioName,
 						employeeCount = int.Parse(split[2]),
 						GameYears = Extensions.Extensions.LoadGameYears(split[3]),
 						GenreScore = float.Parse(split[4]),
-						ReviewScore = float.Parse(split[5])
+						ReviewScore = float.Parse(split[5]),
+						aliases = Extensions.Extensions.CreateAliasList(studioName)
 					};
 				}
 			}
@@ -74,13 +84,13 @@ namespace GameStudioScorer
 		/// </summary>
 		/// <returns><c>true</c> if the cached info was saved successfully, <c>false</c> otherwise.</returns>
 		/// <param name="si">Si.</param>
-		public static bool SaveCachedInfo(StudioInfo si)
+		public static bool SaveCachedInfo(string saveAs, StudioInfo si)
 		{
 			//Read the contents and create the new value for the Studio.
 			string[] contents = File.ReadAllLines("cache.csv");
 
 			string newValue = 		si.id.Replace(",", "-")					+ "," +
-			                        si.alias.Replace(",", "-").ToLower() 	+ "," +
+			                        saveAs.Replace(',', '-').ToLower()		+ "," +
 									si.employeeCount 						+ "," +
 									si.GameYears.GetString() 				+ "," +
 									si.GenreScore 							+ "," +

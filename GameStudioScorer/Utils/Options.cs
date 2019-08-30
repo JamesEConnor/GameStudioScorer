@@ -21,5 +21,8 @@ namespace GameStudioScorer
 
 		[Option("set", Required = false, HelpText = "The name of the set to load Studio names from. The first line is studios that crunch, the second is studios that don't.", Default = "set-0")]
 		public string setName { get; set; }
+
+		[Option("verbose")]
+		public bool verbose { get; set; }
 	}
 }

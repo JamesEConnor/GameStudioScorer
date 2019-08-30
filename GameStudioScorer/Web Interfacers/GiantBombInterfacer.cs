@@ -8,6 +8,7 @@ using System.Xml;
 using System.Collections.Generic;
 using System.Configuration;
 using GameStudioScorer.Utils;
+using System.Text.RegularExpressions;
 
 namespace GameStudioScorer.Giantbomb
 {
@@ -28,21 +29,30 @@ namespace GameStudioScorer.Giantbomb
 			if (API_KEY == "")
 				API_KEY = ConfigurationManager.AppSettings["GBkey"];
 
+			//Logging
+			if (Logger.VERBOSE)
+				Logger.Log(name + " in DEBUG mode: [" + DEBUG.ToString().ToUpper() + "]");
+
 			//Check to see if there's a cached value, unless we are forcibly retrieving
 			//new values.
 			StudioInfo si;
 			if (!DEBUG)
 			{
 				si = LocalCacheManager.GetCachedInfo(name);
-				si.alias = name;
+				si.aliases = Extensions.Extensions.CreateAliasList(name);
+
 				if (si.id != "-1")
 					return si;
 			}
 
 			//Get the employee count from Wikipedia.
 			int employeeCount = Extensions.Extensions.GetEmployeeCount(name);
+
+			//Get an alternative topic from Wikipedia.
+			string wikiName = Wiki.WikipediaRetriever.GetActualTopic(name);
+
 			//Get information on release dates of games.
-			string[] gameInfo = GetGBInfo(name);
+			string[] gameInfo = GetGBInfo(name, wikiName);
 
 			//Change the game info into years, excluding the last two entries,
 			//since they're different pieces of information.
@@ -64,7 +74,7 @@ namespace GameStudioScorer.Giantbomb
 				name = gameInfo[gameInfo.Length - 1],
 				employeeCount = employeeCount,
 				GameYears = gameYears,
-				alias = name
+				aliases = Extensions.Extensions.CreateAliasList(name)
 			};
 
 			//LocalCacheManager.SaveCachedInfo(si);
@@ -77,7 +87,7 @@ namespace GameStudioScorer.Giantbomb
 		/// <returns>An array of studio information, where [[0] - [n - 2]) are years
 		/// of game releases, [n - 2] is the studio's ID, and [n - 1] is the name.</returns>
 		/// <param name="name">Name.</param>
-		public static string[] GetGBInfo(string name)
+		public static string[] GetGBInfo(string name, string wikiName)
 		{
 			name = name.Replace("(company)", "").TrimEnd(new char[] { ' ' });
 
@@ -90,11 +100,37 @@ namespace GameStudioScorer.Giantbomb
 			//Deserialize the result from XML.
 			Companies[] companies = XmlHandler.DeserializeCompanies(text);
 
+			//If no companies were returned, try some aliases.
+			if (companies.Length == 0)
+			{
+				List<string> aliases = Extensions.Extensions.CreateAliasList(name);
+				aliases.Insert(0, wikiName);
+
+				foreach (string alias in aliases)
+				{
+					url = "https://www.giantbomb.com/api/companies/?api_key=" +
+						API_KEY + "&filter=name:" + Uri.EscapeDataString(alias);
+
+					//Make a web request and get the result.
+					text = MakeRequest(url);
+					//Deserialize the result from XML.
+					companies = XmlHandler.DeserializeCompanies(text);
+
+					if (companies.Length > 0)
+						break;
+				}
+
+				if (companies.Length == 0)
+					throw new Exception(name + " doesn't exist on Giantbomb!");
+			}
+
 			//Handles an edge case where the first company listed in the Giantbomb response is not the actual company.
 			int index = 0;
 			for (int a = 0; a < companies.Length; a++)
+			{
 				if (companies[a].name.ToLower() == name.ToLower())
 					index = a;
+			}
 
 			/*int lowestDistance = int.MaxValue;
 			int lowestIndex = 0;
@@ -181,14 +217,9 @@ namespace GameStudioScorer.Giantbomb
 				}
 			}
 
-			Logger.Log("Games length for " + name + ": " + result.Count, Logger.LogLevel.DEBUG, true);
-
 			result.Add(company.guid);
 
-			if (company.name.EndsWith(".", StringComparison.CurrentCulture))
-				result.Add(company.name.Substring(0, company.name.LastIndexOf(",", StringComparison.CurrentCulture)));
-			else
-				result.Add(company.name);
+			result.Add(company.name.removeCompanySuffix());
 
 			//Return the game information, including the years, ID, and studio name.
 			return result.ToArray();
@@ -219,6 +250,24 @@ namespace GameStudioScorer.Giantbomb
 
 			response.Close();
 			response.Dispose();
+
+			//Check status code
+			XmlDocument doc = new XmlDocument();
+			doc.LoadXml(text);
+			string status = doc.SelectSingleNode("response/status_code").Value;
+
+			//Error handling
+			switch (status)
+			{
+				case "100": //Invalid API Key
+					throw new Exception("Giantbomb Error: Invalid API key. Make sure you have it setup correctly in the app.config file. (Check the ReadMe for more info)");
+				case "101": //Object not found
+					throw new Exception("Giantbomb Error: Object not found. Something went wrong.");
+				case "102": //Error in URL format
+					throw new Exception("Giantbomb Error: Error in URL format. Check your spelling.");
+				case "104": //Filter error
+					throw new Exception("Giantbomb Error: Filter error. Check your spelling.");
+			}
 
 			//Return result
 			return text;

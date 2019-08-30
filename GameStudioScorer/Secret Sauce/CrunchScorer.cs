@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using GameStudioScorer.Utils;
+using GameStudioScorer.Extensions;
 using GameStudioScorer.IGDB;
 using System.Diagnostics;
 using System.IO;
@@ -32,6 +33,10 @@ namespace GameStudioScorer.Crunch
 		/// <param name="employeeCount">How many employees work at the studio.</param>
 		public static float GetCrunchOvertimeScore(int[] years, int employeeCount)
 		{
+			//Log information
+			if (Logger.VERBOSE)
+				Logger.Log("Finding crunch over time score.");
+
 			//This is to counteract a bug, where the games that haven't been released yet
 			//are returned as '1's.
 			List<float> yearsF = new List<float>();
@@ -69,21 +74,27 @@ namespace GameStudioScorer.Crunch
 		/// </summary>
 		/// <returns>The genre score.</returns>
 		/// <param name="name">The name of the Studio, which is passed to the IGDB API.</param>
-		/// <param name="savedName">What it's saved as in the cache. This may differ from the name retrieved from the Giantbomb API.</param>
+		/// <param name="aliases">What it's saved as in the cache. This may differ from the name retrieved from the Giantbomb API.</param>
 		/// <param name="DEBUG">Is this Studio in Debug mode?</param>
-		public static float GetGenreScore(string name, string savedName, bool DEBUG)
+		public static float GetGenreScore(string name, List<string> aliases, bool DEBUG)
 		{
+			//Log information
+			if (Logger.VERBOSE)
+				Logger.Log("Finding genre score.");
+
 			//If the Studio is not being forced to recaculate values, check if it
 			//exists in the cache. If it does, return the values. Otherwise, continue.
 			if (!DEBUG)
 			{
-				StudioInfo si = LocalCacheManager.GetCachedInfo(savedName);
+				StudioInfo si = LocalCacheManager.GetCachedInfo(aliases[0]);
 				if (si.id != "-1" && !DEBUG)
 					return si.GenreScore;
 			}
 
 			//Get the genres of all released games from IGDB and return their average as the score.
-			int[] genres = IGDBInterfacer.GetGenres(savedName);
+			int[] genres = IGDBInterfacer.GetGenres(name);
+
+			Logger.Log(name + ", " + aliases.ToArray().GetString(), Logger.LogLevel.DEBUG, true);
 
 			if (genres != null && genres.Length > 0)
 			{
@@ -98,14 +109,25 @@ namespace GameStudioScorer.Crunch
 			}
 			else
 			{
-				//If an exception was thrown, it means the savedName doesn't exist on IGDB.
-				//Then we use the provided name.
-				genres = IGDBInterfacer.GetGenres(name);
-				float total = 0.0f;
-				foreach (int i in genres)
-					total += GENRE_SCORES[i];
+				//If an exception was thrown, it means the name doesn't exist on IGDB.
+				//Then we use the different aliases.
 
-				return total / genres.Length;
+				foreach (string alias in aliases)
+				{
+					genres = IGDBInterfacer.GetGenres(alias);
+
+					//This means this name doesn't exist either, so try the next one.
+					if (genres == null || genres.Length <= 0)
+						continue;
+
+					float total = 0.0f;
+					foreach (int i in genres)
+						total += GENRE_SCORES[i];
+
+					return total / genres.Length;
+				}
+
+				throw new Exception(name + " doesn't exist in IGDB!");
 			}
 		}
 
@@ -116,6 +138,10 @@ namespace GameStudioScorer.Crunch
 		/// <param name="studioName">The name of the Studio.</param>
 		public static float GetReviewScore(string studioName)
 		{
+			//Log information
+			if(Logger.VERBOSE)
+				Logger.Log("Finding review score.");
+
 			//Create the absolute paths to the two scrapers.
 			string searchScraper = AppDomain.CurrentDomain.BaseDirectory + SEARCH_SCRAPER_PATH;
 			string reviewScraper = AppDomain.CurrentDomain.BaseDirectory + REVIEW_SCRAPER_PATH;
@@ -132,9 +158,15 @@ namespace GameStudioScorer.Crunch
 				Arguments = searchCommand,
 				UseShellExecute = false,
 				RedirectStandardOutput = true,
+				CreateNoWindow = true
 			};
 
 			p.Start();
+
+
+			//Logging
+			if (Logger.VERBOSE)
+				Logger.Log("Glassdoor search scraper started... (This may take up to a minute)");
 
 			while (!p.HasExited) {}
 
@@ -151,7 +183,6 @@ namespace GameStudioScorer.Crunch
 			//Execute the review scraper. This takes the link from the search scraper and
 			//gets the overall ratings from the top 40 reviews, or as many reviews that exist.
 			string reviewCommand = "main.py --headless --url \"" + currentLine + "\" -f reviews.csv --limit 40 --browser \"" + ConfigurationManager.AppSettings["browser"] + "\"";
-			Console.WriteLine(reviewCommand);
 
 			p = new Process();
 			p.StartInfo = new ProcessStartInfo()
@@ -161,7 +192,12 @@ namespace GameStudioScorer.Crunch
 				Arguments = reviewCommand,
 				UseShellExecute = false,
 				RedirectStandardOutput = true,
+				CreateNoWindow = true
 			};
+
+			//Logging
+			if (Logger.VERBOSE)
+				Logger.Log("Glassdoor review scraper started... (This may take up to a minute)");
 
 			p.Start();
 

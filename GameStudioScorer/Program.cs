@@ -20,7 +20,7 @@ namespace GameStudioScorer
 		//Copy them from the GAME_STUDIOS array. They *must* be in both.
 		//This will cause them to ignore any cached values and forcibly recalculate
 		//a score. This is good if they're outdated.
-		public static string[] DEBUG_MODE = { "Revolution Software", "Insomniac Games", "Black Isle Studios", "Zachtronics" };
+		public static string[] DEBUG_MODE = { };
 
 		//'p' = Print. This will simply print the values. No logistic regression applied.
 		//'s' = Save. This will perform the same operations as print, but save them to a file.
@@ -35,6 +35,9 @@ namespace GameStudioScorer
 				  .WithParsed(o => options = o).Tag == ParserResultType.NotParsed)
 				return;
 
+			Logger.VERBOSE = options.verbose;
+			if (options.studio != "null")
+				options.studio = options.studio.Replace("_", " ");
 
 
 			if (options.RegressionType == 'p' ||
@@ -58,9 +61,10 @@ namespace GameStudioScorer
 				if (options.RegressionType == 'p')
 				{
 					//Print data.
+					Console.WriteLine("{0, -40}  {1, -15} {4, -8} {2, -15} {4, -10} {3, -15}\n", "STUDIO NAME", "CRUNCH/TIME SCORE", "GENRES SCORE", "REVIEW SCORE", " ");
 					foreach (KeyValuePair<string, float[]> s in scores)
 					{
-						Console.WriteLine("{0, -20}: {1, -5}, {2, 10}, {3, 25}", s.Key, s.Value[0], s.Value[1], s.Value[2]);
+						Console.WriteLine("{0, -40}: {1, -15} {4, -10} {2, -15} {4, -10} {3, -15}", s.Key, s.Value[0], s.Value[1], s.Value[2], ",");
 					}
 				}
 				else if (options.RegressionType == 's')
@@ -107,7 +111,7 @@ namespace GameStudioScorer
 					//If we force-calculated new values or if it doesn't already exist,
 					//cache the Studio.
 					if (DEBUG_MODE.Contains(studio) || LocalCacheManager.GetCachedInfo(studio).id == "-1")
-						LocalCacheManager.SaveCachedInfo(si);
+						LocalCacheManager.SaveCachedInfo(studio, si);
 				}
 				catch(Exception e)
 				{

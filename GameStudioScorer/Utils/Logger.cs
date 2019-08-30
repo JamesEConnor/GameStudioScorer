@@ -5,6 +5,8 @@ namespace GameStudioScorer.Utils
 {
 	public class Logger
 	{
+		public static bool VERBOSE = false;
+
 		public enum LogLevel
 		{
 			DEBUG,
@@ -50,7 +52,7 @@ namespace GameStudioScorer.Utils
 				}
 			}
 
-			string line = "[" + DateTime.Now + "]:\t" + level.ToString() + " -\t" + message + "\n";
+			string line = "[" + DateTime.Now + "]:\t" + level.ToString() + " -\t" + message;
 
 			if (toConsole)
 			{

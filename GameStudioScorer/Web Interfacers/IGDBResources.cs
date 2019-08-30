@@ -25,4 +25,23 @@ namespace GameStudioScorer.IGDB
 		public int id { get; set; }
 		public int[] genres { get; set; }
 	}
+
+	//A class representing a response from the API Status endpoint.
+	public class Status
+	{
+		public bool authorized { get; set; }
+		public string plan { get; set; }
+
+		public UsageReport[] usage_reports { get; set; }
+
+		public class UsageReport
+		{
+			public string metric { get; set; }
+			public string period { get; set; }
+			public DateTime period_start { get; set; }
+			public DateTime period_end { get; set; }
+			public int max_value { get; set; }
+			public int current_value { get; set; }
+		}
+	}
 }

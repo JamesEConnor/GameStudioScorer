@@ -9,6 +9,12 @@ namespace GameStudioScorer.Extensions
 	//Various extension methods.
 	public static class Extensions
 	{
+		//Used for removing company suffixes from names.
+		//https://en.wikipedia.org/wiki/List_of_legal_entity_types_by_country
+		static readonly string[] COMPANY_SUFFIXES = {
+			"lp", "llp", "lllp", "llc", "lc", "ltd", "co", "pllc", "corp", "pc", "cic", "plc", "cyf", "ccc", "inc", "ent", "ltd co", "coop", "gp"
+		};
+
 		/// <summary>
 		/// Turns an array into a string. Good for debugging.
 		/// </summary>
@@ -196,6 +202,63 @@ namespace GameStudioScorer.Extensions
 			}
 			// Step 7
 			return d[n, m];
+		}
+
+		/// <summary>
+		/// Removes the company suffix from a company name.
+		/// </summary>
+		/// <returns>The name, without a company suffix.</returns>
+		/// <param name="name">A company name.</param>
+		public static string removeCompanySuffix(this string name)
+		{
+			name = name.Trim();
+
+			//If the name is only one word, it doesn't have a company suffix.
+			if (!name.Contains(" "))
+				return name;
+
+			//Gets last 'word' in name, which could be a company suffix.
+			string suffix = name.Substring(name.LastIndexOf(' ') + 1);
+			suffix = suffix.Replace(".", "").Replace(",", "");
+
+			//Is the suffix a company suffix?
+			if (Array.IndexOf(COMPANY_SUFFIXES, suffix.ToLower()) > -1)
+				return name.Substring(0, name.LastIndexOf(' ')).TrimEnd(new char[] { ',' });
+
+			//If it's not a company suffix, return the name.
+			return name;
+		}
+
+		/// <summary>
+		/// Creates a list of possible alternate names for a company.
+		/// </summary>
+		/// <returns>A list of alternative studio names.</returns>
+		/// <param name="name">The name of the studio.</param>
+		public static List<string> CreateAliasList(string name)
+		{
+			List<string> result = new List<string>();
+			result.Add(name);
+
+			//Add name without "Games", to handle certain edge cases.
+			if (name.EndsWith("Games", StringComparison.CurrentCultureIgnoreCase))
+				result.Add(Regex.Replace(name, "Games", "", RegexOptions.IgnoreCase).Trim());
+			else
+				result.Add(name.Trim() + " Games");
+
+			//Add name without "Studios", to handle certain edge cases.
+			if(name.EndsWith("Studios", StringComparison.CurrentCultureIgnoreCase))
+				result.Add(Regex.Replace(name, "Studios", "", RegexOptions.IgnoreCase).Trim());
+			else
+				result.Add(name.Trim() + " Studios");
+
+			//Add name without "Studio", to handle certain edge cases.
+			if (name.EndsWith("Studio", StringComparison.CurrentCultureIgnoreCase))
+				result.Add(Regex.Replace(name, "Studio", "", RegexOptions.IgnoreCase).Trim());
+			else
+				result.Add(name.Trim() + " Studio");
+
+
+			return result;
 		}
 	}
 }

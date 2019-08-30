@@ -10,6 +10,7 @@ using GameStudioScorer.Crunch;
 using System.Configuration;
 using GameStudioScorer.Utils;
 using System.Text.RegularExpressions;
+using System.IO;
 
 namespace GameStudioScorer.IGDB
 {
@@ -28,6 +29,9 @@ namespace GameStudioScorer.IGDB
 			//Gets the API Key from the app.config file.
 			if (API_KEY == "")
 				API_KEY = ConfigurationManager.AppSettings["IGDBkey"];
+
+			//Check rate limiting
+			CheckStatus();
 
 			//Make a request to the IGDB company endpoint. This will search for the company
 			//and return the name, id, and genres of it's games.
@@ -143,6 +147,66 @@ namespace GameStudioScorer.IGDB
 			32	Indie						(Adventure) *Note: While I don't like this classification, it was the best one I could come up with.
 			33	Arcade						(Action)
 		 */
+
+		/// <summary>
+		/// Checks the IGDB API status for this API key.
+		/// </summary>
+		public static void CheckStatus()
+		{
+			//Due to rate limiting, only one request can be made each minute.
+			bool canCheck = true;
+
+			//Check for the status.txt file, which holds the time the last check was made.
+			if (!File.Exists("status.txt"))
+			{
+				FileStream fs = File.Create("status.txt");
+				fs.Close();
+				fs.Dispose();
+			}
+			else
+			{
+				string[] lines = File.ReadAllLines("status.txt");
+
+				DateTime lastCheck = DateTime.Parse(lines[0]);
+
+				if (lastCheck.AddMinutes(1.0) > DateTime.Now)
+					canCheck = false;
+			}
+
+			if (canCheck)
+			{
+				//Make a request to the IGDB company endpoint. This will search for the company
+				//and return the name, id, and genres of it's games.
+				HttpResponse<string> status_response = Unirest.get("https://api-v3.igdb.com/api_status")
+					   .header("user-key", API_KEY)
+					   .header("Accept", "application/json")
+					   .asString();
+
+				//Deserializes the response from Json to a status report.
+				Status status = (Status)JsonConvert.DeserializeObject(status_response.Body, typeof(Status));
+
+				//Log/Throw Exception, depending on usage rate
+				if (status.usage_reports[0].current_value >= status.usage_reports[0].max_value)
+					throw new Exception("IGDB API limit exceeded. This API key has exceeded the " + status.usage_reports[0].max_value + " limit, which will be reset at " + status.usage_reports[0].period_end);
+
+				if (Logger.VERBOSE)
+					Logger.Log("Limit not exceeded. API Key has made " + status.usage_reports[0].current_value + "/" + status.usage_reports[0].max_value + " requests. This will be reset at " + status.usage_reports[0].period_end, Logger.LogLevel.WARNING, true);
+
+
+				//Write time for future use.
+				FileStream fs = File.OpenWrite("status.txt");
+				StreamWriter writer = new StreamWriter(fs);
+
+				writer.WriteLine(DateTime.Now);
+
+				//Clean up
+				writer.Close();
+				writer.Dispose();
+
+				fs.Close();
+				fs.Dispose();
+			}
+		}
 	}
 }
 
@@ -161,7 +225,7 @@ namespace GameStudioScorer
 		//The number of employees according to data scraped from Wikipedia.
 		public int employeeCount;
 		//The name of the studio, as stored in the local cache.
-		public string alias;
+		public List<string> aliases;
 
 		//The crunch over time score.
 		public float CrunchOvertimeScore
@@ -208,7 +272,7 @@ namespace GameStudioScorer
 				//we have to make sure we don't already have a cached value before
 				//calling it.
 				if (!_setGenreScore)
-					_GenreScore = CrunchScorer.GetGenreScore(name, alias, MainClass.DEBUG_MODE.Contains(alias));
+					_GenreScore = CrunchScorer.GetGenreScore(name, aliases, MainClass.DEBUG_MODE.Intersect(aliases).Any());
 
 				//At this point, one way or the other, the score has been set.
 				_setGenreScore = true;

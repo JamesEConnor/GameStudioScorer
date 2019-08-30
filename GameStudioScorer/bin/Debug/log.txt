@@ -205,3 +205,657 @@ Parameter name: length. Occurred for Revolution Software
    at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 211
    at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 103
 
+
+
+--------------------------------------------------------------------
+
+[8/30/2019 10:07:54 AM]:	DEBUG -	#REDIRECT [[PlatinumGames]] = 27
+
+[8/30/2019 10:07:54 AM]:	DEBUG -	Redirect, new topic: PlatinumGames
+
+[8/30/2019 10:07:56 AM]:	DEBUG -	Games length for Platinum Games: 1
+
+[8/30/2019 10:07:57 AM]:	ERROR -	Platinumware doesn't exist in IGDB!. Occurred for Platinum Games
+
+[8/30/2019 10:07:57 AM]:	CRITICAL -	   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, List`1 aliases, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 119
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 211
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 103
+
+[8/30/2019 10:07:58 AM]:	DEBUG -	Games length for Revolution Software: 10
+
+[8/30/2019 10:09:11 AM]:	DEBUG -	Games length for Insomniac Games: 32
+
+[8/30/2019 10:10:21 AM]:	DEBUG -	Games length for Warthog Games: 21
+
+[8/30/2019 10:10:21 AM]:	ERROR -	Warthog doesn't exist in IGDB!. Occurred for Warthog Games
+
+[8/30/2019 10:10:21 AM]:	CRITICAL -	   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, List`1 aliases, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 119
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 211
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 103
+
+[8/30/2019 10:10:24 AM]:	DEBUG -	Games length for Black Isle Studios: 13
+
+[8/30/2019 10:11:06 AM]:	DEBUG -	Games length for Razorworks: 8
+
+[8/30/2019 10:11:07 AM]:	ERROR -	Razorworks doesn't exist in IGDB!. Occurred for Razorworks
+
+[8/30/2019 10:11:07 AM]:	CRITICAL -	   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, List`1 aliases, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 119
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 211
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 103
+
+[8/30/2019 10:11:07 AM]:	DEBUG -	Games length for Zachtronics: 9
+
+[8/30/2019 10:11:54 AM]:	DEBUG -	Games length for Fireproof Studios: 10
+
+[8/30/2019 10:11:54 AM]:	ERROR -	Fireproof Studios doesn't exist in IGDB!. Occurred for Fireproof Studios
+
+[8/30/2019 10:11:54 AM]:	CRITICAL -	   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, List`1 aliases, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 119
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 211
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 103
+
+
+
+--------------------------------------------------------------------
+
+[8/30/2019 10:22:59 AM]:	DEBUG -	#REDIRECT [[PlatinumGames]] = 27
+
+[8/30/2019 10:22:59 AM]:	DEBUG -	Redirect, new topic: PlatinumGames
+
+[8/30/2019 10:23:00 AM]:	DEBUG -	Games length for Platinum Games: 1
+
+[8/30/2019 10:23:01 AM]:	DEBUG -	Platinumware, {Platinum Games|Platinum}
+
+[8/30/2019 10:23:02 AM]:	ERROR -	Platinumware doesn't exist in IGDB!. Occurred for Platinum Games
+
+[8/30/2019 10:23:02 AM]:	CRITICAL -	   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, List`1 aliases, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 122
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 211
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 103
+
+[8/30/2019 10:23:03 AM]:	DEBUG -	Games length for Revolution Software: 10
+
+[8/30/2019 10:23:03 AM]:	DEBUG -	Revolution Software, {Revolution Software}
+
+
+
+--------------------------------------------------------------------
+
+[8/30/2019 10:24:38 AM]:	DEBUG -	#REDIRECT [[PlatinumGames]] = 27
+
+[8/30/2019 10:24:38 AM]:	DEBUG -	Redirect, new topic: PlatinumGames
+
+[8/30/2019 10:24:39 AM]:	DEBUG -	Games length for Platinum Games: 1
+
+[8/30/2019 10:24:39 AM]:	DEBUG -	Platinumware, {Platinum Games|Platinum}
+
+[8/30/2019 10:25:24 AM]:	DEBUG -	Games length for Revolution Software: 10
+
+[8/30/2019 10:25:24 AM]:	DEBUG -	Revolution Software, {Revolution Software}
+
+[8/30/2019 10:26:20 AM]:	DEBUG -	Games length for Insomniac Games: 32
+
+[8/30/2019 10:26:20 AM]:	DEBUG -	Insomniac Games, {Insomniac Games|Insomniac}
+
+[8/30/2019 10:27:46 AM]:	DEBUG -	Games length for Warthog Games: 21
+
+[8/30/2019 10:27:46 AM]:	DEBUG -	Warthog, {Warthog Games|Warthog}
+
+[8/30/2019 10:28:32 AM]:	DEBUG -	Games length for Black Isle Studios: 13
+
+[8/30/2019 10:28:32 AM]:	DEBUG -	Black Isle Studios, {Black Isle Studios}
+
+[8/30/2019 10:29:17 AM]:	DEBUG -	Games length for Razorworks: 8
+
+[8/30/2019 10:29:18 AM]:	DEBUG -	Razorworks, {Razorworks}
+
+[8/30/2019 10:29:18 AM]:	ERROR -	Razorworks doesn't exist in IGDB!. Occurred for Razorworks
+
+[8/30/2019 10:29:18 AM]:	CRITICAL -	   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, List`1 aliases, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 122
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 211
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 103
+
+[8/30/2019 10:29:19 AM]:	DEBUG -	Games length for Zachtronics: 9
+
+[8/30/2019 10:29:19 AM]:	DEBUG -	Zachtronics Industries, {Zachtronics}
+
+[8/30/2019 10:30:05 AM]:	DEBUG -	#REDIRECT [[Fireproof Studios]] = 31
+
+[8/30/2019 10:30:05 AM]:	DEBUG -	Redirect, new topic: Fireproof Studios
+
+[8/30/2019 10:30:06 AM]:	DEBUG -	Games length for Fireproof Games: 6
+
+[8/30/2019 10:30:06 AM]:	DEBUG -	Fireproof Games, {Fireproof Games|Fireproof}
+
+
+
+--------------------------------------------------------------------
+
+[8/30/2019 10:38:46 AM]:	DEBUG -	#REDIRECT [[PlatinumGames]] = 27
+
+[8/30/2019 10:38:46 AM]:	DEBUG -	Redirect, new topic: PlatinumGames
+
+[8/30/2019 10:38:47 AM]:	DEBUG -	Games length for Platinum Games: 1
+
+[8/30/2019 10:38:47 AM]:	DEBUG -	Platinumware, {Platinum Games|Platinum}
+
+[8/30/2019 10:39:38 AM]:	DEBUG -	Games length for Revolution Software: 10
+
+[8/30/2019 10:39:38 AM]:	DEBUG -	Revolution Software, {Revolution Software}
+
+
+
+--------------------------------------------------------------------
+
+[8/30/2019 12:48:53 PM]:	DEBUG -	#REDIRECT [[PlatinumGames]] = 27
+
+[8/30/2019 12:48:53 PM]:	DEBUG -	Redirect, new topic: PlatinumGames
+
+[8/30/2019 12:48:56 PM]:	DEBUG -	Games length for Platinum Games: 1
+
+[8/30/2019 12:48:58 PM]:	DEBUG -	Platinumware, {Platinum Games|Platinum|Platinum Games Studios|Platinum Games Studio}
+
+
+
+--------------------------------------------------------------------
+
+[8/30/2019 12:49:57 PM]:	DEBUG -	Games length for PlatinumGames: 22
+
+[8/30/2019 12:49:57 PM]:	DEBUG -	PlatinumGames, {PlatinumGames|Platinum|PlatinumGames Studios|PlatinumGames Studio}
+
+[8/30/2019 12:49:58 PM]:	ERROR -	PlatinumGames doesn't exist in IGDB!. Occurred for PlatinumGames
+
+[8/30/2019 12:49:58 PM]:	CRITICAL -	   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, List`1 aliases, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 122
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 211
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 105
+
+
+
+--------------------------------------------------------------------
+
+[8/30/2019 12:51:23 PM]:	DEBUG -	#REDIRECT [[PlatinumGames]] = 27
+
+[8/30/2019 12:51:23 PM]:	DEBUG -	Redirect, new topic: PlatinumGames
+
+[8/30/2019 12:51:24 PM]:	DEBUG -	Games length for Platinum Games: 1
+
+[8/30/2019 12:51:25 PM]:	DEBUG -	Platinumware, {Platinum Games|Platinum|Platinum Games Studios|Platinum Games Studio}
+
+
+
+--------------------------------------------------------------------
+
+[8/30/2019 12:52:01 PM]:	DEBUG -	#REDIRECT [[PlatinumGames]] = 27
+
+[8/30/2019 12:52:01 PM]:	DEBUG -	Redirect, new topic: PlatinumGames
+
+[8/30/2019 12:52:02 PM]:	DEBUG -	Games length for Platinum Games: 1
+
+[8/30/2019 12:52:03 PM]:	DEBUG -	Platinumware, {Platinum Games|Platinum|Platinum Games Studios|Platinum Games Studio}
+
+
+
+--------------------------------------------------------------------
+
+[8/30/2019 12:58:05 PM]:	DEBUG -	#REDIRECT [[PlatinumGames]] = 27
+
+[8/30/2019 12:58:05 PM]:	DEBUG -	Redirect, new topic: PlatinumGames
+
+[8/30/2019 12:58:05 PM]:	DEBUG -	#REDIRECT [[PlatinumGames]] = 27
+
+[8/30/2019 12:58:05 PM]:	DEBUG -	Redirect, new topic: PlatinumGames
+
+[8/30/2019 12:58:06 PM]:	DEBUG -	Games length for Platinum Games: 22
+
+[8/30/2019 12:58:07 PM]:	DEBUG -	PlatinumGames, {Platinum Games|Platinum|Platinum Games Studios|Platinum Games Studio}
+
+
+
+--------------------------------------------------------------------
+
+[8/30/2019 1:01:49 PM]:	DEBUG -	Redirect, new topic: PlatinumGames
+
+[8/30/2019 1:01:51 PM]:	DEBUG -	PlatinumGames, {Platinum Games|Platinum|Platinum Games Studios|Platinum Games Studio}
+
+
+
+--------------------------------------------------------------------
+
+[8/30/2019 1:11:41 PM]:	DEBUG -	Redirect, new topic: PlatinumGames
+
+[8/30/2019 1:11:43 PM]:	DEBUG -	PlatinumGames, {Platinum Games|Platinum|Platinum Games Studios|Platinum Games Studio}
+
+
+
+--------------------------------------------------------------------
+
+[8/30/2019 1:18:11 PM]:	DEBUG -	Wikipedia redirect, new topic: PlatinumGames
+
+[8/30/2019 1:18:12 PM]:	INFO -	Finding crunch over time score.
+
+[8/30/2019 1:18:12 PM]:	INFO -	Finding genre score.
+
+[8/30/2019 1:18:13 PM]:	DEBUG -	PlatinumGames, {Platinum Games|Platinum|Platinum Games Studios|Platinum Games Studio}
+
+[8/30/2019 1:18:13 PM]:	INFO -	Finding review score.
+
+[8/30/2019 1:18:13 PM]:	INFO -	Glassdoor search scraper started.
+
+[8/30/2019 1:18:35 PM]:	INFO -	Glassdoor review scraper started.
+
+
+
+--------------------------------------------------------------------
+
+[8/30/2019 1:21:08 PM]:	INFO -	Platinum Games in DEBUG mode: [FALSE]
+[8/30/2019 1:21:11 PM]:	DEBUG -	Wikipedia redirect, new topic: PlatinumGames
+[8/30/2019 1:21:12 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:21:12 PM]:	INFO -	Finding genre score.
+[8/30/2019 1:21:13 PM]:	DEBUG -	PlatinumGames, {Platinum Games|Platinum|Platinum Games Studios|Platinum Games Studio}
+[8/30/2019 1:21:13 PM]:	INFO -	Finding review score.
+[8/30/2019 1:21:13 PM]:	INFO -	Glassdoor search scraper started.
+[8/30/2019 1:21:36 PM]:	INFO -	Glassdoor review scraper started.
+
+
+--------------------------------------------------------------------
+
+[8/30/2019 1:22:53 PM]:	INFO -	Platinum Games in DEBUG mode: [FALSE]
+[8/30/2019 1:22:53 PM]:	INFO -	Platinum Games formatted to: platinum games
+[8/30/2019 1:22:55 PM]:	DEBUG -	Wikipedia redirect, new topic: PlatinumGames
+[8/30/2019 1:22:57 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:22:57 PM]:	INFO -	Finding genre score.
+[8/30/2019 1:22:57 PM]:	INFO -	Platinum Games formatted to: platinum games
+[8/30/2019 1:22:58 PM]:	DEBUG -	PlatinumGames, {Platinum Games|Platinum|Platinum Games Studios|Platinum Games Studio}
+[8/30/2019 1:22:58 PM]:	INFO -	Finding review score.
+[8/30/2019 1:22:58 PM]:	INFO -	Glassdoor search scraper started.
+[8/30/2019 1:23:22 PM]:	INFO -	Glassdoor review scraper started.
+[8/30/2019 1:23:40 PM]:	INFO -	Platinum Games formatted to: platinum games
+
+
+--------------------------------------------------------------------
+
+[8/30/2019 1:24:04 PM]:	INFO -	Platinum Games in DEBUG mode: [FALSE]
+[8/30/2019 1:24:04 PM]:	INFO -	Platinum Games formatted to: platinum games
+[8/30/2019 1:24:04 PM]:	INFO -	platinum games (Platinum Games) found in LocalCache.
+[8/30/2019 1:24:04 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:24:04 PM]:	INFO -	Platinum Games formatted to: platinum games
+[8/30/2019 1:24:04 PM]:	INFO -	platinum games (Platinum Games) found in LocalCache.
+
+
+--------------------------------------------------------------------
+
+[8/30/2019 1:25:29 PM]:	INFO -	Rockstar Games in DEBUG mode: [FALSE]
+[8/30/2019 1:25:29 PM]:	INFO -	Rockstar Games formatted to: rockstar games
+[8/30/2019 1:25:29 PM]:	INFO -	rockstar games (Rockstar Games) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:25:29 PM]:	INFO -	Rockstar Games formatted to: rockstar games
+[8/30/2019 1:25:29 PM]:	INFO -	rockstar games (Rockstar Games) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	Bungie in DEBUG mode: [FALSE]
+[8/30/2019 1:25:29 PM]:	INFO -	Bungie formatted to: bungie
+[8/30/2019 1:25:29 PM]:	INFO -	bungie (Bungie) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:25:29 PM]:	INFO -	Bungie formatted to: bungie
+[8/30/2019 1:25:29 PM]:	INFO -	bungie (Bungie) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	Treyarch in DEBUG mode: [FALSE]
+[8/30/2019 1:25:29 PM]:	INFO -	Treyarch formatted to: treyarch
+[8/30/2019 1:25:29 PM]:	INFO -	treyarch (Treyarch) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:25:29 PM]:	INFO -	Treyarch formatted to: treyarch
+[8/30/2019 1:25:29 PM]:	INFO -	treyarch (Treyarch) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	Bethesda Game Studios in DEBUG mode: [FALSE]
+[8/30/2019 1:25:29 PM]:	INFO -	Bethesda Game Studios formatted to: bethesda game studios
+[8/30/2019 1:25:29 PM]:	INFO -	bethesda game studios (Bethesda Game Studios) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:25:29 PM]:	INFO -	Bethesda Game Studios formatted to: bethesda game studios
+[8/30/2019 1:25:29 PM]:	INFO -	bethesda game studios (Bethesda Game Studios) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	Platinum Games in DEBUG mode: [FALSE]
+[8/30/2019 1:25:29 PM]:	INFO -	Platinum Games formatted to: platinum games
+[8/30/2019 1:25:29 PM]:	INFO -	platinum games (Platinum Games) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:25:29 PM]:	INFO -	Platinum Games formatted to: platinum games
+[8/30/2019 1:25:29 PM]:	INFO -	platinum games (Platinum Games) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	FromSoftware in DEBUG mode: [FALSE]
+[8/30/2019 1:25:29 PM]:	INFO -	FromSoftware formatted to: fromsoftware
+[8/30/2019 1:25:29 PM]:	INFO -	fromsoftware (FromSoftware) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:25:29 PM]:	INFO -	FromSoftware formatted to: fromsoftware
+[8/30/2019 1:25:29 PM]:	INFO -	fromsoftware (FromSoftware) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	Capcom in DEBUG mode: [FALSE]
+[8/30/2019 1:25:29 PM]:	INFO -	Capcom formatted to: capcom
+[8/30/2019 1:25:29 PM]:	INFO -	capcom (Capcom) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:25:29 PM]:	INFO -	Capcom formatted to: capcom
+[8/30/2019 1:25:29 PM]:	INFO -	capcom (Capcom) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	CD Projekt in DEBUG mode: [FALSE]
+[8/30/2019 1:25:29 PM]:	INFO -	CD Projekt formatted to: cd projekt
+[8/30/2019 1:25:29 PM]:	INFO -	cd projekt (CD Projekt) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:25:29 PM]:	INFO -	CD Projekt formatted to: cd projekt
+[8/30/2019 1:25:29 PM]:	INFO -	cd projekt (CD Projekt) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	Naughty Dog in DEBUG mode: [FALSE]
+[8/30/2019 1:25:29 PM]:	INFO -	Naughty Dog formatted to: naughty dog
+[8/30/2019 1:25:29 PM]:	INFO -	naughty dog (Naughty Dog) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:25:29 PM]:	INFO -	Naughty Dog formatted to: naughty dog
+[8/30/2019 1:25:29 PM]:	INFO -	naughty dog (Naughty Dog) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	Konami in DEBUG mode: [FALSE]
+[8/30/2019 1:25:29 PM]:	INFO -	Konami formatted to: konami
+[8/30/2019 1:25:29 PM]:	INFO -	konami (Konami) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:25:29 PM]:	INFO -	Konami formatted to: konami
+[8/30/2019 1:25:29 PM]:	INFO -	konami (Konami) found in LocalCache.
+[8/30/2019 1:25:29 PM]:	INFO -	Revolution Software in DEBUG mode: [FALSE]
+[8/30/2019 1:25:29 PM]:	INFO -	Revolution Software formatted to: revolution software
+[8/30/2019 1:25:31 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:25:31 PM]:	INFO -	Finding genre score.
+[8/30/2019 1:25:31 PM]:	INFO -	Revolution Software formatted to: revolution software
+[8/30/2019 1:25:31 PM]:	DEBUG -	Revolution Software, {Revolution Software|Revolution Software Games|Revolution Software Studios|Revolution Software Studio}
+[8/30/2019 1:25:31 PM]:	INFO -	Finding review score.
+[8/30/2019 1:25:31 PM]:	INFO -	Glassdoor search scraper started.
+[8/30/2019 1:25:54 PM]:	INFO -	Glassdoor review scraper started.
+[8/30/2019 1:26:26 PM]:	INFO -	Revolution Software formatted to: revolution software
+[8/30/2019 1:26:26 PM]:	INFO -	Telltale Games in DEBUG mode: [FALSE]
+[8/30/2019 1:26:26 PM]:	INFO -	Telltale Games formatted to: telltale games
+[8/30/2019 1:26:26 PM]:	INFO -	telltale games (Telltale Games) found in LocalCache.
+[8/30/2019 1:26:26 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:26 PM]:	INFO -	Telltale Games formatted to: telltale games
+[8/30/2019 1:26:26 PM]:	INFO -	telltale games (Telltale Games) found in LocalCache.
+[8/30/2019 1:26:26 PM]:	INFO -	Funcom in DEBUG mode: [FALSE]
+[8/30/2019 1:26:26 PM]:	INFO -	Funcom formatted to: funcom
+[8/30/2019 1:26:26 PM]:	INFO -	funcom (Funcom) found in LocalCache.
+[8/30/2019 1:26:26 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:26 PM]:	INFO -	Funcom formatted to: funcom
+[8/30/2019 1:26:26 PM]:	INFO -	funcom (Funcom) found in LocalCache.
+[8/30/2019 1:26:26 PM]:	INFO -	Activision in DEBUG mode: [FALSE]
+[8/30/2019 1:26:26 PM]:	INFO -	Activision formatted to: activision
+[8/30/2019 1:26:26 PM]:	INFO -	activision (Activision) found in LocalCache.
+[8/30/2019 1:26:26 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:26 PM]:	INFO -	Activision formatted to: activision
+[8/30/2019 1:26:26 PM]:	INFO -	activision (Activision) found in LocalCache.
+[8/30/2019 1:26:26 PM]:	INFO -	Origin Systems in DEBUG mode: [FALSE]
+[8/30/2019 1:26:26 PM]:	INFO -	Origin Systems formatted to: origin systems
+[8/30/2019 1:26:26 PM]:	INFO -	origin systems (Origin Systems) found in LocalCache.
+[8/30/2019 1:26:26 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:26 PM]:	INFO -	Origin Systems formatted to: origin systems
+[8/30/2019 1:26:26 PM]:	INFO -	origin systems (Origin Systems) found in LocalCache.
+[8/30/2019 1:26:26 PM]:	INFO -	Looking Glass Studios in DEBUG mode: [FALSE]
+[8/30/2019 1:26:26 PM]:	INFO -	Looking Glass Studios formatted to: looking glass studios
+[8/30/2019 1:26:26 PM]:	INFO -	looking glass studios (Looking Glass Studios) found in LocalCache.
+[8/30/2019 1:26:26 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:26 PM]:	INFO -	Looking Glass Studios formatted to: looking glass studios
+[8/30/2019 1:26:26 PM]:	INFO -	looking glass studios (Looking Glass Studios) found in LocalCache.
+[8/30/2019 1:26:26 PM]:	INFO -	Electronic Arts in DEBUG mode: [FALSE]
+[8/30/2019 1:26:26 PM]:	INFO -	Electronic Arts formatted to: electronic arts
+[8/30/2019 1:26:26 PM]:	INFO -	electronic arts (Electronic Arts) found in LocalCache.
+[8/30/2019 1:26:26 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:26 PM]:	INFO -	Electronic Arts formatted to: electronic arts
+[8/30/2019 1:26:26 PM]:	INFO -	electronic arts (Electronic Arts) found in LocalCache.
+[8/30/2019 1:26:26 PM]:	INFO -	Bioware in DEBUG mode: [FALSE]
+[8/30/2019 1:26:26 PM]:	INFO -	Bioware formatted to: bioware
+[8/30/2019 1:26:26 PM]:	INFO -	bioware (Bioware) found in LocalCache.
+[8/30/2019 1:26:26 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:26 PM]:	INFO -	Bioware formatted to: bioware
+[8/30/2019 1:26:27 PM]:	INFO -	bioware (Bioware) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Blizzard Entertainment in DEBUG mode: [FALSE]
+[8/30/2019 1:26:27 PM]:	INFO -	Blizzard Entertainment formatted to: blizzard entertainment
+[8/30/2019 1:26:27 PM]:	INFO -	blizzard entertainment (Blizzard Entertainment) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:27 PM]:	INFO -	Blizzard Entertainment formatted to: blizzard entertainment
+[8/30/2019 1:26:27 PM]:	INFO -	blizzard entertainment (Blizzard Entertainment) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Tose (company) in DEBUG mode: [FALSE]
+[8/30/2019 1:26:27 PM]:	INFO -	Tose (company) formatted to: tose (company)
+[8/30/2019 1:26:27 PM]:	INFO -	tose (company) (Tose (company)) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:27 PM]:	INFO -	Tose (company) formatted to: tose (company)
+[8/30/2019 1:26:27 PM]:	INFO -	tose (company) (Tose (company)) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Eagle Dynamics in DEBUG mode: [FALSE]
+[8/30/2019 1:26:27 PM]:	INFO -	Eagle Dynamics formatted to: eagle dynamics
+[8/30/2019 1:26:27 PM]:	INFO -	eagle dynamics (Eagle Dynamics) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:27 PM]:	INFO -	Eagle Dynamics formatted to: eagle dynamics
+[8/30/2019 1:26:27 PM]:	INFO -	eagle dynamics (Eagle Dynamics) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Tripwire Interactive in DEBUG mode: [FALSE]
+[8/30/2019 1:26:27 PM]:	INFO -	Tripwire Interactive formatted to: tripwire interactive
+[8/30/2019 1:26:27 PM]:	INFO -	tripwire interactive (Tripwire Interactive) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:27 PM]:	INFO -	Tripwire Interactive formatted to: tripwire interactive
+[8/30/2019 1:26:27 PM]:	INFO -	tripwire interactive (Tripwire Interactive) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Relic Entertainment in DEBUG mode: [FALSE]
+[8/30/2019 1:26:27 PM]:	INFO -	Relic Entertainment formatted to: relic entertainment
+[8/30/2019 1:26:27 PM]:	INFO -	relic entertainment (Relic Entertainment) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:27 PM]:	INFO -	Relic Entertainment formatted to: relic entertainment
+[8/30/2019 1:26:27 PM]:	INFO -	relic entertainment (Relic Entertainment) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Firaxis Games in DEBUG mode: [FALSE]
+[8/30/2019 1:26:27 PM]:	INFO -	Firaxis Games formatted to: firaxis games
+[8/30/2019 1:26:27 PM]:	INFO -	firaxis games (Firaxis Games) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:27 PM]:	INFO -	Firaxis Games formatted to: firaxis games
+[8/30/2019 1:26:27 PM]:	INFO -	firaxis games (Firaxis Games) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Sir-Tech in DEBUG mode: [FALSE]
+[8/30/2019 1:26:27 PM]:	INFO -	Sir-Tech formatted to: sir-tech
+[8/30/2019 1:26:27 PM]:	INFO -	sir-tech (Sir-Tech) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:27 PM]:	INFO -	Sir-Tech formatted to: sir-tech
+[8/30/2019 1:26:27 PM]:	INFO -	sir-tech (Sir-Tech) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Wargaming in DEBUG mode: [FALSE]
+[8/30/2019 1:26:27 PM]:	INFO -	Wargaming formatted to: wargaming
+[8/30/2019 1:26:27 PM]:	INFO -	wargaming (Wargaming) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:27 PM]:	INFO -	Wargaming formatted to: wargaming
+[8/30/2019 1:26:27 PM]:	INFO -	wargaming (Wargaming) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Take-Two Interactive in DEBUG mode: [FALSE]
+[8/30/2019 1:26:27 PM]:	INFO -	Take-Two Interactive formatted to: take-two interactive
+[8/30/2019 1:26:27 PM]:	INFO -	take-two interactive (Take-Two Interactive) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:27 PM]:	INFO -	Take-Two Interactive formatted to: take-two interactive
+[8/30/2019 1:26:27 PM]:	INFO -	take-two interactive (Take-Two Interactive) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Neversoft in DEBUG mode: [FALSE]
+[8/30/2019 1:26:27 PM]:	INFO -	Neversoft formatted to: neversoft
+[8/30/2019 1:26:27 PM]:	INFO -	neversoft (Neversoft) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:27 PM]:	INFO -	Neversoft formatted to: neversoft
+[8/30/2019 1:26:27 PM]:	INFO -	neversoft (Neversoft) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	5th Cell in DEBUG mode: [FALSE]
+[8/30/2019 1:26:27 PM]:	INFO -	5th Cell formatted to: 5th cell
+[8/30/2019 1:26:27 PM]:	INFO -	5th cell (5th Cell) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:27 PM]:	INFO -	5th Cell formatted to: 5th cell
+[8/30/2019 1:26:27 PM]:	INFO -	5th cell (5th Cell) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Respawn Entertainment in DEBUG mode: [FALSE]
+[8/30/2019 1:26:27 PM]:	INFO -	Respawn Entertainment formatted to: respawn entertainment
+[8/30/2019 1:26:27 PM]:	INFO -	respawn entertainment (Respawn Entertainment) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:27 PM]:	INFO -	Respawn Entertainment formatted to: respawn entertainment
+[8/30/2019 1:26:27 PM]:	INFO -	respawn entertainment (Respawn Entertainment) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Square Enix in DEBUG mode: [FALSE]
+[8/30/2019 1:26:27 PM]:	INFO -	Square Enix formatted to: square enix
+[8/30/2019 1:26:27 PM]:	INFO -	square enix (Square Enix) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:27 PM]:	INFO -	Square Enix formatted to: square enix
+[8/30/2019 1:26:27 PM]:	INFO -	square enix (Square Enix) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Monolith Productions in DEBUG mode: [FALSE]
+[8/30/2019 1:26:27 PM]:	INFO -	Monolith Productions formatted to: monolith productions
+[8/30/2019 1:26:27 PM]:	INFO -	monolith productions (Monolith Productions) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:27 PM]:	INFO -	Monolith Productions formatted to: monolith productions
+[8/30/2019 1:26:27 PM]:	INFO -	monolith productions (Monolith Productions) found in LocalCache.
+[8/30/2019 1:26:27 PM]:	INFO -	Insomniac Games in DEBUG mode: [FALSE]
+[8/30/2019 1:26:27 PM]:	INFO -	Insomniac Games formatted to: insomniac games
+[8/30/2019 1:26:29 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:26:29 PM]:	INFO -	Finding genre score.
+[8/30/2019 1:26:29 PM]:	INFO -	Insomniac Games formatted to: insomniac games
+[8/30/2019 1:26:29 PM]:	DEBUG -	Insomniac Games, {Insomniac Games|Insomniac|Insomniac Games Studios|Insomniac Games Studio}
+[8/30/2019 1:26:29 PM]:	INFO -	Finding review score.
+[8/30/2019 1:26:29 PM]:	INFO -	Glassdoor search scraper started.
+[8/30/2019 1:27:25 PM]:	INFO -	Glassdoor review scraper started.
+[8/30/2019 1:28:21 PM]:	INFO -	Insomniac Games formatted to: insomniac games
+[8/30/2019 1:28:21 PM]:	INFO -	Id Software in DEBUG mode: [FALSE]
+[8/30/2019 1:28:21 PM]:	INFO -	Id Software formatted to: id software
+[8/30/2019 1:28:21 PM]:	INFO -	id software (Id Software) found in LocalCache.
+[8/30/2019 1:28:21 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:28:21 PM]:	INFO -	Id Software formatted to: id software
+[8/30/2019 1:28:21 PM]:	INFO -	id software (Id Software) found in LocalCache.
+[8/30/2019 1:28:21 PM]:	INFO -	Rocksteady Studios in DEBUG mode: [FALSE]
+[8/30/2019 1:28:21 PM]:	INFO -	Rocksteady Studios formatted to: rocksteady studios
+[8/30/2019 1:28:21 PM]:	INFO -	rocksteady studios (Rocksteady Studios) found in LocalCache.
+[8/30/2019 1:28:21 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:28:21 PM]:	INFO -	Rocksteady Studios formatted to: rocksteady studios
+[8/30/2019 1:28:21 PM]:	INFO -	rocksteady studios (Rocksteady Studios) found in LocalCache.
+[8/30/2019 1:28:21 PM]:	INFO -	Machine Games in DEBUG mode: [FALSE]
+[8/30/2019 1:28:21 PM]:	INFO -	Machine Games formatted to: machine games
+[8/30/2019 1:28:21 PM]:	INFO -	machine games (Machine Games) found in LocalCache.
+[8/30/2019 1:28:21 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:28:21 PM]:	INFO -	Machine Games formatted to: machine games
+[8/30/2019 1:28:21 PM]:	INFO -	machine games (Machine Games) found in LocalCache.
+[8/30/2019 1:28:21 PM]:	INFO -	Schell Games in DEBUG mode: [FALSE]
+[8/30/2019 1:28:21 PM]:	INFO -	Schell Games formatted to: schell games
+[8/30/2019 1:28:21 PM]:	INFO -	schell games (Schell Games) found in LocalCache.
+[8/30/2019 1:28:21 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:28:21 PM]:	INFO -	Schell Games formatted to: schell games
+[8/30/2019 1:28:21 PM]:	INFO -	schell games (Schell Games) found in LocalCache.
+[8/30/2019 1:28:21 PM]:	INFO -	Warthog Games in DEBUG mode: [FALSE]
+[8/30/2019 1:28:21 PM]:	INFO -	Warthog Games formatted to: warthog games
+[8/30/2019 1:28:23 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:28:23 PM]:	INFO -	Finding genre score.
+[8/30/2019 1:28:23 PM]:	INFO -	Warthog Games formatted to: warthog games
+[8/30/2019 1:28:23 PM]:	DEBUG -	Warthog, {Warthog Games|Warthog|Warthog Games Studios|Warthog Games Studio}
+[8/30/2019 1:28:23 PM]:	INFO -	Finding review score.
+[8/30/2019 1:28:23 PM]:	INFO -	Glassdoor search scraper started.
+[8/30/2019 1:28:51 PM]:	INFO -	Glassdoor review scraper started.
+[8/30/2019 1:29:17 PM]:	INFO -	Warthog Games formatted to: warthog games
+[8/30/2019 1:29:17 PM]:	INFO -	SIE Santa Monica Studio in DEBUG mode: [FALSE]
+[8/30/2019 1:29:17 PM]:	INFO -	SIE Santa Monica Studio formatted to: sie santa monica studio
+[8/30/2019 1:29:17 PM]:	INFO -	sie santa monica studio (SIE Santa Monica Studio) found in LocalCache.
+[8/30/2019 1:29:17 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:29:17 PM]:	INFO -	SIE Santa Monica Studio formatted to: sie santa monica studio
+[8/30/2019 1:29:17 PM]:	INFO -	sie santa monica studio (SIE Santa Monica Studio) found in LocalCache.
+[8/30/2019 1:29:17 PM]:	INFO -	Fullbright (company) in DEBUG mode: [FALSE]
+[8/30/2019 1:29:17 PM]:	INFO -	Fullbright (company) formatted to: fullbright (company)
+[8/30/2019 1:29:17 PM]:	INFO -	fullbright (company) (Fullbright (company)) found in LocalCache.
+[8/30/2019 1:29:17 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:29:17 PM]:	INFO -	Fullbright (company) formatted to: fullbright (company)
+[8/30/2019 1:29:17 PM]:	INFO -	fullbright (company) (Fullbright (company)) found in LocalCache.
+[8/30/2019 1:29:17 PM]:	INFO -	LucasArts in DEBUG mode: [FALSE]
+[8/30/2019 1:29:17 PM]:	INFO -	LucasArts formatted to: lucasarts
+[8/30/2019 1:29:17 PM]:	INFO -	lucasarts (LucasArts) found in LocalCache.
+[8/30/2019 1:29:17 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:29:17 PM]:	INFO -	LucasArts formatted to: lucasarts
+[8/30/2019 1:29:17 PM]:	INFO -	lucasarts (LucasArts) found in LocalCache.
+[8/30/2019 1:29:17 PM]:	INFO -	Wadjet Eye Games in DEBUG mode: [FALSE]
+[8/30/2019 1:29:17 PM]:	INFO -	Wadjet Eye Games formatted to: wadjet eye games
+[8/30/2019 1:29:17 PM]:	INFO -	wadjet eye games (Wadjet Eye Games) found in LocalCache.
+[8/30/2019 1:29:17 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:29:17 PM]:	INFO -	Wadjet Eye Games formatted to: wadjet eye games
+[8/30/2019 1:29:17 PM]:	INFO -	wadjet eye games (Wadjet Eye Games) found in LocalCache.
+[8/30/2019 1:29:17 PM]:	INFO -	Matrix Software in DEBUG mode: [FALSE]
+[8/30/2019 1:29:17 PM]:	INFO -	Matrix Software formatted to: matrix software
+[8/30/2019 1:29:17 PM]:	INFO -	matrix software (Matrix Software) found in LocalCache.
+[8/30/2019 1:29:17 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:29:17 PM]:	INFO -	Matrix Software formatted to: matrix software
+[8/30/2019 1:29:17 PM]:	INFO -	matrix software (Matrix Software) found in LocalCache.
+[8/30/2019 1:29:17 PM]:	INFO -	Black Isle Studios in DEBUG mode: [FALSE]
+[8/30/2019 1:29:17 PM]:	INFO -	Black Isle Studios formatted to: black isle studios
+[8/30/2019 1:29:18 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:29:18 PM]:	INFO -	Finding genre score.
+[8/30/2019 1:29:18 PM]:	INFO -	Black Isle Studios formatted to: black isle studios
+[8/30/2019 1:29:19 PM]:	DEBUG -	Black Isle Studios, {Black Isle Studios|Black Isle Studios Games|Black Isle|Black Isle Studios Studio}
+[8/30/2019 1:29:19 PM]:	INFO -	Finding review score.
+[8/30/2019 1:29:19 PM]:	INFO -	Glassdoor search scraper started.
+[8/30/2019 1:29:51 PM]:	INFO -	Glassdoor review scraper started.
+[8/30/2019 1:30:15 PM]:	INFO -	Black Isle Studios formatted to: black isle studios
+[8/30/2019 1:30:15 PM]:	INFO -	Atlus in DEBUG mode: [FALSE]
+[8/30/2019 1:30:15 PM]:	INFO -	Atlus formatted to: atlus
+[8/30/2019 1:30:15 PM]:	INFO -	atlus (Atlus) found in LocalCache.
+[8/30/2019 1:30:15 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:30:15 PM]:	INFO -	Atlus formatted to: atlus
+[8/30/2019 1:30:15 PM]:	INFO -	atlus (Atlus) found in LocalCache.
+[8/30/2019 1:30:15 PM]:	INFO -	Dovetail Games in DEBUG mode: [FALSE]
+[8/30/2019 1:30:15 PM]:	INFO -	Dovetail Games formatted to: dovetail games
+[8/30/2019 1:30:15 PM]:	INFO -	dovetail games (Dovetail Games) found in LocalCache.
+[8/30/2019 1:30:15 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:30:15 PM]:	INFO -	Dovetail Games formatted to: dovetail games
+[8/30/2019 1:30:15 PM]:	INFO -	dovetail games (Dovetail Games) found in LocalCache.
+[8/30/2019 1:30:15 PM]:	INFO -	Razorworks in DEBUG mode: [FALSE]
+[8/30/2019 1:30:15 PM]:	INFO -	Razorworks formatted to: razorworks
+[8/30/2019 1:30:16 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:30:16 PM]:	INFO -	Finding genre score.
+[8/30/2019 1:30:16 PM]:	INFO -	Razorworks formatted to: razorworks
+[8/30/2019 1:30:16 PM]:	DEBUG -	Razorworks, {Razorworks|Razorworks Games|Razorworks Studios|Razorworks Studio}
+[8/30/2019 1:30:16 PM]:	INFO -	Finding review score.
+[8/30/2019 1:30:16 PM]:	INFO -	Glassdoor search scraper started.
+[8/30/2019 1:30:43 PM]:	INFO -	Glassdoor review scraper started.
+[8/30/2019 1:31:06 PM]:	INFO -	Razorworks formatted to: razorworks
+[8/30/2019 1:31:06 PM]:	INFO -	Gaijin Entertainment in DEBUG mode: [FALSE]
+[8/30/2019 1:31:06 PM]:	INFO -	Gaijin Entertainment formatted to: gaijin entertainment
+[8/30/2019 1:31:06 PM]:	INFO -	gaijin entertainment (Gaijin Entertainment) found in LocalCache.
+[8/30/2019 1:31:06 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:31:06 PM]:	INFO -	Gaijin Entertainment formatted to: gaijin entertainment
+[8/30/2019 1:31:06 PM]:	INFO -	gaijin entertainment (Gaijin Entertainment) found in LocalCache.
+[8/30/2019 1:31:06 PM]:	INFO -	Introversion Software in DEBUG mode: [FALSE]
+[8/30/2019 1:31:06 PM]:	INFO -	Introversion Software formatted to: introversion software
+[8/30/2019 1:31:06 PM]:	INFO -	introversion software (Introversion Software) found in LocalCache.
+[8/30/2019 1:31:06 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:31:06 PM]:	INFO -	Introversion Software formatted to: introversion software
+[8/30/2019 1:31:06 PM]:	INFO -	introversion software (Introversion Software) found in LocalCache.
+[8/30/2019 1:31:06 PM]:	INFO -	Klei Entertainment in DEBUG mode: [FALSE]
+[8/30/2019 1:31:06 PM]:	INFO -	Klei Entertainment formatted to: klei entertainment
+[8/30/2019 1:31:06 PM]:	INFO -	klei entertainment (Klei Entertainment) found in LocalCache.
+[8/30/2019 1:31:06 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:31:06 PM]:	INFO -	Klei Entertainment formatted to: klei entertainment
+[8/30/2019 1:31:06 PM]:	INFO -	klei entertainment (Klei Entertainment) found in LocalCache.
+[8/30/2019 1:31:06 PM]:	INFO -	Paradox Development Studio in DEBUG mode: [FALSE]
+[8/30/2019 1:31:06 PM]:	INFO -	Paradox Development Studio formatted to: paradox development studio
+[8/30/2019 1:31:06 PM]:	INFO -	paradox development studio (Paradox Development Studio) found in LocalCache.
+[8/30/2019 1:31:06 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:31:06 PM]:	INFO -	Paradox Development Studio formatted to: paradox development studio
+[8/30/2019 1:31:06 PM]:	INFO -	paradox development studio (Paradox Development Studio) found in LocalCache.
+[8/30/2019 1:31:06 PM]:	INFO -	Midway Games in DEBUG mode: [FALSE]
+[8/30/2019 1:31:06 PM]:	INFO -	Midway Games formatted to: midway games
+[8/30/2019 1:31:06 PM]:	INFO -	midway games (Midway Games) found in LocalCache.
+[8/30/2019 1:31:06 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:31:06 PM]:	INFO -	Midway Games formatted to: midway games
+[8/30/2019 1:31:06 PM]:	INFO -	midway games (Midway Games) found in LocalCache.
+[8/30/2019 1:31:06 PM]:	INFO -	Sony Interactive Entertainment in DEBUG mode: [FALSE]
+[8/30/2019 1:31:06 PM]:	INFO -	Sony Interactive Entertainment formatted to: sony interactive entertainment
+[8/30/2019 1:31:06 PM]:	INFO -	sony interactive entertainment (Sony Interactive Entertainment) found in LocalCache.
+[8/30/2019 1:31:06 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:31:06 PM]:	INFO -	Sony Interactive Entertainment formatted to: sony interactive entertainment
+[8/30/2019 1:31:06 PM]:	INFO -	sony interactive entertainment (Sony Interactive Entertainment) found in LocalCache.
+[8/30/2019 1:31:06 PM]:	INFO -	Nintendo in DEBUG mode: [FALSE]
+[8/30/2019 1:31:06 PM]:	INFO -	Nintendo formatted to: nintendo
+[8/30/2019 1:31:06 PM]:	INFO -	nintendo (Nintendo) found in LocalCache.
+[8/30/2019 1:31:06 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:31:06 PM]:	INFO -	Nintendo formatted to: nintendo
+[8/30/2019 1:31:06 PM]:	INFO -	nintendo (Nintendo) found in LocalCache.
+[8/30/2019 1:31:06 PM]:	INFO -	PopCap Games in DEBUG mode: [FALSE]
+[8/30/2019 1:31:06 PM]:	INFO -	PopCap Games formatted to: popcap games
+[8/30/2019 1:31:06 PM]:	INFO -	popcap games (PopCap Games) found in LocalCache.
+[8/30/2019 1:31:06 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:31:06 PM]:	INFO -	PopCap Games formatted to: popcap games
+[8/30/2019 1:31:06 PM]:	INFO -	popcap games (PopCap Games) found in LocalCache.
+[8/30/2019 1:31:06 PM]:	INFO -	Zachtronics in DEBUG mode: [FALSE]
+[8/30/2019 1:31:06 PM]:	INFO -	Zachtronics formatted to: zachtronics
+[8/30/2019 1:31:07 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:31:07 PM]:	INFO -	Finding genre score.
+[8/30/2019 1:31:07 PM]:	INFO -	Zachtronics formatted to: zachtronics
+[8/30/2019 1:31:07 PM]:	DEBUG -	Zachtronics Industries, {Zachtronics|Zachtronics Games|Zachtronics Studios|Zachtronics Studio}
+[8/30/2019 1:31:07 PM]:	INFO -	Finding review score.
+[8/30/2019 1:31:07 PM]:	INFO -	Glassdoor search scraper started.
+[8/30/2019 1:31:33 PM]:	INFO -	Glassdoor review scraper started.
+[8/30/2019 1:31:58 PM]:	INFO -	Zachtronics formatted to: zachtronics
+[8/30/2019 1:31:58 PM]:	INFO -	Croteam in DEBUG mode: [FALSE]
+[8/30/2019 1:31:58 PM]:	INFO -	Croteam formatted to: croteam
+[8/30/2019 1:31:58 PM]:	INFO -	croteam (Croteam) found in LocalCache.
+[8/30/2019 1:31:58 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:31:58 PM]:	INFO -	Croteam formatted to: croteam
+[8/30/2019 1:31:58 PM]:	INFO -	croteam (Croteam) found in LocalCache.
+[8/30/2019 1:31:58 PM]:	INFO -	Fireproof Games in DEBUG mode: [FALSE]
+[8/30/2019 1:31:58 PM]:	INFO -	Fireproof Games formatted to: fireproof games
+[8/30/2019 1:31:58 PM]:	DEBUG -	Wikipedia redirect, new topic: Fireproof Studios
+[8/30/2019 1:31:59 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 1:31:59 PM]:	INFO -	Finding genre score.
+[8/30/2019 1:31:59 PM]:	INFO -	Fireproof Games formatted to: fireproof games
+[8/30/2019 1:31:59 PM]:	DEBUG -	Fireproof Games, {Fireproof Games|Fireproof|Fireproof Games Studios|Fireproof Games Studio}
+[8/30/2019 1:31:59 PM]:	INFO -	Finding review score.
+[8/30/2019 1:31:59 PM]:	INFO -	Glassdoor search scraper started.
+[8/30/2019 1:32:33 PM]:	INFO -	Glassdoor review scraper started.
+[8/30/2019 1:32:51 PM]:	INFO -	Fireproof Games formatted to: fireproof games
