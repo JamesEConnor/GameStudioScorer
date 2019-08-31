@@ -5,34 +5,20 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="GameStudioScorer\Web Interfacers\IGDBResources.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GameStudioScorer\Secret Sauce\LRegression.cs">
     <Files>
-      <File FileName="GameStudioScorer\Program.cs" Line="110" Column="50" />
+      <File FileName="GameStudioScorer\Program.cs" Line="107" Column="4" />
       <File FileName="GameStudioScorer\Secret Sauce\CrunchScorer.cs" Line="200" Column="83" />
       <File FileName="GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs" Line="268" Column="15" />
-      <File FileName="GameStudioScorer\Web Interfacers\IGDBInterfacer.cs" Line="179" Column="85" />
-      <File FileName="GameStudioScorer\Utils\Extensions.cs" Line="225" Column="51" />
+      <File FileName="GameStudioScorer\Web Interfacers\IGDBInterfacer.cs" Line="152" Column="51" />
+      <File FileName="GameStudioScorer\Utils\Extensions.cs" Line="236" Column="48" />
       <File FileName="GameStudioScorer\Secret Sauce\LocalCacheManager.cs" Line="107" Column="6" />
       <File FileName="GameStudioScorer\Web Interfacers\WikipediaRetriever.cs" Line="80" Column="6" />
       <File FileName="GameStudioScorer\Utils\Logger.cs" Line="55" Column="83" />
       <File FileName="GameStudioScorer\Utils\Options.cs" Line="26" Column="36" />
       <File FileName="GameStudioScorer\Web Interfacers\XmlHandler.cs" Line="20" Column="60" />
-      <File FileName="GameStudioScorer\Web Interfacers\IGDBResources.cs" Line="29" Column="43" />
+      <File FileName="GameStudioScorer\Web Interfacers\IGDBResources.cs" Line="37" Column="10" />
+      <File FileName="GameStudioScorer\Secret Sauce\LRegression.cs" Line="30" Column="4" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="GameStudioScorer" expanded="True">
-            <Node name="GameStudioScorer" expanded="True">
-              <Node name="Secret Sauce" expanded="True" />
-              <Node name="Utils" expanded="True" />
-              <Node name="Web Interfacers" expanded="True">
-                <Node name="IGDBResources.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
 </Properties>

@@ -66,6 +66,17 @@ namespace GameStudioScorer
 					{
 						Console.WriteLine("{0, -40}: {1, -15} {4, -10} {2, -15} {4, -10} {3, -15}", s.Key, s.Value[0], s.Value[1], s.Value[2], ",");
 					}
+
+					//Print out any additional lines.
+					for (int a = 1; a < lines.Length; a++)
+					{
+						//Get the scores for the second line of the set.
+						List<KeyValuePair<string, float[]>> otherScores = GetScores(lines[a].Split(new string[] { ", " }, StringSplitOptions.None));
+						foreach (KeyValuePair<string, float[]> s in otherScores)
+						{
+							Console.WriteLine("{0, -40}: {1, -15} {4, -10} {2, -15} {4, -10} {3, -15}", s.Key, s.Value[0], s.Value[1], s.Value[2], ",");
+						}
+					}
 				}
 				else if (options.RegressionType == 's')
 				{
@@ -102,7 +113,6 @@ namespace GameStudioScorer
 					//Gets a StudioInfo object, containing all sorts of goodies.
 					StudioInfo si = Giantbomb.GiantBombInterfacer.GetStudio(studio, DEBUG_MODE.Contains(studio));
 
-					//TODO Eventually need to make this use logarithmic regression
 					//Add the different values to the dictionary.
 					dict.Add(studio, new float[]{
 						si.CrunchOvertimeScore, si.GenreScore, si.ReviewScore
@@ -120,8 +130,8 @@ namespace GameStudioScorer
 				}
 			}
 
-			//Order things so it looks nice.
-			return dict.OrderByDescending(x => x.Value[0]).ToList();
+			//Return
+			return dict.ToList();
 		}
 	}
 }

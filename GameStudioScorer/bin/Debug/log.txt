@@ -859,3 +859,475 @@ Parameter name: length. Occurred for Revolution Software
 [8/30/2019 1:31:59 PM]:	INFO -	Glassdoor search scraper started.
 [8/30/2019 1:32:33 PM]:	INFO -	Glassdoor review scraper started.
 [8/30/2019 1:32:51 PM]:	INFO -	Fireproof Games formatted to: fireproof games
+
+
+--------------------------------------------------------------------
+
+[8/30/2019 10:42:38 PM]:	INFO -	Rockstar Games in DEBUG mode: [FALSE]
+[8/30/2019 10:42:38 PM]:	INFO -	Rockstar Games formatted to: rockstar games
+[8/30/2019 10:42:38 PM]:	INFO -	rockstar games (Rockstar Games) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Rockstar Games" to dictionary. 1 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Rockstar Games formatted to: rockstar games
+[8/30/2019 10:42:39 PM]:	INFO -	rockstar games (Rockstar Games) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Bungie in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Bungie formatted to: bungie
+[8/30/2019 10:42:39 PM]:	INFO -	bungie (Bungie) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Bungie" to dictionary. 2 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Bungie formatted to: bungie
+[8/30/2019 10:42:39 PM]:	INFO -	bungie (Bungie) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Treyarch in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Treyarch formatted to: treyarch
+[8/30/2019 10:42:39 PM]:	INFO -	treyarch (Treyarch) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Treyarch" to dictionary. 3 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Treyarch formatted to: treyarch
+[8/30/2019 10:42:39 PM]:	INFO -	treyarch (Treyarch) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Bethesda Game Studios in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Bethesda Game Studios formatted to: bethesda game studios
+[8/30/2019 10:42:39 PM]:	INFO -	bethesda game studios (Bethesda Game Studios) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Bethesda Game Studios" to dictionary. 4 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Bethesda Game Studios formatted to: bethesda game studios
+[8/30/2019 10:42:39 PM]:	INFO -	bethesda game studios (Bethesda Game Studios) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Platinum Games in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Platinum Games formatted to: platinum games
+[8/30/2019 10:42:39 PM]:	INFO -	platinum games (Platinum Games) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Platinum Games" to dictionary. 5 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Platinum Games formatted to: platinum games
+[8/30/2019 10:42:39 PM]:	INFO -	platinum games (Platinum Games) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	FromSoftware in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	FromSoftware formatted to: fromsoftware
+[8/30/2019 10:42:39 PM]:	INFO -	fromsoftware (FromSoftware) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "FromSoftware" to dictionary. 6 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	FromSoftware formatted to: fromsoftware
+[8/30/2019 10:42:39 PM]:	INFO -	fromsoftware (FromSoftware) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Capcom in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Capcom formatted to: capcom
+[8/30/2019 10:42:39 PM]:	INFO -	capcom (Capcom) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Capcom" to dictionary. 7 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Capcom formatted to: capcom
+[8/30/2019 10:42:39 PM]:	INFO -	capcom (Capcom) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	CD Projekt in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	CD Projekt formatted to: cd projekt
+[8/30/2019 10:42:39 PM]:	INFO -	cd projekt (CD Projekt) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "CD Projekt" to dictionary. 8 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	CD Projekt formatted to: cd projekt
+[8/30/2019 10:42:39 PM]:	INFO -	cd projekt (CD Projekt) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Naughty Dog in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Naughty Dog formatted to: naughty dog
+[8/30/2019 10:42:39 PM]:	INFO -	naughty dog (Naughty Dog) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Naughty Dog" to dictionary. 9 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Naughty Dog formatted to: naughty dog
+[8/30/2019 10:42:39 PM]:	INFO -	naughty dog (Naughty Dog) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Konami in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Konami formatted to: konami
+[8/30/2019 10:42:39 PM]:	INFO -	konami (Konami) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Konami" to dictionary. 10 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Konami formatted to: konami
+[8/30/2019 10:42:39 PM]:	INFO -	konami (Konami) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Revolution Software in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Revolution Software formatted to: revolution software
+[8/30/2019 10:42:39 PM]:	INFO -	revolution software (Revolution Software) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Revolution Software" to dictionary. 11 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Revolution Software formatted to: revolution software
+[8/30/2019 10:42:39 PM]:	INFO -	revolution software (Revolution Software) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Telltale Games in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Telltale Games formatted to: telltale games
+[8/30/2019 10:42:39 PM]:	INFO -	telltale games (Telltale Games) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Telltale Games" to dictionary. 12 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Telltale Games formatted to: telltale games
+[8/30/2019 10:42:39 PM]:	INFO -	telltale games (Telltale Games) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Funcom in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Funcom formatted to: funcom
+[8/30/2019 10:42:39 PM]:	INFO -	funcom (Funcom) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Funcom" to dictionary. 13 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Funcom formatted to: funcom
+[8/30/2019 10:42:39 PM]:	INFO -	funcom (Funcom) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Activision in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Activision formatted to: activision
+[8/30/2019 10:42:39 PM]:	INFO -	activision (Activision) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Activision" to dictionary. 14 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Activision formatted to: activision
+[8/30/2019 10:42:39 PM]:	INFO -	activision (Activision) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Origin Systems in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Origin Systems formatted to: origin systems
+[8/30/2019 10:42:39 PM]:	INFO -	origin systems (Origin Systems) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Origin Systems" to dictionary. 15 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Origin Systems formatted to: origin systems
+[8/30/2019 10:42:39 PM]:	INFO -	origin systems (Origin Systems) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Looking Glass Studios in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Looking Glass Studios formatted to: looking glass studios
+[8/30/2019 10:42:39 PM]:	INFO -	looking glass studios (Looking Glass Studios) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Looking Glass Studios" to dictionary. 16 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Looking Glass Studios formatted to: looking glass studios
+[8/30/2019 10:42:39 PM]:	INFO -	looking glass studios (Looking Glass Studios) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Electronic Arts in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Electronic Arts formatted to: electronic arts
+[8/30/2019 10:42:39 PM]:	INFO -	electronic arts (Electronic Arts) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Electronic Arts" to dictionary. 17 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Electronic Arts formatted to: electronic arts
+[8/30/2019 10:42:39 PM]:	INFO -	electronic arts (Electronic Arts) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Bioware in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Bioware formatted to: bioware
+[8/30/2019 10:42:39 PM]:	INFO -	bioware (Bioware) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Bioware" to dictionary. 18 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Bioware formatted to: bioware
+[8/30/2019 10:42:39 PM]:	INFO -	bioware (Bioware) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Blizzard Entertainment in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Blizzard Entertainment formatted to: blizzard entertainment
+[8/30/2019 10:42:39 PM]:	INFO -	blizzard entertainment (Blizzard Entertainment) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Blizzard Entertainment" to dictionary. 19 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Blizzard Entertainment formatted to: blizzard entertainment
+[8/30/2019 10:42:39 PM]:	INFO -	blizzard entertainment (Blizzard Entertainment) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Tose (company) in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Tose (company) formatted to: tose (company)
+[8/30/2019 10:42:39 PM]:	INFO -	tose (company) (Tose (company)) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Tose (company)" to dictionary. 20 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Tose (company) formatted to: tose (company)
+[8/30/2019 10:42:39 PM]:	INFO -	tose (company) (Tose (company)) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Eagle Dynamics in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Eagle Dynamics formatted to: eagle dynamics
+[8/30/2019 10:42:39 PM]:	INFO -	eagle dynamics (Eagle Dynamics) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Eagle Dynamics" to dictionary. 21 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Eagle Dynamics formatted to: eagle dynamics
+[8/30/2019 10:42:39 PM]:	INFO -	eagle dynamics (Eagle Dynamics) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Tripwire Interactive in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Tripwire Interactive formatted to: tripwire interactive
+[8/30/2019 10:42:39 PM]:	INFO -	tripwire interactive (Tripwire Interactive) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Tripwire Interactive" to dictionary. 22 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Tripwire Interactive formatted to: tripwire interactive
+[8/30/2019 10:42:39 PM]:	INFO -	tripwire interactive (Tripwire Interactive) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Relic Entertainment in DEBUG mode: [FALSE]
+[8/30/2019 10:42:39 PM]:	INFO -	Relic Entertainment formatted to: relic entertainment
+[8/30/2019 10:42:39 PM]:	INFO -	relic entertainment (Relic Entertainment) found in LocalCache.
+[8/30/2019 10:42:39 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:39 PM]:	INFO -	Added "Relic Entertainment" to dictionary. 23 studios added.
+[8/30/2019 10:42:39 PM]:	INFO -	Relic Entertainment formatted to: relic entertainment
+[8/30/2019 10:42:39 PM]:	INFO -	relic entertainment (Relic Entertainment) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Firaxis Games in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	Firaxis Games formatted to: firaxis games
+[8/30/2019 10:42:40 PM]:	INFO -	firaxis games (Firaxis Games) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "Firaxis Games" to dictionary. 24 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	Firaxis Games formatted to: firaxis games
+[8/30/2019 10:42:40 PM]:	INFO -	firaxis games (Firaxis Games) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Sir-Tech in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	Sir-Tech formatted to: sir-tech
+[8/30/2019 10:42:40 PM]:	INFO -	sir-tech (Sir-Tech) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "Sir-Tech" to dictionary. 25 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	Sir-Tech formatted to: sir-tech
+[8/30/2019 10:42:40 PM]:	INFO -	sir-tech (Sir-Tech) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Wargaming in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	Wargaming formatted to: wargaming
+[8/30/2019 10:42:40 PM]:	INFO -	wargaming (Wargaming) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "Wargaming" to dictionary. 26 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	Wargaming formatted to: wargaming
+[8/30/2019 10:42:40 PM]:	INFO -	wargaming (Wargaming) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Take-Two Interactive in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	Take-Two Interactive formatted to: take-two interactive
+[8/30/2019 10:42:40 PM]:	INFO -	take-two interactive (Take-Two Interactive) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "Take-Two Interactive" to dictionary. 27 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	Take-Two Interactive formatted to: take-two interactive
+[8/30/2019 10:42:40 PM]:	INFO -	take-two interactive (Take-Two Interactive) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Neversoft in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	Neversoft formatted to: neversoft
+[8/30/2019 10:42:40 PM]:	INFO -	neversoft (Neversoft) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "Neversoft" to dictionary. 28 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	Neversoft formatted to: neversoft
+[8/30/2019 10:42:40 PM]:	INFO -	neversoft (Neversoft) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	5th Cell in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	5th Cell formatted to: 5th cell
+[8/30/2019 10:42:40 PM]:	INFO -	5th cell (5th Cell) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "5th Cell" to dictionary. 29 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	5th Cell formatted to: 5th cell
+[8/30/2019 10:42:40 PM]:	INFO -	5th cell (5th Cell) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Respawn Entertainment in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	Respawn Entertainment formatted to: respawn entertainment
+[8/30/2019 10:42:40 PM]:	INFO -	respawn entertainment (Respawn Entertainment) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "Respawn Entertainment" to dictionary. 1 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	Respawn Entertainment formatted to: respawn entertainment
+[8/30/2019 10:42:40 PM]:	INFO -	respawn entertainment (Respawn Entertainment) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Square Enix in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	Square Enix formatted to: square enix
+[8/30/2019 10:42:40 PM]:	INFO -	square enix (Square Enix) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "Square Enix" to dictionary. 2 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	Square Enix formatted to: square enix
+[8/30/2019 10:42:40 PM]:	INFO -	square enix (Square Enix) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Monolith Productions in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	Monolith Productions formatted to: monolith productions
+[8/30/2019 10:42:40 PM]:	INFO -	monolith productions (Monolith Productions) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "Monolith Productions" to dictionary. 3 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	Monolith Productions formatted to: monolith productions
+[8/30/2019 10:42:40 PM]:	INFO -	monolith productions (Monolith Productions) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Insomniac Games in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	Insomniac Games formatted to: insomniac games
+[8/30/2019 10:42:40 PM]:	INFO -	insomniac games (Insomniac Games) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "Insomniac Games" to dictionary. 4 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	Insomniac Games formatted to: insomniac games
+[8/30/2019 10:42:40 PM]:	INFO -	insomniac games (Insomniac Games) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Id Software in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	Id Software formatted to: id software
+[8/30/2019 10:42:40 PM]:	INFO -	id software (Id Software) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "Id Software" to dictionary. 5 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	Id Software formatted to: id software
+[8/30/2019 10:42:40 PM]:	INFO -	id software (Id Software) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Rocksteady Studios in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	Rocksteady Studios formatted to: rocksteady studios
+[8/30/2019 10:42:40 PM]:	INFO -	rocksteady studios (Rocksteady Studios) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "Rocksteady Studios" to dictionary. 6 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	Rocksteady Studios formatted to: rocksteady studios
+[8/30/2019 10:42:40 PM]:	INFO -	rocksteady studios (Rocksteady Studios) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Machine Games in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	Machine Games formatted to: machine games
+[8/30/2019 10:42:40 PM]:	INFO -	machine games (Machine Games) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "Machine Games" to dictionary. 7 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	Machine Games formatted to: machine games
+[8/30/2019 10:42:40 PM]:	INFO -	machine games (Machine Games) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Schell Games in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	Schell Games formatted to: schell games
+[8/30/2019 10:42:40 PM]:	INFO -	schell games (Schell Games) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "Schell Games" to dictionary. 8 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	Schell Games formatted to: schell games
+[8/30/2019 10:42:40 PM]:	INFO -	schell games (Schell Games) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Warthog Games in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	Warthog Games formatted to: warthog games
+[8/30/2019 10:42:40 PM]:	INFO -	warthog games (Warthog Games) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "Warthog Games" to dictionary. 9 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	Warthog Games formatted to: warthog games
+[8/30/2019 10:42:40 PM]:	INFO -	warthog games (Warthog Games) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	SIE Santa Monica Studio in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	SIE Santa Monica Studio formatted to: sie santa monica studio
+[8/30/2019 10:42:40 PM]:	INFO -	sie santa monica studio (SIE Santa Monica Studio) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "SIE Santa Monica Studio" to dictionary. 10 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	SIE Santa Monica Studio formatted to: sie santa monica studio
+[8/30/2019 10:42:40 PM]:	INFO -	sie santa monica studio (SIE Santa Monica Studio) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Fullbright (company) in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	Fullbright (company) formatted to: fullbright (company)
+[8/30/2019 10:42:40 PM]:	INFO -	fullbright (company) (Fullbright (company)) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "Fullbright (company)" to dictionary. 11 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	Fullbright (company) formatted to: fullbright (company)
+[8/30/2019 10:42:40 PM]:	INFO -	fullbright (company) (Fullbright (company)) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	LucasArts in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	LucasArts formatted to: lucasarts
+[8/30/2019 10:42:40 PM]:	INFO -	lucasarts (LucasArts) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "LucasArts" to dictionary. 12 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	LucasArts formatted to: lucasarts
+[8/30/2019 10:42:40 PM]:	INFO -	lucasarts (LucasArts) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Wadjet Eye Games in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	Wadjet Eye Games formatted to: wadjet eye games
+[8/30/2019 10:42:40 PM]:	INFO -	wadjet eye games (Wadjet Eye Games) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "Wadjet Eye Games" to dictionary. 13 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	Wadjet Eye Games formatted to: wadjet eye games
+[8/30/2019 10:42:40 PM]:	INFO -	wadjet eye games (Wadjet Eye Games) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Matrix Software in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	Matrix Software formatted to: matrix software
+[8/30/2019 10:42:40 PM]:	INFO -	matrix software (Matrix Software) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:40 PM]:	INFO -	Added "Matrix Software" to dictionary. 14 studios added.
+[8/30/2019 10:42:40 PM]:	INFO -	Matrix Software formatted to: matrix software
+[8/30/2019 10:42:40 PM]:	INFO -	matrix software (Matrix Software) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Black Isle Studios in DEBUG mode: [FALSE]
+[8/30/2019 10:42:40 PM]:	INFO -	Black Isle Studios formatted to: black isle studios
+[8/30/2019 10:42:40 PM]:	INFO -	black isle studios (Black Isle Studios) found in LocalCache.
+[8/30/2019 10:42:40 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:41 PM]:	INFO -	Added "Black Isle Studios" to dictionary. 15 studios added.
+[8/30/2019 10:42:41 PM]:	INFO -	Black Isle Studios formatted to: black isle studios
+[8/30/2019 10:42:41 PM]:	INFO -	black isle studios (Black Isle Studios) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Atlus in DEBUG mode: [FALSE]
+[8/30/2019 10:42:41 PM]:	INFO -	Atlus formatted to: atlus
+[8/30/2019 10:42:41 PM]:	INFO -	atlus (Atlus) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:41 PM]:	INFO -	Added "Atlus" to dictionary. 16 studios added.
+[8/30/2019 10:42:41 PM]:	INFO -	Atlus formatted to: atlus
+[8/30/2019 10:42:41 PM]:	INFO -	atlus (Atlus) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Dovetail Games in DEBUG mode: [FALSE]
+[8/30/2019 10:42:41 PM]:	INFO -	Dovetail Games formatted to: dovetail games
+[8/30/2019 10:42:41 PM]:	INFO -	dovetail games (Dovetail Games) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:41 PM]:	INFO -	Added "Dovetail Games" to dictionary. 17 studios added.
+[8/30/2019 10:42:41 PM]:	INFO -	Dovetail Games formatted to: dovetail games
+[8/30/2019 10:42:41 PM]:	INFO -	dovetail games (Dovetail Games) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Razorworks in DEBUG mode: [FALSE]
+[8/30/2019 10:42:41 PM]:	INFO -	Razorworks formatted to: razorworks
+[8/30/2019 10:42:41 PM]:	INFO -	razorworks (Razorworks) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:41 PM]:	INFO -	Added "Razorworks" to dictionary. 18 studios added.
+[8/30/2019 10:42:41 PM]:	INFO -	Razorworks formatted to: razorworks
+[8/30/2019 10:42:41 PM]:	INFO -	razorworks (Razorworks) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Gaijin Entertainment in DEBUG mode: [FALSE]
+[8/30/2019 10:42:41 PM]:	INFO -	Gaijin Entertainment formatted to: gaijin entertainment
+[8/30/2019 10:42:41 PM]:	INFO -	gaijin entertainment (Gaijin Entertainment) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:41 PM]:	INFO -	Added "Gaijin Entertainment" to dictionary. 19 studios added.
+[8/30/2019 10:42:41 PM]:	INFO -	Gaijin Entertainment formatted to: gaijin entertainment
+[8/30/2019 10:42:41 PM]:	INFO -	gaijin entertainment (Gaijin Entertainment) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Introversion Software in DEBUG mode: [FALSE]
+[8/30/2019 10:42:41 PM]:	INFO -	Introversion Software formatted to: introversion software
+[8/30/2019 10:42:41 PM]:	INFO -	introversion software (Introversion Software) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:41 PM]:	INFO -	Added "Introversion Software" to dictionary. 20 studios added.
+[8/30/2019 10:42:41 PM]:	INFO -	Introversion Software formatted to: introversion software
+[8/30/2019 10:42:41 PM]:	INFO -	introversion software (Introversion Software) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Klei Entertainment in DEBUG mode: [FALSE]
+[8/30/2019 10:42:41 PM]:	INFO -	Klei Entertainment formatted to: klei entertainment
+[8/30/2019 10:42:41 PM]:	INFO -	klei entertainment (Klei Entertainment) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:41 PM]:	INFO -	Added "Klei Entertainment" to dictionary. 21 studios added.
+[8/30/2019 10:42:41 PM]:	INFO -	Klei Entertainment formatted to: klei entertainment
+[8/30/2019 10:42:41 PM]:	INFO -	klei entertainment (Klei Entertainment) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Paradox Development Studio in DEBUG mode: [FALSE]
+[8/30/2019 10:42:41 PM]:	INFO -	Paradox Development Studio formatted to: paradox development studio
+[8/30/2019 10:42:41 PM]:	INFO -	paradox development studio (Paradox Development Studio) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:41 PM]:	INFO -	Added "Paradox Development Studio" to dictionary. 22 studios added.
+[8/30/2019 10:42:41 PM]:	INFO -	Paradox Development Studio formatted to: paradox development studio
+[8/30/2019 10:42:41 PM]:	INFO -	paradox development studio (Paradox Development Studio) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Midway Games in DEBUG mode: [FALSE]
+[8/30/2019 10:42:41 PM]:	INFO -	Midway Games formatted to: midway games
+[8/30/2019 10:42:41 PM]:	INFO -	midway games (Midway Games) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:41 PM]:	INFO -	Added "Midway Games" to dictionary. 23 studios added.
+[8/30/2019 10:42:41 PM]:	INFO -	Midway Games formatted to: midway games
+[8/30/2019 10:42:41 PM]:	INFO -	midway games (Midway Games) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Sony Interactive Entertainment in DEBUG mode: [FALSE]
+[8/30/2019 10:42:41 PM]:	INFO -	Sony Interactive Entertainment formatted to: sony interactive entertainment
+[8/30/2019 10:42:41 PM]:	INFO -	sony interactive entertainment (Sony Interactive Entertainment) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:41 PM]:	INFO -	Added "Sony Interactive Entertainment" to dictionary. 24 studios added.
+[8/30/2019 10:42:41 PM]:	INFO -	Sony Interactive Entertainment formatted to: sony interactive entertainment
+[8/30/2019 10:42:41 PM]:	INFO -	sony interactive entertainment (Sony Interactive Entertainment) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Nintendo in DEBUG mode: [FALSE]
+[8/30/2019 10:42:41 PM]:	INFO -	Nintendo formatted to: nintendo
+[8/30/2019 10:42:41 PM]:	INFO -	nintendo (Nintendo) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:41 PM]:	INFO -	Added "Nintendo" to dictionary. 25 studios added.
+[8/30/2019 10:42:41 PM]:	INFO -	Nintendo formatted to: nintendo
+[8/30/2019 10:42:41 PM]:	INFO -	nintendo (Nintendo) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	PopCap Games in DEBUG mode: [FALSE]
+[8/30/2019 10:42:41 PM]:	INFO -	PopCap Games formatted to: popcap games
+[8/30/2019 10:42:41 PM]:	INFO -	popcap games (PopCap Games) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:41 PM]:	INFO -	Added "PopCap Games" to dictionary. 26 studios added.
+[8/30/2019 10:42:41 PM]:	INFO -	PopCap Games formatted to: popcap games
+[8/30/2019 10:42:41 PM]:	INFO -	popcap games (PopCap Games) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Zachtronics in DEBUG mode: [FALSE]
+[8/30/2019 10:42:41 PM]:	INFO -	Zachtronics formatted to: zachtronics
+[8/30/2019 10:42:41 PM]:	INFO -	zachtronics (Zachtronics) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:41 PM]:	INFO -	Added "Zachtronics" to dictionary. 27 studios added.
+[8/30/2019 10:42:41 PM]:	INFO -	Zachtronics formatted to: zachtronics
+[8/30/2019 10:42:41 PM]:	INFO -	zachtronics (Zachtronics) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Croteam in DEBUG mode: [FALSE]
+[8/30/2019 10:42:41 PM]:	INFO -	Croteam formatted to: croteam
+[8/30/2019 10:42:41 PM]:	INFO -	croteam (Croteam) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:41 PM]:	INFO -	Added "Croteam" to dictionary. 28 studios added.
+[8/30/2019 10:42:41 PM]:	INFO -	Croteam formatted to: croteam
+[8/30/2019 10:42:41 PM]:	INFO -	croteam (Croteam) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Fireproof Games in DEBUG mode: [FALSE]
+[8/30/2019 10:42:41 PM]:	INFO -	Fireproof Games formatted to: fireproof games
+[8/30/2019 10:42:41 PM]:	INFO -	fireproof games (Fireproof Games) found in LocalCache.
+[8/30/2019 10:42:41 PM]:	INFO -	Finding crunch over time score.
+[8/30/2019 10:42:41 PM]:	INFO -	Added "Fireproof Games" to dictionary. 29 studios added.
+[8/30/2019 10:42:41 PM]:	INFO -	Fireproof Games formatted to: fireproof games
+[8/30/2019 10:42:41 PM]:	INFO -	fireproof games (Fireproof Games) found in LocalCache.
+
+
+--------------------------------------------------------------------
+
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Rockstar Games" to dictionary. 1 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Bungie" to dictionary. 2 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Treyarch" to dictionary. 3 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Bethesda Game Studios" to dictionary. 4 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Platinum Games" to dictionary. 5 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "FromSoftware" to dictionary. 6 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Capcom" to dictionary. 7 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "CD Projekt" to dictionary. 8 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Naughty Dog" to dictionary. 9 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Konami" to dictionary. 10 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Revolution Software" to dictionary. 11 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Telltale Games" to dictionary. 12 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Funcom" to dictionary. 13 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Activision" to dictionary. 14 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Origin Systems" to dictionary. 15 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Looking Glass Studios" to dictionary. 16 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Electronic Arts" to dictionary. 17 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Bioware" to dictionary. 18 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Blizzard Entertainment" to dictionary. 19 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Tose (company)" to dictionary. 20 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Eagle Dynamics" to dictionary. 21 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Tripwire Interactive" to dictionary. 22 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Relic Entertainment" to dictionary. 23 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Firaxis Games" to dictionary. 24 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Sir-Tech" to dictionary. 25 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Wargaming" to dictionary. 26 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Take-Two Interactive" to dictionary. 27 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Neversoft" to dictionary. 28 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "5th Cell" to dictionary. 29 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Respawn Entertainment" to dictionary. 1 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Square Enix" to dictionary. 2 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Monolith Productions" to dictionary. 3 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Insomniac Games" to dictionary. 4 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Id Software" to dictionary. 5 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Rocksteady Studios" to dictionary. 6 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Machine Games" to dictionary. 7 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Schell Games" to dictionary. 8 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Warthog Games" to dictionary. 9 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "SIE Santa Monica Studio" to dictionary. 10 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Fullbright (company)" to dictionary. 11 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "LucasArts" to dictionary. 12 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Wadjet Eye Games" to dictionary. 13 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Matrix Software" to dictionary. 14 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Black Isle Studios" to dictionary. 15 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Atlus" to dictionary. 16 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Dovetail Games" to dictionary. 17 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Razorworks" to dictionary. 18 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Gaijin Entertainment" to dictionary. 19 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Introversion Software" to dictionary. 20 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Klei Entertainment" to dictionary. 21 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Paradox Development Studio" to dictionary. 22 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Midway Games" to dictionary. 23 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Sony Interactive Entertainment" to dictionary. 24 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Nintendo" to dictionary. 25 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "PopCap Games" to dictionary. 26 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Zachtronics" to dictionary. 27 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Croteam" to dictionary. 28 studios added.
+[8/30/2019 10:43:05 PM]:	DEBUG -	Added "Fireproof Games" to dictionary. 29 studios added.

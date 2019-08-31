@@ -32,13 +32,16 @@ namespace GameStudioScorer.Regression
 			//Loop through and make sure the scores haven't already been recorded.
 			foreach (KeyValuePair<string, float[]> studio in crunchScores)
 			{
-				bool canWrite = true;
+				//If the score already has been recorded, we'll just re-write the same line.
+				string existingLine = "";
 				foreach (string line in lines)
 					if (line.Split(':')[0] == studio.Key)
-						canWrite = false;
+						existingLine = line;
 
-				if(canWrite)
+				if (existingLine == "")
 					writer.WriteLine(studio.Key + ":" + studio.Value[0] + "-" + studio.Value[1] + "-" + studio.Value[2] + ":1");
+				else
+					writer.WriteLine(existingLine);
 			}
 
 			foreach (KeyValuePair<string, float[]> studio in noCrunchScores)
