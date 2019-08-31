@@ -101,7 +101,7 @@ namespace GameStudioScorer.Regression
 		public static string Learn(string fileName)
 		{
 			//Read all inputs and outputs from training file.
-			string[] lines = File.ReadAllLines(fileName);
+			string[] lines = File.ReadAllLines("Logistic Regression Model/data/" + fileName + ".txt");
 			double[][] inputs = new double[lines.Length][];
 			int[] outputs = new int[lines.Length];
 
@@ -118,15 +118,15 @@ namespace GameStudioScorer.Regression
 			}
 
 			//Set up Accord.NET learner.
-			IterativeReweightedLeastSquares learner = new IterativeReweightedLeastSquares()
+			IterativeReweightedLeastSquares<LogisticRegression> learner = new IterativeReweightedLeastSquares<LogisticRegression>()
 			{
 				Tolerance = 1e-4,
-				MaxIterations = 100,
+				MaxIterations = 1000,
 				Regularization = 0
 			};
 
 			//Perform learning.
-			LogisticRegression regression = (LogisticRegression)learner.Learn(inputs, outputs);
+			LogisticRegression regression = learner.Learn(inputs, outputs);
 
 
 
@@ -147,6 +147,13 @@ namespace GameStudioScorer.Regression
 				writer.WriteLine(regression.GetOddsRatio(c));
 				result += "Odds Ratio " + c + ": " + regression.GetOddsRatio(c) + "\n";
 			}
+
+			//Cleanup
+			writer.Close();
+			writer.Dispose();
+
+			fs.Close();
+			fs.Dispose();
 
 			Console.WriteLine("Model trained successfully!");
 
