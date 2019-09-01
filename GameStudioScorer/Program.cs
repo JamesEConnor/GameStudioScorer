@@ -20,7 +20,10 @@ namespace GameStudioScorer
 		//Copy them from the GAME_STUDIOS array. They *must* be in both.
 		//This will cause them to ignore any cached values and forcibly recalculate
 		//a score. This is good if they're outdated.
-		public static string[] DEBUG_MODE = { };
+		public static bool DEBUG_MODE;
+
+		//The command line options.
+		public static Options options;
 
 		//'p' = Print. This will simply print the values. No logistic regression applied.
 		//'s' = Save. This will perform the same operations as print, but save them to a file.
@@ -30,12 +33,14 @@ namespace GameStudioScorer
 		public static void Main(string[] args)
 		{
 			//Uses the CommandLineParser library to parse command line arguments.
-			Options options = new Options();
+			options = new Options();
 			if (Parser.Default.ParseArguments<Options>(args)
 				  .WithParsed(o => options = o).Tag == ParserResultType.NotParsed)
 				return;
 
+			//Go through the various options.
 			Logger.VERBOSE = options.verbose;
+			DEBUG_MODE = options.debug;
 			if (options.studio != "null")
 				options.studio = options.studio.Replace("_", " ");
 
@@ -103,6 +108,12 @@ namespace GameStudioScorer
 			}
 		}
 
+		/// <summary>
+		/// Gets the three scores for a list of given studios.
+		/// </summary>
+		/// <returns>A list of KeyValuePairs in which the provided studios are the keys
+		///  and their values are arrays of scores (of length 3).</returns>
+		/// <param name="studios">The different studios to get scores for.</param>
 		public static List<KeyValuePair<string, float[]>> GetScores(string[] studios)
 		{
 			Dictionary<string, float[]> dict = new Dictionary<string, float[]>();
@@ -111,7 +122,7 @@ namespace GameStudioScorer
 				try
 				{
 					//Gets a StudioInfo object, containing all sorts of goodies.
-					StudioInfo si = Giantbomb.GiantBombInterfacer.GetStudio(studio, DEBUG_MODE.Contains(studio));
+					StudioInfo si = Giantbomb.GiantBombInterfacer.GetStudio(studio, DEBUG_MODE);
 
 					//Add the different values to the dictionary.
 					dict.Add(studio, new float[]{
@@ -120,7 +131,7 @@ namespace GameStudioScorer
 
 					//If we force-calculated new values or if it doesn't already exist,
 					//cache the Studio.
-					if (DEBUG_MODE.Contains(studio) || LocalCacheManager.GetCachedInfo(studio).id == "-1")
+					if (DEBUG_MODE || LocalCacheManager.GetCachedInfo(studio).id == "-1")
 						LocalCacheManager.SaveCachedInfo(studio, si);
 				}
 				catch(Exception e)

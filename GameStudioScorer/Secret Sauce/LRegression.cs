@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using GameStudioScorer.Extensions;
 using Accord.Statistics.Models.Regression;
 using Accord.Statistics.Models.Regression.Fitting;
+using GameStudioScorer.Utils;
 
 namespace GameStudioScorer.Regression
 {
@@ -88,8 +90,9 @@ namespace GameStudioScorer.Regression
 					inputs[a] = score.Value[a];
 
 				double prob = regression.Probability(inputs);
+				bool crunches = (prob > 0.5);
 
-				Console.WriteLine("{0, -20}: {1, -5}", score.Key, prob);
+				Console.WriteLine("{0, -40}: {1, -15} {2, -15}", score.Key, prob, crunches);
 			}
 		}
 
@@ -121,12 +124,19 @@ namespace GameStudioScorer.Regression
 			IterativeReweightedLeastSquares<LogisticRegression> learner = new IterativeReweightedLeastSquares<LogisticRegression>()
 			{
 				Tolerance = 1e-4,
-				MaxIterations = 1000,
+				MaxIterations = 100,
 				Regularization = 0
 			};
 
-			//Perform learning.
-			LogisticRegression regression = learner.Learn(inputs, outputs);
+
+			Dictionary<double[], int> map = inputs.Zip(outputs, (arg1, arg2) => new { arg1, arg2}).ToDictionary(x => x.arg1, x => x.arg2);
+			map.Shuffle();
+			inputs = map.Keys.ToArray();
+			outputs = map.Values.ToArray();
+
+
+			//Train Regression
+			LogisticRegression regression = learner.Learn(inputs, outputs.ToBoolArray());
 
 
 
@@ -156,8 +166,105 @@ namespace GameStudioScorer.Regression
 			fs.Dispose();
 
 			Console.WriteLine("Model trained successfully!");
+			Console.WriteLine("\nEvaluating...\n");
+
+			//Evaluate the model and get the average K-score.
+			float avrgK = EvaluateModel(learner, inputs, outputs, inputs.Length / 4);
+
+			//Log it.
+			Logger.Log("Average K-score: " + avrgK);
 
 			return result;
+		}
+
+		/// <summary>
+		/// Evaluates a Logistic Regression Model using K-Fold Shuffle Cross Validation.
+		/// </summary>
+		/// <returns>A float representing the average K-score.</returns>
+		/// <param name="learner">An instance of a learner to use to train the evaluation models.</param>
+		/// <param name="inputs">The inputs.</param>
+		/// <param name="outputs">The outputs.</param>
+		/// <param name="partitionSize">The size of each Partition.</param>
+		public static float EvaluateModel(IterativeReweightedLeastSquares<LogisticRegression> learner, double[][] inputs, int[] outputs, int partitionSize)
+		{
+			if (inputs.Length < partitionSize)
+				throw new Exception("Input Partition Size can not be larger than the number of inputs!");
+
+			//Get to evenly partitionable size.
+			List<double[]> inputList = new List<double[]>(inputs);
+			List<int> outputList = new List<int>(outputs);
+			while (inputList.Count % partitionSize != 0)
+			{
+				inputList.RemoveAt(0);
+				outputList.RemoveAt(0);
+			}
+
+			//Allows for shuffling while keeping the inputs/outputs together.
+			Dictionary<double[], int> map = inputList.Zip(outputList, (arg1, arg2) => new { arg1, arg2 })
+													 .ToDictionary(x => x.arg1, x => x.arg2);
+
+			//K-Fold Shuffle Validation
+			int k = inputList.Count / partitionSize;
+			float total = 0.0f;
+
+			for (int a = 0; a < k; a++)
+			{
+				//Shuffle the Dictionary.
+				map.Shuffle();
+
+				//The input/output for training.
+				inputs = new double[(k - 1) * partitionSize][];
+				outputs = new int[(k - 1) * partitionSize];
+
+				//The input/output for validation.
+				double[][] testInput = new double[partitionSize][];
+				int[] testOutput = new int[partitionSize];
+
+				//Keeps track of the current training data partition.
+				int currPartition = 0;
+
+				for (int b = 0; b < k; b++)
+				{
+					for (int c = 0; c < partitionSize; c++)
+					{
+						if (a != b)
+						{
+							//If this isn't the test partition, add to the training
+							//data.
+							inputs[(currPartition * partitionSize) + c] = map.ElementAt(b * partitionSize + c).Key;
+							outputs[(currPartition * partitionSize) + c] = map.ElementAt(b * partitionSize + c).Value;
+						}
+						else
+						{
+							//If this is the test partition, add to the test data.
+							testInput[c] = map.ElementAt(b * partitionSize + c).Key;
+							testOutput[c] = map.ElementAt(b * partitionSize + c).Value;
+						}
+					}
+
+					//Only increase the current training data partition if the most
+					//recent was a training partition.
+					if(a != b)
+						currPartition++;
+				}
+
+				//Train
+				LogisticRegression regression = learner.Learn(inputs, outputs.ToBoolArray());
+
+				//Evaluate
+				for (int d = 0; d < testInput.Length; d++)
+				{
+					//Test actual output against expected output.
+					double output = regression.Probability(testInput[d]);
+
+					total += (float)Math.Abs(output - testOutput[d]);
+				}
+
+				total /= partitionSize;
+			}
+
+			//Return average of K-scores.
+			return total / k;
 		}
 	}
 }

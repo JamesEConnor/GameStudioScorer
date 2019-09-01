@@ -22,7 +22,10 @@ namespace GameStudioScorer
 		[Option("set", Required = false, HelpText = "The name of the set to load Studio names from. The first line is studios that crunch, the second is studios that don't.", Default = "set-0")]
 		public string setName { get; set; }
 
-		[Option("verbose")]
+		[Option("verbose", Required = false, HelpText = "Whether the scorer should print extra information.", Default = false)]
 		public bool verbose { get; set; }
+
+		[Option("debug", Required = false, HelpText = "Is the scorer in debug mode?", Default=false)]
+		public bool debug { get; set; }
 	}
 }

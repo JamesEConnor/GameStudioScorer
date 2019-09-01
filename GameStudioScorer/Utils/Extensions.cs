@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 using System.Xml;
 using GameStudioScorer.Wiki;
@@ -120,6 +121,10 @@ namespace GameStudioScorer.Extensions
 					//Use some Regex to remove the html stuff.
 					string val = Regex.Replace(dict[key], "<.+?>.+<\\/.+?>", "");
 					//Use some Regex to remove everything but the numbers.
+
+					if (val.Contains('-'))
+						val = val.Substring(0, val.IndexOf('-'));
+
 					string result = Regex.Replace(val, "[^\\d]+", "");
 
 					//If the result is parsable, the number of employees has been found!
@@ -257,6 +262,33 @@ namespace GameStudioScorer.Extensions
 			else
 				result.Add(name.Trim() + " Studio");
 
+
+			return result;
+		}
+
+		//Random for shuffling lists.
+		private static Random rng = new Random();
+
+		/// <summary>
+		/// Suffles a provided Dictionary.
+		/// </summary>
+		/// <param name="dict">The dictionary to shuffle.</param>
+		public static void Shuffle<T1, T2>(this Dictionary<T1, T2> dict)
+		{
+			dict.OrderBy(x => rng.Next())
+  				.ToDictionary(item => item.Key, item => item.Value);
+		}
+
+		/// <summary>
+		/// Converts an array of binary integers (0's and 1's) to an array of booleans.
+		/// </summary>
+		/// <returns>An array of booleans.</returns>
+		/// <param name="array">This array.</param>
+		public static bool[] ToBoolArray(this int[] array)
+		{
+			bool[] result = new bool[array.Length];
+			for (int a = 0; a < array.Length; a++)
+				result[a] = (array[a] == 1);
 
 			return result;
 		}

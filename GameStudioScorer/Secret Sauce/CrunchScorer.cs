@@ -55,6 +55,8 @@ namespace GameStudioScorer.Crunch
 			BestFit bf = MathUtils.ExpRegression(inputs, yearsF.ToArray());
 			ExponentialEquation exp = (ExponentialEquation)bf.equation;
 
+			return exp.r;
+
 			//Reflect the exponential equation into a logarithmic one, which makes it
 			//easier to get differences in values, since they can now be tested with
 			//a vertical, as opposed to horizontal, line.
@@ -158,7 +160,7 @@ namespace GameStudioScorer.Crunch
 				Arguments = searchCommand,
 				UseShellExecute = false,
 				RedirectStandardOutput = true,
-				CreateNoWindow = true
+				CreateNoWindow = !(MainClass.DEBUG_MODE || MainClass.options.verbose)
 			};
 
 			p.Start();
@@ -192,7 +194,7 @@ namespace GameStudioScorer.Crunch
 				Arguments = reviewCommand,
 				UseShellExecute = false,
 				RedirectStandardOutput = true,
-				CreateNoWindow = true
+				CreateNoWindow = !(MainClass.DEBUG_MODE || MainClass.options.verbose)
 			};
 
 			//Logging

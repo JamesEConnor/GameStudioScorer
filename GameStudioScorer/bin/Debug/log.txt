@@ -1331,3 +1331,455 @@ Parameter name: length. Occurred for Revolution Software
 [8/30/2019 10:43:05 PM]:	DEBUG -	Added "Zachtronics" to dictionary. 27 studios added.
 [8/30/2019 10:43:05 PM]:	DEBUG -	Added "Croteam" to dictionary. 28 studios added.
 [8/30/2019 10:43:05 PM]:	DEBUG -	Added "Fireproof Games" to dictionary. 29 studios added.
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 9:54:58 AM]:	INFO -	Average K-score: 6.864207
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 9:56:43 AM]:	INFO -	Average K-score: 9.568389
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 9:56:51 AM]:	INFO -	Average K-score: 9.568389
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 10:04:50 AM]:	INFO -	Average K-score: 9.568389
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 10:09:10 AM]:	INFO -	Average K-score: 9.568389
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 10:14:37 AM]:	INFO -	Average K-score: 9.56838
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 10:16:33 AM]:	INFO -	Average K-score: 3.442318
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 10:18:48 AM]:	INFO -	Average K-score: 0.04627183
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 10:18:56 AM]:	INFO -	Average K-score: 0.2035004
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 10:19:02 AM]:	INFO -	Average K-score: 0.1506541
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 10:19:26 AM]:	INFO -	Average K-score: 0.1506541
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 10:22:03 AM]:	INFO -	Average K-score: 0.1879537
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 11:48:36 AM]:	ERROR -	Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'GameStudioScorer.IGDB.Status' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.. Occurred for Epic Games
+[8/31/2019 11:48:36 AM]:	CRITICAL -	   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type)
+   at GameStudioScorer.IGDB.IGDBInterfacer.CheckStatus() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 186
+   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 34
+   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, List`1 aliases, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 95
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 275
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 123
+[8/31/2019 11:48:38 AM]:	ERROR -	Index was outside the bounds of the array.. Occurred for NetherRealm Studios
+[8/31/2019 11:48:38 AM]:	CRITICAL -	   at GameStudioScorer.IGDB.IGDBInterfacer.CheckStatus() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 170
+   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 34
+   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, List`1 aliases, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 95
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 275
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 123
+[8/31/2019 11:48:39 AM]:	ERROR -	Index was outside the bounds of the array.. Occurred for Techland
+[8/31/2019 11:48:39 AM]:	CRITICAL -	   at GameStudioScorer.IGDB.IGDBInterfacer.CheckStatus() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 170
+   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 34
+   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, List`1 aliases, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 95
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 275
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 123
+[8/31/2019 11:48:41 AM]:	ERROR -	Index was outside the bounds of the array.. Occurred for IO Interactive
+[8/31/2019 11:48:41 AM]:	CRITICAL -	   at GameStudioScorer.IGDB.IGDBInterfacer.CheckStatus() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 170
+   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 34
+   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, List`1 aliases, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 95
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 275
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 123
+[8/31/2019 11:48:42 AM]:	ERROR -	Index was outside the bounds of the array.. Occurred for Relentless Software
+[8/31/2019 11:48:42 AM]:	CRITICAL -	   at GameStudioScorer.IGDB.IGDBInterfacer.CheckStatus() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 170
+   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 34
+   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, List`1 aliases, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 95
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 275
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 123
+[8/31/2019 11:48:42 AM]:	ERROR -	Index was outside the bounds of the array.. Occurred for Playground Games
+[8/31/2019 11:48:42 AM]:	CRITICAL -	   at GameStudioScorer.IGDB.IGDBInterfacer.CheckStatus() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 170
+   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 34
+   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, List`1 aliases, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 95
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 275
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 123
+[8/31/2019 11:48:43 AM]:	ERROR -	Index was outside the bounds of the array.. Occurred for 4A Games
+[8/31/2019 11:48:43 AM]:	CRITICAL -	   at GameStudioScorer.IGDB.IGDBInterfacer.CheckStatus() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 170
+   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 34
+   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, List`1 aliases, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 95
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 275
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 123
+[8/31/2019 11:48:44 AM]:	ERROR -	Index was outside the bounds of the array.. Occurred for Avalanche Studios
+[8/31/2019 11:48:44 AM]:	CRITICAL -	   at GameStudioScorer.IGDB.IGDBInterfacer.CheckStatus() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 170
+   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 34
+   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, List`1 aliases, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 95
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 275
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 123
+[8/31/2019 11:48:47 AM]:	ERROR -	Index was outside the bounds of the array.. Occurred for Bandai Namco
+[8/31/2019 11:48:47 AM]:	CRITICAL -	   at GameStudioScorer.IGDB.IGDBInterfacer.CheckStatus() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 170
+   at GameStudioScorer.IGDB.IGDBInterfacer.GetGenres(String name) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 34
+   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, List`1 aliases, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 95
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 275
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 123
+[8/31/2019 11:48:48 AM]:	ERROR -	Milestone srl doesn't exist on Giantbomb!. Occurred for Milestone srl
+[8/31/2019 11:48:48 AM]:	CRITICAL -	   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name, String wikiName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 124
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 55
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 120
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 11:50:40 AM]:	DEBUG -	Epic Games, {Epic Games|Epic|Epic Games Studios|Epic Games Studio}
+[8/31/2019 11:52:26 AM]:	DEBUG -	NetherRealm Studios, {NetherRealm Studios|NetherRealm Studios Games|NetherRealm|NetherRealm Studios Studio}
+[8/31/2019 11:53:25 AM]:	DEBUG -	Techland Sp. z o.o., {Techland|Techland Games|Techland Studios|Techland Studio}
+[8/31/2019 11:54:06 AM]:	DEBUG -	IO Interactive, {IO Interactive|IO Interactive Games|IO Interactive Studios|IO Interactive Studio}
+[8/31/2019 11:55:07 AM]:	DEBUG -	Relentless Software, {Relentless Software|Relentless Software Games|Relentless Software Studios|Relentless Software Studio}
+[8/31/2019 11:55:58 AM]:	DEBUG -	Playground Games, {Playground Games|Playground|Playground Games Studios|Playground Games Studio}
+[8/31/2019 11:56:45 AM]:	DEBUG -	4A Games, {4A Games|4A|4A Games Studios|4A Games Studio}
+[8/31/2019 11:57:44 AM]:	DEBUG -	Avalanche Studios, {Avalanche Studios|Avalanche Studios Games|Avalanche|Avalanche Studios Studio}
+[8/31/2019 11:58:49 AM]:	DEBUG -	Bandai Namco Entertainment, {Bandai Namco|Bandai Namco Games|Bandai Namco Studios|Bandai Namco Studio}
+[8/31/2019 12:00:04 PM]:	ERROR -	Milestone srl doesn't exist on Giantbomb!. Occurred for Milestone srl
+[8/31/2019 12:00:04 PM]:	CRITICAL -	   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name, String wikiName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 124
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 55
+   at GameStudioScorer.MainClass.GetScores(String[] studios) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 120
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 4:29:41 PM]:	DEBUG -	Milestone s.r.l., {Milestone S.r.l.|Milestone S.r.l. Games|Milestone S.r.l. Studios|Milestone S.r.l. Studio}
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 4:31:17 PM]:	INFO -	Average K-score: 3.448123E-08
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 4:49:18 PM]:	INFO -	Average K-score: 3.448123E-08
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 7:50:17 PM]:	INFO -	Average K-score: 0.299729
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 7:54:59 PM]:	INFO -	Average K-score: 0.1319373
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 7:55:22 PM]:	INFO -	Average K-score: 0.08971074
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 7:55:53 PM]:	INFO -	Average K-score: 0.299729
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 8:27:52 PM]:	DEBUG -	Rockstar Games, {Rockstar Games|Rockstar|Rockstar Games Studios|Rockstar Games Studio}
+[8/31/2019 8:29:20 PM]:	DEBUG -	Treyarch, {Treyarch|Treyarch Games|Treyarch Studios|Treyarch Studio}
+[8/31/2019 8:30:35 PM]:	DEBUG -	Epic Games, {Epic Games|Epic|Epic Games Studios|Epic Games Studio}
+[8/31/2019 8:32:02 PM]:	DEBUG -	Electronic Arts, {Electronic Arts|Electronic Arts Games|Electronic Arts Studios|Electronic Arts Studio}
+[8/31/2019 8:33:22 PM]:	DEBUG -	Telltale Games, {Telltale Games|Telltale|Telltale Games Studios|Telltale Games Studio}
+[8/31/2019 8:34:39 PM]:	DEBUG -	BioWare, {BioWare|BioWare Games|BioWare Studios|BioWare Studio}
+[8/31/2019 8:35:54 PM]:	DEBUG -	NetherRealm Studios, {NetherRealm Studios|NetherRealm Studios Games|NetherRealm|NetherRealm Studios Studio}
+[8/31/2019 8:36:56 PM]:	DEBUG -	CD Projekt SA, {CD Projekt|CD Projekt Games|CD Projekt Studios|CD Projekt Studio}
+[8/31/2019 8:38:15 PM]:	DEBUG -	Capcom, {Capcom|Capcom Games|Capcom Studios|Capcom Studio}
+[8/31/2019 8:39:33 PM]:	DEBUG -	Techland Sp. z o.o., {Techland|Techland Games|Techland Studios|Techland Studio}
+[8/31/2019 8:40:16 PM]:	DEBUG -	IO Interactive, {IO Interactive|IO Interactive Games|IO Interactive Studios|IO Interactive Studio}
+[8/31/2019 8:41:18 PM]:	DEBUG -	Relentless Software, {Relentless Software|Relentless Software Games|Relentless Software Studios|Relentless Software Studio}
+[8/31/2019 8:42:08 PM]:	DEBUG -	Schell Games, {Schell Games|Schell|Schell Games Studios|Schell Games Studio}
+[8/31/2019 8:43:18 PM]:	DEBUG -	Playground Games, {Playground Games|Playground|Playground Games Studios|Playground Games Studio}
+[8/31/2019 8:44:08 PM]:	DEBUG -	4A Games, {4A Games|4A|4A Games Studios|4A Games Studio}
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 9:12:21 PM]:	DEBUG -	4A Games, {4A Games|4A|4A Games Studios|4A Games Studio}
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 9:15:24 PM]:	INFO -	Rockstar Games in DEBUG mode: [FALSE]
+[8/31/2019 9:15:24 PM]:	INFO -	Rockstar Games formatted to: rockstar games
+[8/31/2019 9:15:24 PM]:	INFO -	rockstar games (Rockstar Games) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 9:15:24 PM]:	INFO -	Rockstar Games formatted to: rockstar games
+[8/31/2019 9:15:24 PM]:	INFO -	rockstar games (Rockstar Games) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Treyarch in DEBUG mode: [FALSE]
+[8/31/2019 9:15:24 PM]:	INFO -	Treyarch formatted to: treyarch
+[8/31/2019 9:15:24 PM]:	INFO -	treyarch (Treyarch) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 9:15:24 PM]:	INFO -	Treyarch formatted to: treyarch
+[8/31/2019 9:15:24 PM]:	INFO -	treyarch (Treyarch) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Epic Games in DEBUG mode: [FALSE]
+[8/31/2019 9:15:24 PM]:	INFO -	Epic Games formatted to: epic games
+[8/31/2019 9:15:24 PM]:	INFO -	epic games (Epic Games) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 9:15:24 PM]:	INFO -	Epic Games formatted to: epic games
+[8/31/2019 9:15:24 PM]:	INFO -	epic games (Epic Games) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Electronic Arts in DEBUG mode: [FALSE]
+[8/31/2019 9:15:24 PM]:	INFO -	Electronic Arts formatted to: electronic arts
+[8/31/2019 9:15:24 PM]:	INFO -	electronic arts (Electronic Arts) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 9:15:24 PM]:	INFO -	Electronic Arts formatted to: electronic arts
+[8/31/2019 9:15:24 PM]:	INFO -	electronic arts (Electronic Arts) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Telltale Games in DEBUG mode: [FALSE]
+[8/31/2019 9:15:24 PM]:	INFO -	Telltale Games formatted to: telltale games
+[8/31/2019 9:15:24 PM]:	INFO -	telltale games (Telltale Games) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 9:15:24 PM]:	INFO -	Telltale Games formatted to: telltale games
+[8/31/2019 9:15:24 PM]:	INFO -	telltale games (Telltale Games) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	BioWare in DEBUG mode: [FALSE]
+[8/31/2019 9:15:24 PM]:	INFO -	BioWare formatted to: bioware
+[8/31/2019 9:15:24 PM]:	INFO -	bioware (BioWare) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 9:15:24 PM]:	INFO -	BioWare formatted to: bioware
+[8/31/2019 9:15:24 PM]:	INFO -	bioware (BioWare) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	NetherRealm Studios in DEBUG mode: [FALSE]
+[8/31/2019 9:15:24 PM]:	INFO -	NetherRealm Studios formatted to: netherrealm studios
+[8/31/2019 9:15:24 PM]:	INFO -	netherrealm studios (NetherRealm Studios) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 9:15:24 PM]:	INFO -	NetherRealm Studios formatted to: netherrealm studios
+[8/31/2019 9:15:24 PM]:	INFO -	netherrealm studios (NetherRealm Studios) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	CD Projekt in DEBUG mode: [FALSE]
+[8/31/2019 9:15:24 PM]:	INFO -	CD Projekt formatted to: cd projekt
+[8/31/2019 9:15:24 PM]:	INFO -	cd projekt (CD Projekt) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 9:15:24 PM]:	INFO -	CD Projekt formatted to: cd projekt
+[8/31/2019 9:15:24 PM]:	INFO -	cd projekt (CD Projekt) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Capcom in DEBUG mode: [FALSE]
+[8/31/2019 9:15:24 PM]:	INFO -	Capcom formatted to: capcom
+[8/31/2019 9:15:24 PM]:	INFO -	capcom (Capcom) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 9:15:24 PM]:	INFO -	Capcom formatted to: capcom
+[8/31/2019 9:15:24 PM]:	INFO -	capcom (Capcom) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Techland in DEBUG mode: [FALSE]
+[8/31/2019 9:15:24 PM]:	INFO -	Techland formatted to: techland
+[8/31/2019 9:15:24 PM]:	INFO -	techland (Techland) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 9:15:24 PM]:	INFO -	Techland formatted to: techland
+[8/31/2019 9:15:24 PM]:	INFO -	techland (Techland) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	IO Interactive in DEBUG mode: [FALSE]
+[8/31/2019 9:15:24 PM]:	INFO -	IO Interactive formatted to: io interactive
+[8/31/2019 9:15:24 PM]:	INFO -	io interactive (IO Interactive) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 9:15:24 PM]:	INFO -	IO Interactive formatted to: io interactive
+[8/31/2019 9:15:24 PM]:	INFO -	io interactive (IO Interactive) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Relentless Software in DEBUG mode: [FALSE]
+[8/31/2019 9:15:24 PM]:	INFO -	Relentless Software formatted to: relentless software
+[8/31/2019 9:15:24 PM]:	INFO -	relentless software (Relentless Software) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 9:15:24 PM]:	INFO -	Relentless Software formatted to: relentless software
+[8/31/2019 9:15:24 PM]:	INFO -	relentless software (Relentless Software) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Schell Games in DEBUG mode: [FALSE]
+[8/31/2019 9:15:24 PM]:	INFO -	Schell Games formatted to: schell games
+[8/31/2019 9:15:24 PM]:	INFO -	schell games (Schell Games) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 9:15:24 PM]:	INFO -	Schell Games formatted to: schell games
+[8/31/2019 9:15:24 PM]:	INFO -	schell games (Schell Games) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Playground Games in DEBUG mode: [FALSE]
+[8/31/2019 9:15:24 PM]:	INFO -	Playground Games formatted to: playground games
+[8/31/2019 9:15:24 PM]:	INFO -	playground games (Playground Games) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 9:15:24 PM]:	INFO -	Playground Games formatted to: playground games
+[8/31/2019 9:15:24 PM]:	INFO -	playground games (Playground Games) found in LocalCache.
+[8/31/2019 9:15:24 PM]:	INFO -	4A Games in DEBUG mode: [FALSE]
+[8/31/2019 9:15:24 PM]:	INFO -	4A Games formatted to: 4a games
+[8/31/2019 9:15:25 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 9:15:25 PM]:	INFO -	Finding genre score.
+[8/31/2019 9:15:25 PM]:	INFO -	4A Games formatted to: 4a games
+[8/31/2019 9:15:26 PM]:	DEBUG -	4A Games, {4A Games|4A|4A Games Studios|4A Games Studio}
+[8/31/2019 9:15:26 PM]:	INFO -	Finding review score.
+[8/31/2019 9:15:26 PM]:	INFO -	Glassdoor search scraper started... (This may take up to a minute)
+[8/31/2019 9:16:43 PM]:	INFO -	Glassdoor review scraper started... (This may take up to a minute)
+[8/31/2019 9:18:22 PM]:	INFO -	4A Games formatted to: 4a games
+[8/31/2019 9:18:22 PM]:	INFO -	Avalanche Studios in DEBUG mode: [FALSE]
+[8/31/2019 9:18:22 PM]:	INFO -	Avalanche Studios formatted to: avalanche studios
+[8/31/2019 9:18:23 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 9:18:23 PM]:	INFO -	Finding genre score.
+[8/31/2019 9:18:23 PM]:	INFO -	Avalanche Studios formatted to: avalanche studios
+[8/31/2019 9:18:23 PM]:	DEBUG -	Avalanche Studios, {Avalanche Studios|Avalanche Studios Games|Avalanche|Avalanche Studios Studio}
+[8/31/2019 9:18:23 PM]:	INFO -	Finding review score.
+[8/31/2019 9:18:23 PM]:	INFO -	Glassdoor search scraper started... (This may take up to a minute)
+[8/31/2019 9:18:46 PM]:	INFO -	Glassdoor review scraper started... (This may take up to a minute)
+[8/31/2019 9:21:16 PM]:	INFO -	Avalanche Studios formatted to: avalanche studios
+[8/31/2019 9:21:16 PM]:	INFO -	Bandai Namco in DEBUG mode: [FALSE]
+[8/31/2019 9:21:16 PM]:	INFO -	Bandai Namco formatted to: bandai namco
+[8/31/2019 9:21:16 PM]:	DEBUG -	Wikipedia redirect, new topic: Bandai Namco Entertainment
+[8/31/2019 9:21:20 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 9:21:20 PM]:	INFO -	Finding genre score.
+[8/31/2019 9:21:20 PM]:	INFO -	Bandai Namco formatted to: bandai namco
+[8/31/2019 9:21:20 PM]:	DEBUG -	Bandai Namco Entertainment, {Bandai Namco|Bandai Namco Games|Bandai Namco Studios|Bandai Namco Studio}
+[8/31/2019 9:21:20 PM]:	INFO -	Finding review score.
+[8/31/2019 9:21:20 PM]:	INFO -	Glassdoor search scraper started... (This may take up to a minute)
+[8/31/2019 9:22:21 PM]:	INFO -	Glassdoor review scraper started... (This may take up to a minute)
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 10:20:14 PM]:	INFO -	Rockstar Games in DEBUG mode: [FALSE]
+[8/31/2019 10:20:14 PM]:	INFO -	Rockstar Games formatted to: rockstar games
+[8/31/2019 10:20:14 PM]:	INFO -	rockstar games (Rockstar Games) found in LocalCache.
+[8/31/2019 10:20:14 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 10:20:14 PM]:	INFO -	Rockstar Games formatted to: rockstar games
+[8/31/2019 10:20:14 PM]:	INFO -	rockstar games (Rockstar Games) found in LocalCache.
+[8/31/2019 10:20:14 PM]:	INFO -	Treyarch in DEBUG mode: [FALSE]
+[8/31/2019 10:20:14 PM]:	INFO -	Treyarch formatted to: treyarch
+[8/31/2019 10:20:14 PM]:	INFO -	treyarch (Treyarch) found in LocalCache.
+[8/31/2019 10:20:14 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 10:20:14 PM]:	INFO -	Treyarch formatted to: treyarch
+[8/31/2019 10:20:14 PM]:	INFO -	treyarch (Treyarch) found in LocalCache.
+[8/31/2019 10:20:14 PM]:	INFO -	Epic Games in DEBUG mode: [FALSE]
+[8/31/2019 10:20:14 PM]:	INFO -	Epic Games formatted to: epic games
+[8/31/2019 10:20:14 PM]:	INFO -	epic games (Epic Games) found in LocalCache.
+[8/31/2019 10:20:14 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 10:20:14 PM]:	INFO -	Epic Games formatted to: epic games
+[8/31/2019 10:20:14 PM]:	INFO -	epic games (Epic Games) found in LocalCache.
+[8/31/2019 10:20:14 PM]:	INFO -	Electronic Arts in DEBUG mode: [FALSE]
+[8/31/2019 10:20:14 PM]:	INFO -	Electronic Arts formatted to: electronic arts
+[8/31/2019 10:20:14 PM]:	INFO -	electronic arts (Electronic Arts) found in LocalCache.
+[8/31/2019 10:20:14 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 10:20:14 PM]:	INFO -	Electronic Arts formatted to: electronic arts
+[8/31/2019 10:20:14 PM]:	INFO -	electronic arts (Electronic Arts) found in LocalCache.
+[8/31/2019 10:20:14 PM]:	INFO -	Telltale Games in DEBUG mode: [FALSE]
+[8/31/2019 10:20:14 PM]:	INFO -	Telltale Games formatted to: telltale games
+[8/31/2019 10:20:14 PM]:	INFO -	telltale games (Telltale Games) found in LocalCache.
+[8/31/2019 10:20:14 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 10:20:14 PM]:	INFO -	Telltale Games formatted to: telltale games
+[8/31/2019 10:20:14 PM]:	INFO -	telltale games (Telltale Games) found in LocalCache.
+[8/31/2019 10:20:14 PM]:	INFO -	BioWare in DEBUG mode: [FALSE]
+[8/31/2019 10:20:14 PM]:	INFO -	BioWare formatted to: bioware
+[8/31/2019 10:20:14 PM]:	INFO -	bioware (BioWare) found in LocalCache.
+[8/31/2019 10:20:14 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 10:20:14 PM]:	INFO -	BioWare formatted to: bioware
+[8/31/2019 10:20:14 PM]:	INFO -	bioware (BioWare) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	NetherRealm Studios in DEBUG mode: [FALSE]
+[8/31/2019 10:20:15 PM]:	INFO -	NetherRealm Studios formatted to: netherrealm studios
+[8/31/2019 10:20:15 PM]:	INFO -	netherrealm studios (NetherRealm Studios) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 10:20:15 PM]:	INFO -	NetherRealm Studios formatted to: netherrealm studios
+[8/31/2019 10:20:15 PM]:	INFO -	netherrealm studios (NetherRealm Studios) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	CD Projekt in DEBUG mode: [FALSE]
+[8/31/2019 10:20:15 PM]:	INFO -	CD Projekt formatted to: cd projekt
+[8/31/2019 10:20:15 PM]:	INFO -	cd projekt (CD Projekt) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 10:20:15 PM]:	INFO -	CD Projekt formatted to: cd projekt
+[8/31/2019 10:20:15 PM]:	INFO -	cd projekt (CD Projekt) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	Capcom in DEBUG mode: [FALSE]
+[8/31/2019 10:20:15 PM]:	INFO -	Capcom formatted to: capcom
+[8/31/2019 10:20:15 PM]:	INFO -	capcom (Capcom) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 10:20:15 PM]:	INFO -	Capcom formatted to: capcom
+[8/31/2019 10:20:15 PM]:	INFO -	capcom (Capcom) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	Techland in DEBUG mode: [FALSE]
+[8/31/2019 10:20:15 PM]:	INFO -	Techland formatted to: techland
+[8/31/2019 10:20:15 PM]:	INFO -	techland (Techland) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 10:20:15 PM]:	INFO -	Techland formatted to: techland
+[8/31/2019 10:20:15 PM]:	INFO -	techland (Techland) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	IO Interactive in DEBUG mode: [FALSE]
+[8/31/2019 10:20:15 PM]:	INFO -	IO Interactive formatted to: io interactive
+[8/31/2019 10:20:15 PM]:	INFO -	io interactive (IO Interactive) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 10:20:15 PM]:	INFO -	IO Interactive formatted to: io interactive
+[8/31/2019 10:20:15 PM]:	INFO -	io interactive (IO Interactive) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	Relentless Software in DEBUG mode: [FALSE]
+[8/31/2019 10:20:15 PM]:	INFO -	Relentless Software formatted to: relentless software
+[8/31/2019 10:20:15 PM]:	INFO -	relentless software (Relentless Software) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 10:20:15 PM]:	INFO -	Relentless Software formatted to: relentless software
+[8/31/2019 10:20:15 PM]:	INFO -	relentless software (Relentless Software) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	Schell Games in DEBUG mode: [FALSE]
+[8/31/2019 10:20:15 PM]:	INFO -	Schell Games formatted to: schell games
+[8/31/2019 10:20:15 PM]:	INFO -	schell games (Schell Games) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 10:20:15 PM]:	INFO -	Schell Games formatted to: schell games
+[8/31/2019 10:20:15 PM]:	INFO -	schell games (Schell Games) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	Playground Games in DEBUG mode: [FALSE]
+[8/31/2019 10:20:15 PM]:	INFO -	Playground Games formatted to: playground games
+[8/31/2019 10:20:15 PM]:	INFO -	playground games (Playground Games) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 10:20:15 PM]:	INFO -	Playground Games formatted to: playground games
+[8/31/2019 10:20:15 PM]:	INFO -	playground games (Playground Games) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	4A Games in DEBUG mode: [FALSE]
+[8/31/2019 10:20:15 PM]:	INFO -	4A Games formatted to: 4a games
+[8/31/2019 10:20:15 PM]:	INFO -	4a games (4A Games) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 10:20:15 PM]:	INFO -	4A Games formatted to: 4a games
+[8/31/2019 10:20:15 PM]:	INFO -	4a games (4A Games) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	Avalanche Studios in DEBUG mode: [FALSE]
+[8/31/2019 10:20:15 PM]:	INFO -	Avalanche Studios formatted to: avalanche studios
+[8/31/2019 10:20:15 PM]:	INFO -	avalanche studios (Avalanche Studios) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 10:20:15 PM]:	INFO -	Avalanche Studios formatted to: avalanche studios
+[8/31/2019 10:20:15 PM]:	INFO -	avalanche studios (Avalanche Studios) found in LocalCache.
+[8/31/2019 10:20:15 PM]:	INFO -	Bandai Namco in DEBUG mode: [FALSE]
+[8/31/2019 10:20:15 PM]:	INFO -	Bandai Namco formatted to: bandai namco
+[8/31/2019 10:20:16 PM]:	DEBUG -	Wikipedia redirect, new topic: Bandai Namco Entertainment
+[8/31/2019 10:20:19 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 10:20:19 PM]:	INFO -	Finding genre score.
+[8/31/2019 10:20:19 PM]:	INFO -	Bandai Namco formatted to: bandai namco
+[8/31/2019 10:20:20 PM]:	DEBUG -	Bandai Namco Entertainment, {Bandai Namco|Bandai Namco Games|Bandai Namco Studios|Bandai Namco Studio}
+[8/31/2019 10:20:20 PM]:	INFO -	Finding review score.
+[8/31/2019 10:20:20 PM]:	INFO -	Glassdoor search scraper started... (This may take up to a minute)
+[8/31/2019 10:20:52 PM]:	INFO -	Glassdoor review scraper started... (This may take up to a minute)
+[8/31/2019 10:22:30 PM]:	INFO -	Bandai Namco formatted to: bandai namco
+[8/31/2019 10:22:30 PM]:	INFO -	Milestone S.r.l. in DEBUG mode: [FALSE]
+[8/31/2019 10:22:30 PM]:	INFO -	Milestone S.r.l. formatted to: milestone s.r.l.
+[8/31/2019 10:22:30 PM]:	DEBUG -	Wikipedia redirect, new topic: Milestone srl
+[8/31/2019 10:22:32 PM]:	INFO -	Finding crunch over time score.
+[8/31/2019 10:22:32 PM]:	INFO -	Finding genre score.
+[8/31/2019 10:22:32 PM]:	INFO -	Milestone S.r.l. formatted to: milestone s.r.l.
+[8/31/2019 10:22:32 PM]:	DEBUG -	Milestone s.r.l., {Milestone S.r.l.|Milestone S.r.l. Games|Milestone S.r.l. Studios|Milestone S.r.l. Studio}
+[8/31/2019 10:22:32 PM]:	INFO -	Finding review score.
+[8/31/2019 10:22:32 PM]:	INFO -	Glassdoor search scraper started... (This may take up to a minute)
+[8/31/2019 10:22:54 PM]:	INFO -	Glassdoor review scraper started... (This may take up to a minute)
+[8/31/2019 10:23:30 PM]:	INFO -	Milestone S.r.l. formatted to: milestone s.r.l.
+
+
+--------------------------------------------------------------------
+
+[8/31/2019 10:39:37 PM]:	INFO -	Average K-score: 0.01952261

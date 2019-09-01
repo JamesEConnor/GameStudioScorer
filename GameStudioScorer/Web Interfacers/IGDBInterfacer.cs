@@ -31,7 +31,7 @@ namespace GameStudioScorer.IGDB
 				API_KEY = ConfigurationManager.AppSettings["IGDBkey"];
 
 			//Check rate limiting
-			CheckStatus();
+			//CheckStatus();
 
 			//Make a request to the IGDB company endpoint. This will search for the company
 			//and return the name, id, and genres of it's games.
@@ -272,7 +272,7 @@ namespace GameStudioScorer
 				//we have to make sure we don't already have a cached value before
 				//calling it.
 				if (!_setGenreScore)
-					_GenreScore = CrunchScorer.GetGenreScore(name, aliases, MainClass.DEBUG_MODE.Intersect(aliases).Any());
+					_GenreScore = CrunchScorer.GetGenreScore(name, aliases, MainClass.DEBUG_MODE);
 
 				//At this point, one way or the other, the score has been set.
 				_setGenreScore = true;
