@@ -1,0 +1,18 @@
+Rockstar Games:0.3199999-0.7:1
+Treyarch:0.3599998-0.8100001:1
+Epic Games:0.21-0.69:1
+Electronic Arts:0.2761123-0.5666667:1
+Telltale Games:0.1847621-0.53:1
+BioWare:0.3813952-0.675:1
+NetherRealm Studios:0.4685714-0.7222222:1
+CD Projekt:0.4-0.71:1
+Capcom:0.3395891-0.51:1
+Techland:0.3171428-0.7222222:1
+IO Interactive:0.3644444-0.8142858:0
+Relentless Software:0.128-0.8142858:0
+Schell Games:0.1466667-0.7615384:0
+Playground Games:0.3377778-0.8142858:0
+4A Games:0.37-0.7692307:0
+Avalanche Studios:0.2304762-0.6833333:0
+Bandai Namco:0.3251723-0.57:0
+Milestone S.r.l.:0.1461818-0.5263158:0

@@ -146,6 +146,30 @@ namespace GameStudioScorer.Utils
 
 			return result;
 		}
+
+		/// <summary>
+		/// Inverts a given 2D array. (i.e. array[0][1] becomes array[1][0])
+		/// </summary>
+		/// <returns>The rotated array.</returns>
+		/// <param name="array">The array to rotate.</param>
+		public static double[][] RotateArray(double[][] array)
+		{
+			//Unrotatable array
+			if (array.Length == 0 || array[0].Length == 0)
+				return null;
+
+			//Create result array.
+			double[][] result = new double[array[0].Length][];
+			for (int a = 0; a < result.Length; a++)
+				result[a] = new double[array.Length];
+
+			//Rotate
+			for (int i = 0; i < result.Length; i++)
+				for (int j = 0; j < result[0].Length; j++)
+					result[i][j] = array[j][i];
+
+			return result;
+		}
 	}
 
 	/// <summary>

@@ -6,6 +6,8 @@ using GameStudioScorer.Extensions;
 using Accord.Statistics.Models.Regression;
 using Accord.Statistics.Models.Regression.Fitting;
 using GameStudioScorer.Utils;
+using Accord.Statistics.Models.Regression.Linear;
+using Accord.Math.Optimization.Losses;
 
 namespace GameStudioScorer.Regression
 {
@@ -41,7 +43,13 @@ namespace GameStudioScorer.Regression
 						existingLine = line;
 
 				if (existingLine == "")
-					writer.WriteLine(studio.Key + ":" + studio.Value[0] + "-" + studio.Value[1] + "-" + studio.Value[2] + ":1");
+				{
+					string writeLine = studio.Key + ":";
+					foreach (float f in studio.Value)
+						writeLine += f + "-";
+					writeLine = writeLine.Substring(0, writeLine.Length - 1) + ":1";
+					writer.WriteLine(writeLine);
+				}
 				else
 					writer.WriteLine(existingLine);
 			}
@@ -54,7 +62,13 @@ namespace GameStudioScorer.Regression
 						canWrite = false;
 
 				if (canWrite)
-					writer.WriteLine(studio.Key + ":" + studio.Value[0] + "-" + studio.Value[1] + "-" + studio.Value[2] + ":0");
+				{
+					string writeLine = studio.Key + ":";
+					foreach (float f in studio.Value)
+						writeLine += f + "-";
+					writeLine = writeLine.Substring(0, writeLine.Length - 1) + ":0";
+					writer.WriteLine(writeLine);
+				}
 			}
 
 			//Clean up
@@ -82,6 +96,8 @@ namespace GameStudioScorer.Regression
 
 			Console.WriteLine("Probability of studios crunching:");
 
+			Dictionary<string, double> probabilities = new Dictionary<string, double>();
+
 			//Predict and print.
 			foreach (KeyValuePair<string, float[]> score in scores)
 			{
@@ -90,10 +106,16 @@ namespace GameStudioScorer.Regression
 					inputs[a] = score.Value[a];
 
 				double prob = regression.Probability(inputs);
-				bool crunches = (prob > 0.5);
 
-				Console.WriteLine("{0, -40}: {1, -15} {2, -15}", score.Key, prob, crunches);
+				probabilities.Add(score.Key, prob);
 			}
+
+			//Print in order
+			List<KeyValuePair<string, double>> probList = probabilities.ToList();
+			probList.Sort((x, y) => x.Value.CompareTo(y.Value));
+
+			foreach(KeyValuePair<string, double> score in probList)
+				Console.WriteLine("{0, -40}: {1, -15}", score.Key, score.Value);
 		}
 
 		/// <summary>
@@ -112,6 +134,7 @@ namespace GameStudioScorer.Regression
 			{
 				string[] split = lines[a].Split(':');
 
+				//Dynamically get variables from file.
 				string[] scores = split[1].Split('-');
 				inputs[a] = new double[scores.Length];
 				for (int b = 0; b < scores.Length; b++)
@@ -173,6 +196,13 @@ namespace GameStudioScorer.Regression
 
 			//Log it.
 			Logger.Log("Average K-score: " + avrgK);
+
+			//Get the VIFs
+			float[] VIFs = CalculateVIFs(inputs);
+
+			//Log it
+			for (int a = 0; a < VIFs.Length; a++)
+				Logger.Log("Variance Inflation Factor #" + a + ": " + VIFs[a]);
 
 			return result;
 		}
@@ -265,6 +295,65 @@ namespace GameStudioScorer.Regression
 
 			//Return average of K-scores.
 			return total / k;
+		}
+
+		/// <summary>
+		/// Calculates the Variance Inflation Factors (VIFs) for the different coefficients.
+		/// </summary>
+		/// <returns>An array containing corresponding VIFs.</returns>
+		/// <param name="inputs">The inputs that a model was trained on.</param>
+		public static float[] CalculateVIFs(double[][] inputs)
+		{
+			//Rotate array and create resultant array.
+			inputs = MathUtils.RotateArray(inputs);
+			float[] VIFs = new float[inputs.Length];
+
+			//Loop through each variable
+			for (int a = 0; a < inputs.Length; a++)
+			{
+				//The inputs/outputs for the regression models.
+				double[][] regressionInputs = new double[inputs[0].Length][];
+				double[] regressionOutput = new double[inputs[0].Length];
+
+				//Loop through and assign all of the independent variables as IVs,
+				//except inputs[a], which becomes the dependent variable.
+				for (int b = 0; b < inputs[0].Length; b++)
+				{
+					regressionInputs[b] = new double[inputs.Length - 1];
+
+					for (int c = 0, d = 0; c < inputs.Length; c++)
+					{
+						if (a == c)
+						{
+							regressionOutput[b] = inputs[a][b];
+						}
+						else
+						{
+							regressionInputs[b][d] = inputs[c][b];
+							d++;
+						}
+					}
+				}
+
+				//Perform regression
+				OrdinaryLeastSquares ols = new OrdinaryLeastSquares()
+				{
+					UseIntercept = true
+				};
+
+				MultipleLinearRegression regression = ols.Learn(regressionInputs, regressionOutput);
+
+				//Make predictions
+				double[] predictions = regression.Transform(regressionInputs);
+
+				//Calculate the loss
+				double r2 = (new RSquaredLoss(inputs.Length - 1, regressionOutput)).Loss(predictions);
+
+				//Calculate the VIF
+				VIFs[a] = (float)(1.0f / (1.0f - r2));
+			}
+
+			return VIFs;
 		}
 	}
 }

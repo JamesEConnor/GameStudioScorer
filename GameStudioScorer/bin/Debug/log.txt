@@ -1783,3 +1783,71 @@ Path '', line 1, position 1.. Occurred for Epic Games
 --------------------------------------------------------------------
 
 [8/31/2019 10:39:37 PM]:	INFO -	Average K-score: 0.01952261
+
+
+--------------------------------------------------------------------
+
+[9/1/2019 11:28:57 AM]:	INFO -	Average K-score: 0.299729
+
+
+--------------------------------------------------------------------
+
+[9/1/2019 11:30:11 AM]:	INFO -	Average K-score: 0.01952261
+
+
+--------------------------------------------------------------------
+
+[9/2/2019 9:35:24 AM]:	INFO -	Average K-score: 0.299729
+
+
+--------------------------------------------------------------------
+
+[9/2/2019 9:35:43 AM]:	INFO -	Average K-score: 0.139651
+
+
+--------------------------------------------------------------------
+
+[9/2/2019 9:35:54 AM]:	INFO -	Average K-score: 0.2377623
+
+
+--------------------------------------------------------------------
+
+[9/2/2019 9:36:06 AM]:	INFO -	Average K-score: 0.1751051
+
+
+--------------------------------------------------------------------
+
+[9/2/2019 11:11:39 AM]:	INFO -	Average K-score: 0.299729
+[9/2/2019 11:11:39 AM]:	INFO -	Variance Inflation Factor #0: 1.011054
+[9/2/2019 11:11:39 AM]:	INFO -	Variance Inflation Factor #1: 1.055814
+[9/2/2019 11:11:39 AM]:	INFO -	Variance Inflation Factor #2: 1.047999
+
+
+--------------------------------------------------------------------
+
+[9/2/2019 11:27:35 AM]:	DEBUG -	Rockstar Games, {Rockstar Games|Rockstar|Rockstar Games Studios|Rockstar Games Studio}
+[9/2/2019 11:30:00 AM]:	DEBUG -	Treyarch, {Treyarch|Treyarch Games|Treyarch Studios|Treyarch Studio}
+[9/2/2019 11:31:57 AM]:	DEBUG -	Epic Games, {Epic Games|Epic|Epic Games Studios|Epic Games Studio}
+[9/2/2019 11:33:27 AM]:	DEBUG -	Electronic Arts, {Electronic Arts|Electronic Arts Games|Electronic Arts Studios|Electronic Arts Studio}
+[9/2/2019 11:35:17 AM]:	DEBUG -	Telltale Games, {Telltale Games|Telltale|Telltale Games Studios|Telltale Games Studio}
+[9/2/2019 11:37:13 AM]:	DEBUG -	BioWare, {BioWare|BioWare Games|BioWare Studios|BioWare Studio}
+[9/2/2019 11:39:00 AM]:	DEBUG -	NetherRealm Studios, {NetherRealm Studios|NetherRealm Studios Games|NetherRealm|NetherRealm Studios Studio}
+[9/2/2019 11:40:12 AM]:	DEBUG -	CD Projekt SA, {CD Projekt|CD Projekt Games|CD Projekt Studios|CD Projekt Studio}
+[9/2/2019 11:42:23 AM]:	DEBUG -	Capcom, {Capcom|Capcom Games|Capcom Studios|Capcom Studio}
+[9/2/2019 11:43:59 AM]:	DEBUG -	Techland Sp. z o.o., {Techland|Techland Games|Techland Studios|Techland Studio}
+[9/2/2019 11:44:51 AM]:	DEBUG -	IO Interactive, {IO Interactive|IO Interactive Games|IO Interactive Studios|IO Interactive Studio}
+[9/2/2019 11:46:18 AM]:	DEBUG -	Relentless Software, {Relentless Software|Relentless Software Games|Relentless Software Studios|Relentless Software Studio}
+[9/2/2019 11:47:42 AM]:	DEBUG -	Schell Games, {Schell Games|Schell|Schell Games Studios|Schell Games Studio}
+[9/2/2019 11:49:25 AM]:	DEBUG -	Playground Games, {Playground Games|Playground|Playground Games Studios|Playground Games Studio}
+[9/2/2019 11:50:32 AM]:	DEBUG -	4A Games, {4A Games|4A|4A Games Studios|4A Games Studio}
+[9/2/2019 11:51:40 AM]:	DEBUG -	Avalanche Studios, {Avalanche Studios|Avalanche Studios Games|Avalanche|Avalanche Studios Studio}
+[9/2/2019 11:52:34 AM]:	DEBUG -	Bandai Namco Entertainment, {Bandai Namco|Bandai Namco Games|Bandai Namco Studios|Bandai Namco Studio}
+[9/2/2019 11:54:18 AM]:	DEBUG -	Milestone s.r.l., {Milestone S.r.l.|Milestone S.r.l. Games|Milestone S.r.l. Studios|Milestone S.r.l. Studio}
+
+
+--------------------------------------------------------------------
+
+[9/2/2019 12:19:10 PM]:	INFO -	Average K-score: 0.01860136
+[9/2/2019 12:19:10 PM]:	INFO -	Variance Inflation Factor #0: 1.023741
+[9/2/2019 12:19:10 PM]:	INFO -	Variance Inflation Factor #1: 1.030347
+[9/2/2019 12:19:10 PM]:	INFO -	Variance Inflation Factor #2: 1.007465
