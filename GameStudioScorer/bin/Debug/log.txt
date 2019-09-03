@@ -1851,3 +1851,33 @@ Path '', line 1, position 1.. Occurred for Epic Games
 [9/2/2019 12:19:10 PM]:	INFO -	Variance Inflation Factor #0: 1.023741
 [9/2/2019 12:19:10 PM]:	INFO -	Variance Inflation Factor #1: 1.030347
 [9/2/2019 12:19:10 PM]:	INFO -	Variance Inflation Factor #2: 1.007465
+
+
+--------------------------------------------------------------------
+
+[9/3/2019 9:42:42 AM]:	DEBUG -	Rockstar Games, {Rockstar Games|Rockstar|Rockstar Games Studios|Rockstar Games Studio}
+[9/3/2019 9:44:34 AM]:	DEBUG -	Treyarch, {Treyarch|Treyarch Games|Treyarch Studios|Treyarch Studio}
+[9/3/2019 9:46:09 AM]:	DEBUG -	Epic Games, {Epic Games|Epic|Epic Games Studios|Epic Games Studio}
+[9/3/2019 9:47:47 AM]:	DEBUG -	Electronic Arts, {Electronic Arts|Electronic Arts Games|Electronic Arts Studios|Electronic Arts Studio}
+[9/3/2019 9:49:16 AM]:	DEBUG -	Telltale Games, {Telltale Games|Telltale|Telltale Games Studios|Telltale Games Studio}
+[9/3/2019 9:50:45 AM]:	DEBUG -	BioWare, {BioWare|BioWare Games|BioWare Studios|BioWare Studio}
+[9/3/2019 9:52:09 AM]:	DEBUG -	NetherRealm Studios, {NetherRealm Studios|NetherRealm Studios Games|NetherRealm|NetherRealm Studios Studio}
+[9/3/2019 9:53:27 AM]:	DEBUG -	CD Projekt SA, {CD Projekt|CD Projekt Games|CD Projekt Studios|CD Projekt Studio}
+[9/3/2019 9:55:03 AM]:	DEBUG -	Capcom, {Capcom|Capcom Games|Capcom Studios|Capcom Studio}
+[9/3/2019 9:56:36 AM]:	DEBUG -	Techland Sp. z o.o., {Techland|Techland Games|Techland Studios|Techland Studio}
+[9/3/2019 9:57:21 AM]:	DEBUG -	IO Interactive, {IO Interactive|IO Interactive Games|IO Interactive Studios|IO Interactive Studio}
+[9/3/2019 9:58:25 AM]:	DEBUG -	Relentless Software, {Relentless Software|Relentless Software Games|Relentless Software Studios|Relentless Software Studio}
+[9/3/2019 9:59:20 AM]:	DEBUG -	Schell Games, {Schell Games|Schell|Schell Games Studios|Schell Games Studio}
+[9/3/2019 10:00:35 AM]:	DEBUG -	Playground Games, {Playground Games|Playground|Playground Games Studios|Playground Games Studio}
+[9/3/2019 10:01:30 AM]:	DEBUG -	4A Games, {4A Games|4A|4A Games Studios|4A Games Studio}
+[9/3/2019 10:02:35 AM]:	DEBUG -	Avalanche Studios, {Avalanche Studios|Avalanche Studios Games|Avalanche|Avalanche Studios Studio}
+[9/3/2019 10:03:53 AM]:	DEBUG -	Bandai Namco Entertainment, {Bandai Namco|Bandai Namco Games|Bandai Namco Studios|Bandai Namco Studio}
+[9/3/2019 10:05:17 AM]:	DEBUG -	Milestone s.r.l., {Milestone S.r.l.|Milestone S.r.l. Games|Milestone S.r.l. Studios|Milestone S.r.l. Studio}
+
+
+--------------------------------------------------------------------
+
+[9/3/2019 10:20:24 AM]:	INFO -	Average K-score: 0.01860175
+[9/3/2019 10:20:24 AM]:	INFO -	Variance Inflation Factor #0: 1.023372
+[9/3/2019 10:20:24 AM]:	INFO -	Variance Inflation Factor #1: 1.037003
+[9/3/2019 10:20:24 AM]:	INFO -	Variance Inflation Factor #2: 1.013747

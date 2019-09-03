@@ -55,6 +55,10 @@ namespace GameStudioScorer.Crunch
 			BestFit bf = MathUtils.ExpRegression(inputs, yearsF.ToArray());
 			ExponentialEquation exp = (ExponentialEquation)bf.equation;
 
+			float x = exp.r * employeeCount;
+			return (float)(1.0f / (1.0f + Math.Exp(-9.2 * (x - 0.5f))));
+
+
 			//Reflect the exponential equation into a logarithmic one, which makes it
 			//easier to get differences in values, since they can now be tested with
 			//a vertical, as opposed to horizontal, line.
@@ -96,22 +100,25 @@ namespace GameStudioScorer.Crunch
 
 			Logger.Log(name + ", " + aliases.ToArray().GetString(), Logger.LogLevel.DEBUG, true);
 
+			float totalX = 0.0f;
+			float totalY = 0.0f;
+
 			if (genres != null && genres.Length > 0)
 			{
-				float total = 0.0f;
-				foreach (int i in genres)
-					total += GENRE_SCORES[i];
+				for (int i = 0; i < genres.Length; i++)
+				{
+					float angle = (float)((i / 7) * 2 * Math.PI);
 
-				if (genres.Length == 0)
-					return 0.5f;
-
-				return total / genres.Length;
+					totalX += genres[i] * (float)Math.Cos(angle);
+					totalY += genres[i] * (float)Math.Sin(angle);
+				}
 			}
 			else
 			{
 				//If an exception was thrown, it means the name doesn't exist on IGDB.
 				//Then we use the different aliases.
 
+				bool broken = false;
 				foreach (string alias in aliases)
 				{
 					genres = IGDBInterfacer.GetGenres(alias);
@@ -120,15 +127,31 @@ namespace GameStudioScorer.Crunch
 					if (genres == null || genres.Length <= 0)
 						continue;
 
-					float total = 0.0f;
-					foreach (int i in genres)
-						total += GENRE_SCORES[i];
+					for (int i = 0; i < genres.Length; i++)
+					{
+						float angle = (float)((i / 7) * 2 * Math.PI);
 
-					return total / genres.Length;
+						totalX += genres[i] * (float)Math.Cos(angle);
+						totalY += genres[i] * (float)Math.Sin(angle);
+					}
+
+					broken = true;
+					break;
 				}
 
-				throw new Exception(name + " doesn't exist in IGDB!");
+				if(broken)
+					throw new Exception(name + " doesn't exist in IGDB!");
 			}
+
+			totalX /= genres.Length;
+			totalY /= genres.Length;
+
+			float hyp = (float)Math.Sqrt((totalX * totalX) + (totalY * totalY));
+
+			totalX /= hyp;
+			totalY /= hyp;
+
+			return (float)(Math.Atan(totalY / totalX) / (2 * Math.PI));
 		}
 
 		/// <summary>
