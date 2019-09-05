@@ -46,7 +46,7 @@ namespace GameStudioScorer.Regression
 				{
 					string writeLine = studio.Key + ":";
 					foreach (float f in studio.Value)
-						writeLine += f + "-";
+						writeLine += f + "&";
 					writeLine = writeLine.Substring(0, writeLine.Length - 1) + ":1";
 					writer.WriteLine(writeLine);
 				}
@@ -65,7 +65,7 @@ namespace GameStudioScorer.Regression
 				{
 					string writeLine = studio.Key + ":";
 					foreach (float f in studio.Value)
-						writeLine += f + "-";
+						writeLine += f + "&";
 					writeLine = writeLine.Substring(0, writeLine.Length - 1) + ":0";
 					writer.WriteLine(writeLine);
 				}
@@ -105,6 +105,7 @@ namespace GameStudioScorer.Regression
 				for (int a = 0; a < score.Value.Length; a++)
 					inputs[a] = score.Value[a];
 
+				//Get the probability
 				double prob = regression.Probability(inputs);
 
 				probabilities.Add(score.Key, prob);
@@ -115,7 +116,7 @@ namespace GameStudioScorer.Regression
 			probList.Sort((x, y) => x.Value.CompareTo(y.Value));
 
 			foreach(KeyValuePair<string, double> score in probList)
-				Console.WriteLine("{0, -40}: {1, -15}", score.Key, score.Value);
+				Console.WriteLine("{0, -40}: {1, -20} {2, 15}", score.Key, score.Value, (score.Value >= 0.5f) ? ": TRUE " : ": FALSE");
 		}
 
 		/// <summary>
@@ -135,7 +136,7 @@ namespace GameStudioScorer.Regression
 				string[] split = lines[a].Split(':');
 
 				//Dynamically get variables from file.
-				string[] scores = split[1].Split('-');
+				string[] scores = split[1].Split('&');
 				inputs[a] = new double[scores.Length];
 				for (int b = 0; b < scores.Length; b++)
 					inputs[a][b] = double.Parse(scores[b]);
@@ -148,7 +149,7 @@ namespace GameStudioScorer.Regression
 			{
 				Tolerance = 1e-4,
 				MaxIterations = 100,
-				Regularization = 0
+				Regularization = 1e-10
 			};
 
 

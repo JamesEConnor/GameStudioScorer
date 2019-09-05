@@ -58,10 +58,10 @@ namespace GameStudioScorer
 
 				//If studio is specified, use it. Otherwise, load from the file.
 				if (options.studio == "null")
-					scores = GetScores(lines[0].Split(new string[] { ", " }, StringSplitOptions.None));
+					scores = GetScores(lines[0].Split(new string[] { ", " }, StringSplitOptions.None), 2);
 				else
 					scores = GetScores(new string[] { options.studio });
-
+				
 				//Print the values out.
 				if (options.RegressionType == 'p')
 				{
@@ -86,13 +86,19 @@ namespace GameStudioScorer
 				else if (options.RegressionType == 's')
 				{
 					//Get the scores for the second line of the set.
-					List<KeyValuePair<string, float[]>> noCrunchScores = GetScores(lines[1].Split(new string[] { ", " }, StringSplitOptions.None));
+					List<KeyValuePair<string, float[]>> noCrunchScores = (options.studio == "null") ?
+						GetScores(lines[1].Split(new string[] { ", " }, StringSplitOptions.None)) :
+						new List<KeyValuePair<string, float[]>>();
 
 					//Save data to file.
 					LRegression.SaveToDataFile(scores, noCrunchScores, options.fileName);
 				}
 				else if (options.RegressionType == 'm')
 				{
+					//Get additional lines.
+					for (int c = 1; c < lines.Length; c++)
+						scores.AddRange(GetScores(lines[c].Split(new string[] { ", " }, StringSplitOptions.None), 1));
+
 					//Model based off of learned weights.
 					LRegression.Model(scores, options.modelName);
 				}
@@ -114,24 +120,26 @@ namespace GameStudioScorer
 		/// <returns>A list of KeyValuePairs in which the provided studios are the keys
 		///  and their values are arrays of scores (of length 3).</returns>
 		/// <param name="studios">The different studios to get scores for.</param>
-		public static List<KeyValuePair<string, float[]>> GetScores(string[] studios)
+		public static List<KeyValuePair<string, float[]>> GetScores(string[] studios, int crunches = 0)
 		{
 			Dictionary<string, float[]> dict = new Dictionary<string, float[]>();
 			foreach (string studio in studios)
 			{
+				string s = studio.Replace("company", "").Trim();
+
 				try
 				{
 					//Gets a StudioInfo object, containing all sorts of goodies.
-					StudioInfo si = Giantbomb.GiantBombInterfacer.GetStudio(studio, DEBUG_MODE);
+					StudioInfo si = Giantbomb.GiantBombInterfacer.GetStudio(s, DEBUG_MODE);
 
 					//Add the different values to the dictionary.
-					dict.Add(studio, new float[]{
-						si.CrunchOvertimeScore, si.GenreScore, si.ReviewScore
+					dict.Add(studio + ((crunches == 2) ? " - TRUE" : (crunches == 1) ? " - FALSE" : ""), new float[]{
+						si.CrunchOvertimeScore, si.GenreScore, si.ReviewScore, si.ConsScore
 					});
 
 					//If we force-calculated new values or if it doesn't already exist,
-					//cache the Studio.
-					if (DEBUG_MODE || LocalCacheManager.GetCachedInfo(studio).id == "-1")
+					//cache the Studio
+					if (MainClass.options.force || LocalCacheManager.GetCachedInfo(studio).id == "-1")
 						LocalCacheManager.SaveCachedInfo(studio, si);
 				}
 				catch(Exception e)

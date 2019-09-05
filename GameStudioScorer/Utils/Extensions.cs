@@ -13,7 +13,11 @@ namespace GameStudioScorer.Extensions
 		//Used for removing company suffixes from names.
 		//https://en.wikipedia.org/wiki/List_of_legal_entity_types_by_country
 		static readonly string[] COMPANY_SUFFIXES = {
-			"lp", "llp", "lllp", "llc", "lc", "ltd", "co", "pllc", "corp", "pc", "cic", "plc", "cyf", "ccc", "inc", "ent", "ltd co", "coop", "gp"
+			"lp", "llp", "lllp", "llc", "lc", "ltd", "co", "pllc", "corp", "pc", "cic", "plc", "cyf", "ccc", "inc", "ent", "ltd co", "coop", "gp", "sa", "sc", "ska", "spj", "spk", "spp", "saa", "sac", "saog", "saoc", "asa", "as", "ans", "ba", "da", "iks", "kf", "ks", "nuf", "cia", "cia ltda", "scs", "wa", "ua", "mij", "vof", "cv", "bv", "nv", "sarl", "gie", "snc"
+		};
+
+		static readonly string[] COMPANY_SUFFIXES_WITH_SPACES = {
+			"sp z oo"
 		};
 
 		/// <summary>
@@ -119,12 +123,20 @@ namespace GameStudioScorer.Extensions
 				if (key.Contains("employee"))
 				{
 					//Use some Regex to remove the html stuff.
-					string val = Regex.Replace(dict[key], "<.+?>.+<\\/.+?>", "");
-					//Use some Regex to remove everything but the numbers.
+					string val = Regex.Replace(dict[key], "<.+?>.+<\\/.+?>|<.+\\/>", "");
 
+					//Remove years
+					val = Regex.Replace(val, "\\(.+\\)", "");
+
+					//Remove any year ranges and take the bottom value.
 					if (val.Contains('-'))
-						val = val.Substring(0, val.IndexOf('-'));
-
+						val = val.Substring(0, val.IndexOf('-')).Trim();
+					if (val.Contains("to"))
+						val = val.Substring(0, val.IndexOf("to", StringComparison.CurrentCultureIgnoreCase)).Trim();
+					if (val.Contains('|'))
+						val = val.Substring(0, val.IndexOf('|')).Trim();
+					
+					//Use some Regex to remove everything but the numbers.
 					string result = Regex.Replace(val, "[^\\d]+", "");
 
 					//If the result is parsable, the number of employees has been found!
@@ -229,6 +241,29 @@ namespace GameStudioScorer.Extensions
 			//Is the suffix a company suffix?
 			if (Array.IndexOf(COMPANY_SUFFIXES, suffix.ToLower()) > -1)
 				return name.Substring(0, name.LastIndexOf(' ')).TrimEnd(new char[] { ',' });
+
+			//Name without punctuation
+			string nameWO = name.Replace(".", "").Replace(",", "").ToLower();
+
+			//Loop through all of the company suffixes that have spaces.
+			foreach (string str in COMPANY_SUFFIXES_WITH_SPACES)
+			{
+				//If the name ends with the suffix
+				if (nameWO.EndsWith(str, StringComparison.CurrentCultureIgnoreCase))
+				{
+					//Count the number of spaces and construct a substring
+					//This is to counteract the removal of any punctuation from earlier
+					//that's actually part of the name and not part of the suffix.
+					int spaceCount = str.Count((arg) => arg == ' ');
+					string[] split = name.Split(' ');
+					string result = "";
+					for (int b = 0; b < split.Length - spaceCount - 1; b++)
+						result += split[b];
+
+					//Return the result.
+					return result.Trim();
+				}
+			}
 
 			//If it's not a company suffix, return the name.
 			return name;

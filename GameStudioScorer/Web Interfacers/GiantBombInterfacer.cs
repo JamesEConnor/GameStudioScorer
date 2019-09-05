@@ -36,7 +36,7 @@ namespace GameStudioScorer.Giantbomb
 			//Check to see if there's a cached value, unless we are forcibly retrieving
 			//new values.
 			StudioInfo si;
-			if (!DEBUG)
+			if (!MainClass.options.force)
 			{
 				si = LocalCacheManager.GetCachedInfo(name);
 				si.aliases = Extensions.Extensions.CreateAliasList(name);
@@ -220,6 +220,7 @@ namespace GameStudioScorer.Giantbomb
 			result.Add(company.guid);
 
 			result.Add(company.name.removeCompanySuffix());
+			Console.WriteLine(company.name.removeCompanySuffix());
 
 			//Return the game information, including the years, ID, and studio name.
 			return result.ToArray();

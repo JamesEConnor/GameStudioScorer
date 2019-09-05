@@ -181,7 +181,7 @@ def scrape(field, review, author):
             pass
         try:
             cons = review.find_element_by_xpath (".//div/div/p[contains(text(),'Cons')]/following-sibling::p")  
-            res = cons.text.strip('-')
+            res = cons.text.strip('-').replace(",", "")
         except Exception:
             res = np.nan
         return res
@@ -244,7 +244,7 @@ def scrape(field, review, author):
         #scrape_years,
         #scrape_helpful,
         #scrape_pros,
-        #scrape_cons,
+        scrape_cons,
         #scrape_advice,
         scrape_overall_rating#,
         #scrape_work_life_balance,
@@ -456,4 +456,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception:
+        print("null")
+        exit(0)

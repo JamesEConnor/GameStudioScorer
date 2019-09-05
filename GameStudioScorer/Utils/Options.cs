@@ -27,5 +27,8 @@ namespace GameStudioScorer
 
 		[Option("debug", Required = false, HelpText = "Is the scorer in debug mode?", Default=false)]
 		public bool debug { get; set; }
+
+		[Option("force", Required = false, HelpText = "Whether the scorer should forcibly refresh values (in other words, ignore the local cache)", Default = false)]
+		public bool force { get; set; }
 	}
 }

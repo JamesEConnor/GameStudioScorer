@@ -89,36 +89,39 @@ namespace GameStudioScorer.IGDB
 			//31 = Adventure
 			foreach (int i in genres)
 			{
-				if (i == 9)
-					return 1;
-				else if (i == 12)
-					return 2;
-				else if (i == 13)
-					return 3;
-				else if (i == 14)
-					return 4;
-				else if (i == 15)
+				if (i == 9) //Puzzle
 					return 5;
-				else if (i == 31)
+				else if (i == 12) //RPG
+					return 2;
+				else if (i == 13) //Simulator
 					return 6;
+				else if (i == 14) //Sport
+					return 1;
+				else if (i == 15) //Strategy
+					return 3;
+				else if (i == 31) //Adventure
+					return 4;
 			}
 
 			//If it doesn't belong to a specific genre, check all the ones provided
 			//and figure out which one it should belong to.
 			//Action, Puzzle, RPG, Simulator, Sport, Strategy, Adventure
+
+			//New ones:
+			//Action, Sport, RPG, Strategy, Adventure, Puzzle, Simulator
 			int[] genre_points = new int[7];
 			foreach (int i in genres)
 			{
-				if (i == 4 || i == 5 || i == 25 || i == 33)
+				if (i == 4 || i == 5 || i == 25 || i == 33) //Action
 					genre_points[0]++;
-				else if (i == 2 || i == 7 || i == 8 || i == 26 || i == 30)
-					genre_points[1]++;
-				else if (i == 10)
-					genre_points[4]++;
-				else if (i == 11 || i == 16 || i == 24)
+				else if (i == 2 || i == 7 || i == 8 || i == 26 || i == 30) //Puzzle
 					genre_points[5]++;
-				else if (i == 32)
-					genre_points[6]++;
+				else if (i == 10) //Sports
+					genre_points[1]++;
+				else if (i == 11 || i == 16 || i == 24) //Strategy
+					genre_points[3]++;
+				else if (i == 32) //Adventure
+					genre_points[4]++;
 			}
 
 			//Whichever genre the game most likely belongs to, return it.
@@ -247,7 +250,7 @@ namespace GameStudioScorer
 				//we have to make sure we don't already have a cached value before
 				//calling it.
 				if (!_setReviewScore)
-					_ReviewScore = Crunch.CrunchScorer.GetReviewScore(name);
+					_ReviewScore = Crunch.CrunchScorer.GetReviewScore(name)[1];
 
 				//At this point, one way or the other, the score has been set.
 				_setReviewScore = true;
@@ -258,6 +261,31 @@ namespace GameStudioScorer
 				//If you set it, make sure you keep track of that.
 				_setReviewScore = true;
 				_ReviewScore = value;
+			}
+		}
+
+		private float _ConsScore;
+		private bool _setConsScore;
+
+		public float ConsScore
+		{
+			get
+			{
+				//Since this uses a lengthy and expensive web request system,
+				//we have to make sure we don't already have a cached value before
+				//calling it.
+				if (!_setConsScore)
+					_ConsScore = Crunch.CrunchScorer.GetReviewScore(name)[0];
+
+				//At this point, one way or the other, the score has been set.
+				_setConsScore = true;
+				return _ConsScore;
+			}
+			set
+			{
+				//If you set it, make sure you keep track of that.
+				_setConsScore = true;
+				_ConsScore = value;
 			}
 		}
 

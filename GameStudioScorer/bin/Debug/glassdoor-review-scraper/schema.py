@@ -7,7 +7,7 @@ SCHEMA = [
     #'years_at_company',
     #'helpful',
     #'pros',
-    #'cons',
+    'cons',
     #'advice_to_mgmt',
     'rating_overall'#,
     #'rating_balance',

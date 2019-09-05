@@ -55,21 +55,10 @@ namespace GameStudioScorer.Crunch
 			BestFit bf = MathUtils.ExpRegression(inputs, yearsF.ToArray());
 			ExponentialEquation exp = (ExponentialEquation)bf.equation;
 
+			//Return the rate. The higher the rate (steeper curve), the less likely to crunch.
+			//Takes into account the number of employees.
 			float x = exp.r * employeeCount;
-			return (float)(1.0f / (1.0f + Math.Exp(-9.2 * (x - 0.5f))));
-
-
-			//Reflect the exponential equation into a logarithmic one, which makes it
-			//easier to get differences in values, since they can now be tested with
-			//a vertical, as opposed to horizontal, line.
-			LogarithmicEquation log = new LogarithmicEquation(1/exp.A, exp.r, employeeCount);
-
-			//This measures the area under the log curve between 1 and some arbitrary value.
-			//This is to normalize it and therefore make it easier for the program to manage.
-			//However, this has a theoretical minimum of 0.5, so it's reduced and multiplied
-			//to make it fit the range 0 - 1.
-			const int length = 20;
-			return (MathUtils.LogarithmicIntegral(log, 1f, length + 1)/(length * log.GetValue(length + 1)) - 0.5f) * 2;
+			return x;
 		}
 
 		/// <summary>
@@ -100,13 +89,17 @@ namespace GameStudioScorer.Crunch
 
 			Logger.Log(name + ", " + aliases.ToArray().GetString(), Logger.LogLevel.DEBUG, true);
 
+			//Uses a Unit Circle based system.
 			float totalX = 0.0f;
 			float totalY = 0.0f;
 
 			if (genres != null && genres.Length > 0)
 			{
+				
 				for (int i = 0; i < genres.Length; i++)
 				{
+					//Get the angle because it uses a unit-circle based system.
+					//See the ReadMe or Whitepaper for more info.
 					float angle = (float)((i / 7) * 2 * Math.PI);
 
 					totalX += genres[i] * (float)Math.Cos(angle);
@@ -121,6 +114,7 @@ namespace GameStudioScorer.Crunch
 				bool broken = false;
 				foreach (string alias in aliases)
 				{
+					Console.WriteLine(alias);
 					genres = IGDBInterfacer.GetGenres(alias);
 
 					//This means this name doesn't exist either, so try the next one.
@@ -129,6 +123,8 @@ namespace GameStudioScorer.Crunch
 
 					for (int i = 0; i < genres.Length; i++)
 					{
+						//Get the angle because it uses a unit-circle based system.
+						//See the ReadMe or Whitepaper for more info.
 						float angle = (float)((i / 7) * 2 * Math.PI);
 
 						totalX += genres[i] * (float)Math.Cos(angle);
@@ -139,18 +135,22 @@ namespace GameStudioScorer.Crunch
 					break;
 				}
 
-				if(broken)
+				//If no genres were found, throw an exception.
+				if(!broken)
 					throw new Exception(name + " doesn't exist in IGDB!");
 			}
 
+			//Average
 			totalX /= genres.Length;
 			totalY /= genres.Length;
 
+			//Normalize
 			float hyp = (float)Math.Sqrt((totalX * totalX) + (totalY * totalY));
 
 			totalX /= hyp;
 			totalY /= hyp;
 
+			//Return the value.
 			return (float)(Math.Atan(totalY / totalX) / (2 * Math.PI));
 		}
 
@@ -159,7 +159,7 @@ namespace GameStudioScorer.Crunch
 		/// </summary>
 		/// <returns>The review score.</returns>
 		/// <param name="studioName">The name of the Studio.</param>
-		public static float GetReviewScore(string studioName)
+		public static float[] GetReviewScore(string studioName)
 		{
 			//Log information
 			if(Logger.VERBOSE)
@@ -201,7 +201,7 @@ namespace GameStudioScorer.Crunch
 			}
 
 			if (currentLine == "null")
-				return 0.5f;
+				return new float[] { 0.5f, 0.5f };
 
 			//Execute the review scraper. This takes the link from the search scraper and
 			//gets the overall ratings from the top 40 reviews, or as many reviews that exist.
@@ -226,19 +226,41 @@ namespace GameStudioScorer.Crunch
 
 			while (!p.HasExited) {}
 
+			//If an error occurs, just return 0.5 for each.
+			currentLine = "";
+			while (p.StandardOutput.Peek() > -1)
+			{
+				currentLine = p.StandardOutput.ReadLine();
+			}
+
+			if (currentLine == "null")
+				return new float[] { 0.5f, 0.5f };
+
 
 			//Add up all the ratings, average them, and then normalize them, since they're
 			//all between 1 and 5.
 			float ratingTotal = 0.0f;
+			float conTotal = 0.0f;
 
+			//Searches all of the cons for terms that would imply crunch is used.
 			string[] lines = File.ReadAllLines(AppDomain.CurrentDomain.BaseDirectory + "/glassdoor-review-scraper/reviews.csv");
 			for (int a = 1; a < lines.Length; a++)
 			{
-				ratingTotal += float.Parse(lines[a]);
+				string[] split = lines[a].Split(',');
+
+				split[0] = split[0].ToLower();
+				if (split[0].Contains("overtime") || split[0].Contains("work life balance") || split[0].Contains("work-life balance") || split[0].Contains("crunch"))
+					conTotal++;
+
+				ratingTotal += float.Parse(split[1]);
 			}
 
+			//Average the values.
 			ratingTotal /= lines.Length - 1;
-			return ratingTotal / 5;
+			conTotal /= lines.Length - 1;
+
+			//Return the values.
+			return new float[] { conTotal, ratingTotal / 5};
 		}
 	}
 }
