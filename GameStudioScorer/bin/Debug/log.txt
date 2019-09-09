@@ -4714,3 +4714,865 @@ Path '', line 1, position 1.. Occurred for Epic Games
    at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
    at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
    at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 10:47:27 AM]:	ERROR -	Input string was not in a correct format.. Occurred for Platinum Games
+[9/8/2019 10:47:27 AM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 10:47:27 AM]:	ERROR -	Input string was not in a correct format.. Occurred for Funcom
+[9/8/2019 10:47:27 AM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 10:47:30 AM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Tose (company)
+[9/8/2019 10:47:30 AM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 10:47:30 AM]:	ERROR -	Input string was not in a correct format.. Occurred for Take-Two Interactive
+[9/8/2019 10:47:30 AM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 10:47:30 AM]:	ERROR -	Input string was not in a correct format.. Occurred for 5th Cell
+[9/8/2019 10:47:30 AM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 10:47:30 AM]:	ERROR -	Input string was not in a correct format.. Occurred for Machine Games
+[9/8/2019 10:47:30 AM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 10:47:30 AM]:	ERROR -	Input string was not in a correct format.. Occurred for Warthog Games
+[9/8/2019 10:47:30 AM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 10:47:30 AM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Fullbright (company)
+[9/8/2019 10:47:30 AM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 10:47:30 AM]:	ERROR -	Input string was not in a correct format.. Occurred for LucasArts
+[9/8/2019 10:47:30 AM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 10:47:30 AM]:	ERROR -	Input string was not in a correct format.. Occurred for Atlus
+[9/8/2019 10:47:30 AM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 10:47:30 AM]:	ERROR -	Input string was not in a correct format.. Occurred for Razorworks
+[9/8/2019 10:47:30 AM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 11:52:59 AM]:	INFO -	Average K-score: 0.275403
+[9/8/2019 11:52:59 AM]:	INFO -	Variance Inflation Factor #0: 1.146519
+[9/8/2019 11:52:59 AM]:	INFO -	Variance Inflation Factor #1: 1.714311
+[9/8/2019 11:52:59 AM]:	INFO -	Variance Inflation Factor #2: 1.55836
+[9/8/2019 11:52:59 AM]:	INFO -	Variance Inflation Factor #3: 1.265491
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 11:53:30 AM]:	INFO -	Average K-score: 0.275403
+[9/8/2019 11:53:30 AM]:	INFO -	Variance Inflation Factor #0: 1.146519
+[9/8/2019 11:53:30 AM]:	INFO -	Variance Inflation Factor #1: 1.714311
+[9/8/2019 11:53:30 AM]:	INFO -	Variance Inflation Factor #2: 1.55836
+[9/8/2019 11:53:30 AM]:	INFO -	Variance Inflation Factor #3: 1.265491
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 1:00:24 PM]:	INFO -	Average K-score: 0.2736968
+[9/8/2019 1:00:24 PM]:	INFO -	Variance Inflation Factor #0: 3731824
+[9/8/2019 1:00:24 PM]:	INFO -	Variance Inflation Factor #1: 3731597
+[9/8/2019 1:00:24 PM]:	INFO -	Variance Inflation Factor #2: 1.72449
+[9/8/2019 1:00:24 PM]:	INFO -	Variance Inflation Factor #3: 1.715879
+[9/8/2019 1:00:24 PM]:	INFO -	Variance Inflation Factor #4: 1.285405
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 1:00:32 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Platinum Games
+[9/8/2019 1:00:32 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:32 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Funcom
+[9/8/2019 1:00:32 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:34 PM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Tose (company)
+[9/8/2019 1:00:34 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:34 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Take-Two Interactive
+[9/8/2019 1:00:34 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:34 PM]:	ERROR -	Input string was not in a correct format.. Occurred for 5th Cell
+[9/8/2019 1:00:34 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:34 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Machine Games
+[9/8/2019 1:00:34 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:34 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Warthog Games
+[9/8/2019 1:00:34 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:34 PM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Fullbright (company)
+[9/8/2019 1:00:34 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:34 PM]:	ERROR -	Input string was not in a correct format.. Occurred for LucasArts
+[9/8/2019 1:00:34 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:34 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Atlus
+[9/8/2019 1:00:34 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:34 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Razorworks
+[9/8/2019 1:00:34 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 1:00:56 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Platinum Games
+[9/8/2019 1:00:56 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:56 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Funcom
+[9/8/2019 1:00:56 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:56 PM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Tose (company)
+[9/8/2019 1:00:56 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:56 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Take-Two Interactive
+[9/8/2019 1:00:56 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:56 PM]:	ERROR -	Input string was not in a correct format.. Occurred for 5th Cell
+[9/8/2019 1:00:56 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:56 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Machine Games
+[9/8/2019 1:00:56 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:56 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Warthog Games
+[9/8/2019 1:00:56 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:56 PM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Fullbright (company)
+[9/8/2019 1:00:56 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:56 PM]:	ERROR -	Input string was not in a correct format.. Occurred for LucasArts
+[9/8/2019 1:00:56 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:56 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Atlus
+[9/8/2019 1:00:56 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:00:56 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Razorworks
+[9/8/2019 1:00:56 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 1:01:29 PM]:	INFO -	Average K-score: 0.2705681
+[9/8/2019 1:01:30 PM]:	INFO -	Variance Inflation Factor #0: 1.02179
+[9/8/2019 1:01:30 PM]:	INFO -	Variance Inflation Factor #1: 1.66737
+[9/8/2019 1:01:30 PM]:	INFO -	Variance Inflation Factor #2: 1.573901
+[9/8/2019 1:01:30 PM]:	INFO -	Variance Inflation Factor #3: 1.10033
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 1:01:34 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Platinum Games
+[9/8/2019 1:01:35 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:01:35 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Funcom
+[9/8/2019 1:01:35 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:01:36 PM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Tose (company)
+[9/8/2019 1:01:36 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:01:36 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Take-Two Interactive
+[9/8/2019 1:01:36 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:01:36 PM]:	ERROR -	Input string was not in a correct format.. Occurred for 5th Cell
+[9/8/2019 1:01:36 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:01:36 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Machine Games
+[9/8/2019 1:01:36 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:01:36 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Warthog Games
+[9/8/2019 1:01:36 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:01:36 PM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Fullbright (company)
+[9/8/2019 1:01:36 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:01:36 PM]:	ERROR -	Input string was not in a correct format.. Occurred for LucasArts
+[9/8/2019 1:01:36 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:01:36 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Atlus
+[9/8/2019 1:01:36 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:01:36 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Razorworks
+[9/8/2019 1:01:36 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 1:02:56 PM]:	INFO -	Average K-score: 0.2705681
+[9/8/2019 1:02:56 PM]:	INFO -	Variance Inflation Factor #0: 1.02179
+[9/8/2019 1:02:56 PM]:	INFO -	Variance Inflation Factor #1: 1.66737
+[9/8/2019 1:02:56 PM]:	INFO -	Variance Inflation Factor #2: 1.573901
+[9/8/2019 1:02:56 PM]:	INFO -	Variance Inflation Factor #3: 1.10033
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 1:03:02 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Platinum Games
+[9/8/2019 1:03:02 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:03:02 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Funcom
+[9/8/2019 1:03:02 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:03:03 PM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Tose (company)
+[9/8/2019 1:03:03 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:03:03 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Take-Two Interactive
+[9/8/2019 1:03:03 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:03:03 PM]:	ERROR -	Input string was not in a correct format.. Occurred for 5th Cell
+[9/8/2019 1:03:03 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:03:03 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Machine Games
+[9/8/2019 1:03:03 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:03:03 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Warthog Games
+[9/8/2019 1:03:03 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:03:03 PM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Fullbright (company)
+[9/8/2019 1:03:03 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:03:03 PM]:	ERROR -	Input string was not in a correct format.. Occurred for LucasArts
+[9/8/2019 1:03:03 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:03:03 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Atlus
+[9/8/2019 1:03:03 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+[9/8/2019 1:03:03 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Razorworks
+[9/8/2019 1:03:03 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 133
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 1:14:55 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Platinum Games
+[9/8/2019 1:14:55 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 144
+[9/8/2019 1:14:55 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Funcom
+[9/8/2019 1:14:55 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 144
+[9/8/2019 1:14:56 PM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Tose (company)
+[9/8/2019 1:14:56 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 144
+[9/8/2019 1:14:56 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Take-Two Interactive
+[9/8/2019 1:14:56 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 144
+[9/8/2019 1:14:56 PM]:	ERROR -	Input string was not in a correct format.. Occurred for 5th Cell
+[9/8/2019 1:14:56 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 144
+[9/8/2019 1:14:56 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Machine Games
+[9/8/2019 1:14:56 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 144
+[9/8/2019 1:14:56 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Warthog Games
+[9/8/2019 1:14:56 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 144
+[9/8/2019 1:14:56 PM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Fullbright (company)
+[9/8/2019 1:14:56 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 144
+[9/8/2019 1:14:56 PM]:	ERROR -	Input string was not in a correct format.. Occurred for LucasArts
+[9/8/2019 1:14:56 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 144
+[9/8/2019 1:14:56 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Atlus
+[9/8/2019 1:14:56 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 144
+[9/8/2019 1:14:56 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Razorworks
+[9/8/2019 1:14:56 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 144
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 1:44:40 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Platinum Games
+[9/8/2019 1:44:40 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:44:40 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Funcom
+[9/8/2019 1:44:40 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:44:41 PM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Tose (company)
+[9/8/2019 1:44:41 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:44:41 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Take-Two Interactive
+[9/8/2019 1:44:41 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:44:41 PM]:	ERROR -	Input string was not in a correct format.. Occurred for 5th Cell
+[9/8/2019 1:44:41 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:44:41 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Machine Games
+[9/8/2019 1:44:41 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:44:41 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Warthog Games
+[9/8/2019 1:44:41 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:44:41 PM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Fullbright (company)
+[9/8/2019 1:44:42 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:44:42 PM]:	ERROR -	Input string was not in a correct format.. Occurred for LucasArts
+[9/8/2019 1:44:42 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:44:42 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Atlus
+[9/8/2019 1:44:42 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:44:42 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Razorworks
+[9/8/2019 1:44:42 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 1:46:51 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Machine Games
+[9/8/2019 1:46:51 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[9/8/2019 1:46:51 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Warthog Games
+[9/8/2019 1:46:51 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[9/8/2019 1:46:52 PM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Fullbright (company)
+[9/8/2019 1:46:52 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[9/8/2019 1:46:52 PM]:	ERROR -	Input string was not in a correct format.. Occurred for LucasArts
+[9/8/2019 1:46:52 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[9/8/2019 1:46:52 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Atlus
+[9/8/2019 1:46:52 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[9/8/2019 1:46:52 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Razorworks
+[9/8/2019 1:46:52 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 1:49:27 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Platinum Games
+[9/8/2019 1:49:27 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:49:27 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Funcom
+[9/8/2019 1:49:27 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:49:28 PM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Tose (company)
+[9/8/2019 1:49:28 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:49:28 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Take-Two Interactive
+[9/8/2019 1:49:28 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:49:28 PM]:	ERROR -	Input string was not in a correct format.. Occurred for 5th Cell
+[9/8/2019 1:49:28 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:49:28 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Machine Games
+[9/8/2019 1:49:28 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:49:28 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Warthog Games
+[9/8/2019 1:49:28 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:49:28 PM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Fullbright (company)
+[9/8/2019 1:49:28 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:49:28 PM]:	ERROR -	Input string was not in a correct format.. Occurred for LucasArts
+[9/8/2019 1:49:28 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:49:28 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Atlus
+[9/8/2019 1:49:28 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:49:28 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Razorworks
+[9/8/2019 1:49:28 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 1:50:46 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Take-Two Interactive
+[9/8/2019 1:50:46 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:50:46 PM]:	ERROR -	Input string was not in a correct format.. Occurred for 5th Cell
+[9/8/2019 1:50:46 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 1:51:42 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Platinum Games
+[9/8/2019 1:51:42 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:42 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Funcom
+[9/8/2019 1:51:42 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:42 PM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Tose (company)
+[9/8/2019 1:51:42 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:42 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Take-Two Interactive
+[9/8/2019 1:51:42 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:42 PM]:	ERROR -	Input string was not in a correct format.. Occurred for 5th Cell
+[9/8/2019 1:51:42 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:42 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Machine Games
+[9/8/2019 1:51:42 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:42 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Warthog Games
+[9/8/2019 1:51:42 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:42 PM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Fullbright (company)
+[9/8/2019 1:51:42 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:42 PM]:	ERROR -	Input string was not in a correct format.. Occurred for LucasArts
+[9/8/2019 1:51:42 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:42 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Atlus
+[9/8/2019 1:51:42 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:42 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Razorworks
+[9/8/2019 1:51:42 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 1:51:46 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Platinum Games
+[9/8/2019 1:51:46 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:46 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Funcom
+[9/8/2019 1:51:46 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:47 PM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Tose (company)
+[9/8/2019 1:51:47 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:47 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Take-Two Interactive
+[9/8/2019 1:51:47 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:47 PM]:	ERROR -	Input string was not in a correct format.. Occurred for 5th Cell
+[9/8/2019 1:51:47 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:47 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Machine Games
+[9/8/2019 1:51:47 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:47 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Warthog Games
+[9/8/2019 1:51:47 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:47 PM]:	ERROR -	The remote server returned an error: (404) Not Found.. Occurred for Fullbright (company)
+[9/8/2019 1:51:47 PM]:	CRITICAL -	   at System.Net.HttpWebRequest.GetResponse()
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetHTMLCode(String uri) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 113
+   at GameStudioScorer.Wiki.WikipediaRetriever.GetWikiInfo(String topic) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\WikipediaRetriever.cs:line 68
+   at GameStudioScorer.Extensions.Extensions.GetEmployeeCount(String companyName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Utils\Extensions.cs:line 115
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 49
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:47 PM]:	ERROR -	Input string was not in a correct format.. Occurred for LucasArts
+[9/8/2019 1:51:47 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:47 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Atlus
+[9/8/2019 1:51:47 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+[9/8/2019 1:51:47 PM]:	ERROR -	Input string was not in a correct format.. Occurred for Razorworks
+[9/8/2019 1:51:47 PM]:	CRITICAL -	   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 54
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 41
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 148
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 1:59:00 PM]:	DEBUG -	PlatinumGames, {Platinum Games|Platinum|Platinum Games Studios|Platinum Games Studio}
+[9/8/2019 2:00:42 PM]:	DEBUG -	Funcom Productions A/S, {Funcom|Funcom Games|Funcom Studios|Funcom Studio}
+[9/8/2019 2:02:17 PM]:	ERROR -	Tose () doesn't exist on Giantbomb!. Occurred for Tose (company)
+[9/8/2019 2:02:17 PM]:	CRITICAL -	   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name, String wikiName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 126
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 57
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 146
+[9/8/2019 2:02:21 PM]:	DEBUG -	Take-Two Interactive Software, {Take-Two Interactive|Take-Two Interactive Games|Take-Two Interactive Studios|Take-Two Interactive Studio}
+[9/8/2019 2:11:00 PM]:	DEBUG -	5th Cell Media, {5th Cell|5th Cell Games|5th Cell Studios|5th Cell Studio}
+[9/8/2019 2:13:07 PM]:	DEBUG -	Time Machine Games, {Machine Games|Machine|Machine Games Studios|Machine Games Studio}
+[9/8/2019 2:14:31 PM]:	DEBUG -	Warthog, {Warthog Games|Warthog|Warthog Games Studios|Warthog Games Studio}
+[9/8/2019 2:16:09 PM]:	DEBUG -	LucasArts Entertainment Company, {LucasArts|LucasArts Games|LucasArts Studios|LucasArts Studio}
+[9/8/2019 2:17:38 PM]:	DEBUG -	Atlus Co., {Atlus|Atlus Games|Atlus Studios|Atlus Studio}
+[9/8/2019 2:19:25 PM]:	DEBUG -	Razorworks, {Razorworks|Razorworks Games|Razorworks Studios|Razorworks Studio}
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 2:29:23 PM]:	ERROR -	Tose () doesn't exist on Giantbomb!. Occurred for Tose (company)
+[9/8/2019 2:29:23 PM]:	CRITICAL -	   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name, String wikiName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 126
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 57
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 146
+[9/8/2019 2:29:25 PM]:	DEBUG -	Razorworks, {Razorworks|Razorworks Games|Razorworks Studios|Razorworks Studio}
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 2:35:31 PM]:	ERROR -	Tose () doesn't exist on Giantbomb!. Occurred for Tose (company)
+[9/8/2019 2:35:31 PM]:	CRITICAL -	   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetGBInfo(String name, String wikiName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 126
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 57
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 146
+
+
+--------------------------------------------------------------------
+
+[9/8/2019 2:36:05 PM]:	DEBUG -	TOSE Co., {Tose|Tose Games|Tose Studios|Tose Studio}

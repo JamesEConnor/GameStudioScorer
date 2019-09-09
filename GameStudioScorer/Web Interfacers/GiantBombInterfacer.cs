@@ -51,6 +51,8 @@ namespace GameStudioScorer.Giantbomb
 			//Get an alternative topic from Wikipedia.
 			string wikiName = Wiki.WikipediaRetriever.GetActualTopic(name);
 
+			name = Regex.Replace(name, "\\(company\\)", "", RegexOptions.IgnoreCase).Trim();
+
 			//Get information on release dates of games.
 			string[] gameInfo = GetGBInfo(name, wikiName);
 

@@ -47,7 +47,8 @@ namespace GameStudioScorer
 
 			if (options.RegressionType == 'p' ||
 			   options.RegressionType == 's' ||
-			   options.RegressionType == 'm')
+			   options.RegressionType == 'm' ||
+			   options.RegressionType == 'e')
 			{
 				if (!File.Exists("Logistic Regression Model/sets/" + options.setName + ".txt") && options.studio == "null")
 					throw new Exception("Set file must exist or studio must be specified. Consult the ReadMe for more information.");
@@ -61,7 +62,7 @@ namespace GameStudioScorer
 					scores = GetScores(lines[0].Split(new string[] { ", " }, StringSplitOptions.None), 2);
 				else
 					scores = GetScores(new string[] { options.studio });
-				
+
 				//Print the values out.
 				if (options.RegressionType == 'p')
 				{
@@ -96,11 +97,26 @@ namespace GameStudioScorer
 				else if (options.RegressionType == 'm')
 				{
 					//Get additional lines.
-					for (int c = 1; c < lines.Length; c++)
-						scores.AddRange(GetScores(lines[c].Split(new string[] { ", " }, StringSplitOptions.None), 1));
+					if(options.studio == "null")
+						for (int c = 1; c < lines.Length; c++)
+							scores.AddRange(GetScores(lines[c].Split(new string[] { ", " }, StringSplitOptions.None), 1));
 
 					//Model based off of learned weights.
 					LRegression.Model(scores, options.modelName);
+				}
+				else if (options.RegressionType == 'e')
+				{
+					//Get the scores for the second line of the set.
+					List<KeyValuePair<string, float[]>> noCrunchScores = (options.studio == "null") ?
+						GetScores(lines[1].Split(new string[] { ", " }, StringSplitOptions.None)) :
+						new List<KeyValuePair<string, float[]>>();
+
+					//Calculate and print the loss
+					float[] measurements = LRegression.EvaluateModel(scores, noCrunchScores, options.modelName);
+					Console.WriteLine("Loss (SME): " + measurements[0]);
+					Console.WriteLine("False Positive Rate: " + measurements[1]);
+					Console.WriteLine("Overall Accuracy: " + measurements[2]);
+					Console.WriteLine("Correct High Confidence Rate: " + measurements[3]);
 				}
 			}
 			else if (options.RegressionType == 'l')
@@ -125,12 +141,10 @@ namespace GameStudioScorer
 			Dictionary<string, float[]> dict = new Dictionary<string, float[]>();
 			foreach (string studio in studios)
 			{
-				string s = studio.Replace("company", "").Trim();
-
 				try
 				{
 					//Gets a StudioInfo object, containing all sorts of goodies.
-					StudioInfo si = Giantbomb.GiantBombInterfacer.GetStudio(s, DEBUG_MODE);
+					StudioInfo si = Giantbomb.GiantBombInterfacer.GetStudio(studio, DEBUG_MODE);
 
 					//Add the different values to the dictionary.
 					dict.Add(studio + ((crunches == 2) ? " - TRUE" : (crunches == 1) ? " - FALSE" : ""), new float[]{

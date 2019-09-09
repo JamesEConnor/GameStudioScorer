@@ -8,6 +8,7 @@ using Accord.Statistics.Models.Regression.Fitting;
 using GameStudioScorer.Utils;
 using Accord.Statistics.Models.Regression.Linear;
 using Accord.Math.Optimization.Losses;
+using Accord.Statistics.Analysis;
 
 namespace GameStudioScorer.Regression
 {
@@ -115,8 +116,14 @@ namespace GameStudioScorer.Regression
 			List<KeyValuePair<string, double>> probList = probabilities.ToList();
 			probList.Sort((x, y) => x.Value.CompareTo(y.Value));
 
-			foreach(KeyValuePair<string, double> score in probList)
-				Console.WriteLine("{0, -40}: {1, -20} {2, 15}", score.Key, score.Value, (score.Value >= 0.5f) ? ": TRUE " : ": FALSE");
+			foreach (KeyValuePair<string, double> score in probList)
+			{
+				string confidence =
+					((Math.Abs(score.Value - 0.5f) <= 0.3f) ? "LOW CONFIDENCE" : "HIGH CONFIDENCE") +
+					" OF " +
+					((score.Value > 0.5f) ? "CRUNCHING" : "NOT CRUNCHING");
+				Console.WriteLine("{0, -40}: {1, -20} {2, 15}", score.Key, score.Value, confidence);
+			}
 		}
 
 		/// <summary>
@@ -182,6 +189,24 @@ namespace GameStudioScorer.Regression
 				result += "Odds Ratio " + c + ": " + regression.GetOddsRatio(c) + "\n";
 			}
 
+			//Get Loss values.
+			double[] actual = new double[inputs.Length];
+			double[] expected = new double[outputs.Length];
+			for (int a = 0; a < actual.Length; a++)
+			{
+				actual[a] = regression.Probability(inputs[a]);
+				expected[a] = outputs[a];
+			}
+
+			string loss = "Loss: " + new SquareLoss(expected)
+			{
+				Mean = true,
+				Root = true
+			}.Loss(actual);
+			result += loss;
+			writer.WriteLine(loss);
+			Console.WriteLine("\n\n" + loss);
+
 			//Cleanup
 			writer.Close();
 			writer.Dispose();
@@ -191,12 +216,6 @@ namespace GameStudioScorer.Regression
 
 			Console.WriteLine("Model trained successfully!");
 			Console.WriteLine("\nEvaluating...\n");
-
-			//Evaluate the model and get the average K-score.
-			float avrgK = EvaluateModel(learner, inputs, outputs, inputs.Length / 4);
-
-			//Log it.
-			Logger.Log("Average K-score: " + avrgK);
 
 			//Get the VIFs
 			float[] VIFs = CalculateVIFs(inputs);
@@ -209,93 +228,83 @@ namespace GameStudioScorer.Regression
 		}
 
 		/// <summary>
-		/// Evaluates a Logistic Regression Model using K-Fold Shuffle Cross Validation.
+		/// Evaluates a model by calculating it's loss from a set.
 		/// </summary>
-		/// <returns>A float representing the average K-score.</returns>
-		/// <param name="learner">An instance of a learner to use to train the evaluation models.</param>
-		/// <param name="inputs">The inputs.</param>
-		/// <param name="outputs">The outputs.</param>
-		/// <param name="partitionSize">The size of each Partition.</param>
-		public static float EvaluateModel(IterativeReweightedLeastSquares<LogisticRegression> learner, double[][] inputs, int[] outputs, int partitionSize)
+		/// <returns>An array of measurements. (SME, False Positive Rate, Accuracy)</returns>
+		/// <param name="crunchingScores">The scores for crunching studios.</param>
+		/// <param name="nonCrunchingScores">The scores for non-crunching studios.</param>
+		/// <param name="modelName">The file name of the model.</param>
+		public static float[] EvaluateModel(List<KeyValuePair<string, float[]>> crunchingScores, List<KeyValuePair<string, float[]>> nonCrunchingScores, string modelName)
 		{
-			if (inputs.Length < partitionSize)
-				throw new Exception("Input Partition Size can not be larger than the number of inputs!");
+			//Get the model file and deserialize the weights.
+			if (!File.Exists("Logistic Regression Model/models/" + modelName + ".txt"))
+				throw new Exception("Model doesn't exist. Check your spelling and try again.");
 
-			//Get to evenly partitionable size.
-			List<double[]> inputList = new List<double[]>(inputs);
-			List<int> outputList = new List<int>(outputs);
-			while (inputList.Count % partitionSize != 0)
+			string line = File.ReadAllLines("Logistic Regression Model/models/" + modelName + ".txt")[0];
+			double[] weights = Extensions.Extensions.LoadWeights(line);
+
+			//Create a regression model.
+			LogisticRegression regression = new LogisticRegression();
+			regression.Weights = weights;
+
+			//Get the actual and expected values from the scores.
+			double[] actual = new double[crunchingScores.Count + nonCrunchingScores.Count];
+			double[] expected = new double[crunchingScores.Count + nonCrunchingScores.Count];
+
+			int[] actualClass = new int[crunchingScores.Count + nonCrunchingScores.Count];
+			int[] expectedClass = new int[crunchingScores.Count + nonCrunchingScores.Count];
+
+			for (int a = 0; a < crunchingScores.Count; a++)
 			{
-				inputList.RemoveAt(0);
-				outputList.RemoveAt(0);
+				actual[a] = regression.Probability(crunchingScores[a].Value.Select((arg) => (double)arg).ToArray());
+				expected[a] = 1;
+
+				actualClass[a] = (actual[a] > 0.5f) ? 1 : 0;
+				expectedClass[a] = 1;
 			}
 
-			//Allows for shuffling while keeping the inputs/outputs together.
-			Dictionary<double[], int> map = inputList.Zip(outputList, (arg1, arg2) => new { arg1, arg2 })
-													 .ToDictionary(x => x.arg1, x => x.arg2);
-
-			//K-Fold Shuffle Validation
-			int k = inputList.Count / partitionSize;
-			float total = 0.0f;
-
-			for (int a = 0; a < k; a++)
+			for (int b = 0; b < nonCrunchingScores.Count; b++)
 			{
-				//Shuffle the Dictionary.
-				map.Shuffle();
+				actual[b + crunchingScores.Count] = regression.Probability(nonCrunchingScores[b].Value.Select((arg) => (double)arg).ToArray());
+				expected[b + crunchingScores.Count] = 0;
 
-				//The input/output for training.
-				inputs = new double[(k - 1) * partitionSize][];
-				outputs = new int[(k - 1) * partitionSize];
-
-				//The input/output for validation.
-				double[][] testInput = new double[partitionSize][];
-				int[] testOutput = new int[partitionSize];
-
-				//Keeps track of the current training data partition.
-				int currPartition = 0;
-
-				for (int b = 0; b < k; b++)
-				{
-					for (int c = 0; c < partitionSize; c++)
-					{
-						if (a != b)
-						{
-							//If this isn't the test partition, add to the training
-							//data.
-							inputs[(currPartition * partitionSize) + c] = map.ElementAt(b * partitionSize + c).Key;
-							outputs[(currPartition * partitionSize) + c] = map.ElementAt(b * partitionSize + c).Value;
-						}
-						else
-						{
-							//If this is the test partition, add to the test data.
-							testInput[c] = map.ElementAt(b * partitionSize + c).Key;
-							testOutput[c] = map.ElementAt(b * partitionSize + c).Value;
-						}
-					}
-
-					//Only increase the current training data partition if the most
-					//recent was a training partition.
-					if(a != b)
-						currPartition++;
-				}
-
-				//Train
-				LogisticRegression regression = learner.Learn(inputs, outputs.ToBoolArray());
-
-				//Evaluate
-				for (int d = 0; d < testInput.Length; d++)
-				{
-					//Test actual output against expected output.
-					double output = regression.Probability(testInput[d]);
-
-					total += (float)Math.Abs(output - testOutput[d]);
-				}
-
-				total /= partitionSize;
+				actualClass[b + crunchingScores.Count] = (actual[b + crunchingScores.Count] > 0.5f) ? 1 : 0;
+				expectedClass[b + crunchingScores.Count] = 0;
 			}
 
-			//Return average of K-scores.
-			return total / k;
+			//Calculate and return the loss.
+			float loss = (float)new SquareLoss(expected)
+			{
+				Mean = true,
+				Root = true
+			}.Loss(actual);
+
+			//Calculate confusion matrix
+			ConfusionMatrix gcm = new ConfusionMatrix(actualClass.ToBoolArray(), expectedClass.ToBoolArray());
+
+			//Calculate false negative and positive rates
+			float falsePR = (float)gcm.FalsePositiveRate;
+
+			//Calculate overall accuracy
+			float accuracy = (float)gcm.Accuracy;
+
+			int correctHighConfidence = 0, highConfidence = 0;
+			for (int a = 0; a < actual.Length; a++)
+			{
+				//If it's in the range of 0 - 0.2 or 0.8 - 1, it's considered 'high confidence'
+				if (Math.Abs(actual[a] - 0.5f) > 0.3f)
+				{
+					//Is it correct?
+					if (actualClass[a] == expectedClass[a])
+						correctHighConfidence++;
+
+					highConfidence++;
+				}
+			}
+
+			float correctHC = ((float)correctHighConfidence) / highConfidence;
+
+			return new float[] { loss, falsePR, accuracy, correctHC };
 		}
 
 		/// <summary>
