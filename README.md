@@ -2,33 +2,33 @@
 
 Crunch has become a huge topic in the game development industry. There've been countless reports on the subject, with many companies being called out for employing such tactics. Basically, crunch is when a game development company pressures or requires their employees to participate in large amounts of overtime, usually under the guise of a final 'push' for the game. It's been proven to be unhealthy and even dangerous for developers, which is why I decided that I needed to do something to help. So I wrote this program. It utilizes Logistic Regression and data points from multiple sources (see [Credits](#credits)) to predict whether a game development studio uses crunch.
 
+# Disclaimer
+
+Before you go any further, it's important to note the following: while this is a helpful model and is built to be as accurate as possible, it is still only math and numbers. It can be wrong, and should not be used as guidance or as a completely accurate source of information. This is not a database, it's statistics, and simply made as an exploration and an investigation into whether crunch can be predicted. I am not responsible for any decisions made based off of information obtained from this program or associated sources.
+
+Also, I don't have the rights to any of the code, programs, sources, or APIs mentioned in the credits section.
+
 # Methodology
 
 ## Data Points
 
-Right now, the program uses three different data points for prediction, known as the "Crunch over Time Score", "Genres Score", and "Review Score". Each represents a different factor in determining whether a game studio employs crunch.
+Right now, the program uses four different data points for prediction, known as the "Crunch over Time Score", "Genres Score", "Review Score", and "Cons Score". Each represents a different factor in determining whether a game studio employs crunch.
 
 ### Crunch over Time Score
 
-This score basically represents how frequently a game is put out by a studio. If a studio is putting out games more often, that means they're more likely to be crunching to get it done. However, it also takes into account the number of employees as listed on Wikipedia, since a studio of 2000 can put out games faster and more easily than a studio of 20. However, if no Wikipedia page is available, . Sparing too many details, it collects all of the games and their release years from the Giantbomb API and finds the exponential function of best fit. If the exponential function is steeper, they put out games less frequently, meaning they're less likely to crunch.
+This score basically represents how frequently a game is put out by a studio. If a studio is putting out games more often, that means they're more likely to be crunching to get it done. However, it also takes into account the number of employees as listed on Wikipedia, since a studio of 2000 can put out games faster and more easily than a studio of 20. If no Wikipedia page is available, a default of 100 employees is used. Sparing too many details, it collects all of the games and their release years from the Giantbomb API and finds the exponential function of best fit. If the exponential function is steeper, they put out games less frequently, meaning they're less likely to crunch.
 
 ### Genres Score
 
-The genres score relies on the fact that certain game genres tend to be crunched more than others. For example, Action games are very often crunched on, while Puzzle games tend not to be. What I did was select 7 overarching genres (Action, Adventure, Simulation, Strategy, RPG, Sports, and Puzzle) and pick the top 25 games from each (See [References](#references) for the lists) Then I researched each game and developing studio to see if they crunched, and got an average number of games/studios for each genre that employ crunch. These are held as constants in the code. Then, for each studio fed into the program, their games are taken and one of the 7 genres is assigned for each. These constants are then averaged and returned as the genre score.
-
-```
-Ex. If a studio put out 3 Action games, 2 Adventure games, and an RPG:
-
-Action Genre Constant: 0.48
-Adventure Genre Constant: 0.12
-RPG Genre Constant: 0.40
-
-Genre Score: ((3 * 0.48) + (2 * 0.12) + (1 * 0.40))/6
-```
+The genres score relies on the fact that certain game genres tend to be crunched more than others. For example, Action games are very often crunched on, while Puzzle games tend not to be. What I did was select 7 overarching genres (Action, Adventure, Simulation, Strategy, RPG, Sports, and Puzzle) and pick the top 25 games from each (See [References](#references) for the lists) Then I researched each game and developing studio to see if they crunched, and got an average number of games/studios for each genre that employ crunch. These were then ordered from high to low. Sparing the mathematical details, the program takes the games of a studio, and computes a number. The lower it is, the more likely the studio is to crunch.
 
 ### Review Score
 
-This score is the most direct out of the three. Reviews are gathered from Glassdoor for each company and their overall ratings are averaged together. The lower the average rating, the more likely the studio is to utilize crunch.
+This score is the most directly obvious out of the three. Reviews are gathered from Glassdoor for each company and their overall ratings are averaged together. The lower the average rating, the more likely the studio is to utilize crunch.
+
+### Cons Score
+
+This also utilizes data from Glassdoor. It reads through the 'con's from each review and looks for phrase such as "overtime", "crunch", or "work-life balance". It then simply counts all of these up and divides by the total number of reviews, as the presence of these phrases in the 'cons' section of reviews implies the use of crunch.
 
 ## Regression
 
@@ -50,6 +50,10 @@ The resulting weights are:
 - Genres Weight          : xxx.xxxx
 - Review Weight          : xxx.xxxx
 
+This model has a Square Mean Error of xxx.xxx, a false-positive ratio of xxx.xxx, and an accuracy of xxx.xxx.
+
+Overall, the model seems to perform well, but does much better with more distinct examples of crunch or non-crunch. It will almost surely predict it when a studio shows all of the signs of crunch. Overall, it throws more false negatives than false positives, meaning that the model aires on the side of caution when it comes to classifying a studio as likely to crunch.
+
 ## White Paper
 
 A white paper on the math behind the program is in the works and will be posted here when completed.
@@ -57,7 +61,7 @@ A white paper on the math behind the program is in the works and will be posted 
 # Using the Program
 
 ```
-  -- studio       (Default: null) A specific studio to calculate for. Should only be used with 'p' and 'm' regression modes.
+  --studio        (Default: null) A specific studio to calculate for. Should only be used with 'p' and 'm' regression modes.
 
   --regression    (Default: m) The action to take in terms of regression learning. The default is 'm' for model.
 
@@ -65,10 +69,15 @@ A white paper on the math behind the program is in the works and will be posted 
 
   --model         (Default: Model-0) The name of the model to use in predicting values.
 
-  --set           (Default: set-0) The name of the set to load Game Development Studio names from. The first line is studios that 
-                  crunch, the second is studios that don't.
+  --set           (Default: set-0) The name of the set to load Studio names from. The first line is studios that crunch, the second is studios that don't.
 
-  --help          Display the help screen.
+  --verbose       (Default: false) Whether the scorer should print extra information.
+
+  --debug         (Default: false) Is the scorer in debug mode?
+
+  --force         (Default: false) Whether the scorer should forcibly refresh values (in other words, ignore the local cache)
+
+  --help          Display this help screen.
 
   --version       Display version information.
 ```
@@ -81,6 +90,50 @@ A white paper on the math behind the program is in the works and will be posted 
 - 's': Takes in a set of Game Studios. It calculates the three scores and then prints them, as well as whether they crunch or not, to a
        data file.
 - 'l': Uses a data file to train a regression model.
+- 'e': Evaluates a model, printing the Square Mean Error, false positive ratio, accuracy, and High Confidence Correct Rate. This last one is the ratio of correct to total predictions, where the probability is 0.2 away from either extreme (0 - 0.2 or 0.8 - 1).
+
+## Setup
+
+There are three data sources that are used, which will each require their own API keys or login credentials.
+
+1. Giantbomb API: Go to [https://www.giantbomb.com/api](https://www.giantbomb.com/api). Follow the directions to either log in or sign up. Once you do this, it will provide an API Key. Put it into the app.config file (in the main application directory) as shown below.
+2. IGDB API: Go to [https://api.igdb.com](https://api.igdb.com). Follow the directions to either log in or sign up. Once you do this, follow the directions to create an API Key. Put it into the app.config file (in the main application directory) as shown below.
+3. Glassdoor: Go to [https://www.glassdoor.com](https://www.glassdoor.com) and create an account. ***Even if you have one, it's advised that you create a new one for this application, in case it's banned for web scraping.*** Then, enter the username and password in the app.config file (in the main application directory) as shown below.
+
+Once you've done this, you're all good to go!
+
+## Running the Program
+
+### For One Studio
+
+To run the Game Studio Scorer for a single studio using the default model, simply run the following command in the application's directory:
+
+` GameStudioScorer.exe --studio STUDIO_NAME `
+
+The name must be the same as the entry on Wikipedia, if it exists. Further, any spaces must be replaced with an underscore. For example, Rockstar Games translates to ` Rockstar_Games `. However, Tose Software, as listed on Wikipedia, is "Tose (company)". So that would be input as ` Tose_(company) `
+
+### For a List of Studios
+
+For a list of studios, create a txt file in "APPLICATION_DIRECTORY/Logistic Regression Model/sets". The name cannot contain a space. All studio names must be comma-separated. Then, the following command is entered, if using the default model:
+
+` GameStudioScorer.exe --set SET_NAME `
+
+### Training Your Own Model
+
+To train your own model, construct a comma-separated set as described in the previous section. However, since this is training data, the studios that don't crunch go on the first line and those that do go on the second. Then, enter the following command:
+
+` GameStudioScorer.exe --regression s --set SET_NAME --file SAVE_NAME `
+
+Use that save name in the following command (if you didn't supply one, don't supply one for this command):
+
+` GameStudioScorer.exe --regression l --file SAVE_NAME `
+
+This will output a model name, which you can now use as below:
+
+```
+GameStudioScorer.exe --regression m --model MODEL_NAME --studio STUDIO_NAME
+GameStudioScorer.exe --regression m --model MODEL_NAME --set SET_NAME
+```
 
 # References
 
@@ -117,4 +170,3 @@ Lists used for calculating the genre constants:
 - Unirest-API: [https://www.nuget.org/packages/Unirest-API/](https://www.nuget.org/packages/Unirest-API/)
   - Utilizes Unirest: [http://unirest.io](http://unirest.io)
   - Used for creating POST requests for the IGDB API.
-
