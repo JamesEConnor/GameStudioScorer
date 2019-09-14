@@ -172,6 +172,6 @@ Lists used for calculating the genre constants:
 - Unirest-API: [https://www.nuget.org/packages/Unirest-API/](https://www.nuget.org/packages/Unirest-API/)
   - Utilizes Unirest: [http://unirest.io](http://unirest.io)
   - Used for creating POST requests for the IGDB API.
--  Glassdoor Review Scraper: [https://github.com/iopsych/glassdoor-review-scraper](https://github.com/iopsych/glassdoor-review-scraper)
+- Glassdoor Review Scraper: [https://github.com/iopsych/glassdoor-review-scraper](https://github.com/iopsych/glassdoor-review-scraper)
   - Repository forked from original: [https://github.com/MatthewChatham/glassdoor-review-scraper](https://github.com/MatthewChatham/glassdoor-review-scraper)
   - Used for getting reviews from Glassdoor
