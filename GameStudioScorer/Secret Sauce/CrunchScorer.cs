@@ -169,6 +169,39 @@ namespace GameStudioScorer.Crunch
 			string searchScraper = AppDomain.CurrentDomain.BaseDirectory + SEARCH_SCRAPER_PATH;
 			string reviewScraper = AppDomain.CurrentDomain.BaseDirectory + REVIEW_SCRAPER_PATH;
 
+			//Handle secret.json file for review scraper.
+			FileStream fs;
+			if (!File.Exists(REVIEW_SCRAPER_PATH + "/secret.json"))
+				fs = File.Create(REVIEW_SCRAPER_PATH + "/secret.json");
+			else
+				fs = File.OpenWrite(REVIEW_SCRAPER_PATH + "/secret.json");
+
+			//Write the lines.
+			StreamWriter writer = new StreamWriter(fs);
+			writer.WriteLine("{");
+			writer.WriteLine("\t\"username\": \"" + ConfigurationManager.AppSettings["GDemail"] + "\",");
+			writer.WriteLine("\t\"password\": \"" + ConfigurationManager.AppSettings["GDpass"] + "\"");
+			writer.WriteLine("}");
+
+			writer.Close();
+			writer.Dispose();
+
+			//Handle secret.json file for search scraper.
+			if (!File.Exists(SEARCH_SCRAPER_PATH + "/secret.json"))
+				fs = File.Create(SEARCH_SCRAPER_PATH + "/secret.json");
+			else
+				fs = File.OpenWrite(SEARCH_SCRAPER_PATH + "/secret.json");
+
+			//Write the lines.
+			writer = new StreamWriter(fs);
+			writer.WriteLine("{");
+			writer.WriteLine("\t\"username\": \"" + ConfigurationManager.AppSettings["GDemail"] + "\",");
+			writer.WriteLine("\t\"password\": \"" + ConfigurationManager.AppSettings["GDpass"] + "\"");
+			writer.WriteLine("}");
+
+			writer.Close();
+			writer.Dispose();
+
 			//Execute the search scraper. This finds the link to company reviews by
 			//scraping the Glassdoor search page.
 			string searchCommand = "main.py --headless --name \"" + studioName + "\" --browser \"" + ConfigurationManager.AppSettings["browser"] + "\"";

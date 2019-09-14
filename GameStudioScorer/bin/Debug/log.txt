@@ -5590,3 +5590,83 @@ Path '', line 1, position 1.. Occurred for Epic Games
 --------------------------------------------------------------------
 
 [9/14/2019 2:47:06 PM]:	DEBUG -	Nicalis, {Nicalis, Inc.|Nicalis|Nicalis Games|Nicalis Studios|Nicalis Studio}
+
+
+--------------------------------------------------------------------
+
+[9/14/2019 4:27:57 PM]:	DEBUG -	Nicalis, {Nicalis, Inc.|Nicalis|Nicalis Games|Nicalis Studios|Nicalis Studio}
+
+
+--------------------------------------------------------------------
+
+[9/14/2019 4:34:48 PM]:	DEBUG -	Nicalis, {Nicalis, Inc.|Nicalis|Nicalis Games|Nicalis Studios|Nicalis Studio}
+
+
+--------------------------------------------------------------------
+
+[9/14/2019 4:37:59 PM]:	DEBUG -	Nicalis, {Nicalis, Inc.|Nicalis|Nicalis Games|Nicalis Studios|Nicalis Studio}
+
+
+--------------------------------------------------------------------
+
+[9/14/2019 4:38:17 PM]:	INFO -	Nicalis in DEBUG mode: [FALSE]
+[9/14/2019 4:38:19 PM]:	INFO -	Finding crunch over time score.
+[9/14/2019 4:38:19 PM]:	INFO -	Finding genre score.
+[9/14/2019 4:38:19 PM]:	INFO -	Nicalis, Inc. formatted to: nicalis- inc.
+[9/14/2019 4:38:19 PM]:	DEBUG -	Nicalis, {Nicalis, Inc.|Nicalis|Nicalis Games|Nicalis Studios|Nicalis Studio}
+[9/14/2019 4:38:19 PM]:	INFO -	Finding review score.
+[9/14/2019 4:38:19 PM]:	INFO -	Glassdoor search scraper started... (This may take up to a minute)
+[9/14/2019 4:38:21 PM]:	INFO -	Glassdoor review scraper started... (This may take up to a minute)
+[9/14/2019 4:38:23 PM]:	INFO -	Finding review score.
+[9/14/2019 4:38:23 PM]:	INFO -	Glassdoor search scraper started... (This may take up to a minute)
+[9/14/2019 4:38:25 PM]:	INFO -	Glassdoor review scraper started... (This may take up to a minute)
+
+
+--------------------------------------------------------------------
+
+[9/14/2019 4:38:56 PM]:	INFO -	Nicalis in DEBUG mode: [FALSE]
+[9/14/2019 4:38:57 PM]:	INFO -	Finding crunch over time score.
+[9/14/2019 4:38:57 PM]:	INFO -	Finding genre score.
+[9/14/2019 4:38:57 PM]:	INFO -	Nicalis, Inc. formatted to: nicalis- inc.
+[9/14/2019 4:38:58 PM]:	DEBUG -	Nicalis, {Nicalis, Inc.|Nicalis|Nicalis Games|Nicalis Studios|Nicalis Studio}
+[9/14/2019 4:38:58 PM]:	INFO -	Finding review score.
+[9/14/2019 4:38:58 PM]:	INFO -	Glassdoor search scraper started... (This may take up to a minute)
+[9/14/2019 4:39:00 PM]:	INFO -	Glassdoor review scraper started... (This may take up to a minute)
+[9/14/2019 4:39:01 PM]:	INFO -	Finding review score.
+[9/14/2019 4:39:01 PM]:	INFO -	Glassdoor search scraper started... (This may take up to a minute)
+[9/14/2019 4:39:03 PM]:	INFO -	Glassdoor review scraper started... (This may take up to a minute)
+
+
+--------------------------------------------------------------------
+
+[9/14/2019 4:40:22 PM]:	INFO -	Nicalis in DEBUG mode: [FALSE]
+[9/14/2019 4:40:23 PM]:	INFO -	Finding crunch over time score.
+[9/14/2019 4:40:23 PM]:	INFO -	Finding genre score.
+[9/14/2019 4:40:23 PM]:	INFO -	Nicalis, Inc. formatted to: nicalis- inc.
+[9/14/2019 4:40:24 PM]:	DEBUG -	Nicalis, {Nicalis, Inc.|Nicalis|Nicalis Games|Nicalis Studios|Nicalis Studio}
+[9/14/2019 4:40:24 PM]:	INFO -	Finding review score.
+[9/14/2019 4:40:24 PM]:	INFO -	Glassdoor search scraper started... (This may take up to a minute)
+[9/14/2019 4:40:26 PM]:	INFO -	Glassdoor review scraper started... (This may take up to a minute)
+[9/14/2019 4:40:28 PM]:	INFO -	Finding review score.
+[9/14/2019 4:40:28 PM]:	INFO -	Glassdoor search scraper started... (This may take up to a minute)
+[9/14/2019 4:40:29 PM]:	INFO -	Glassdoor review scraper started... (This may take up to a minute)
+
+
+--------------------------------------------------------------------
+
+[9/14/2019 4:42:04 PM]:	INFO -	Nicalis in DEBUG mode: [FALSE]
+[9/14/2019 4:42:05 PM]:	INFO -	Finding crunch over time score.
+[9/14/2019 4:42:05 PM]:	INFO -	Finding genre score.
+[9/14/2019 4:42:05 PM]:	INFO -	Nicalis, Inc. formatted to: nicalis- inc.
+[9/14/2019 4:42:06 PM]:	DEBUG -	Nicalis, {Nicalis, Inc.|Nicalis|Nicalis Games|Nicalis Studios|Nicalis Studio}
+[9/14/2019 4:42:06 PM]:	INFO -	Finding review score.
+[9/14/2019 4:42:06 PM]:	INFO -	Glassdoor search scraper started... (This may take up to a minute)
+[9/14/2019 4:42:08 PM]:	INFO -	Glassdoor review scraper started... (This may take up to a minute)
+[9/14/2019 4:42:10 PM]:	INFO -	Finding review score.
+[9/14/2019 4:42:10 PM]:	INFO -	Glassdoor search scraper started... (This may take up to a minute)
+[9/14/2019 4:42:12 PM]:	INFO -	Glassdoor review scraper started... (This may take up to a minute)
+
+
+--------------------------------------------------------------------
+
+[9/14/2019 4:44:42 PM]:	DEBUG -	Nicalis, {Nicalis, Inc.|Nicalis|Nicalis Games|Nicalis Studios|Nicalis Studio}
