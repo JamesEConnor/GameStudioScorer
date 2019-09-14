@@ -94,13 +94,15 @@ A white paper on the math behind the program is in the works and will be posted 
 
 ## Setup
 
-There are three data sources that are used, which will each require their own API keys or login credentials.
+First things first. Rename *template-app.config* to *app.config*. This will make Github ignore the file, in case you ever push the repository to the web. Then open it up. There are three settings to change.
 
-1. Giantbomb API: Go to [https://www.giantbomb.com/api](https://www.giantbomb.com/api). Follow the directions to either log in or sign up. Once you do this, it will provide an API Key. Put it into the app.config file (in the main application directory) as shown below.
-2. IGDB API: Go to [https://api.igdb.com](https://api.igdb.com). Follow the directions to either log in or sign up. Once you do this, follow the directions to create an API Key. Put it into the app.config file (in the main application directory) as shown below.
-3. Glassdoor: Go to [https://www.glassdoor.com](https://www.glassdoor.com) and create an account. ***Even if you have one, it's advised that you create a new one for this application, in case it's banned for web scraping.*** Then, enter the username and password in the app.config file (in the main application directory) as shown below.
+1. ***browser***: This is the path to your chrome executable. It must be Google Chrome or a chromium-based browser. The default for Windows 10 is provided already.
+2. ***IGDBkey***: Go to [https://api.igdb.com](https://api.igdb.com). Follow the directions to either log in or sign up. Once you do this, follow the directions to create an API Key. Then paste it here.
+3. ***GBkey***: Go to [https://www.giantbomb.com/api](https://www.giantbomb.com/api). Follow the directions to either log in or sign up. Once you do this, it will provide an API Key. Then paste it here.
+4. ***GDemail***: Go to [https://www.glassdoor.com](https://www.glassdoor.com) and create an account. ***Even if you have one, it's advised that you create a new one for this application, in case it's banned for web scraping.*** Paste the username here.
+5. ***GDpass***: Paste the password from Step 4 here.
 
-Once you've done this, you're all good to go!
+Once you've completed these steps, you're all good to go!
 
 ## Running the Program
 
