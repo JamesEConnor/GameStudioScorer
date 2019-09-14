@@ -58,10 +58,10 @@ namespace GameStudioScorer.Giantbomb
 
 			//Change the game info into years, excluding the last two entries,
 			//since they're different pieces of information.
-			int[] gameYears = new int[gameInfo.Length - 2];
+			int[] gameYears = new int[gameInfo.Length - 3];
 
 			//Parse all of the actual years.
-			for (int a = 0; a < gameInfo.Length - 2; a++)
+			for (int a = 0; a < gameInfo.Length - 3; a++)
 			{
 				gameYears[a] = int.Parse(gameInfo[a]);
 			}
@@ -72,12 +72,15 @@ namespace GameStudioScorer.Giantbomb
 			//Return the new information, including the ID and name from game info.
 			si = new StudioInfo
 			{
-				id = gameInfo[gameInfo.Length - 2],
-				name = gameInfo[gameInfo.Length - 1],
+				id = gameInfo[gameInfo.Length - 3],
+				name = gameInfo[gameInfo.Length - 2],
+				companyName = gameInfo[gameInfo.Length - 1],
 				employeeCount = employeeCount,
-				GameYears = gameYears,
+				gameYears = gameYears,
 				aliases = Extensions.Extensions.CreateAliasList(name)
 			};
+
+			si.aliases.Insert(0, si.companyName);
 
 			//LocalCacheManager.SaveCachedInfo(si);
 			return si;
@@ -222,6 +225,7 @@ namespace GameStudioScorer.Giantbomb
 			result.Add(company.guid);
 
 			result.Add(company.name.removeCompanySuffix());
+			result.Add(company.name);
 			Console.WriteLine(company.name.removeCompanySuffix());
 
 			//Return the game information, including the years, ID, and studio name.

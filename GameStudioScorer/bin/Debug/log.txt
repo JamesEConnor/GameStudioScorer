@@ -5576,3 +5576,17 @@ Path '', line 1, position 1.. Occurred for Epic Games
 --------------------------------------------------------------------
 
 [9/8/2019 2:36:05 PM]:	DEBUG -	TOSE Co., {Tose|Tose Games|Tose Studios|Tose Studio}
+
+
+--------------------------------------------------------------------
+
+[9/14/2019 2:35:44 PM]:	DEBUG -	Nicalis, {Nicalis|Nicalis Games|Nicalis Studios|Nicalis Studio}
+[9/14/2019 2:35:45 PM]:	ERROR -	Nicalis doesn't exist in IGDB!. Occurred for Nicalis
+[9/14/2019 2:35:45 PM]:	CRITICAL -	   at GameStudioScorer.Crunch.CrunchScorer.GetGenreScore(String name, List`1 aliases, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 140
+   at GameStudioScorer.StudioInfo.get_GenreScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 303
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 150
+
+
+--------------------------------------------------------------------
+
+[9/14/2019 2:47:06 PM]:	DEBUG -	Nicalis, {Nicalis, Inc.|Nicalis|Nicalis Games|Nicalis Studios|Nicalis Studio}

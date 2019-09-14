@@ -56,7 +56,7 @@ namespace GameStudioScorer
 						id = split[0],
 						name = studioName,
 						employeeCount = int.Parse(split[2]),
-						GameYears = Extensions.Extensions.LoadGameYears(split[3]),
+						gameYears = Extensions.Extensions.LoadGameYears(split[3]),
 						GenreScore = float.Parse(split[4]),
 						ReviewScore = float.Parse(split[5]),
 						ConsScore = float.Parse(split[6]),
@@ -93,7 +93,7 @@ namespace GameStudioScorer
 			string newValue = 		si.id.Replace(",", "-")					+ "," +
 			                        saveAs.Replace(',', '-').ToLower()		+ "," +
 									si.employeeCount 						+ "," +
-									si.GameYears.GetString() 				+ "," +
+									si.gameYears.GetString() 				+ "," +
 									si.GenreScore 							+ "," +
 									si.ReviewScore							+"," +
 									si.ConsScore;

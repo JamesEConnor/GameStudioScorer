@@ -223,8 +223,11 @@ namespace GameStudioScorer
 		public string id;
 		//The name of the studio, as provided by Giantbomb's API.
 		public string name;
+		//The name of the studio, as provided by Giantbomb's API, with the company
+		//suffix.
+		public string companyName;
 		//The years of all released games, according to Giantbomb's API.
-		public int[] GameYears;
+		public int[] gameYears;
 		//The number of employees according to data scraped from Wikipedia.
 		public int employeeCount;
 		//The name of the studio, as stored in the local cache.
@@ -238,7 +241,7 @@ namespace GameStudioScorer
 				//This just uses the years and employee count values.
 				//Since it isn't actually cached and doesn't in itself require
 				//a web request, we can simply call the function.
-				return Crunch.CrunchScorer.GetCrunchOvertimeScore(GameYears, employeeCount);
+				return Crunch.CrunchScorer.GetCrunchOvertimeScore(gameYears, employeeCount);
 			}
 		}
 
