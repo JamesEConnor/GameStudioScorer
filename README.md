@@ -41,18 +41,20 @@ Non-crunching Studios: Respawn Entertainment, Square Enix, Monolith Productions,
 ```
 
 The resulting odds ratios are:
-- Crunch over Time Score: xxx.xxxx
-- Genres Score          : xxx.xxxx
-- Review Score          : xxx.xxxx
+- Crunch over Time Score: 1.34566059130515
+- Genres Score          : 1.00036279141103
+- Review Score          : 1.00000083706756
+- Cons Weight           : 0.0680223525529887
 
 The resulting weights are:
-- Crunch over Time Weight: xxx.xxxx
-- Genres Weight          : xxx.xxxx
-- Review Weight          : xxx.xxxx
+- Crunch over Time Weight: 3.62725618140328 x 10<sup>-4</sup>
+- Genres Weight          : 8.37067208942337 x 10<sup>-7</sup>
+- Review Weight          : -2.68791891380611
+- Cons Weight            : 17.222429825684
 
-This model has a Square Mean Error of xxx.xxx, a false-positive ratio of xxx.xxx, and an accuracy of xxx.xxx.
+This model has a Square Mean Error of 0.08503985, a false-positive ratio of 0.125, and an accuracy of 0.85.
 
-Overall, the model seems to perform well, but does much better with more distinct examples of crunch or non-crunch. It will almost surely predict it when a studio shows all of the signs of crunch. Overall, it throws more false negatives than false positives, meaning that the model aires on the side of caution when it comes to classifying a studio as likely to crunch.
+Overall, the model seems to perform well, but does much better with more distinct examples of crunch or non-crunch. It will almost surely predict it when a studio shows all of the signs of crunch. Overall, it throws more false negatives than false positives, meaning that the model aires on the side of caution when it comes to classifying a studio as likely to crunch. However, when it has high confidence in a value (with the probability within 0.20 from either extreme), it has a slightly higher accuracy of 0.909
 
 ## White Paper
 
