@@ -1,8 +1,6 @@
 ﻿using System.IO;
 using System.Text;
-using GameStudioScorer.IGDB;
 using GameStudioScorer.Extensions;
-using System;
 using GameStudioScorer.Utils;
 
 namespace GameStudioScorer

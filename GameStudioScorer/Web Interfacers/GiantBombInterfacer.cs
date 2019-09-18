@@ -1,7 +1,6 @@
 ﻿using System;
 using GameStudioScorer.Extensions;
 using GameStudioScorer.XML;
-using System.Xml.Serialization;
 using System.IO;
 using System.Net;
 using System.Xml;

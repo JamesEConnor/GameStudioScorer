@@ -1,6 +1,4 @@
-﻿using System;
-using CommandLine;
-using CommandLine.Text;
+﻿using CommandLine;
 
 namespace GameStudioScorer
 {

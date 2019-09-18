@@ -5,17 +5,9 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="GameStudioScorer\Secret Sauce\CrunchScorer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GameStudioScorer\Program.cs">
     <Files>
       <File FileName="GameStudioScorer\Program.cs" Line="100" Column="34" />
-      <File FileName="GameStudioScorer\Secret Sauce\LRegression.cs" Line="233" Column="68" />
-      <File FileName="GameStudioScorer\Web Interfacers\IGDBInterfacer.cs" Line="228" Column="25" />
-      <File FileName="GameStudioScorer\Secret Sauce\CrunchScorer.cs" Line="203" Column="21" />
-      <File FileName="GameStudioScorer\Utils\Options.cs" Line="32" Column="34" />
-      <File FileName="GameStudioScorer\Utils\MathUtils.cs" Line="1" Column="1" />
-      <File FileName="GameStudioScorer\Secret Sauce\LocalCacheManager.cs" Line="89" Column="4" />
-      <File FileName="GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs" Line="233" Column="4" />
-      <File FileName="GameStudioScorer\app.config" Line="8" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
 </Properties>

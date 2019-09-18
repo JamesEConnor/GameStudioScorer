@@ -1,5 +1,4 @@
 ﻿using System;
-using GameStudioScorer.Utils;
 
 namespace GameStudioScorer.Utils
 {

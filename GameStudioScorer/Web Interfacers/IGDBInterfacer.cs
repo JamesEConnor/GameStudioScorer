@@ -1,10 +1,7 @@
-﻿using System.Net;
-using System.Linq;
-using GameStudioScorer.Extensions;
+﻿using GameStudioScorer.Extensions;
 using unirest_net.http;
 using System.Collections.Generic;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System;
 using GameStudioScorer.Crunch;
 using System.Configuration;
