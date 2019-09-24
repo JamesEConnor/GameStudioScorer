@@ -138,6 +138,9 @@ This will output a model name, which you can now use as below:
 GameStudioScorer.exe --regression m --model MODEL_NAME --studio STUDIO_NAME
 GameStudioScorer.exe --regression m --model MODEL_NAME --set SET_NAME
 ```
+# Use in a Project
+
+This program is 100% available for use in other projects, both for proprietary and non-commercial software. The only thing I ask is that you credit me and link back to this repository. You also *must* follow the rules of the GNU GPL v3.0. For more info, check out the license here: [https://github.com/JamesEConnor/GameStudioScorer/blob/master/LICENSE](https://github.com/JamesEConnor/GameStudioScorer/blob/master/LICENSE).
 
 # References
 
