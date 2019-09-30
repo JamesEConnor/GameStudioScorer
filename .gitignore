@@ -2,3 +2,5 @@ GameStudioScorer/app.config
 GameStudioScorer/bin/Debug/glassdoor-search-scraper/secret.json
 GameStudioScorer/bin/Debug/glassdoor-review-scraper/secret.json
 GameStudioScorer.userprefs
+GameStudioScorer/bin/Debug/bfg.jar
+GameStudioScorer/bin/Debug/GameStudioScorer.exe.config
