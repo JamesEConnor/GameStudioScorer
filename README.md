@@ -96,7 +96,7 @@ A white paper on the math behind the program is in the works and will be posted 
 
 ## Setup
 
-First things first. Rename *template-app.config* to *app.config*. This will make Github ignore the file, in case you ever push the repository to the web. Then open it up. There are three settings to change.
+First things first. Rename *template-app.config* to *app.config* and *GameStudioScorer/bin/Debug/template-GameStudioScorer.exe.config* to *GameStudioScorer/bin/Debug/GameStudioScorer.exe.config*. This will make Github ignore those files, in case you ever push the repository to the web. Then open them both up. There are five settings to change in both.
 
 1. ***browser***: This is the path to your chrome executable. It must be Google Chrome or a chromium-based browser. The default for Windows 10 is provided already.
 2. ***IGDBkey***: Go to [https://api.igdb.com](https://api.igdb.com). Follow the directions to either log in or sign up. Once you do this, follow the directions to create an API Key. Then paste it here.
