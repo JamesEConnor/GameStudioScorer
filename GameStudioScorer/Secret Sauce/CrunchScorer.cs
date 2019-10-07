@@ -6,6 +6,7 @@ using GameStudioScorer.IGDB;
 using System.Diagnostics;
 using System.IO;
 using System.Configuration;
+using System.Linq;
 
 namespace GameStudioScorer.Crunch
 {
@@ -69,7 +70,7 @@ namespace GameStudioScorer.Crunch
 		/// <param name="name">The name of the Studio, which is passed to the IGDB API.</param>
 		/// <param name="aliases">What it's saved as in the cache. This may differ from the name retrieved from the Giantbomb API.</param>
 		/// <param name="DEBUG">Is this Studio in Debug mode?</param>
-		public static float GetGenreScore(string name, List<string> aliases, bool DEBUG)
+		public static float[] GetGenreScore(string name, List<string> aliases, bool DEBUG)
 		{
 			//Log information
 			if (Logger.VERBOSE)
@@ -77,15 +78,20 @@ namespace GameStudioScorer.Crunch
 
 			//If the Studio is not being forced to recaculate values, check if it
 			//exists in the cache. If it does, return the values. Otherwise, continue.
-			if (!DEBUG)
+			if (!DEBUG && !MainClass.options.force)
 			{
 				StudioInfo si = LocalCacheManager.GetCachedInfo(aliases[0]);
 				if (si.id != "-1" && !DEBUG)
-					return si.GenreScore;
+				{
+					List<float> f = Array.ConvertAll(si.genreArray, x => (float)x).ToList();
+					f.Insert(0, si.GenreScore);
+					return f.ToArray();
+				}
 			}
 
 			//Get the genres of all released games from IGDB and return their average as the score.
 			int[] genres = IGDBInterfacer.GetGenres(name);
+			int[] genreCount = new int[7];
 
 			Logger.Log(name + ", " + aliases.ToArray().GetString(), Logger.LogLevel.DEBUG, true);
 
@@ -94,8 +100,7 @@ namespace GameStudioScorer.Crunch
 			float totalY = 0.0f;
 
 			if (genres != null && genres.Length > 0)
-			{
-				
+			{				
 				for (int i = 0; i < genres.Length; i++)
 				{
 					//Get the angle because it uses a unit-circle based system.
@@ -104,6 +109,8 @@ namespace GameStudioScorer.Crunch
 
 					totalX += genres[i] * (float)Math.Cos(angle);
 					totalY += genres[i] * (float)Math.Sin(angle);
+
+					genreCount[genres[i]]++;
 				}
 			}
 			else
@@ -114,7 +121,6 @@ namespace GameStudioScorer.Crunch
 				bool broken = false;
 				foreach (string alias in aliases)
 				{
-					Console.WriteLine(alias);
 					genres = IGDBInterfacer.GetGenres(alias);
 
 					//This means this name doesn't exist either, so try the next one.
@@ -129,6 +135,8 @@ namespace GameStudioScorer.Crunch
 
 						totalX += genres[i] * (float)Math.Cos(angle);
 						totalY += genres[i] * (float)Math.Sin(angle);
+
+						genreCount[genres[i]]++;
 					}
 
 					broken = true;
@@ -151,7 +159,16 @@ namespace GameStudioScorer.Crunch
 			totalY /= hyp;
 
 			//Return the value.
-			return (float)(Math.Atan(totalY / totalX) / (2 * Math.PI));
+			return new float[] {
+				(float)(Math.Atan(totalY / totalX) / (2 * Math.PI)),
+				genreCount[0],
+				genreCount[1],
+				genreCount[2],
+				genreCount[3],
+				genreCount[4],
+				genreCount[5],
+				genreCount[6],
+			};
 		}
 
 		/// <summary>

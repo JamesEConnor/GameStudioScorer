@@ -58,6 +58,7 @@ namespace GameStudioScorer
 						GenreScore = float.Parse(split[4]),
 						ReviewScore = float.Parse(split[5]),
 						ConsScore = float.Parse(split[6]),
+						genreArray = Extensions.Extensions.LoadGameYears(split[7]),
 						aliases = Extensions.Extensions.CreateAliasList(studioName)
 					};
 				}
@@ -93,8 +94,9 @@ namespace GameStudioScorer
 									si.employeeCount 						+ "," +
 									si.gameYears.GetString() 				+ "," +
 									si.GenreScore 							+ "," +
-									si.ReviewScore							+"," +
-									si.ConsScore;
+									si.ReviewScore							+ "," +
+									si.ConsScore							+ "," +
+			                        si.genreArray.GetString();
 
 			string toAdd = "";
 			bool saved = false;

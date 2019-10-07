@@ -8,6 +8,7 @@ using System.Configuration;
 using GameStudioScorer.Utils;
 using System.Text.RegularExpressions;
 using System.IO;
+using System.Linq;
 
 namespace GameStudioScorer.IGDB
 {
@@ -250,7 +251,14 @@ namespace GameStudioScorer
 				//we have to make sure we don't already have a cached value before
 				//calling it.
 				if (!_setReviewScore)
-					_ReviewScore = Crunch.CrunchScorer.GetReviewScore(name)[1];
+				{
+					float[] f = Crunch.CrunchScorer.GetReviewScore(name);
+
+					if (!_setConsScore)
+						ConsScore = f[0];
+
+					_ReviewScore = f[1];
+				}
 
 				//At this point, one way or the other, the score has been set.
 				_setReviewScore = true;
@@ -275,7 +283,14 @@ namespace GameStudioScorer
 				//we have to make sure we don't already have a cached value before
 				//calling it.
 				if (!_setConsScore)
-					_ConsScore = Crunch.CrunchScorer.GetReviewScore(name)[0];
+				{
+					float[] f = Crunch.CrunchScorer.GetReviewScore(name);
+
+					if (!_setReviewScore)
+						ReviewScore = f[1];
+
+					_ConsScore = f[0];
+				}
 
 				//At this point, one way or the other, the score has been set.
 				_setConsScore = true;
@@ -300,7 +315,14 @@ namespace GameStudioScorer
 				//we have to make sure we don't already have a cached value before
 				//calling it.
 				if (!_setGenreScore)
-					_GenreScore = CrunchScorer.GetGenreScore(name, aliases, MainClass.DEBUG_MODE);
+				{
+					//Get the score and the counts for the different genres.
+					float[] f = CrunchScorer.GetGenreScore(name, aliases, MainClass.DEBUG_MODE);
+
+					_GenreScore = f[0];
+
+					genreArray = Array.ConvertAll(f.Skip(1).ToArray(), x => (int)x);
+				}
 
 				//At this point, one way or the other, the score has been set.
 				_setGenreScore = true;
@@ -316,5 +338,7 @@ namespace GameStudioScorer
 
 		private float _GenreScore;
 		private bool _setGenreScore;
+
+		public int[] genreArray;
 	}
 }
