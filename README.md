@@ -52,7 +52,7 @@ The resulting weights are:
 - Review Weight          : -2.68791891380611
 - Cons Weight            : 17.222429825684
 
-This model has a Square Mean Error of 0.08503985, a false-positive ratio of 0.125, and an accuracy of 0.85.
+This model has a Square Mean Error of 0.08503985, an R<sup>2</sup> of 0.402332881862449, a false-positive ratio of 0.125, and an accuracy of 0.85.
 
 Overall, the model seems to perform well, but does much better with more distinct examples of crunch or non-crunch. It will almost surely predict it when a studio shows all of the signs of crunch. Overall, it throws more false negatives than false positives, meaning that the model aires on the side of caution when it comes to classifying a studio as likely to crunch. However, when it has high confidence in a value (with the probability within 0.20 from either extreme), it has a slightly higher accuracy of 0.909
 
