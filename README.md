@@ -92,7 +92,7 @@ A white paper on the math behind the program is in the works and will be posted 
 - 's': Takes in a set of Game Studios. It calculates the three scores and then prints them, as well as whether they crunch or not, to a
        data file.
 - 'l': Uses a data file to train a regression model.
-- 'e': Evaluates a model, printing the Square Mean Error, false positive ratio, accuracy, and High Confidence Correct Rate. This last one is the ratio of correct to total predictions, where the probability is 0.2 away from either extreme (0 - 0.2 or 0.8 - 1).
+- 'e': Evaluates a model, printing the Square Mean Error, the R<sup>2</sup> value, false positive ratio, accuracy, and High Confidence Correct Rate. This last one is the ratio of correct to total predictions, where the probability is 0.2 away from either extreme (0 - 0.2 or 0.8 - 1).
 
 ## Setup
 
