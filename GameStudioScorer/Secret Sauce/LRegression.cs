@@ -159,7 +159,8 @@ namespace GameStudioScorer.Regression
 				Regularization = 1e-10
 			};
 
-
+			//Shuffle the input and output pairs to eliminate some inherent bias from
+			//training data.
 			Dictionary<double[], int> map = inputs.Zip(outputs, (arg1, arg2) => new { arg1, arg2}).ToDictionary(x => x.arg1, x => x.arg2);
 			map.Shuffle();
 			inputs = map.Keys.ToArray();
@@ -176,9 +177,11 @@ namespace GameStudioScorer.Regression
 			while (File.Exists("Logistic Regression Model/models/Model-" + counter + ".txt"))
 				counter++;
 
+			//Create a file writer
 			FileStream fs = File.Create("Logistic Regression Model/models/Model-" + counter + ".txt");
 			StreamWriter writer = new StreamWriter(fs);
 
+			//Print the weights
 			string result = "Weights: " + regression.Weights.GetString() + "\n";
 
 			//Write lines.
@@ -198,14 +201,22 @@ namespace GameStudioScorer.Regression
 				expected[a] = outputs[a];
 			}
 
+			//Calculate and print square loss.
 			string loss = "Loss: " + new SquareLoss(expected)
 			{
 				Mean = true,
 				Root = true
 			}.Loss(actual);
-			result += loss;
+			result += loss + "\n";
 			writer.WriteLine(loss);
+
 			Console.WriteLine("\n\n" + loss);
+
+
+			//Calculate and print R-squared Loss
+			string r2 = "R2: " + new RSquaredLoss(inputs[0].Length, expected).Loss(actual);
+			result += r2;
+			writer.WriteLine(r2);
 
 			//Cleanup
 			writer.Close();
@@ -254,6 +265,7 @@ namespace GameStudioScorer.Regression
 			int[] actualClass = new int[crunchingScores.Count + nonCrunchingScores.Count];
 			int[] expectedClass = new int[crunchingScores.Count + nonCrunchingScores.Count];
 
+			//Get expected and actual values for crunching studios.
 			for (int a = 0; a < crunchingScores.Count; a++)
 			{
 				actual[a] = regression.Probability(crunchingScores[a].Value.Select((arg) => (double)arg).ToArray());
@@ -263,6 +275,7 @@ namespace GameStudioScorer.Regression
 				expectedClass[a] = 1;
 			}
 
+			//Get expected and actual values for non-crunching studios.
 			for (int b = 0; b < nonCrunchingScores.Count; b++)
 			{
 				actual[b + crunchingScores.Count] = regression.Probability(nonCrunchingScores[b].Value.Select((arg) => (double)arg).ToArray());
@@ -279,6 +292,9 @@ namespace GameStudioScorer.Regression
 				Root = true
 			}.Loss(actual);
 
+			//Get R-squared loss
+			float r2 = (float)new RSquaredLoss(crunchingScores.First().Value.Length, expected).Loss(actual);
+
 			//Calculate confusion matrix
 			ConfusionMatrix gcm = new ConfusionMatrix(actualClass.ToBoolArray(), expectedClass.ToBoolArray());
 
@@ -288,6 +304,8 @@ namespace GameStudioScorer.Regression
 			//Calculate overall accuracy
 			float accuracy = (float)gcm.Accuracy;
 
+			//Calculate the high confidence rate
+			//(how many are correct and have a probability within 0.2 of either extreme)
 			int correctHighConfidence = 0, highConfidence = 0;
 			for (int a = 0; a < actual.Length; a++)
 			{
@@ -304,7 +322,7 @@ namespace GameStudioScorer.Regression
 
 			float correctHC = ((float)correctHighConfidence) / highConfidence;
 
-			return new float[] { loss, falsePR, accuracy, correctHC };
+			return new float[] { loss, r2, falsePR, accuracy, correctHC };
 		}
 
 		/// <summary>

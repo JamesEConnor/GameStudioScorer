@@ -5937,3 +5937,271 @@ Path '', line 1, position 1.. Occurred for Epic Games
 [10/6/2019 8:25:23 PM]:	INFO -	Variance Inflation Factor #1: 1.380432
 [10/6/2019 8:25:23 PM]:	INFO -	Variance Inflation Factor #2: 1.369647
 [10/6/2019 8:25:23 PM]:	INFO -	Variance Inflation Factor #3: 1.249169
+
+
+--------------------------------------------------------------------
+
+[10/9/2019 7:56:56 AM]:	INFO -	Variance Inflation Factor #0: 1.146519
+[10/9/2019 7:56:56 AM]:	INFO -	Variance Inflation Factor #1: 1.714311
+[10/9/2019 7:56:56 AM]:	INFO -	Variance Inflation Factor #2: 1.55836
+[10/9/2019 7:56:56 AM]:	INFO -	Variance Inflation Factor #3: 1.265491
+
+
+--------------------------------------------------------------------
+
+[10/9/2019 8:07:23 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for Rockstar Games
+[10/9/2019 8:07:23 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[10/9/2019 8:07:23 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for Treyarch
+[10/9/2019 8:07:23 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[10/9/2019 8:07:23 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for Epic Games
+[10/9/2019 8:07:23 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[10/9/2019 8:07:23 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for Electronic Arts
+[10/9/2019 8:07:23 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[10/9/2019 8:07:23 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for Telltale Games
+[10/9/2019 8:07:23 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[10/9/2019 8:07:23 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for BioWare
+[10/9/2019 8:07:23 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[10/9/2019 8:07:23 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for NetherRealm Studios
+[10/9/2019 8:07:23 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[10/9/2019 8:07:23 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for CD Projekt
+[10/9/2019 8:07:23 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[10/9/2019 8:07:23 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for Capcom
+[10/9/2019 8:07:23 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[10/9/2019 8:07:23 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for Techland
+[10/9/2019 8:07:23 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[10/9/2019 8:07:23 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for Sir-Tech
+[10/9/2019 8:07:24 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[10/9/2019 8:07:24 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for Wargaming
+[10/9/2019 8:07:24 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[10/9/2019 8:07:24 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for IO Interactive
+[10/9/2019 8:07:24 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[10/9/2019 8:07:24 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for Relentless Software
+[10/9/2019 8:07:24 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[10/9/2019 8:07:24 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for Schell Games
+[10/9/2019 8:07:24 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[10/9/2019 8:07:24 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for Playground Games
+[10/9/2019 8:07:24 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[10/9/2019 8:07:24 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for 4A Games
+[10/9/2019 8:07:24 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[10/9/2019 8:07:24 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for Avalanche Studios
+[10/9/2019 8:07:24 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[10/9/2019 8:07:24 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for Bandai Namco
+[10/9/2019 8:07:24 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+[10/9/2019 8:07:24 AM]:	ERROR -	The process cannot access the file 'C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\bin\Debug\cache.csv' because it is being used by another process.. Occurred for Milestone S.r.l.
+[10/9/2019 8:07:24 AM]:	CRITICAL -	   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at GameStudioScorer.LocalCacheManager.GetCachedInfo(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\LocalCacheManager.cs:line 27
+   at GameStudioScorer.Giantbomb.GiantBombInterfacer.GetStudio(String name, Boolean DEBUG) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\GiantBombInterfacer.cs:line 40
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 147
+
+
+--------------------------------------------------------------------
+
+[10/9/2019 8:07:49 AM]:	INFO -	Variance Inflation Factor #0: 1.02179
+[10/9/2019 8:07:49 AM]:	INFO -	Variance Inflation Factor #1: 1.66737
+[10/9/2019 8:07:49 AM]:	INFO -	Variance Inflation Factor #2: 1.573901
+[10/9/2019 8:07:50 AM]:	INFO -	Variance Inflation Factor #3: 1.10033
+
+
+--------------------------------------------------------------------
+
+[10/9/2019 8:38:15 AM]:	INFO -	Variance Inflation Factor #0: 1.017625
+[10/9/2019 8:38:15 AM]:	INFO -	Variance Inflation Factor #1: 1.520049
+[10/9/2019 8:38:15 AM]:	INFO -	Variance Inflation Factor #2: 1.53829
+
+
+--------------------------------------------------------------------
+
+[10/9/2019 8:39:51 AM]:	INFO -	Variance Inflation Factor #0: 1.001933
+[10/9/2019 8:39:51 AM]:	INFO -	Variance Inflation Factor #1: ∞
+[10/9/2019 8:39:51 AM]:	INFO -	Variance Inflation Factor #2: 1.075434
+
+
+--------------------------------------------------------------------
+
+[10/9/2019 8:41:12 AM]:	INFO -	Variance Inflation Factor #0: 1.01356
+[10/9/2019 8:41:12 AM]:	INFO -	Variance Inflation Factor #1: 1.013269
+[10/9/2019 8:41:12 AM]:	INFO -	Variance Inflation Factor #2: 1.00311
+
+
+--------------------------------------------------------------------
+
+[10/9/2019 8:41:35 AM]:	INFO -	Variance Inflation Factor #0: 1.65394
+[10/9/2019 8:41:35 AM]:	INFO -	Variance Inflation Factor #1: 1.543315
+[10/9/2019 8:41:35 AM]:	INFO -	Variance Inflation Factor #2: 1.095844

@@ -111,12 +111,13 @@ namespace GameStudioScorer
 						GetScores(lines[1].Split(new string[] { ", " }, StringSplitOptions.None)) :
 						new List<KeyValuePair<string, float[]>>();
 
-					//Calculate and print the loss
+					//Calculate and print the different evaluation stats.
 					float[] measurements = LRegression.EvaluateModel(scores, noCrunchScores, options.modelName);
 					Console.WriteLine("Loss (SME): " + measurements[0]);
-					Console.WriteLine("False Positive Rate: " + measurements[1]);
-					Console.WriteLine("Overall Accuracy: " + measurements[2]);
-					Console.WriteLine("Correct High Confidence Rate: " + measurements[3]);
+					Console.WriteLine("R2: " + measurements[1]);
+					Console.WriteLine("False Positive Rate: " + measurements[2]);
+					Console.WriteLine("Overall Accuracy: " + measurements[3]);
+					Console.WriteLine("Correct High Confidence Rate: " + measurements[4]);
 				}
 			}
 			else if (options.RegressionType == 'l')
