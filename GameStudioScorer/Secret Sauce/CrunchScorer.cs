@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Configuration;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace GameStudioScorer.Crunch
 {
@@ -252,6 +253,15 @@ namespace GameStudioScorer.Crunch
 
 			if (currentLine == "null")
 				return new float[] { 0.5f, 0.5f };
+
+			if (MainClass.DEBUG_MODE)
+				Logger.Log(currentLine, Logger.LogLevel.DEBUG, true);
+
+			//Get company ID
+			Match id = Regex.Match(currentLine, "(?<=EI_I)[^-]+(?=\\.\\d+,\\d+.htm)");
+			Match name = Regex.Match(currentLine, "(?<=Working\\-at-).+(?=-EI_I)");
+
+			currentLine = "https://www.glassdoor.com/Reviews/" + name.Value + "-Reviews-" + id.Value + ".htm";
 
 			//Execute the review scraper. This takes the link from the search scraper and
 			//gets the overall ratings from the top 40 reviews, or as many reviews that exist.

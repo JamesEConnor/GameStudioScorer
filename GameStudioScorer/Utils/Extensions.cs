@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Xml;
@@ -326,6 +327,24 @@ namespace GameStudioScorer.Extensions
 				result[a] = (array[a] == 1);
 
 			return result;
+		}
+
+		/// <summary>
+		/// Kills a process by PID>
+		/// </summary>
+		/// <param name="pid">The process's PID.</param>
+		public static void KillProcess(int pid)
+		{
+			Process[] process = Process.GetProcesses();
+
+			foreach (Process prs in process)
+			{
+				if (prs.Id == pid)
+				{
+					prs.Kill();
+					break;
+				}
+			}
 		}
 	}
 }

@@ -34,6 +34,8 @@ from schema import SCHEMA
 import json
 import urllib
 import datetime as dt
+import os
+import signal
 
 start = time.time()
 
@@ -127,13 +129,25 @@ def extract_from_page():
 
     res = pd.DataFrame([], columns=SCHEMA)
 
-    links = browser.find_elements_by_class_name('tightAll')
+    print(browser.current_url)
+    links = browser.find_elements_by_css_selector('.single-company-result')
     logger.info(f'Found {len(links)} links on page.')
 
     for link in links:
-        if(link.get_attribute('href') is not None):
-            return link.get_attribute('href')
+        el = link.find_element_by_xpath(".//h2/a")
+        print(el.get_attribute('href'))
+        if(el.get_attribute('href') is not None):
+            return "https://www.glassdoor.com" + el.get_attribute('href')
     
+    return browser.current_url
+
+def extract_review_url_from_page():
+    links = browser.find_elements_by_class_name('reviews')
+
+    for link in links:
+        if(link.get_attribute('data-label') is 'Reviews'):
+            return link
+
     return browser.current_url
 
 
@@ -150,9 +164,14 @@ def main():
 
     browser.get(url)
     logger.info(f'Accessing page.')
-    time.sleep(1)
+    time.sleep(4)
 
     link_url = extract_from_page()
+
+    time.sleep(1)
+    
+    browser.get(url)
+    link_url = extract_review_url_from_page()
 
     end = time.time()
     logger.info(f'Finished in {end - start} seconds')

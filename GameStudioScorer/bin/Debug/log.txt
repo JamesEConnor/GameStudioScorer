@@ -6205,3 +6205,59 @@ Path '', line 1, position 1.. Occurred for Epic Games
 [10/9/2019 8:41:35 AM]:	INFO -	Variance Inflation Factor #0: 1.65394
 [10/9/2019 8:41:35 AM]:	INFO -	Variance Inflation Factor #1: 1.543315
 [10/9/2019 8:41:35 AM]:	INFO -	Variance Inflation Factor #2: 1.095844
+
+
+--------------------------------------------------------------------
+
+[10/9/2019 3:38:01 PM]:	DEBUG -	Rockstar Games, {Rockstar Games|Rockstar Games|Rockstar|Rockstar Games Studios|Rockstar Games Studio}
+[10/9/2019 3:38:45 PM]:	ERROR -	Index was outside the bounds of the array.. Occurred for Rockstar Games
+[10/9/2019 3:38:45 PM]:	CRITICAL -	   at GameStudioScorer.Crunch.CrunchScorer.GetReviewScore(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 255
+   at GameStudioScorer.StudioInfo.get_ReviewScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 255
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 151
+
+
+--------------------------------------------------------------------
+
+[10/9/2019 3:39:33 PM]:	DEBUG -	Rockstar Games, {Rockstar Games|Rockstar Games|Rockstar|Rockstar Games Studios|Rockstar Games Studio}
+[10/9/2019 3:40:01 PM]:	ERROR -	Index was outside the bounds of the array.. Occurred for Rockstar Games
+[10/9/2019 3:40:01 PM]:	CRITICAL -	   at GameStudioScorer.Crunch.CrunchScorer.GetReviewScore(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 255
+   at GameStudioScorer.StudioInfo.get_ReviewScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 255
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 151
+
+
+--------------------------------------------------------------------
+
+[10/9/2019 3:41:19 PM]:	DEBUG -	Rockstar Games, {Rockstar Games|Rockstar Games|Rockstar|Rockstar Games Studios|Rockstar Games Studio}
+[10/9/2019 3:41:46 PM]:	ERROR -	Index was outside the bounds of the array.. Occurred for Rockstar Games
+[10/9/2019 3:41:46 PM]:	CRITICAL -	   at GameStudioScorer.Crunch.CrunchScorer.GetReviewScore(String studioName) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Secret Sauce\CrunchScorer.cs:line 256
+   at GameStudioScorer.StudioInfo.get_ReviewScore() in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Web Interfacers\IGDBInterfacer.cs:line 255
+   at GameStudioScorer.MainClass.GetScores(String[] studios, Int32 crunches) in C:\Users\James\Documents\Projects\GameStudioScorer\GameStudioScorer\Program.cs:line 151
+
+
+--------------------------------------------------------------------
+
+[10/9/2019 3:47:20 PM]:	DEBUG -	Rockstar Games, {Rockstar Games|Rockstar Games|Rockstar|Rockstar Games Studios|Rockstar Games Studio}
+
+
+--------------------------------------------------------------------
+
+[10/13/2019 11:56:49 AM]:	INFO -	Rockstar Games in DEBUG mode: [TRUE]
+[10/13/2019 11:56:52 AM]:	INFO -	Finding crunch over time score.
+[10/13/2019 11:56:52 AM]:	INFO -	Finding genre score.
+[10/13/2019 11:56:53 AM]:	DEBUG -	Rockstar Games, {Rockstar Games|Rockstar Games|Rockstar|Rockstar Games Studios|Rockstar Games Studio}
+[10/13/2019 11:56:53 AM]:	INFO -	Finding review score.
+[10/13/2019 11:56:53 AM]:	INFO -	Glassdoor search scraper started... (This may take up to a minute)
+[10/13/2019 11:57:26 AM]:	DEBUG -	
+[10/13/2019 11:57:26 AM]:	INFO -	Glassdoor review scraper started... (This may take up to a minute)
+
+
+--------------------------------------------------------------------
+
+[10/13/2019 11:59:30 AM]:	INFO -	Rockstar Games in DEBUG mode: [TRUE]
+[10/13/2019 11:59:32 AM]:	INFO -	Finding crunch over time score.
+[10/13/2019 11:59:32 AM]:	INFO -	Finding genre score.
+[10/13/2019 11:59:33 AM]:	DEBUG -	Rockstar Games, {Rockstar Games|Rockstar Games|Rockstar|Rockstar Games Studios|Rockstar Games Studio}
+[10/13/2019 11:59:33 AM]:	INFO -	Finding review score.
+[10/13/2019 11:59:33 AM]:	INFO -	Glassdoor search scraper started... (This may take up to a minute)
+[10/13/2019 12:00:00 PM]:	DEBUG -	https://www.glassdoor.com/Overview/Working-at-Rockstar-Games-EI_IE20887.11,25.htm
+[10/13/2019 12:00:00 PM]:	INFO -	Glassdoor review scraper started... (This may take up to a minute)

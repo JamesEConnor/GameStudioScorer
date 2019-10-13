@@ -32,6 +32,8 @@ from schema import SCHEMA
 import json
 import urllib
 import datetime as dt
+import os
+import signal
 
 start = time.time()
 
@@ -180,8 +182,8 @@ def scrape(field, review, author):
         except Exception:
             pass
         try:
-            cons = review.find_element_by_xpath (".//div/div/p[contains(text(),'Cons')]/following-sibling::p")  
-            res = cons.text.strip('-').replace(",", "")
+            cons = review.find_element_by_xpath (".//div/div/p[contains(text(),'Cons')]/following-sibling::p")
+            res = cons.text.strip('-').replace(",", "").replace("\n", "")
         except Exception:
             res = np.nan
         return res
@@ -412,6 +414,8 @@ def main():
 
     res = pd.DataFrame([], columns=SCHEMA)
 
+
+    browser.get(args.url)
     
     
     sign_in()
@@ -428,6 +432,11 @@ def main():
         time.sleep(1)
     else:
         browser.get(args.url)
+
+        if browser.find_elements_by_xpath("//h1[contains(text(),'Sorry, we can't find that page.')]") is not None:
+            browser.quit()
+            exit(0)
+        
         page[0] = get_current_page()
         logger.info(f'Starting from page {page[0]:,}.')
         time.sleep(1)
@@ -459,4 +468,5 @@ if __name__ == '__main__':
         main()
     except Exception:
         print("null")
+        browser.quit()
         exit(0)
