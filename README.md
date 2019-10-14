@@ -194,18 +194,18 @@ Connor, James E. “Game Studio Scorer.” *Github*, 1.0, 2019, <br /> &emsp; ww
 This repository is licensed with the following: [![License: GNU GPL v3.0](https://img.shields.io/badge/License-GNU%20GPL%20v3.0-lightgrey.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 This license:
 
-[x] Allows you to use this software commercially
-[x] Allows you to distribute this software
-[x] Allows you to modify this software
-[x] Provides an express grant of patent rights to you
-[x] May be used and modified in private.
+- [x] Allows you to use this software commercially
+- [x] Allows you to distribute this software
+- [x] Allows you to modify this software
+- [x] Provides an express grant of patent rights to you
+- [x] May be used and modified in private.
 
 There are a few limitations though:
 
-[ ] You must open source any software you make using this code
-[ ] A copy of the license and copyright must be included with your software
-[ ] Any modifications must be released under [![License: GNU GPL v3.0](https://img.shields.io/badge/License-GNU%20GPL%20v3.0-lightgrey.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
-[ ] Any modifications made must be clearly stated in any works derived from this code.
+- [ ] You must open source any software you make using this code
+- [ ] A copy of the license and copyright must be included with your software
+- [ ] Any modifications must be released under [![License: GNU GPL v3.0](https://img.shields.io/badge/License-GNU%20GPL%20v3.0-lightgrey.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+- [ ] Any modifications made must be clearly stated in any works derived from this code.
 
 ## Warranty and Liability
 
