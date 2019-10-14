@@ -180,3 +180,37 @@ Lists used for calculating the genre constants:
 - Glassdoor Review Scraper: [https://github.com/iopsych/glassdoor-review-scraper](https://github.com/iopsych/glassdoor-review-scraper)
   - Repository forked from original: [https://github.com/MatthewChatham/glassdoor-review-scraper](https://github.com/MatthewChatham/glassdoor-review-scraper)
   - Used for getting reviews from Glassdoor
+
+# Citing, Use of Code, and Other Legalese
+
+## Citing this repository
+
+If you're referencing this software in an academic work, just use this citation:
+
+Connor, James E. “Game Studio Scorer.” *Github*, 1.0, 2019, <br /> &emsp; www.github.com/JamesEConnor/GameStudioScorer.
+
+## Use of Code and Licensing
+
+This repository is licensed with the following: [![License: GNU GPL v3.0](https://img.shields.io/badge/License-GNU%20GPL%20v3.0-lightgrey.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+This license:
+
+[x] Allows you to use this software commercially
+[x] Allows you to distribute this software
+[x] Allows you to modify this software
+[x] Provides an express grant of patent rights to you
+[x] May be used and modified in private.
+
+There are a few limitations though:
+
+[ ] You must open source any software you make using this code
+[ ] A copy of the license and copyright must be included with your software
+[ ] Any modifications must be released under [![License: GNU GPL v3.0](https://img.shields.io/badge/License-GNU%20GPL%20v3.0-lightgrey.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+[ ] Any modifications made must be clearly stated in any works derived from this code.
+
+## Warranty and Liability
+
+According to the license, I have no liability for any damamges resulting from this code. I also provide no warranty whatsoever. Use and modify at your own risks.
+
+## Derivative Works
+
+That about covers it. I'd love to see any projects you use this code for. Whether it's a paper, derived code, or a research project, give me a shout! Thanks for your support, and happy coding!
