@@ -93,7 +93,8 @@ namespace GameStudioScorer.Regression
 
 			//Create a regression model.
 			LogisticRegression regression = new LogisticRegression();
-			regression.Weights = weights;
+			regression.Weights = weights.Take(weights.Length - 1).ToArray();
+			regression.Intercept = weights[weights.Length - 1];
 
 			Console.WriteLine("Probability of studios crunching:");
 
@@ -185,7 +186,7 @@ namespace GameStudioScorer.Regression
 			string result = "Weights: " + regression.Weights.GetString() + "\n";
 
 			//Write lines.
-			writer.WriteLine(regression.Weights.GetString());
+			writer.WriteLine(regression.Weights.Append(regression.Intercept).ToArray().GetString());
 			for (int c = 0; c < regression.Weights.Length; c++)
 			{
 				writer.WriteLine(regression.GetOddsRatio(c));
@@ -256,7 +257,8 @@ namespace GameStudioScorer.Regression
 
 			//Create a regression model.
 			LogisticRegression regression = new LogisticRegression();
-			regression.Weights = weights;
+			regression.Weights = weights.Take(weights.Length - 1).ToArray();
+			regression.Intercept = weights[weights.Length - 1];
 
 			//Get the actual and expected values from the scores.
 			double[] actual = new double[crunchingScores.Count + nonCrunchingScores.Count];

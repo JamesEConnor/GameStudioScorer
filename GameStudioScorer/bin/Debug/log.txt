@@ -6261,3 +6261,11 @@ Path '', line 1, position 1.. Occurred for Epic Games
 [10/13/2019 11:59:33 AM]:	INFO -	Glassdoor search scraper started... (This may take up to a minute)
 [10/13/2019 12:00:00 PM]:	DEBUG -	https://www.glassdoor.com/Overview/Working-at-Rockstar-Games-EI_IE20887.11,25.htm
 [10/13/2019 12:00:00 PM]:	INFO -	Glassdoor review scraper started... (This may take up to a minute)
+
+
+--------------------------------------------------------------------
+
+[11/9/2019 5:15:57 PM]:	INFO -	Variance Inflation Factor #0: 1.146519
+[11/9/2019 5:15:57 PM]:	INFO -	Variance Inflation Factor #1: 1.714311
+[11/9/2019 5:15:57 PM]:	INFO -	Variance Inflation Factor #2: 1.55836
+[11/9/2019 5:15:57 PM]:	INFO -	Variance Inflation Factor #3: 1.265491
