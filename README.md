@@ -58,7 +58,9 @@ Overall, the model seems to perform well, but does much better with more distinc
 
 ## White Paper
 
-A white paper on the math behind the program is in the works and will be posted here when completed.
+There is a white paper available discussing the mathematics and design of this program. It also analyzes the statistical properties of the model and investigates how the inputs and outputs are related.
+
+[![Download White Paper PDF](https://img.shields.io/badge/Download-pdf-red)](WhitePaper.pdf)
 
 # Using the Program
 
