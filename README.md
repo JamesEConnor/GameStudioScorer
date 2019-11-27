@@ -60,11 +60,11 @@ Overall, the model seems to perform well, but does much better with more distinc
 
 There is a white paper available discussing the mathematics and design of this program. It also analyzes the statistical properties of the model and investigates how the inputs and outputs are related.
 
-[![Download White Paper PDF](https://img.shields.io/badge/Download-pdf-red)](WhitePaper.pdf)
+[![Download White Paper PDF](https://img.shields.io/badge/Download-pdf-red)](https://github.com/JamesEConnor/GameStudioScorer/blob/master/Crunching%20the%20Numbers.pdf)
 
 # Using the Program
 
-The most up to date source code is available on the following branch: [![Logistic-Regression-Intercept Branch](https://img.shields.io/badge/Branch-Logistic--Regression--Intercept-%233d7a00)](https://github.com/JamesEConnor/GameStudioScorer/tree/Logistic-Regression-Intercept)
+The most up to date source code is available on the following branch: [![master Branch](https://img.shields.io/badge/Branch-master-%233d7a00)](https://github.com/JamesEConnor/GameStudioScorer/tree/master)
 
 The most recent release is: [![version 1.0.0](https://img.shields.io/badge/version-v1.0.0-%230576B6)](https://github.com/JamesEConnor/GameStudioScorer/releases/tag/v1.0.0)
 
