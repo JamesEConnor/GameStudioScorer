@@ -64,6 +64,10 @@ There is a white paper available discussing the mathematics and design of this p
 
 # Using the Program
 
+The most up to date source code is available on the following branch: [![Logistic-Regression-Intercept Branch](https://img.shields.io/badge/Branch-Logistic--Regression--Intercept-%233d7a00)](https://github.com/JamesEConnor/GameStudioScorer/tree/Logistic-Regression-Intercept)
+
+The most recent release is: [![version 1.0.0](https://img.shields.io/badge/version-v1.0.0-%230576B6)](https://github.com/JamesEConnor/GameStudioScorer/releases/tag/v1.0.0)
+
 ```
   --studio        (Default: null) A specific studio to calculate for. Should only be used with 'p' and 'm' regression modes.
 
