@@ -58,9 +58,15 @@ Overall, the model seems to perform well, but does much better with more distinc
 
 ## White Paper
 
-A white paper on the math behind the program is in the works and will be posted here when completed.
+There is a white paper available discussing the mathematics and design of this program. It also analyzes the statistical properties of the model and investigates how the inputs and outputs are related.
+
+[![Download White Paper PDF](https://img.shields.io/badge/Download-pdf-red)](WhitePaper.pdf)
 
 # Using the Program
+
+The most up to date source code is available on the following branch: [![Logistic-Regression-Intercept Branch](https://img.shields.io/badge/Branch-Logistic--Regression--Intercept-%233d7a00)](https://github.com/JamesEConnor/GameStudioScorer/tree/Logistic-Regression-Intercept)
+
+The most recent release is: [![version 1.0.0](https://img.shields.io/badge/version-v1.0.0-%230576B6)](https://github.com/JamesEConnor/GameStudioScorer/releases/tag/v1.0.0)
 
 ```
   --studio        (Default: null) A specific studio to calculate for. Should only be used with 'p' and 'm' regression modes.
@@ -180,3 +186,37 @@ Lists used for calculating the genre constants:
 - Glassdoor Review Scraper: [https://github.com/iopsych/glassdoor-review-scraper](https://github.com/iopsych/glassdoor-review-scraper)
   - Repository forked from original: [https://github.com/MatthewChatham/glassdoor-review-scraper](https://github.com/MatthewChatham/glassdoor-review-scraper)
   - Used for getting reviews from Glassdoor
+
+# Citing, Use of Code, and Other Legalese
+
+## Citing this repository
+
+If you're referencing this software in an academic work, just use this citation:
+
+Connor, James E. “Game Studio Scorer.” *Github*, 1.0, 2019, <br /> &emsp; www.github.com/JamesEConnor/GameStudioScorer.
+
+## Use of Code and Licensing
+
+This repository is licensed with the following: [![License: GNU GPL v3.0](https://img.shields.io/badge/License-GNU%20GPL%20v3.0-lightgrey.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+This license:
+
+- [x] Allows you to use this software commercially
+- [x] Allows you to distribute this software
+- [x] Allows you to modify this software
+- [x] Provides an express grant of patent rights to you
+- [x] May be used and modified in private.
+
+There are a few limitations though:
+
+- [ ] You must open source any software you make using this code
+- [ ] A copy of the license and copyright must be included with your software
+- [ ] Any modifications must be released under [![License: GNU GPL v3.0](https://img.shields.io/badge/License-GNU%20GPL%20v3.0-lightgrey.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+- [ ] Any modifications made must be clearly stated in any works derived from this code.
+
+## Warranty and Liability
+
+According to the license, I have no liability for any damamges resulting from this code. I also provide no warranty whatsoever. Use and modify at your own risks.
+
+## Derivative Works
+
+That about covers it. I'd love to see any projects you use this code for. Whether it's a paper, derived code, or a research project, give me a shout! Thanks for your support, and happy coding!
