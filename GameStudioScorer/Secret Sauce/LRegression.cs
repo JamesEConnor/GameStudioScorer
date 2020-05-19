@@ -183,14 +183,14 @@ namespace GameStudioScorer.Regression
 			StreamWriter writer = new StreamWriter(fs);
 
 			//Print the weights
-			string result = "Weights: " + regression.Weights.GetString() + "\n";
+			string result = "Weights: " + regression.Weights.Append(regression.Intercept).ToArray().GetString() + "\n";
 
 			//Write lines.
 			writer.WriteLine(regression.Weights.Append(regression.Intercept).ToArray().GetString());
 			for (int c = 0; c < regression.Weights.Length; c++)
 			{
-				writer.WriteLine(regression.GetOddsRatio(c));
-				result += "Odds Ratio " + c + ": " + regression.GetOddsRatio(c) + "\n";
+				writer.WriteLine(regression.GetOddsRatio(c + 1) + "," + regression.GetConfidenceInterval(c + 1));
+				result += "Odds Ratio " + c + ": " + regression.GetOddsRatio(c + 1) + "," + regression.GetConfidenceInterval(c + 1) + "\n";
 			}
 
 			//Get Loss values.
@@ -259,6 +259,11 @@ namespace GameStudioScorer.Regression
 			LogisticRegression regression = new LogisticRegression();
 			regression.Weights = weights.Take(weights.Length - 1).ToArray();
 			regression.Intercept = weights[weights.Length - 1];
+
+			for (int a = 0; a < regression.Weights.Length; a++)
+			{
+				Console.WriteLine(regression.Weights[a] + ", " + regression.GetOddsRatio(a + 1));
+			}
 
 			//Get the actual and expected values from the scores.
 			double[] actual = new double[crunchingScores.Count + nonCrunchingScores.Count];

@@ -77,21 +77,8 @@ namespace GameStudioScorer.Crunch
 			if (Logger.VERBOSE)
 				Logger.Log("Finding genre score.");
 
-			//If the Studio is not being forced to recaculate values, check if it
-			//exists in the cache. If it does, return the values. Otherwise, continue.
-			if (!DEBUG && !MainClass.options.force)
-			{
-				StudioInfo si = LocalCacheManager.GetCachedInfo(aliases[0]);
-				if (si.id != "-1" && !DEBUG)
-				{
-					List<float> f = Array.ConvertAll(si.genreArray, x => (float)x).ToList();
-					f.Insert(0, si.GenreScore);
-					return f.ToArray();
-				}
-			}
-
 			//Get the genres of all released games from IGDB and return their average as the score.
-			int[] genres = IGDBInterfacer.GetGenres(name);
+			int[] genres = IGDBInterfacer.GetGenres(name, DEBUG, aliases);
 			int[] genreCount = new int[7];
 
 			Logger.Log(name + ", " + aliases.ToArray().GetString(), Logger.LogLevel.DEBUG, true);
@@ -122,7 +109,7 @@ namespace GameStudioScorer.Crunch
 				bool broken = false;
 				foreach (string alias in aliases)
 				{
-					genres = IGDBInterfacer.GetGenres(alias);
+					genres = IGDBInterfacer.GetGenres(alias, DEBUG, aliases);
 
 					//This means this name doesn't exist either, so try the next one.
 					if (genres == null || genres.Length <= 0)

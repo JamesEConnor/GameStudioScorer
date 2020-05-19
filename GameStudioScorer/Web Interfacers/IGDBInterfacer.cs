@@ -22,8 +22,19 @@ namespace GameStudioScorer.IGDB
 		/// </summary>
 		/// <returns>The genres, with values between 0 and 6 (inclusive).</returns>
 		/// <param name="name">The name of the game Studio.</param>
-		public static int[] GetGenres(string name)
+		public static int[] GetGenres(string name, bool DEBUG, List<string> aliases)
 		{
+			//If the Studio is not being forced to recaculate values, check if it
+			//exists in the cache. If it does, return the values. Otherwise, continue.
+			if (!DEBUG && !MainClass.options.force)
+			{
+				StudioInfo si = LocalCacheManager.GetCachedInfo(aliases[0]);
+				if (si.id != "-1" && !DEBUG)
+				{
+					return si.genreArray;
+				}
+			}
+
 			//Gets the API Key from the app.config file.
 			if (API_KEY == "")
 				API_KEY = ConfigurationManager.AppSettings["IGDBkey"];

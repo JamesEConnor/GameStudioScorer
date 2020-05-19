@@ -6269,3 +6269,51 @@ Path '', line 1, position 1.. Occurred for Epic Games
 [11/9/2019 5:15:57 PM]:	INFO -	Variance Inflation Factor #1: 1.714311
 [11/9/2019 5:15:57 PM]:	INFO -	Variance Inflation Factor #2: 1.55836
 [11/9/2019 5:15:57 PM]:	INFO -	Variance Inflation Factor #3: 1.265491
+
+
+--------------------------------------------------------------------
+
+[11/10/2019 9:41:00 AM]:	INFO -	Variance Inflation Factor #0: 1.146519
+[11/10/2019 9:41:00 AM]:	INFO -	Variance Inflation Factor #1: 1.714311
+[11/10/2019 9:41:00 AM]:	INFO -	Variance Inflation Factor #2: 1.55836
+[11/10/2019 9:41:00 AM]:	INFO -	Variance Inflation Factor #3: 1.265491
+
+
+--------------------------------------------------------------------
+
+[11/10/2019 10:06:25 AM]:	INFO -	Variance Inflation Factor #0: 1.146519
+[11/10/2019 10:06:25 AM]:	INFO -	Variance Inflation Factor #1: 1.714311
+[11/10/2019 10:06:25 AM]:	INFO -	Variance Inflation Factor #2: 1.55836
+[11/10/2019 10:06:25 AM]:	INFO -	Variance Inflation Factor #3: 1.265491
+
+
+--------------------------------------------------------------------
+
+[11/10/2019 10:16:37 AM]:	INFO -	Variance Inflation Factor #0: 1.146519
+[11/10/2019 10:16:38 AM]:	INFO -	Variance Inflation Factor #1: 1.714311
+[11/10/2019 10:16:38 AM]:	INFO -	Variance Inflation Factor #2: 1.55836
+[11/10/2019 10:16:38 AM]:	INFO -	Variance Inflation Factor #3: 1.265491
+
+
+--------------------------------------------------------------------
+
+[11/10/2019 10:18:52 AM]:	INFO -	Variance Inflation Factor #0: 1.146519
+[11/10/2019 10:18:52 AM]:	INFO -	Variance Inflation Factor #1: 1.714311
+[11/10/2019 10:18:52 AM]:	INFO -	Variance Inflation Factor #2: 1.55836
+[11/10/2019 10:18:52 AM]:	INFO -	Variance Inflation Factor #3: 1.265491
+
+
+--------------------------------------------------------------------
+
+[11/10/2019 9:29:51 PM]:	INFO -	Variance Inflation Factor #0: 1.255046
+[11/10/2019 9:29:51 PM]:	INFO -	Variance Inflation Factor #1: 1.367254
+[11/10/2019 9:29:51 PM]:	INFO -	Variance Inflation Factor #2: 1.388842
+[11/10/2019 9:29:51 PM]:	INFO -	Variance Inflation Factor #3: 1.274094
+
+
+--------------------------------------------------------------------
+
+[11/19/2019 7:38:24 PM]:	INFO -	Variance Inflation Factor #0: 1.020225
+[11/19/2019 7:38:24 PM]:	INFO -	Variance Inflation Factor #1: 1.664393
+[11/19/2019 7:38:24 PM]:	INFO -	Variance Inflation Factor #2: 1.572768
+[11/19/2019 7:38:24 PM]:	INFO -	Variance Inflation Factor #3: 1.095804
